@@ -1,0 +1,973 @@
+{
+  "status": "EXACT_SOURCE_BOUND_REDUCTION",
+  "statement": "For every non-root packet whose complete gateway-conditioned energy polynomials obey A_minus=A_plus=A, summing its gateway spin across a bridge J contributes A(q)*(1+q^abs(J)), independent of the parent spin. Recursion along the declared tree gives the exact root-conditioned spectrum.",
+  "derivation": "The bridge exponent is (abs(J)-J*s*t)/2. As t ranges over -1,+1, these exponents are 0 and abs(J) in either order. Equality of the two full packet messages makes the sum independent of s. The tree recursion preserves equality. All local energy bounds and bridge bounds add to the global bound.",
+  "supporting_cases": [
+    {
+      "N": 1,
+      "key": "signed_packet_chain_N001",
+      "source_hash": "57b81c8eb6e150592de7dd2d76dc7011993428fe9269502e3842e603128a1d37",
+      "median_ms": 0.0708489678800106,
+      "verification_hash": "22cf123b2e00dc3d4f0fa4eaeeb01f80055a20d7145d7b8fe1237e4bee6f7b59",
+      "reduction": "NO_BRIDGES"
+    },
+    {
+      "N": 2,
+      "key": "signed_packet_chain_N002",
+      "source_hash": "5bb171c34a12fd75df39d7111c476b051529dee25c0ce9c3bdf4bf235db9cbaa",
+      "median_ms": 0.06283901166170835,
+      "verification_hash": "3972f412add8f457c6912c33d15bcd956dc8ce0b5a230fb3aea8848baea6e999",
+      "reduction": "NO_BRIDGES"
+    },
+    {
+      "N": 3,
+      "key": "signed_packet_chain_N003",
+      "source_hash": "5034ef106678f0100caa99f998d7cbd132c873d15017bd2a653161be218f1aef",
+      "median_ms": 0.0696780625730753,
+      "verification_hash": "a67cde296068da828138669c30a1db0e6ea371ca7a3326cec0997775fcb34237",
+      "reduction": "NO_BRIDGES"
+    },
+    {
+      "N": 4,
+      "key": "signed_packet_chain_N004",
+      "source_hash": "e8b3fe97ff508e669b4ec9a53198049234ac2b0f28c7082411e014a3c6a61e84",
+      "median_ms": 0.08651800453662872,
+      "verification_hash": "6d704d7b890f3f337b87bd4d9ba5d9ee237fbb4971018156008b08ce9307f7cb",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 5,
+      "key": "signed_packet_chain_N005",
+      "source_hash": "61888a8f73b77390f813231127561cbbd05525b18287515b714f7b3e407a80d1",
+      "median_ms": 0.07907894905656576,
+      "verification_hash": "19b69b5f8b3708ccd52cd3b4379d8ade412060b2f953ba9ba14164483e298938",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 6,
+      "key": "signed_packet_chain_N006",
+      "source_hash": "99d1b7fabb277119f85e721bde391f94a50a0f8cb7a0d8098ee3aeb7c022f668",
+      "median_ms": 0.11719809845089912,
+      "verification_hash": "c0d4c73d1b13979d69a254a97435503c545ad39fc4c26b5a4d4b5c5606f77fd0",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 7,
+      "key": "signed_packet_chain_N007",
+      "source_hash": "dd24962e272575a31a66360da9335222c6b1e4c6a235e5d0a4692667d92a54ab",
+      "median_ms": 0.09847898036241531,
+      "verification_hash": "5731be427e49ea4b8288a22717df9c13254e704526e69f1d3a0723fdb9117a21",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 8,
+      "key": "signed_packet_chain_N008",
+      "source_hash": "2da7e6edbd2dc89587db1a7694154b4fbd195ea006b9b0a4759168587ec497a8",
+      "median_ms": 0.12825708836317062,
+      "verification_hash": "e43d0f14a83982e1525c567caed9696895de75fa56246c37108eef0fc83db5b5",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 9,
+      "key": "signed_packet_chain_N009",
+      "source_hash": "3e1a093bf53feb5532da05265d66564730bfeaa17b792cdc5b4f2758cd43a82f",
+      "median_ms": 0.10672793723642826,
+      "verification_hash": "6e5cf06c31e362580cdd60dac8b43cde4b41b124a8d03f963a1c38571250149a",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 10,
+      "key": "signed_packet_chain_N010",
+      "source_hash": "e881c03f4debf0afc2e8e7c2d1929aade2197f8fb7217da6086a920cad970378",
+      "median_ms": 0.11714803986251354,
+      "verification_hash": "580bd5b5f63429fdf276059523837800ada78cfe0b59874a49476d3a80de189e",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 11,
+      "key": "signed_packet_chain_N011",
+      "source_hash": "14053683e14bc69a06db449097f5955b14301dd0668c814a04c17881b04c644e",
+      "median_ms": 0.12258801143616438,
+      "verification_hash": "75baaf70f7fe09205e8c3012fa1df4728a65b5c8d76dcf1ce8fe963cca053b68",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 12,
+      "key": "signed_packet_chain_N012",
+      "source_hash": "654e646c0669facc455a20b8c602afcbb3f067618ad2bb1ff42fab505358dd0d",
+      "median_ms": 0.1290281070396304,
+      "verification_hash": "2ca627d50e256f0ca4d531f22ac1570db0d6abdd8bdb207b7bfebdb16a55cf85",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 13,
+      "key": "signed_packet_chain_N013",
+      "source_hash": "119dbb2a6b171cc45b95220b616a2937329a539e3dbd0a3b8d00bd645c032504",
+      "median_ms": 0.14190701767802238,
+      "verification_hash": "21c426b2c43eeb91cb2e1299525a625f8ab4f55473436e4b72f70747bd95c39f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 14,
+      "key": "signed_packet_chain_N014",
+      "source_hash": "0704833ec730fde5b03886cd049a03ac2e4df598174d1b7536322955b08a5b27",
+      "median_ms": 0.147626968100667,
+      "verification_hash": "9d3d237a4ee944e77d6d7aa69ed2c80b9731db807fd3976dca02724422bba598",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 15,
+      "key": "signed_packet_chain_N015",
+      "source_hash": "33b7292b11ebf33dbefc85c007cd4ce3ccb0bc38066434bcf5cb96b97e5170f0",
+      "median_ms": 0.15874707605689764,
+      "verification_hash": "2b9036009775a9210e2863d36a4cc1fbd588f163103c1a34aeeeb03e7a83ffeb",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 16,
+      "key": "signed_packet_chain_N016",
+      "source_hash": "595d943ebddfc7a8500a345ec26796c9176a04182453c50df43974f712f22856",
+      "median_ms": 0.16150798182934523,
+      "verification_hash": "8d0bb00898828250262089b27aba23460bfdbc89773c224c74df25bff3597962",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 17,
+      "key": "signed_packet_chain_N017",
+      "source_hash": "03e7d3a4ef99bbfbe3e160d9acab13c55ab126b3728a92e7551cab60914103ec",
+      "median_ms": 0.1637069508433342,
+      "verification_hash": "34fa459831aa037c3630b945df78e200576aeef33757637de6cc7f5cc55c0475",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 18,
+      "key": "signed_packet_chain_N018",
+      "source_hash": "6fd12a379d9b6a2233e12f33a79ddb10f397efafbb10e205ea02fc454d0ee92b",
+      "median_ms": 0.17299700994044542,
+      "verification_hash": "9ba9ac4a4d44c35c1c6c534590c7d9f68d9d3799801e44566956211d6f8141af",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 19,
+      "key": "signed_packet_chain_N019",
+      "source_hash": "f415691644b715738e0b958f1d7587ae7c2033f8ddb0412f01c5d4582cb29769",
+      "median_ms": 0.1799969468265772,
+      "verification_hash": "f6cb9d44ab2e413bece933d9485a40479ffca7bcab08bee116f00f80e11292a3",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 20,
+      "key": "signed_packet_chain_N020",
+      "source_hash": "d9099ca077b093d791956e075ed3d3afc7b1d5ac362d6670da780bec6aea8caf",
+      "median_ms": 0.20727701485157013,
+      "verification_hash": "08c3ee50d3e8acdc071a20d09ab86c8d30edaf7594343d1f1017bd4941aac990",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 21,
+      "key": "signed_packet_chain_N021",
+      "source_hash": "28d065bed00f6cd79d5e46cc789945dc26e3d431b4a69ceb02576ad2dc19efbc",
+      "median_ms": 0.19272591453045607,
+      "verification_hash": "128c5a934f11f664d5f1086a8d858067e78a75ce106ad4eb455d1fc5e29dc30c",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 22,
+      "key": "signed_packet_chain_N022",
+      "source_hash": "d021f29303e400b910866adbc1e72157b7e98b230f65f93f8906177f2b7dda9d",
+      "median_ms": 0.20131608471274376,
+      "verification_hash": "7e934f3a1242320b9b11c199b8edf00b4330b0fe298692f03fdd75601e5f2a86",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 23,
+      "key": "signed_packet_chain_N023",
+      "source_hash": "67b1c53ace008670ab71d3283c8b15e20e0196ad5bf22c99632a7fb4b2306801",
+      "median_ms": 0.20222598686814308,
+      "verification_hash": "c0c7ef85bb19d1b5378e79aa5705d48b56e010ef8161fe950a9fc1c4ce5e9026",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 24,
+      "key": "signed_packet_chain_N024",
+      "source_hash": "95640d7001549800595b0ab2559a99d3ba5ccbf8cb02ca3e569c9bb709db1801",
+      "median_ms": 0.21951599046587944,
+      "verification_hash": "f699704f5ed9c799fee449047559236dea8a13cc822a4937b724b3805f0ff175",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 25,
+      "key": "signed_packet_chain_N025",
+      "source_hash": "f7499f0c7a7b1e2e11eb1fc33a658872653084eb77654f97587b6b12fdb55d2f",
+      "median_ms": 0.23530598264187574,
+      "verification_hash": "062b9ac66f409dd203184c92219d231d1f94f8f49fce736c50723237731f5f2f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 26,
+      "key": "signed_packet_chain_N026",
+      "source_hash": "445b82cf6e60138d29bcaa86ec3bc8ecb488f4cdafe074846674bede7f460bf1",
+      "median_ms": 0.2400859957560897,
+      "verification_hash": "8cbd93a0bb145fee57a3f55800b01ccf83c284af21f08d1d027f7b204a9ee8ed",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 27,
+      "key": "signed_packet_chain_N027",
+      "source_hash": "ae8efa7c04933102fe60b67b09d53f38cd6ff4386b539ab5b2253953d158889a",
+      "median_ms": 0.2517550019547343,
+      "verification_hash": "85ab8de84c0d7a460ffd69c5800ec77d1644aedfed927b8c67e7a9e9f4298d49",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 28,
+      "key": "signed_packet_chain_N028",
+      "source_hash": "5d5e26ee86a124619da600a4c0c4562de86fe2f883478bb73f48514622ed9436",
+      "median_ms": 0.2836249768733978,
+      "verification_hash": "a7543911970319c9cdfe6a657b9dcf97d4298e2fba12b98cbd19d8e6f5caaed8",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 29,
+      "key": "signed_packet_chain_N029",
+      "source_hash": "93c46e15ac8612eec991e3470c1aa70d7161196c971f087e6883a330d090974d",
+      "median_ms": 0.279594911262393,
+      "verification_hash": "7c04bf88451f4b481d76764aa0caf03caa43d60d9dbd6e965814b74c99c9af31",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 30,
+      "key": "signed_packet_chain_N030",
+      "source_hash": "2b3d01eb8a01131f53f59a79ad62114e8e1cb9e5bd0bb81b98208793379e6a38",
+      "median_ms": 0.29023492243140936,
+      "verification_hash": "a94170c5c5db50a81a356f7789887e8fa05dab50f2c4dc8b8c4c370a7e2c7a87",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 31,
+      "key": "signed_packet_chain_N031",
+      "source_hash": "79aa54bc174314f9ee75c880eb71b52f294dcf9c8c53ae47049cc0ae7f16a474",
+      "median_ms": 0.2997349947690964,
+      "verification_hash": "fd1394fdc88f81ad195d447ed315f65fe678c1798535afd70d9bdb02fbf07010",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 32,
+      "key": "signed_packet_chain_N032",
+      "source_hash": "ea9e3b3f5f79982d68ae8b3fdfa1a2c50a64faa8b35a0bc8d053236bf47acfc7",
+      "median_ms": 0.29928493313491344,
+      "verification_hash": "b5b12ba2625adad8289da66d9188fee237c416b12f406b35096a2222fec66d43",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 33,
+      "key": "signed_packet_chain_N033",
+      "source_hash": "3a016c705aec5a919e495a06a313fcb925e3d750d7470ca8bbf1c89495682321",
+      "median_ms": 0.32624404411762953,
+      "verification_hash": "8b1494d251bb53378c4d93c554dbe5e692e3c5c4e27172ff97878d1d1ca1db0f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 34,
+      "key": "signed_packet_chain_N034",
+      "source_hash": "85aaf4212cfb5d98f2cc1dcb769bb53cb9793577df30c9c4834b3bbe6163e633",
+      "median_ms": 0.331723946146667,
+      "verification_hash": "8b06961431fbd0cdb1acbd7fb398f3031bc919aa391b19ab4040e9d786a8c963",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 35,
+      "key": "signed_packet_chain_N035",
+      "source_hash": "261216e23978f84517951c201a42ba4721ec59bc1b5fb7d33c7a32a5eee57106",
+      "median_ms": 0.32985396683216095,
+      "verification_hash": "796263d6e5681f8780c5b2ea5e563108c2b0e952e644b38c841bcbb6624322ee",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 36,
+      "key": "signed_packet_chain_N036",
+      "source_hash": "29377a6afe3a11025e7d1855f4644b47114626b063cbc7d0bd14c1d1f663dcd4",
+      "median_ms": 0.34442299511283636,
+      "verification_hash": "7098f012fcffbd8bd3f2517008cbab6257618d201185a299fe5c29ca27030962",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 37,
+      "key": "signed_packet_chain_N037",
+      "source_hash": "62f658357e0250aeab51df1c37ab3bbff10cc19edc7326768ed854c8036f810d",
+      "median_ms": 0.35665405448526144,
+      "verification_hash": "a6b174ae885e43a2fa9b510788922e190ca565ccde12457d25dcf2fb527cb046",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 38,
+      "key": "signed_packet_chain_N038",
+      "source_hash": "0028867096400a397f530bfe4d80467858e1f112bfa28e80d7e7802b2c879241",
+      "median_ms": 0.3589739790186286,
+      "verification_hash": "4bcc753914190d2244778ec2e811deca64fea2a7b8bbad0b6f4a76385b4887fa",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 39,
+      "key": "signed_packet_chain_N039",
+      "source_hash": "bd20febb82347bd3af58185b9f1f4547d9186eed209bb37a8e1a0c2db6526633",
+      "median_ms": 0.3848630003631115,
+      "verification_hash": "08174851fde22de28c98b4a61a342cf04ab8a1a5308f831f5d2cb32c20bf6ba9",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 40,
+      "key": "signed_packet_chain_N040",
+      "source_hash": "6b91ba9dba9eb3ef9a643d7416be27a10c2ea4ecf6f5628593bb3f1476fee3e5",
+      "median_ms": 0.3803529543802142,
+      "verification_hash": "a1d73fe2c61a67f9bdecbb07c2c2ce2de8067b9998de8b01124d215ce8b598cb",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 41,
+      "key": "signed_packet_chain_N041",
+      "source_hash": "038580062a81fb8b19909649786e38630215530eda957186996ed7ac50079710",
+      "median_ms": 0.3862029407173395,
+      "verification_hash": "4c7fa4189372d172822b2605582d85ce51b083c80806dd59c9912df010252b2f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 42,
+      "key": "signed_packet_chain_N042",
+      "source_hash": "340946f4d636849e607f06f7507a11a6bf561219f6b6acde52e4f9044138a8a1",
+      "median_ms": 0.4055020399391651,
+      "verification_hash": "677cfd9ecfeae08afa09d7454d45148fb18425e480cfbf4d2273b307fa2a294d",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 43,
+      "key": "signed_packet_chain_N043",
+      "source_hash": "43cde4b98b382d11020092ab2203e53725494ea72e513e6e4a4c07ef457dbcd0",
+      "median_ms": 0.4193820059299469,
+      "verification_hash": "25c215f3f3696273df36a15f90ad53c7c8774b95820837ad32844fcf6fe8641b",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 44,
+      "key": "signed_packet_chain_N044",
+      "source_hash": "67080f79557f1e1dee9b46317fa4c0d818d38187e547ff93957dd713d1498118",
+      "median_ms": 0.43292203918099403,
+      "verification_hash": "108751e611a6073bb8a758072a1ca835c9800f65c4583edd590cde3d9d2a6e51",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 45,
+      "key": "signed_packet_chain_N045",
+      "source_hash": "0ade9dc47c4b2192810a0941a8e8a4a83ce9e705285ac9992f238f121fc3ec6f",
+      "median_ms": 0.431952066719532,
+      "verification_hash": "7581d53adebdad706db44a910fb049cd411f0c001a1241900e25603890811e75",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 46,
+      "key": "signed_packet_chain_N046",
+      "source_hash": "23f561fba9bf92594c3c8ac6a38132ee1acf7648d5c220a1d155a42f976bcc9d",
+      "median_ms": 0.43542205821722746,
+      "verification_hash": "30312b1144ec582495a5744ec9d655f8909ffe506db576c1bcaf57b5fa022a7b",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 47,
+      "key": "signed_packet_chain_N047",
+      "source_hash": "7ca13e1f9430f2ca08d97b03e1d9c9857eea5e176e8c909ca96c277db8bb2c2f",
+      "median_ms": 0.46723196282982826,
+      "verification_hash": "14b9e1200c54982ca3600071c3d5d507d1336c63b92cfef5ef9dadd0c0aca4ec",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 48,
+      "key": "signed_packet_chain_N048",
+      "source_hash": "36c3e1c57895883cfc721e32293dfdd8aaaf4831432b3dc5b20a6b5e6206c839",
+      "median_ms": 0.4568819422274828,
+      "verification_hash": "a134f69fcf28c80b025269ccce8a4576783740a44f67f8cd1ce9c1f3bfceed27",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 49,
+      "key": "signed_packet_chain_N049",
+      "source_hash": "dc00691611d786f64c8b804e6443895ca9280980741a9e339a5c10dc3cd955a9",
+      "median_ms": 0.4797420697286725,
+      "verification_hash": "fff86db2a2380cdc181940b6bc11d725d82d8dc96ae468504b538506b89381f2",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 50,
+      "key": "signed_packet_chain_N050",
+      "source_hash": "ec0262891039a019e826ea4775e4d01abddd0d5be9db6c0d32bb0cceeb5f5035",
+      "median_ms": 0.47812191769480705,
+      "verification_hash": "df038efd7835e7e88cc906e21cac7b6ce124ed03a6a1f83e9dc871827c609e26",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 51,
+      "key": "signed_packet_chain_N051",
+      "source_hash": "c097d9f0bf8a342bc846c216e1767e90754d305a9fd0e00697ca071b7d7c0723",
+      "median_ms": 0.4859910113736987,
+      "verification_hash": "6196d55c6793aa01dff8673fd7d77828cb68487be70ebe0ca051f302c8fb0a78",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 52,
+      "key": "signed_packet_chain_N052",
+      "source_hash": "de24f2c0f7a56efe45c73b8c3e2d2e676eaacddba01809475c1ebb757ad1eba6",
+      "median_ms": 0.5026010330766439,
+      "verification_hash": "215bc138554ec9f1cf8281a9341f523c9a2717bbf5c23a9ca4f4f1aa2cfb0e51",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 53,
+      "key": "signed_packet_chain_N053",
+      "source_hash": "47e883203d2094b61c18eb80bdd7501400ca97b99e8c4c88d32a3d5257f107e2",
+      "median_ms": 0.5118109984323382,
+      "verification_hash": "dd611cc5f986d3b318ef0217a9b3b0520c8593662b66c7621fb1b2d4141e9cb7",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 54,
+      "key": "signed_packet_chain_N054",
+      "source_hash": "7f9d4446a95b29326af38690f2deaf33dd9e64b8710b060ea8fb604e99fcd819",
+      "median_ms": 0.5159999709576368,
+      "verification_hash": "f6209b2e98953836ddee4bef8b61f643ee14f94b0a8134c81ac6d4428d6ec953",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 55,
+      "key": "signed_packet_chain_N055",
+      "source_hash": "744b0ae3ad143a6f5c585b1f9a41f4f1d2c5d6b1cd6e689ec56a5a3705d435b9",
+      "median_ms": 0.5559099372476339,
+      "verification_hash": "bd5f85d2804c93db0d0127f352f847350866ba3881538524697ffe8aa4486c30",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 56,
+      "key": "signed_packet_chain_N056",
+      "source_hash": "bf005169e346d537145390e617635ebe32dfb71115d5bd050244b349797ad37d",
+      "median_ms": 0.6625580135732889,
+      "verification_hash": "8da29d6df57c10cab74e0d572bc4a6279f2223859da455b3ff9770d25b6f2309",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 57,
+      "key": "signed_packet_chain_N057",
+      "source_hash": "00c140c97293e1a426a6080a19fb4497ce1b6f8bc7e15bd246299dc5582cac4e",
+      "median_ms": 0.5758700426667929,
+      "verification_hash": "1c7178d56439b5e52b812101b6cbc4b08a8e26f90fa0977e355af5a241459e0c",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 58,
+      "key": "signed_packet_chain_N058",
+      "source_hash": "6d329d34c7d0e549961abebce23b46488f61ce0bf5d104e4e8fc778f96f0180f",
+      "median_ms": 0.5918800598010421,
+      "verification_hash": "a7f99d83bf4bb6c567970c9cb1d7374c8c361ba39f88eb11a215a6de53b1e517",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 59,
+      "key": "signed_packet_chain_N059",
+      "source_hash": "5fa7b7a424b88f0062ba96d58f45255f72de0195d5b0ab4ab482a503797dd602",
+      "median_ms": 0.6008989876136184,
+      "verification_hash": "aeabb01f7256abe17f2cdea31a2f346b854a1610e82ebf73946dde1c0d701a66",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 60,
+      "key": "signed_packet_chain_N060",
+      "source_hash": "d4090182cb2e48afb04e4983e14c1b923f65cbc9c8e2131e916a4aa773403852",
+      "median_ms": 0.6111689144745469,
+      "verification_hash": "ecb90af7a417b6e64b2df5e57406f8f9dd193af0780245e7a6145e96c25a12bc",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 61,
+      "key": "signed_packet_chain_N061",
+      "source_hash": "9f9e1bff24baef65534a483d9c64e41dd489dfdcad31a26d29ca4be30b7304d8",
+      "median_ms": 0.9933019755408168,
+      "verification_hash": "80814012f9b0eee6ffa9ab5d190c096383a5dd6d0858733c069ab3c5ba2ac64c",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 62,
+      "key": "signed_packet_chain_N062",
+      "source_hash": "199bc17574807de274b3c4aa91e54203719e0f2bb4889a315f8f4342bbf5252f",
+      "median_ms": 1.6849999083206058,
+      "verification_hash": "464b0a87469ee6eb8006313d26408abff8c8e5a6cd8c6059db7e55519dd150a1",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 63,
+      "key": "signed_packet_chain_N063",
+      "source_hash": "26b18d9a299d903baa3a8be9d0448fc6c7193a536b48afdf5c130aa955adce44",
+      "median_ms": 1.7534790094941854,
+      "verification_hash": "a82fcc1e65f736917b37e0c993e95eacba8814320a19bfc34c3438c750ac4b02",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 64,
+      "key": "signed_packet_chain_N064",
+      "source_hash": "394327257154848004d698bfdd7e8b58f712fee7b6532891b537a31f59eedab9",
+      "median_ms": 1.7983580473810434,
+      "verification_hash": "e93e4432b17b7c601815d0cd5863c8b1196bffd66231bc5cd6e441e74ebf2d7d",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 65,
+      "key": "signed_packet_chain_N065",
+      "source_hash": "3feef51bfb8ce6551d578677400774ebf9fec93cc731b379cc2756934fb2bd56",
+      "median_ms": 1.8430768977850676,
+      "verification_hash": "86013abe0aec9006e9d2e079c9d26ea2d49bdb6526ae3ea84b3cc04e6c305dbb",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 66,
+      "key": "signed_packet_chain_N066",
+      "source_hash": "71b349db662ec1b7ed157b360f7929d519432d0c2c0ec25b0fa4b59e07509693",
+      "median_ms": 1.8752559553831816,
+      "verification_hash": "1aab9b7ca0e19e10857b7cc691019431f320c29098dcb283a7e1c4809d9eeb2c",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 67,
+      "key": "signed_packet_chain_N067",
+      "source_hash": "00013464a005644a586fdd99a2d423432ffbe5718793ccdfe7b0acf3c2ab2208",
+      "median_ms": 1.9532139413058758,
+      "verification_hash": "7b37022aca3801c928e8c7d94b4cdf837da8f37eb3872535628a23fa2d21124a",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 68,
+      "key": "signed_packet_chain_N068",
+      "source_hash": "c40e8e28d93ab27d5c630c876065f321f85860896875fe832047268452eb296f",
+      "median_ms": 2.0730020478367805,
+      "verification_hash": "56b97b66412e86fc06ebffc5b7b7845bb50c3337f37f5c9310eded72cbebf575",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 69,
+      "key": "signed_packet_chain_N069",
+      "source_hash": "9691ee3ccdf0a717ef55bb615a172e96f3eaa9788578ce58fea6f08ac93614a8",
+      "median_ms": 2.0236129639670253,
+      "verification_hash": "09eed4d3124dc9effaaf4bd442ea6a6a2e5069c8adf9e091d7a3a4b4a85d5497",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 70,
+      "key": "signed_packet_chain_N070",
+      "source_hash": "a793f87926d5ada238a2620f8c70c4e3ea742361a6cc5950d706e048bd4ba1b7",
+      "median_ms": 2.126681967638433,
+      "verification_hash": "beeb935a6b1174910adfb7cce9b7b7648c6fc0d6d93cf6b5826c0220dda6cb7c",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 71,
+      "key": "signed_packet_chain_N071",
+      "source_hash": "e64ac67fffbdda86c0680b844f6f747521b4cddcdc41da1dba6fec7e0eb672ae",
+      "median_ms": 2.2259200923144817,
+      "verification_hash": "1bbcf72a02560f73576045d3559940c6f1379e8537c8305ad93500b7a08e1d44",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 72,
+      "key": "signed_packet_chain_N072",
+      "source_hash": "3a765400a9ce60feb94714cee34026c5a82aa94d3862b0de10f3a1c60aa143a3",
+      "median_ms": 2.392906928434968,
+      "verification_hash": "9d770decb03dc5fc42f0ac79bd7d2baf8d8af655160403265b44c8f38dce6774",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 73,
+      "key": "signed_packet_chain_N073",
+      "source_hash": "f48dde62c336559d623940dc141f2bf12cde555eb0d74d3acc6b5c0ffaafb2f6",
+      "median_ms": 2.453705994412303,
+      "verification_hash": "41e3d175e075fbbfff7ae93a0ea9986e7a0d53a0824308adf36704ce6cc99729",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 74,
+      "key": "signed_packet_chain_N074",
+      "source_hash": "628bda3b18f07fedf1ca2ea6adc464331b8fc873f7d52b7b4e6869db5e3d4582",
+      "median_ms": 2.483795047737658,
+      "verification_hash": "0060dbcdab3b9eaddc22d958e3f7bcfa599754336278833a2d87322ede283966",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 75,
+      "key": "signed_packet_chain_N075",
+      "source_hash": "a4862f9424598c3fb16a8cd44b036bf6193559a18c030f8cb3608491b086d7de",
+      "median_ms": 2.597593003883958,
+      "verification_hash": "e4dd3a8b1996944e4489eb135d044a3d59e1af07a32a8faa4158f659aa0a7177",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 76,
+      "key": "signed_packet_chain_N076",
+      "source_hash": "1515fb7c73f82e0421a6c2782889959094f225555ce5f10bfddc087d6fe7ac3a",
+      "median_ms": 2.682351041585207,
+      "verification_hash": "8b0bca1401ef286c1b10da320046fba39c76765adee16da238021cad6ea50bd8",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 77,
+      "key": "signed_packet_chain_N077",
+      "source_hash": "bc69628b851254bc6a682be03c610f814e496f8a80fd020536b26beefa5fb68c",
+      "median_ms": 2.7613600250333548,
+      "verification_hash": "86db254a066fc4a2dc7dd235db191e5c32f048d485dcf8b5ea87795cb7cf3662",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 78,
+      "key": "signed_packet_chain_N078",
+      "source_hash": "d9ba982e622c8a256f2b40e11290a8a5d40aa039f6a723aefafaadbc02ea54ba",
+      "median_ms": 2.816698979586363,
+      "verification_hash": "006f383cb8fdd5ad4ba00bf2d89fede9bb41fe1a4d625b2342e6543030c2acce",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 79,
+      "key": "signed_packet_chain_N079",
+      "source_hash": "a22774aabb6608fdcfdeb8edb6a185535033873a1bbf87179dfe16e77e819e93",
+      "median_ms": 3.0947549967095256,
+      "verification_hash": "1987afbe3e8b37e29d427ab7b25cc57b5a32c8503aedb22cbb754d692b0c8ab5",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 80,
+      "key": "signed_packet_chain_N080",
+      "source_hash": "8c08669f92d01abe9abeb93ef5ff7c61b2a745183bf7be92a677fdf7ff0c0961",
+      "median_ms": 3.135952982120216,
+      "verification_hash": "ae74d958b225f29b6ee6c1659e3613fbcd9d6263a6cab58f25ff728733276021",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 81,
+      "key": "signed_packet_chain_N081",
+      "source_hash": "99ce5fbf0b7c4dd015125d1242121413502e2ab5c934cfc6a8d43ec8cd4dba5e",
+      "median_ms": 3.2434610184282064,
+      "verification_hash": "e030d6397f3d4b2a9203bc7f52adf4c0bb57e813ae9252a56d7d93ab78874a66",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 82,
+      "key": "signed_packet_chain_N082",
+      "source_hash": "eb65cf584f0979b3f81c1822b1b34a45fb2ade4f0f9c01ddf565fae1446d5d9d",
+      "median_ms": 3.325899946503341,
+      "verification_hash": "80ffaa1ba7f3af5c18e531b94c13fc1459231e0d6fbfb64179c5345849583972",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 83,
+      "key": "signed_packet_chain_N083",
+      "source_hash": "f01d036a7e61a5f3fe7ab5bdddcb2ca4f77ff9c06cf747ea3d083b84b3d9d677",
+      "median_ms": 3.4246579743921757,
+      "verification_hash": "c49969169b498cf7e7082051db493c8462141600bd1309c3e23cf7d37a74e0e0",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 84,
+      "key": "signed_packet_chain_N084",
+      "source_hash": "0354ff050be1e9cb755bae1ef417c6f8965fb24167aa884caf09f1d2ba5c8e4c",
+      "median_ms": 3.5075769992545247,
+      "verification_hash": "be807952b1baa74b533f017a7e19ad4395e2689c4f53bca470535dfb95879c4b",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 85,
+      "key": "signed_packet_chain_N085",
+      "source_hash": "86cc790fa8cfd57df46be01e0129e3f723cd63b7333313ac9ba9825bc1975e09",
+      "median_ms": 3.6094250390306115,
+      "verification_hash": "3ba877fdf91250e62d1b33edd4da9450825c75f8049ea166eab657bf60892c1e",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 86,
+      "key": "signed_packet_chain_N086",
+      "source_hash": "73e152a0d9be687b3b64efc9084078730e2cd5caa2794006514d51c9e53257aa",
+      "median_ms": 3.7260829703882337,
+      "verification_hash": "8d1f1f54d66f099df9cb4de3b5fe2361a9f67dc644f3ac06e604395f9a5c9d8f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 87,
+      "key": "signed_packet_chain_N087",
+      "source_hash": "4eb1619f0e805b82c1ccfb6f94917c53b3a2beabb96c670a0787090f353f1e70",
+      "median_ms": 3.767112037166953,
+      "verification_hash": "ca3be5d225bd81e19c14602fe10c8d26ab3758c2fcbc8aedf551dbdb3709fd7c",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 88,
+      "key": "signed_packet_chain_N088",
+      "source_hash": "4af9c909dd2be751898dd0babf2fecfa3949ef963a81d5edef388704bb108aa3",
+      "median_ms": 3.816901007667184,
+      "verification_hash": "7467a8661676f0964691a185481d43c681b4022f623202643dc9b0b312495195",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 89,
+      "key": "signed_packet_chain_N089",
+      "source_hash": "be2458f9b837256c4f88f06fd58b29efb4dcd248dff77bcfb59ccffd6774d862",
+      "median_ms": 3.93664906732738,
+      "verification_hash": "494d618b0f23d3a0e8d579acc196d7e794b07205e9204dbc0b8edd92504bbf08",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 90,
+      "key": "signed_packet_chain_N090",
+      "source_hash": "ce18c4f297cec2ee107a1853bb7de752a6cea592354fa2580149fefc3d022dc1",
+      "median_ms": 4.044246976263821,
+      "verification_hash": "b5a3d4d10c476fb828788196aa67a0e526ed0e0e43ae7c5bbccd1eafdbc5bd39",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 91,
+      "key": "signed_packet_chain_N091",
+      "source_hash": "b556ec2158cf93435372e1a0f1b3ad093cccc067ed34ae9d86dc183ba3131e70",
+      "median_ms": 4.124455968849361,
+      "verification_hash": "820258d250cd6242564bca5091dd783eec6f844f6f58a0cc0f35b3ff168a403f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 92,
+      "key": "signed_packet_chain_N092",
+      "source_hash": "a89b8150df251b0fdb4e46ef4e49bc3993db6af7af3affd71ff1c9aed5413e23",
+      "median_ms": 4.251963924616575,
+      "verification_hash": "c3d9bb32755632407794215668660f5cc1b783a9f0c1d76450818f88d2dc5520",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 93,
+      "key": "signed_packet_chain_N093",
+      "source_hash": "ee757ecf742058c01510adfecf40dedecab42afd073cd2fc2e7b127d5e6bba66",
+      "median_ms": 4.290682962164283,
+      "verification_hash": "0b73bba116e27d6aaff82168a6380c69f266803a692765d0e8752f92203693f1",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 94,
+      "key": "signed_packet_chain_N094",
+      "source_hash": "1bb67aa34d3932c2c91934e6967f49a06009cf83fd3748dcd2963aec6e338d62",
+      "median_ms": 4.3916209833696485,
+      "verification_hash": "7588373e33ccfba7901324e008c7b56535d0aaa2ee0c2c0bc91457379385fa29",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 95,
+      "key": "signed_packet_chain_N095",
+      "source_hash": "179b4663f9d7f2ca3fa3f01a36310661db4ae904476de9d024bbe9355b803f7e",
+      "median_ms": 4.467318998649716,
+      "verification_hash": "c0c45ac3662b67db9ecf7449d8c32f2e4594d20fa72530dd468d31fb8d1f2b37",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 96,
+      "key": "signed_packet_chain_N096",
+      "source_hash": "00b927f707c798501afd21a4cb2826cc06067071c28fd62aedefb90842819ee2",
+      "median_ms": 4.567797994241118,
+      "verification_hash": "0d93a83e7c571fb0ce2d7ca3c8cc94a3b15ce4247b76d5eb1aac1a831da1be8b",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 97,
+      "key": "signed_packet_chain_N097",
+      "source_hash": "93d6046a6f4647afac3bb96240da68789446e9d6c3caead477dc4cd0fa06d849",
+      "median_ms": 4.714285023510456,
+      "verification_hash": "e1405f91779de5c8d9a0944ad905a5bb2edaa5404c28cb5826db063333d840ba",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 98,
+      "key": "signed_packet_chain_N098",
+      "source_hash": "f2ed9328b16f6e525f9fbd55388071435fcc92a1b1a67863808b409216f52bc7",
+      "median_ms": 4.772374057210982,
+      "verification_hash": "a7c64867cf8780578499673dc8199a070cd4271c23c542f12091a5e28ce2030f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 99,
+      "key": "signed_packet_chain_N099",
+      "source_hash": "8db4ca69168cc313daa2f189c7231f19e816b5f43c511061bee924abb59534ca",
+      "median_ms": 4.889691947028041,
+      "verification_hash": "95addf871028d410bea7d7d16b1fca6c2c25cdb54012fb750630899239b2cdd9",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 100,
+      "key": "signed_packet_chain_N100",
+      "source_hash": "99fb56884555b3d7620f3d3c41dca9d1a44f5ce5ad6bb98c841bc5e36b15852a",
+      "median_ms": 4.929631017148495,
+      "verification_hash": "421e554d627fef14e9dda2185000d3b055499446053d08dc71db68520a843625",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 101,
+      "key": "signed_packet_chain_N101",
+      "source_hash": "f4e86a69822f6c20196dc52dc544071902624261a0e105ab80e06ae7dee12047",
+      "median_ms": 5.028170067816973,
+      "verification_hash": "f1c4c8c7a6f2402d21b67f27447cedee1d764dd2f1db70f24275b1afaeb8b6f4",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 102,
+      "key": "signed_packet_chain_N102",
+      "source_hash": "db108b60574fd6742e345c30863f8aedd478ab20808dbd916537d314b019fc08",
+      "median_ms": 5.07222895976156,
+      "verification_hash": "c56d794e9934e6f3fdef007047a3c58b4c181de9c4dbe7bc60ea8ad3507e36c2",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 103,
+      "key": "signed_packet_chain_N103",
+      "source_hash": "8b910b9bbf68d03bf377d7def16b6958ed7506615c7d9b4e8bd1d8d3fb4d1f56",
+      "median_ms": 5.171946948394179,
+      "verification_hash": "6db44e42bd8ae2d2a230b600f6b06beb5a18f54db52038e4ed3f1469092ac704",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 104,
+      "key": "signed_packet_chain_N104",
+      "source_hash": "64972ebc440945fa4bf4adfbcca15a92cff39496e600a2f30fea7b305a599287",
+      "median_ms": 5.23925491143018,
+      "verification_hash": "1277d0372d53540f70a502d1bd632dc8bc3b7a8a2968cf5ee79a5e4bbc904a8e",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 105,
+      "key": "signed_packet_chain_N105",
+      "source_hash": "4642bd985497488efede4cff9592b39d24e22859ffe9cd10281bd3fa8463321f",
+      "median_ms": 5.355403991416097,
+      "verification_hash": "33d06d5cb3af0e612ccdc5327e0311d993b4011f60ceebd37dca8c0beb971c5f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 106,
+      "key": "signed_packet_chain_N106",
+      "source_hash": "2cfd7f2ad53c8414351911b002113c74c556d27551a25e51843ec4adcf6a3ba1",
+      "median_ms": 5.43584197293967,
+      "verification_hash": "ceda9df015575620ccd14234f90684274d47316198d92588e9c65757f8c09db7",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 107,
+      "key": "signed_packet_chain_N107",
+      "source_hash": "a7d7c9322cbf88b2228034a35c227f07f6e608cbb5316a03e073d09b33036fe7",
+      "median_ms": 5.466082016937435,
+      "verification_hash": "773a2ea4af270dc4d75d16f9f88654b8cf9e6740bc1f9c4568e4eab8c1ca4ee6",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 108,
+      "key": "signed_packet_chain_N108",
+      "source_hash": "513fa36c1faa74199a72a14b02ce89792bba15c533d4991696c5834e67dbd29d",
+      "median_ms": 5.502760061062872,
+      "verification_hash": "3dae8e92fe40fbb0928928256b3d7d275789899f3a2e69646c979025db473552",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 109,
+      "key": "signed_packet_chain_N109",
+      "source_hash": "c055079be44f1386231375ee1036ee8c6a35de98f3a98539762f6ca46d9dbf67",
+      "median_ms": 5.637568072415888,
+      "verification_hash": "895d57a83f03a4648535d2b31b5b405fd11d2ee18c017d3f9f3d9ec886f5636d",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 110,
+      "key": "signed_packet_chain_N110",
+      "source_hash": "41fc2b54a93b40d091f744e4c334248eea539f048a3c2ab58e63050460693e7e",
+      "median_ms": 5.843555089086294,
+      "verification_hash": "6273cef2d8b8fefcdb57109e4bb2b68a49599bb7e5abed0ef2cf048cfd5bf1d8",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 111,
+      "key": "signed_packet_chain_N111",
+      "source_hash": "c50bcb3e953ba62871555ca2f15b749acd50d7cd7063efe43efbcb973c827c4f",
+      "median_ms": 5.794056109152734,
+      "verification_hash": "af2d2000b2a285b83b874bd4859d7ab88fd023e9f76209798913decf9eff190e",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 112,
+      "key": "signed_packet_chain_N112",
+      "source_hash": "42c640372f00d2818a7252c0887a4df7c2e2e217dc421a80855cc61957148af8",
+      "median_ms": 5.844675004482269,
+      "verification_hash": "01a00ade02444df441cbf663798ac6f8c7c7c475fe16fbaf13aa9e813166d69e",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 113,
+      "key": "signed_packet_chain_N113",
+      "source_hash": "189921180ec110640b4cf13bf091e4132505757a546f858528f67429e8450862",
+      "median_ms": 5.980732035823166,
+      "verification_hash": "a425dcd2f5df22f2ff3819b2082dd6071667eb57bb78d51e8689de465db559c4",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 114,
+      "key": "signed_packet_chain_N114",
+      "source_hash": "b12a3fc16adb6c1b193db531d04faa659b43da0e24fbb68051f2185a23abff9c",
+      "median_ms": 6.068070069886744,
+      "verification_hash": "543fdf6f9578055fb3c71439aa3e612be73742a0beb1fdb86ab760dd7c345adc",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 115,
+      "key": "signed_packet_chain_N115",
+      "source_hash": "141f35ab1686710df56a6bb0f34a97c9e1dabeb71878d0752b00bcdbc48aff8c",
+      "median_ms": 6.149910041131079,
+      "verification_hash": "b5bf68bca02f31441f65ffa567d62effacc21b3c476d7d7b53ffb2f25d5cae13",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 116,
+      "key": "signed_packet_chain_N116",
+      "source_hash": "193c0bb50f2b4c59bf7bd47a8c7855bed9e89db95acaf8c7abc862c56dc62da9",
+      "median_ms": 6.408164044842124,
+      "verification_hash": "5cb0d7449fc5921327127b23713ac59689d20fe02530ec680c9e918335b761f1",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 117,
+      "key": "signed_packet_chain_N117",
+      "source_hash": "eca3dd143126e1b4b4c5411e6da67badbdc4e690d81a41f6bd387e3f5f016db9",
+      "median_ms": 6.251777987927198,
+      "verification_hash": "e5740ba3689fbbb2e5cb57478564e1445e50f7fc123167eb90a1044ffc025e1f",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 118,
+      "key": "signed_packet_chain_N118",
+      "source_hash": "49bb8e2bb2e31ebb700ed6185e2ae5a543eb6fd393288033637fac292a928b26",
+      "median_ms": 6.4114839769899845,
+      "verification_hash": "e7e846ead4328b607503b5049ee113a11b58de0c4e11897f524ff37fc4b6f567",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 119,
+      "key": "signed_packet_chain_N119",
+      "source_hash": "42a1d54ed41e6ee532068d2fd3062cc3ecd4c8f438dc65562ffd7ed253742fb0",
+      "median_ms": 6.500392919406295,
+      "verification_hash": "3d6e8a5e8388ee17123aec4145e3f9d5093f411530fa8c6449aba87b20028e8b",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    },
+    {
+      "N": 120,
+      "key": "signed_packet_chain_N120",
+      "source_hash": "72edd590741aebaf42fb5761c30499a6396f51618e6b256ef407d65a715cfca5",
+      "median_ms": 6.556241889484227,
+      "verification_hash": "9f88fd2738c4d025e72e0c91546d49d5fb9a9c83b2430bef3786b7e973016746",
+      "reduction": "EXACT_EQUAL_BOUNDARY_SPECTRA"
+    }
+  ],
+  "independent_verification": "Every full scalar and ordered-port coefficient compared with separately executed full-graph variable elimination",
+  "controls": {
+    "nonzero_field": "Boundary equality rejected; complete two-state message solver agrees with full-graph VE",
+    "undeclared_cross_edge": "Partition compiler rejects the extra interaction"
+  },
+  "global_installation": false
+}

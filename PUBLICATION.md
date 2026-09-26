@@ -80,5 +80,29 @@ any subsequent execution is a separate experiment, not a replacement for the
 sealed prospective result. Machine allocation and shell launch files describe
 their recorded environments and require deliberate adaptation on another host.
 
+## Continuation and dense-completion supplement
+
+The September 26 supplement adds `frustrated_spin_packet_continuation1` and
+`frustrated_spin_dense_completion1`. Its separate
+[sync receipt](provenance/SYNC_CONTINUATION_DENSE_20260926.json) records the
+scope and export exclusions. The running continuation was not paused for this
+publication; `pod_launch/` retains its launch-time snapshot and first new
+source outputs. It does not contain all subsequent pod results.
+
+The dense-completion project includes all six N300 graph definitions,
+generation code, input identities, precommits, native receipts, and identity
+checks. Its `SOURCE_GENERATED_NOT_DOS_SOLVED` status is preserved.
+
+The continuation controller's isolated runtime link can be recreated after
+restoring the shared runtime archive:
+
+```sh
+ln -s ../frustrated_spin_learning1/runtime GEN4/frustrated_spin_packet_continuation1/runtime
+```
+
+Do not treat retained launch commands or process IDs as commands for another
+machine. Reproduction uses a fresh output directory and explicit resource
+configuration; the source records in this publication remain unchanged.
+
 Existing repository license, notice, and stewardship terms apply. Originating
 third-party notices retained in runtime and source bundles remain applicable.

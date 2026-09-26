@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/opt/gen4-spin-continuation1/project/campaign.py", line 263, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/opt/gen4-spin-continuation1/project/campaign.py", line 162, in main
+    profile=resources.inspect(scratch=P,persistent_root='/workspace/gen4')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-continuation1/project/runtime/gen4/resources.py", line 148, in inspect
+    total_bytes=int(fields[3])*1024**2, free_bytes=int(fields[4])*1024**2,
+                ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '[Insufficient Permissions]'

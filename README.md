@@ -9,6 +9,8 @@ Codex are AI research collaborators and co-authors.
 
 | Record | Contents |
 |---|---|
+| [Fully connected N300 sources](GEN4/frustrated_spin_dense_completion1/README.md) | Six complete graphs with 44,850 interactions each; preserved parent couplings and an exact collective-magnetization representation |
+| [Consecutive packet continuation](GEN4/frustrated_spin_packet_continuation1/README.md) | Resumable CPU campaign starting at N121, independent exact verification, and retained launch/recovery evidence |
 | [N300 report](GEN4/frustrated_spin_n300_courtroom1/REPORT.md) | Prospective timing prediction, sealed protocol, independent exact comparisons, six wrong controls, and every timing sample |
 | [Packet-family idea](GEN4/frustrated_spin_packet_catalog1/IDEA.md) | Source grammar, extension, signed and connected constructions, and the reusable computation |
 | [Packet-family results](GEN4/frustrated_spin_packet_catalog1/REPORT.md) | All N1–120 in three explicit families: 360 sources and 3,240 timed exact calculations |
@@ -20,7 +22,24 @@ Codex are AI research collaborators and co-authors.
 | [N96 plan/backend study](GEN4/frustrated_spin_pod14_learning1/N96_PLAN_BACKEND.md) | Expanded versus older plans on the cooperative-14 backend |
 | [Publication and reproduction](PUBLICATION.md) | Export boundary, verification, archive mapping, and runtime setup |
 
-## N300 result
+## Fully connected extension and consecutive continuation
+
+The [dense-completion project](GEN4/frustrated_spin_dense_completion1/RESULTS.json)
+constructs six fully connected N300 sources from the three existing families.
+Each preserves its parent's couplings and fills absent pairs with either +1
+or −1. Pair coverage, inherited couplings, and the collective-magnetization
+energy identity are checked. **Their full density-of-states calculations have
+not been run.** The proposed exact route extends packet tables to retain joint
+correction energy, magnetization, and ordered ports.
+
+Separately, the packet continuation launched on the cheaper pod with three
+CPU workers. Its retained launch check confirms every N121–N259 in all three
+families: **417 independently verified source cases**. This is a dated launch
+snapshot, not a live progress feed. Sources, code, qualification, N121/N122
+outputs, and checkpoint-recovery evidence are included. Later running results
+remain on the pod until a subsequent export.
+
+## Precommitted packet-family N300 result
 
 The precommitted primary endpoint was a **warm exact-solve median below 25 ms**,
 with 31 scored trials for each of three N300 sources. The workstation was an
