@@ -1,0 +1,949 @@
+{
+  "value": {
+    "status": "LEARNED_HEURISTIC",
+    "source": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+    "N": 16,
+    "plans": [
+      {
+        "N": 16,
+        "source_sha256": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "glue": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "local_bound": 37,
+        "root_count": 64,
+        "primes": [
+          998244353
+        ],
+        "selected": {
+          "method": "fresh_min_fill",
+          "cutset": [],
+          "branches": 1,
+          "order": [
+            12,
+            14,
+            11,
+            13,
+            15,
+            4,
+            5,
+            6,
+            9,
+            7,
+            8,
+            10
+          ],
+          "width": 2,
+          "output_entries": 36,
+          "weighted_entries": 36,
+          "planning_ns": 88622
+        },
+        "candidates": [
+          {
+            "method": "fresh_min_fill",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8,
+              10
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 88622
+          },
+          {
+            "method": "transition_priority",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              10,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 71999
+          },
+          {
+            "method": "parent_plan",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              15,
+              11,
+              13,
+              8,
+              4,
+              7,
+              5,
+              14,
+              9,
+              10,
+              6,
+              12
+            ],
+            "width": 4,
+            "output_entries": 60,
+            "weighted_entries": 60,
+            "planning_ns": 13457
+          }
+        ],
+        "parent_elimination_order": [
+          3,
+          7,
+          17,
+          4,
+          8,
+          0,
+          12,
+          1,
+          14,
+          13,
+          2,
+          5
+        ],
+        "planning_ns": 202307,
+        "execution_admitted": true,
+        "prime_product_sufficient": true,
+        "training_method": "fresh_min_fill",
+        "mathematical_plan_sha256": "6002763fc961b1eac74bf645705fb84a2e1a75a8664e874deb7d9a94c556b03f"
+      },
+      {
+        "N": 16,
+        "source_sha256": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "glue": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "local_bound": 37,
+        "root_count": 64,
+        "primes": [
+          998244353
+        ],
+        "selected": {
+          "method": "transition_priority",
+          "cutset": [],
+          "branches": 1,
+          "order": [
+            12,
+            14,
+            11,
+            13,
+            15,
+            10,
+            4,
+            5,
+            6,
+            9,
+            7,
+            8
+          ],
+          "width": 2,
+          "output_entries": 36,
+          "weighted_entries": 36,
+          "planning_ns": 71999
+        },
+        "candidates": [
+          {
+            "method": "fresh_min_fill",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8,
+              10
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 88622
+          },
+          {
+            "method": "transition_priority",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              10,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 71999
+          },
+          {
+            "method": "parent_plan",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              15,
+              11,
+              13,
+              8,
+              4,
+              7,
+              5,
+              14,
+              9,
+              10,
+              6,
+              12
+            ],
+            "width": 4,
+            "output_entries": 60,
+            "weighted_entries": 60,
+            "planning_ns": 13457
+          }
+        ],
+        "parent_elimination_order": [
+          3,
+          7,
+          17,
+          4,
+          8,
+          5,
+          0,
+          12,
+          1,
+          14,
+          13,
+          2
+        ],
+        "planning_ns": 202307,
+        "execution_admitted": true,
+        "prime_product_sufficient": true,
+        "training_method": "transition_priority",
+        "mathematical_plan_sha256": "c86e33b7279c9a90daac0225b5758238f1238a611ccb7d37971a4f9300b6b3b1"
+      },
+      {
+        "N": 16,
+        "source_sha256": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "glue": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "local_bound": 37,
+        "root_count": 64,
+        "primes": [
+          998244353
+        ],
+        "selected": {
+          "method": "parent_plan",
+          "cutset": [],
+          "branches": 1,
+          "order": [
+            15,
+            11,
+            13,
+            8,
+            4,
+            7,
+            5,
+            14,
+            9,
+            10,
+            6,
+            12
+          ],
+          "width": 4,
+          "output_entries": 60,
+          "weighted_entries": 60,
+          "planning_ns": 13457
+        },
+        "candidates": [
+          {
+            "method": "fresh_min_fill",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8,
+              10
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 88622
+          },
+          {
+            "method": "transition_priority",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              10,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 71999
+          },
+          {
+            "method": "parent_plan",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              15,
+              11,
+              13,
+              8,
+              4,
+              7,
+              5,
+              14,
+              9,
+              10,
+              6,
+              12
+            ],
+            "width": 4,
+            "output_entries": 60,
+            "weighted_entries": 60,
+            "planning_ns": 13457
+          }
+        ],
+        "parent_elimination_order": [
+          8,
+          17,
+          4,
+          2,
+          0,
+          13,
+          12,
+          7,
+          14,
+          5,
+          1,
+          3
+        ],
+        "planning_ns": 202307,
+        "execution_admitted": true,
+        "prime_product_sufficient": true,
+        "training_method": "parent_plan",
+        "mathematical_plan_sha256": "ad8c78ccad008066e6798996abe4e31592e1ae50ba2be174fed399dc23d8611b"
+      },
+      {
+        "N": 16,
+        "source_sha256": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "glue": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "local_bound": 37,
+        "root_count": 64,
+        "primes": [
+          998244353
+        ],
+        "selected": {
+          "method": "repair_transfer",
+          "cutset": [],
+          "branches": 1,
+          "order": [
+            12,
+            14,
+            11,
+            13,
+            15,
+            10,
+            4,
+            5,
+            6,
+            9,
+            7,
+            8
+          ],
+          "width": 2,
+          "output_entries": 36,
+          "weighted_entries": 36,
+          "planning_ns": 94671,
+          "repair_candidates": 11
+        },
+        "candidates": [
+          {
+            "method": "fresh_min_fill",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8,
+              10
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 88622
+          },
+          {
+            "method": "transition_priority",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              10,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 71999
+          },
+          {
+            "method": "parent_plan",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              15,
+              11,
+              13,
+              8,
+              4,
+              7,
+              5,
+              14,
+              9,
+              10,
+              6,
+              12
+            ],
+            "width": 4,
+            "output_entries": 60,
+            "weighted_entries": 60,
+            "planning_ns": 13457
+          }
+        ],
+        "parent_elimination_order": [
+          3,
+          7,
+          17,
+          4,
+          8,
+          5,
+          0,
+          12,
+          1,
+          14,
+          13,
+          2
+        ],
+        "planning_ns": 202307,
+        "execution_admitted": true,
+        "prime_product_sufficient": true,
+        "training_method": "repair_transfer",
+        "mathematical_plan_sha256": "c86e33b7279c9a90daac0225b5758238f1238a611ccb7d37971a4f9300b6b3b1"
+      },
+      {
+        "N": 16,
+        "source_sha256": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "glue": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "local_bound": 37,
+        "root_count": 64,
+        "primes": [
+          998244353
+        ],
+        "selected": {
+          "method": "tie_portfolio",
+          "cutset": [],
+          "branches": 1,
+          "order": [
+            12,
+            14,
+            11,
+            13,
+            15,
+            4,
+            5,
+            6,
+            9,
+            7,
+            8,
+            10
+          ],
+          "width": 2,
+          "output_entries": 36,
+          "weighted_entries": 36,
+          "planning_ns": 436167,
+          "portfolio_candidates": 6
+        },
+        "candidates": [
+          {
+            "method": "fresh_min_fill",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8,
+              10
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 88622
+          },
+          {
+            "method": "transition_priority",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              10,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 71999
+          },
+          {
+            "method": "parent_plan",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              15,
+              11,
+              13,
+              8,
+              4,
+              7,
+              5,
+              14,
+              9,
+              10,
+              6,
+              12
+            ],
+            "width": 4,
+            "output_entries": 60,
+            "weighted_entries": 60,
+            "planning_ns": 13457
+          }
+        ],
+        "parent_elimination_order": [
+          3,
+          7,
+          17,
+          4,
+          8,
+          0,
+          12,
+          1,
+          14,
+          13,
+          2,
+          5
+        ],
+        "planning_ns": 202307,
+        "execution_admitted": true,
+        "prime_product_sufficient": true,
+        "training_method": "tie_portfolio",
+        "mathematical_plan_sha256": "6002763fc961b1eac74bf645705fb84a2e1a75a8664e874deb7d9a94c556b03f"
+      },
+      {
+        "N": 16,
+        "source_sha256": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "glue": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "local_bound": 37,
+        "root_count": 64,
+        "primes": [
+          998244353
+        ],
+        "selected": {
+          "method": "expanded_portfolio",
+          "cutset": [],
+          "branches": 1,
+          "order": [
+            12,
+            14,
+            11,
+            13,
+            15,
+            4,
+            5,
+            6,
+            9,
+            7,
+            8,
+            10
+          ],
+          "width": 2,
+          "output_entries": 36,
+          "weighted_entries": 36,
+          "planning_ns": 4843618,
+          "portfolio_candidates": 64
+        },
+        "candidates": [
+          {
+            "method": "fresh_min_fill",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8,
+              10
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 88622
+          },
+          {
+            "method": "transition_priority",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              12,
+              14,
+              11,
+              13,
+              15,
+              10,
+              4,
+              5,
+              6,
+              9,
+              7,
+              8
+            ],
+            "width": 2,
+            "output_entries": 36,
+            "weighted_entries": 36,
+            "planning_ns": 71999
+          },
+          {
+            "method": "parent_plan",
+            "cutset": [],
+            "branches": 1,
+            "order": [
+              15,
+              11,
+              13,
+              8,
+              4,
+              7,
+              5,
+              14,
+              9,
+              10,
+              6,
+              12
+            ],
+            "width": 4,
+            "output_entries": 60,
+            "weighted_entries": 60,
+            "planning_ns": 13457
+          }
+        ],
+        "parent_elimination_order": [
+          3,
+          7,
+          17,
+          4,
+          8,
+          0,
+          12,
+          1,
+          14,
+          13,
+          2,
+          5
+        ],
+        "planning_ns": 202307,
+        "execution_admitted": true,
+        "prime_product_sufficient": true,
+        "training_method": "expanded_portfolio",
+        "mathematical_plan_sha256": "6002763fc961b1eac74bf645705fb84a2e1a75a8664e874deb7d9a94c556b03f"
+      }
+    ],
+    "features": {
+      "N": 16,
+      "source_family": "FOLLOWUP1_swap",
+      "graph_hash": "387dc827c292f45623118ffbfdf21447c30604742937f708337adced02db0975",
+      "source_hash": "2943259982c0fdc0ffc3ffcb04033cf0e4a72a9016ff546a0af8652a5a729126",
+      "edges": 15,
+      "degree_min": 0,
+      "degree_max": 4,
+      "degree_mean": 1.875,
+      "degree_std": 1.165922381636102,
+      "components": 4,
+      "component_sizes": [
+        1,
+        1,
+        2,
+        12
+      ],
+      "max_component": 12,
+      "local_assignments": 4104,
+      "minfill_width": 2,
+      "minfill_work": 42,
+      "minfill_order": [
+        12,
+        14,
+        0,
+        1,
+        11,
+        13,
+        15,
+        2,
+        3,
+        10,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "energy_bound": 41,
+      "root_bound": 64,
+      "crt_primes": 1,
+      "arithmetic_burden": 2688,
+      "coefficient_bound": "65536",
+      "coupling_multiplicities": {
+        "3": 2,
+        "1": 3,
+        "-1": 4,
+        "-2": 4,
+        "-3": 2
+      },
+      "symmetry": "not assumed",
+      "degree_signature": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4
+      ]
+    },
+    "meaning": "structural planning only; no new DOS",
+    "method_roster": [
+      "fresh_min_fill",
+      "transition_priority",
+      "parent_plan",
+      "repair_transfer",
+      "tie_portfolio",
+      "expanded_portfolio",
+      "components",
+      "variable_elimination",
+      "incremental_boundary"
+    ]
+  },
+  "seconds": 0.2595150709967129,
+  "session": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/followup1/experiments/d26650d831b2c8b39e513e3a/sessions/MATTER_SEARCH_6a9a937066204b919a4337ffd8de3013",
+  "checkpoint": {
+    "schema": "GEN3_CHECKPOINT_REFERENCE_V1",
+    "root": "df7ab93ce2e9a632ebd3d030a83420ea0ae8c9019e2a287a62da2dc80917526d",
+    "binding": {
+      "version": "SLC-GEN4-P1",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "implementation_sha256": "ad3d0a3d7365821deb125b2dfb58a2b576b0a3fdedff4ed65df6bafee0647f86"
+    },
+    "local_durable": true,
+    "replicated": false
+  },
+  "peak_RSS_KiB": 62876
+}

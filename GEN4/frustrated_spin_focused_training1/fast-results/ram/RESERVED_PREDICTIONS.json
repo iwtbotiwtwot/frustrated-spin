@@ -1,0 +1,1009 @@
+{
+  "G4-N84": {
+    "choices": {
+      "cost": 78,
+      "fresh": 75,
+      "pairwise": 78,
+      "structural": 78
+    },
+    "cost_ns": [
+      718253521.4873573,
+      1163375230.5879228,
+      305282755.29716647,
+      292773170.05496687
+    ],
+    "indices": [
+      75,
+      76,
+      77,
+      78
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "75:76",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "75:77",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "75:78",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "76:75",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "76:77",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "76:78",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "77:75",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "77:76",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "77:78",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "78:75",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "78:76",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "78:77",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "75:76",
+            "77:75",
+            "77:76",
+            "78:75",
+            "78:76",
+            "78:77"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "75:77",
+            "75:78",
+            "76:75",
+            "76:77",
+            "76:78",
+            "77:78"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G4-N88": {
+    "choices": {
+      "cost": 80,
+      "fresh": null,
+      "pairwise": 80,
+      "structural": 80
+    },
+    "cost_ns": [
+      851346286.8133312,
+      525829913.3867063
+    ],
+    "indices": [
+      79,
+      80
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "79:80",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "80:79",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "80:79"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "79:80"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G4-N91": {
+    "choices": {
+      "cost": 83,
+      "fresh": 81,
+      "pairwise": 83,
+      "structural": 83
+    },
+    "cost_ns": [
+      4417802972.009383,
+      3229234205.4242053,
+      2256807758.123522
+    ],
+    "indices": [
+      81,
+      82,
+      83
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "81:82",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "81:83",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "82:81",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "82:83",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "83:81",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "83:82",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "82:81",
+            "83:81",
+            "83:82"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "81:82",
+            "81:83",
+            "82:83"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G4-N92": {
+    "choices": {
+      "cost": 85,
+      "fresh": null,
+      "pairwise": 85,
+      "structural": 85
+    },
+    "cost_ns": [
+      8051380358.635865,
+      3479438370.72393
+    ],
+    "indices": [
+      84,
+      85
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "84:85",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "85:84",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "85:84"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "84:85"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G4-N96": {
+    "choices": {
+      "cost": 86,
+      "fresh": 86,
+      "pairwise": 86,
+      "structural": 87
+    },
+    "cost_ns": [
+      11386683289.724928,
+      11567577515.80899
+    ],
+    "indices": [
+      86,
+      87
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "86:87",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "87:86",
+          "positive": false,
+          "probability": "6/37"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "86:87"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "87:86"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G5-N84": {
+    "choices": {
+      "cost": 90,
+      "fresh": 88,
+      "pairwise": 90,
+      "structural": 90
+    },
+    "cost_ns": [
+      728995646.0853232,
+      252929736.1551394,
+      208570469.64530885
+    ],
+    "indices": [
+      88,
+      89,
+      90
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "88:89",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "88:90",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "89:88",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "89:90",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "90:88",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "90:89",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "89:88",
+            "90:88",
+            "90:89"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "88:89",
+            "88:90",
+            "89:90"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G5-N88": {
+    "choices": {
+      "cost": 94,
+      "fresh": 91,
+      "pairwise": 94,
+      "structural": 94
+    },
+    "cost_ns": [
+      978910999.7432449,
+      992182420.3022082,
+      338458729.096557,
+      311238299.9039202
+    ],
+    "indices": [
+      91,
+      92,
+      93,
+      94
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "91:92",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "91:93",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "91:94",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "92:91",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "92:93",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "92:94",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "93:91",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "93:92",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "93:94",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "94:91",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "94:92",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "94:93",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "91:92",
+            "93:91",
+            "93:92",
+            "94:91",
+            "94:92",
+            "94:93"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "91:93",
+            "91:94",
+            "92:91",
+            "92:93",
+            "92:94",
+            "93:94"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G5-N91": {
+    "choices": {
+      "cost": 97,
+      "fresh": 95,
+      "pairwise": 97,
+      "structural": 97
+    },
+    "cost_ns": [
+      5701184133.960905,
+      6395647351.522335,
+      2444962380.1871343
+    ],
+    "indices": [
+      95,
+      96,
+      97
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "95:96",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "95:97",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "96:95",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "96:97",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "97:95",
+          "positive": true,
+          "probability": "6/7"
+        },
+        {
+          "id": "97:96",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "95:96",
+            "97:95",
+            "97:96"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "95:97",
+            "96:95",
+            "96:97"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "G5-N92": {
+    "choices": {
+      "cost": 99,
+      "fresh": null,
+      "pairwise": 99,
+      "structural": 99
+    },
+    "cost_ns": [
+      4011368225.920367,
+      3274513895.2489305
+    ],
+    "indices": [
+      98,
+      99
+    ],
+    "pairwise": {
+      "all_ties_retained": true,
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "691ec215dda9bd41af2d85422795436c727327a7b2b9b9c659ecc7d15188a1a3",
+        "shared_R3_checkpoint": true
+      },
+      "model_sha256": "cba0bfd02a4ec010f2054b55e81c1e424479911263dcf32a84aeef93fa6a7199",
+      "name": "spin-focused-fast-pairwise-v1",
+      "predictions": [
+        {
+          "id": "98:99",
+          "positive": false,
+          "probability": "6/37"
+        },
+        {
+          "id": "99:98",
+          "positive": true,
+          "probability": "6/7"
+        }
+      ],
+      "ranked_tie_groups": [
+        {
+          "ids": [
+            "99:98"
+          ],
+          "probability": "6/7"
+        },
+        {
+          "ids": [
+            "98:99"
+          ],
+          "probability": "6/37"
+        }
+      ],
+      "source_binding": {
+        "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+        "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+        "development_topologies": [
+          3
+        ],
+        "features": [
+          "N",
+          "edges",
+          "width",
+          "log2_branches",
+          "log2_work",
+          "log2_kernel_work",
+          "log2_map_bytes",
+          "roots",
+          "prime_count",
+          "local_bound",
+          "log2_factor_work",
+          "previous_width",
+          "previous_log2_work",
+          "new_edges",
+          "touched_boundary"
+        ],
+        "pairwise_features": "A minus B, then A, then B",
+        "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+        "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+        "reserved_topologies": [
+          4,
+          5
+        ],
+        "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+        "training_topologies": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  }
+}

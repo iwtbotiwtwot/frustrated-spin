@@ -1,0 +1,12 @@
+from pathlib import Path
+p=Path(__file__).parent/'gpu_run.py';s=p.read_text()
+s=s.replace('import numpy as np','import resource\nimport numpy as np')
+s=s.replace('def worker(device):\n    with',"def worker(device):\n    worker_start=time.perf_counter();cpu_start=time.process_time();profile=[]\n    with")
+s=s.replace('        cp.cuda.get_current_stream().synchronize()\n        barrier',"        kernel.compile()\n        cp.cuda.get_current_stream().synchronize()\n        device_setup=time.perf_counter()-worker_start\n        barrier")
+s=s.replace("            prime=plan['primes'][pi];batch=hi-lo", "            prime=plan['primes'][pi];batch=hi-lo\n            batch_started=time.perf_counter()")
+s=s.replace('            for si,s in enumerate(desc[\'steps\']):',"            prep_seconds=time.perf_counter()-batch_started\n            begin=cp.cuda.Event();end=cp.cuda.Event();begin.record()\n            for si,s in enumerate(desc['steps']):")
+s=s.replace('            terminal=cp.ones', '            end.record()\n            terminal=cp.ones')
+s=s.replace("            results.append((pi,lo,hi,cp.asnumpy(terminal).tolist()));batches+=1", "            results.append((pi,lo,hi,cp.asnumpy(terminal).tolist()));batches+=1\n            profile.append({'prime_index':pi,'lo':lo,'hi':hi,'prepare_seconds':prep_seconds,'elimination_stream_ms':cp.cuda.get_elapsed_time(begin,end),'batch_seconds':time.perf_counter()-batch_started,'device_pool_bytes':cp.get_default_memory_pool().total_bytes()})")
+s=s.replace("'gpu':device,'seconds':", "'gpu':device,'device_setup_seconds':device_setup,'cpu_seconds':time.process_time()-cpu_start,'host_maxrss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'profile':profile,'seconds':")
+s=s.replace("cache.close()\ncache_path.unlink()", "cache.close()\ncache_path.unlink()")
+p.write_text(s)

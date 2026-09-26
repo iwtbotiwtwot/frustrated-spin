@@ -1,0 +1,151 @@
+{
+  "kind": "solve",
+  "N": 1,
+  "method": "parent_plan",
+  "variant": null,
+  "question": "solve: N1 parent_plan Counterfactual exact route for cheap source; compare all coefficients",
+  "why_chosen": "Counterfactual exact route for cheap source; compare all coefficients",
+  "expected_information_gain": 7,
+  "predicted_cost_seconds": 0.3,
+  "maximum_admitted_seconds": 120,
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "frozen graph structure and prior completed experiments; no future output",
+  "expected_discriminating_outcomes": [
+    "structural or exact equality supports scoped hypothesis",
+    "counterexample or resource rejection changes next frontier"
+  ],
+  "verification_contract": "native source-bound receipt; every DOS retains full counts/moments/port closure; compare canonical or independent route; structural plans are not new spectra",
+  "plan": {
+    "N": 1,
+    "source_sha256": "a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf",
+    "ports": [
+      0
+    ],
+    "glue": [],
+    "local_bound": 1,
+    "root_count": 2,
+    "primes": [
+      998244353
+    ],
+    "selected": {
+      "method": "parent_plan",
+      "cutset": [],
+      "branches": 1,
+      "order": [],
+      "width": 0,
+      "output_entries": 0,
+      "weighted_entries": 0,
+      "planning_ns": 1494
+    },
+    "candidates": [
+      {
+        "method": "fresh_min_fill",
+        "cutset": [],
+        "branches": 1,
+        "order": [],
+        "width": 0,
+        "output_entries": 0,
+        "weighted_entries": 0,
+        "planning_ns": 23362
+      },
+      {
+        "method": "transition_priority",
+        "cutset": [],
+        "branches": 1,
+        "order": [],
+        "width": 0,
+        "output_entries": 0,
+        "weighted_entries": 0,
+        "planning_ns": 2928
+      },
+      {
+        "method": "parent_plan",
+        "cutset": [],
+        "branches": 1,
+        "order": [],
+        "width": 0,
+        "output_entries": 0,
+        "weighted_entries": 0,
+        "planning_ns": 1494
+      }
+    ],
+    "parent_elimination_order": [],
+    "planning_ns": 48628,
+    "execution_admitted": true,
+    "prime_product_sufficient": true,
+    "training_method": "parent_plan",
+    "mathematical_plan_sha256": "afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+  },
+  "question_id": "af43faa44240b99074b4",
+  "score": 23.333333333333336,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "ac18a166ec456c65fae2a58cbca8e62b9d332d3bb2f36f3737e45b16eff15265",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "inputs_hashes": {
+    "canonical/N001.json": "83c337bf24d8621e4f7035ac707477fea3f0e756331a5f09297919fa664050e2"
+  },
+  "candidate_methods": [
+    "parent_plan"
+  ],
+  "timestamp": 1790403421.1549678,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 23611949056,
+      "prelaunch_available_cpu_equivalents": 2.0,
+      "cpu_equivalents": 1.4,
+      "cpu_quota_percent": 140.0,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 16528364339,
+      "memory_high_bytes": 14875527905,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T06:17:01Z"
+    },
+    "cpu_cap": 1.4,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1843205 56.2  0.1 python",
+      "1209887  5.2  2.1 firefox-bin",
+      "1776178  2.8  1.4 Isolated Web Co",
+      "   1925  2.7  0.4 cinnamon",
+      "   1382  2.5  0.4 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  1.0 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  1.9 Isolated Web Co",
+      "1210108  0.6  0.2 RDD Process",
+      "1843033  0.5  0.3 cinnamon-screen",
+      "1776069  0.4  1.5 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "6e0fb3c23e023cf9af399de0c6af8c19a64152c211464e1c0aa0bcc23d3c9bae"
+}

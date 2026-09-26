@@ -1,0 +1,1397 @@
+{
+  "models": {
+    "spin-all96-combined-v1": {
+      "class_weights": {
+        "negative": 7,
+        "positive": 70
+      },
+      "depth": 0,
+      "development": {
+        "balanced_accuracy": "1/2",
+        "correct": 7,
+        "exception_witnesses": [
+          "N65/fresh_min_fill/47ae52198dde993d3f0055b99368bd0cf0813af78a18595e998128e4704fc455",
+          "N66/fresh_min_fill/a3d65cea61fa698796679dbde402adaddb29fa41e5451129f00fa9d988eba0e1",
+          "N67/fresh_min_fill/ce9a0aaa6dfa514b65b8fcf7448392d5d067ebe2894ed46c3884ccaf12ac80fe",
+          "N68/fresh_min_fill/5e09e4fdce867e5812542d5f6019aa7e79052b07ff217745b372dfcca0f29831",
+          "N68/tie_portfolio/f53f734ab8414994ae7546408ef0d3a1cd584cc79b3fbec53ac164b1831def50",
+          "N69/fresh_min_fill/52ecadc80a66a02c88e458c1a52d3c4096385d525ece3820dd3c9040bd437c44",
+          "N70/fresh_min_fill/03d78aee6899454bc683b08e2c914325ee0dcf207102bd50dbda199544a50ade",
+          "N71/fresh_min_fill/724b7b37c908c0f1173aab831c82726e5cf3042a2203bea1d83906e1f60c0652"
+        ],
+        "positives": 7,
+        "rows": 28
+      },
+      "feature_count": 17,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "classification_threshold": "1/11",
+          "conditions": [],
+          "n": 77,
+          "positive": 7,
+          "probability": "1/11",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1/2",
+        "correct": 7,
+        "exception_witnesses": [
+          "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72",
+          "N2/fresh_min_fill/b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+          "N3/fresh_min_fill/1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d",
+          "N4/fresh_min_fill/8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b",
+          "N5/fresh_min_fill/0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e",
+          "N6/fresh_min_fill/5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1",
+          "N7/fresh_min_fill/3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd",
+          "N8/fresh_min_fill/334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2"
+        ],
+        "positives": 7,
+        "rows": 77
+      },
+      "tree": {
+        "classification_threshold": "1/11",
+        "n": 77,
+        "positive": 7,
+        "probability": "1/11",
+        "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+      }
+    },
+    "spin-all96-structural-v1": {
+      "class_weights": {
+        "negative": 7,
+        "positive": 70
+      },
+      "depth": 0,
+      "development": {
+        "balanced_accuracy": "1/2",
+        "correct": 7,
+        "exception_witnesses": [
+          "N65/fresh_min_fill/47ae52198dde993d3f0055b99368bd0cf0813af78a18595e998128e4704fc455",
+          "N66/fresh_min_fill/a3d65cea61fa698796679dbde402adaddb29fa41e5451129f00fa9d988eba0e1",
+          "N67/fresh_min_fill/ce9a0aaa6dfa514b65b8fcf7448392d5d067ebe2894ed46c3884ccaf12ac80fe",
+          "N68/fresh_min_fill/5e09e4fdce867e5812542d5f6019aa7e79052b07ff217745b372dfcca0f29831",
+          "N68/tie_portfolio/f53f734ab8414994ae7546408ef0d3a1cd584cc79b3fbec53ac164b1831def50",
+          "N69/fresh_min_fill/52ecadc80a66a02c88e458c1a52d3c4096385d525ece3820dd3c9040bd437c44",
+          "N70/fresh_min_fill/03d78aee6899454bc683b08e2c914325ee0dcf207102bd50dbda199544a50ade",
+          "N71/fresh_min_fill/724b7b37c908c0f1173aab831c82726e5cf3042a2203bea1d83906e1f60c0652"
+        ],
+        "positives": 7,
+        "rows": 28
+      },
+      "feature_count": 7,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "classification_threshold": "1/11",
+          "conditions": [],
+          "n": 77,
+          "positive": 7,
+          "probability": "1/11",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1/2",
+        "correct": 7,
+        "exception_witnesses": [
+          "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72",
+          "N2/fresh_min_fill/b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+          "N3/fresh_min_fill/1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d",
+          "N4/fresh_min_fill/8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b",
+          "N5/fresh_min_fill/0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e",
+          "N6/fresh_min_fill/5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1",
+          "N7/fresh_min_fill/3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd",
+          "N8/fresh_min_fill/334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2"
+        ],
+        "positives": 7,
+        "rows": 77
+      },
+      "tree": {
+        "classification_threshold": "1/11",
+        "n": 77,
+        "positive": 7,
+        "probability": "1/11",
+        "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+      }
+    },
+    "spin-all96-transition-v1": {
+      "class_weights": {
+        "negative": 7,
+        "positive": 70
+      },
+      "depth": 0,
+      "development": {
+        "balanced_accuracy": "1/2",
+        "correct": 7,
+        "exception_witnesses": [
+          "N65/fresh_min_fill/47ae52198dde993d3f0055b99368bd0cf0813af78a18595e998128e4704fc455",
+          "N66/fresh_min_fill/a3d65cea61fa698796679dbde402adaddb29fa41e5451129f00fa9d988eba0e1",
+          "N67/fresh_min_fill/ce9a0aaa6dfa514b65b8fcf7448392d5d067ebe2894ed46c3884ccaf12ac80fe",
+          "N68/fresh_min_fill/5e09e4fdce867e5812542d5f6019aa7e79052b07ff217745b372dfcca0f29831",
+          "N68/tie_portfolio/f53f734ab8414994ae7546408ef0d3a1cd584cc79b3fbec53ac164b1831def50",
+          "N69/fresh_min_fill/52ecadc80a66a02c88e458c1a52d3c4096385d525ece3820dd3c9040bd437c44",
+          "N70/fresh_min_fill/03d78aee6899454bc683b08e2c914325ee0dcf207102bd50dbda199544a50ade",
+          "N71/fresh_min_fill/724b7b37c908c0f1173aab831c82726e5cf3042a2203bea1d83906e1f60c0652"
+        ],
+        "positives": 7,
+        "rows": 28
+      },
+      "feature_count": 10,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "classification_threshold": "1/11",
+          "conditions": [],
+          "n": 77,
+          "positive": 7,
+          "probability": "1/11",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1/2",
+        "correct": 7,
+        "exception_witnesses": [
+          "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72",
+          "N2/fresh_min_fill/b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+          "N3/fresh_min_fill/1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d",
+          "N4/fresh_min_fill/8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b",
+          "N5/fresh_min_fill/0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e",
+          "N6/fresh_min_fill/5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1",
+          "N7/fresh_min_fill/3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd",
+          "N8/fresh_min_fill/334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2"
+        ],
+        "positives": 7,
+        "rows": 77
+      },
+      "tree": {
+        "classification_threshold": "1/11",
+        "n": 77,
+        "positive": 7,
+        "probability": "1/11",
+        "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+      }
+    },
+    "spin-focused-fast-pairwise-v1": {
+      "class_weights": {
+        "negative": 72,
+        "positive": 72
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "1",
+        "correct": 14,
+        "exception_witnesses": [],
+        "positives": 7,
+        "rows": 14
+      },
+      "feature_count": 45,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 10,
+              "threshold": -31
+            }
+          ],
+          "n": 70,
+          "positive": 60,
+          "probability": "6/7",
+          "witness": "G0-N80:2<0"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 10,
+              "threshold": -31
+            }
+          ],
+          "n": 74,
+          "positive": 12,
+          "probability": "6/37",
+          "witness": "G0-N80:0<1"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "61/72",
+        "correct": 122,
+        "exception_witnesses": [
+          "G0-N80:0<1",
+          "G0-N84:3<4",
+          "G0-N84:3<5",
+          "G0-N84:3<6",
+          "G0-N84:4<3",
+          "G0-N84:4<5",
+          "G0-N84:4<6",
+          "G0-N84:5<3"
+        ],
+        "positives": 72,
+        "rows": 144
+      },
+      "tree": {
+        "classification_threshold": "1/2",
+        "feature": 10,
+        "left": {
+          "n": 70,
+          "positive": 60,
+          "probability": "6/7",
+          "witness": "G0-N80:2<0"
+        },
+        "n": 144,
+        "positive": 72,
+        "probability": "1/2",
+        "right": {
+          "n": 74,
+          "positive": 12,
+          "probability": "6/37",
+          "witness": "G0-N80:0<1"
+        },
+        "threshold": -31,
+        "witness": "G0-N80:0<1"
+      }
+    },
+    "spin-focused-pairwise-v1": {
+      "class_weights": {
+        "negative": 72,
+        "positive": 72
+      },
+      "depth": 3,
+      "development": {
+        "balanced_accuracy": "6/7",
+        "correct": 12,
+        "exception_witnesses": [
+          "G3-N84:66<67",
+          "G3-N88:69<68"
+        ],
+        "positives": 7,
+        "rows": 14
+      },
+      "feature_count": 30,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": "<=",
+              "feature": 18,
+              "threshold": 0
+            },
+            {
+              "comparison": "<=",
+              "feature": 3,
+              "threshold": 0
+            }
+          ],
+          "n": 14,
+          "positive": 7,
+          "probability": "1/2",
+          "witness": "G0-N80:0<1"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": "<=",
+              "feature": 18,
+              "threshold": 0
+            },
+            {
+              "comparison": ">",
+              "feature": 3,
+              "threshold": 0
+            }
+          ],
+          "n": 7,
+          "positive": 0,
+          "probability": "0",
+          "witness": "G0-N84:6<3"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": ">",
+              "feature": 18,
+              "threshold": 0
+            },
+            {
+              "comparison": "<=",
+              "feature": 3,
+              "threshold": 3072
+            }
+          ],
+          "n": 26,
+          "positive": 26,
+          "probability": "1",
+          "witness": "G0-N84:3<6"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": ">",
+              "feature": 18,
+              "threshold": 0
+            },
+            {
+              "comparison": ">",
+              "feature": 3,
+              "threshold": 3072
+            }
+          ],
+          "n": 10,
+          "positive": 7,
+          "probability": "7/10",
+          "witness": "G0-N88:20<18"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": "<=",
+              "feature": 19,
+              "threshold": 28607
+            },
+            {
+              "comparison": "<=",
+              "feature": 3,
+              "threshold": 3072
+            }
+          ],
+          "n": 2,
+          "positive": 2,
+          "probability": "1",
+          "witness": "G1-N88:53<52"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": "<=",
+              "feature": 19,
+              "threshold": 28607
+            },
+            {
+              "comparison": ">",
+              "feature": 3,
+              "threshold": 3072
+            }
+          ],
+          "n": 55,
+          "positive": 7,
+          "probability": "7/55",
+          "witness": "G0-N85:7<8"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": ">",
+              "feature": 19,
+              "threshold": 28607
+            },
+            {
+              "comparison": "<=",
+              "feature": 4,
+              "threshold": 29630
+            }
+          ],
+          "n": 23,
+          "positive": 22,
+          "probability": "22/23",
+          "witness": "G0-N91:29<28"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 4,
+              "threshold": 25944
+            },
+            {
+              "comparison": ">",
+              "feature": 19,
+              "threshold": 28607
+            },
+            {
+              "comparison": ">",
+              "feature": 4,
+              "threshold": 29630
+            }
+          ],
+          "n": 7,
+          "positive": 1,
+          "probability": "1/7",
+          "witness": "G0-N93:35<34"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "125/144",
+        "correct": 125,
+        "exception_witnesses": [
+          "G0-N80:0<2",
+          "G0-N80:1<0",
+          "G0-N80:1<2",
+          "G0-N84:3<4",
+          "G0-N84:3<5",
+          "G0-N84:4<5",
+          "G0-N85:7<8",
+          "G0-N86:10<11"
+        ],
+        "positives": 72,
+        "rows": 144
+      },
+      "tree": {
+        "classification_threshold": "1/2",
+        "feature": 4,
+        "left": {
+          "feature": 18,
+          "left": {
+            "feature": 3,
+            "left": {
+              "n": 14,
+              "positive": 7,
+              "probability": "1/2",
+              "witness": "G0-N80:0<1"
+            },
+            "n": 21,
+            "positive": 7,
+            "probability": "1/3",
+            "right": {
+              "n": 7,
+              "positive": 0,
+              "probability": "0",
+              "witness": "G0-N84:6<3"
+            },
+            "threshold": 0,
+            "witness": "G0-N80:0<1"
+          },
+          "n": 57,
+          "positive": 40,
+          "probability": "40/57",
+          "right": {
+            "feature": 3,
+            "left": {
+              "n": 26,
+              "positive": 26,
+              "probability": "1",
+              "witness": "G0-N84:3<6"
+            },
+            "n": 36,
+            "positive": 33,
+            "probability": "11/12",
+            "right": {
+              "n": 10,
+              "positive": 7,
+              "probability": "7/10",
+              "witness": "G0-N88:20<18"
+            },
+            "threshold": 3072,
+            "witness": "G0-N84:3<6"
+          },
+          "threshold": 0,
+          "witness": "G0-N80:0<1"
+        },
+        "n": 144,
+        "positive": 72,
+        "probability": "1/2",
+        "right": {
+          "feature": 19,
+          "left": {
+            "feature": 3,
+            "left": {
+              "n": 2,
+              "positive": 2,
+              "probability": "1",
+              "witness": "G1-N88:53<52"
+            },
+            "n": 57,
+            "positive": 9,
+            "probability": "3/19",
+            "right": {
+              "n": 55,
+              "positive": 7,
+              "probability": "7/55",
+              "witness": "G0-N85:7<8"
+            },
+            "threshold": 3072,
+            "witness": "G0-N85:7<8"
+          },
+          "n": 87,
+          "positive": 32,
+          "probability": "32/87",
+          "right": {
+            "feature": 4,
+            "left": {
+              "n": 23,
+              "positive": 22,
+              "probability": "22/23",
+              "witness": "G0-N91:29<28"
+            },
+            "n": 30,
+            "positive": 23,
+            "probability": "23/30",
+            "right": {
+              "n": 7,
+              "positive": 1,
+              "probability": "1/7",
+              "witness": "G0-N93:35<34"
+            },
+            "threshold": 29630,
+            "witness": "G0-N91:29<28"
+          },
+          "threshold": 28607,
+          "witness": "G0-N85:7<8"
+        },
+        "threshold": 25944,
+        "witness": "G0-N80:0<1"
+      }
+    },
+    "spin-n1-30-combined-v1": {
+      "class_weights": {
+        "negative": 22,
+        "positive": 38
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "23/36",
+        "correct": 9,
+        "exception_witnesses": [
+          "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+          "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+          "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+          "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+        ],
+        "positives": 4,
+        "rows": 13
+      },
+      "feature_count": 18,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 17,
+              "threshold": 0
+            }
+          ],
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 17,
+              "threshold": 0
+            }
+          ],
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1",
+        "correct": 60,
+        "exception_witnesses": [],
+        "positives": 22,
+        "rows": 60
+      },
+      "tree": {
+        "classification_threshold": "11/30",
+        "feature": 17,
+        "left": {
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        "n": 60,
+        "positive": 22,
+        "probability": "11/30",
+        "right": {
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        },
+        "threshold": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      }
+    },
+    "spin-n1-30-structural-v1": {
+      "class_weights": {
+        "negative": 22,
+        "positive": 38
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "23/36",
+        "correct": 9,
+        "exception_witnesses": [
+          "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+          "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+          "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+          "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+        ],
+        "positives": 4,
+        "rows": 13
+      },
+      "feature_count": 8,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 7,
+              "threshold": 0
+            }
+          ],
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 7,
+              "threshold": 0
+            }
+          ],
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1",
+        "correct": 60,
+        "exception_witnesses": [],
+        "positives": 22,
+        "rows": 60
+      },
+      "tree": {
+        "classification_threshold": "11/30",
+        "feature": 7,
+        "left": {
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        "n": 60,
+        "positive": 22,
+        "probability": "11/30",
+        "right": {
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        },
+        "threshold": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      }
+    },
+    "spin-n1-30-transition-v1": {
+      "class_weights": {
+        "negative": 22,
+        "positive": 38
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "23/36",
+        "correct": 9,
+        "exception_witnesses": [
+          "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+          "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+          "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+          "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+        ],
+        "positives": 4,
+        "rows": 13
+      },
+      "feature_count": 11,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 10,
+              "threshold": 0
+            }
+          ],
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 10,
+              "threshold": 0
+            }
+          ],
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1",
+        "correct": 60,
+        "exception_witnesses": [],
+        "positives": 22,
+        "rows": 60
+      },
+      "tree": {
+        "classification_threshold": "11/30",
+        "feature": 10,
+        "left": {
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        "n": 60,
+        "positive": 22,
+        "probability": "11/30",
+        "right": {
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        },
+        "threshold": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      }
+    },
+    "spin-transition-combined-v2": {
+      "class_weights": {
+        "negative": 7,
+        "positive": 15
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "3/4",
+        "correct": 4,
+        "exception_witnesses": [
+          "N84/fresh_min_fill:84526ae3cef9cb6a5cb7d4b1bf1968c78d297f1536c0a3423c2e0c5dee4feeae"
+        ],
+        "positives": 3,
+        "rows": 5
+      },
+      "feature_count": 17,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 3,
+              "threshold": 1
+            }
+          ],
+          "n": 18,
+          "positive": 7,
+          "probability": "7/18",
+          "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 3,
+              "threshold": 1
+            }
+          ],
+          "n": 4,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N36/parent_plan:7b528e73a59cae78c62feb199f2fefe5106a32153171ab1f3e995ab69175aa9b"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "19/30",
+        "correct": 11,
+        "exception_witnesses": [
+          "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+          "N8/fresh_min_fill:334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2",
+          "N12/parent_plan:c0b7da93500c684ae2332c6eaa590b987bbafc55b23bde9a4d45105c9e5e4539",
+          "N12/fresh_min_fill:041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34",
+          "N18/parent_plan:e2234b23a4193dd1d81a417cc9b1678931a92090fcdd1752f96eee2c61913af4",
+          "N18/fresh_min_fill:d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56",
+          "N24/fresh_min_fill:661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa",
+          "N36/fresh_min_fill:727d29d95ef64f8371ea00c9313c954fbdc7b69ef8d7d28dcf6b10a77b6a4176"
+        ],
+        "positives": 7,
+        "rows": 22
+      },
+      "tree": {
+        "classification_threshold": "7/22",
+        "feature": 3,
+        "left": {
+          "n": 18,
+          "positive": 7,
+          "probability": "7/18",
+          "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+        },
+        "n": 22,
+        "positive": 7,
+        "probability": "7/22",
+        "right": {
+          "n": 4,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N36/parent_plan:7b528e73a59cae78c62feb199f2fefe5106a32153171ab1f3e995ab69175aa9b"
+        },
+        "threshold": 1,
+        "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+      }
+    },
+    "spin-transition-plan-v1": {
+      "class_weights": {
+        "negative": 1,
+        "positive": 7
+      },
+      "depth": 0,
+      "development": {
+        "balanced_accuracy": "1",
+        "correct": 1,
+        "exception_witnesses": [],
+        "positives": 1,
+        "rows": 1
+      },
+      "feature_count": 6,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "classification_threshold": "1/8",
+          "conditions": [],
+          "n": 8,
+          "positive": 1,
+          "probability": "1/8",
+          "witness": "N2->N8:fresh=11;transfer=11"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 1,
+      "training": {
+        "balanced_accuracy": "1/2",
+        "correct": 1,
+        "exception_witnesses": [
+          "N2->N8:fresh=11;transfer=11",
+          "N8->N12:fresh=35;transfer=35",
+          "N12->N18:fresh=44;transfer=44",
+          "N18->N24:fresh=53;transfer=53",
+          "N24->N36:fresh=89;transfer=89",
+          "N36->N48:fresh=236;transfer=236",
+          "N48->N60:fresh=2661;transfer=3205"
+        ],
+        "positives": 1,
+        "rows": 8
+      },
+      "tree": {
+        "classification_threshold": "1/8",
+        "n": 8,
+        "positive": 1,
+        "probability": "1/8",
+        "witness": "N2->N8:fresh=11;transfer=11"
+      }
+    },
+    "spin-transition-structural-v2": {
+      "class_weights": {
+        "negative": 7,
+        "positive": 15
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "3/4",
+        "correct": 4,
+        "exception_witnesses": [
+          "N84/fresh_min_fill:84526ae3cef9cb6a5cb7d4b1bf1968c78d297f1536c0a3423c2e0c5dee4feeae"
+        ],
+        "positives": 3,
+        "rows": 5
+      },
+      "feature_count": 7,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 3,
+              "threshold": 1
+            }
+          ],
+          "n": 18,
+          "positive": 7,
+          "probability": "7/18",
+          "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 3,
+              "threshold": 1
+            }
+          ],
+          "n": 4,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N36/parent_plan:7b528e73a59cae78c62feb199f2fefe5106a32153171ab1f3e995ab69175aa9b"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "19/30",
+        "correct": 11,
+        "exception_witnesses": [
+          "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+          "N8/fresh_min_fill:334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2",
+          "N12/parent_plan:c0b7da93500c684ae2332c6eaa590b987bbafc55b23bde9a4d45105c9e5e4539",
+          "N12/fresh_min_fill:041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34",
+          "N18/parent_plan:e2234b23a4193dd1d81a417cc9b1678931a92090fcdd1752f96eee2c61913af4",
+          "N18/fresh_min_fill:d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56",
+          "N24/fresh_min_fill:661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa",
+          "N36/fresh_min_fill:727d29d95ef64f8371ea00c9313c954fbdc7b69ef8d7d28dcf6b10a77b6a4176"
+        ],
+        "positives": 7,
+        "rows": 22
+      },
+      "tree": {
+        "classification_threshold": "7/22",
+        "feature": 3,
+        "left": {
+          "n": 18,
+          "positive": 7,
+          "probability": "7/18",
+          "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+        },
+        "n": 22,
+        "positive": 7,
+        "probability": "7/22",
+        "right": {
+          "n": 4,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N36/parent_plan:7b528e73a59cae78c62feb199f2fefe5106a32153171ab1f3e995ab69175aa9b"
+        },
+        "threshold": 1,
+        "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+      }
+    },
+    "spin-transition-transition-v2": {
+      "class_weights": {
+        "negative": 7,
+        "positive": 15
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "3/4",
+        "correct": 4,
+        "exception_witnesses": [
+          "N84/fresh_min_fill:84526ae3cef9cb6a5cb7d4b1bf1968c78d297f1536c0a3423c2e0c5dee4feeae"
+        ],
+        "positives": 3,
+        "rows": 5
+      },
+      "feature_count": 10,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 7,
+              "threshold": 1
+            }
+          ],
+          "n": 18,
+          "positive": 7,
+          "probability": "7/18",
+          "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 7,
+              "threshold": 1
+            }
+          ],
+          "n": 4,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N36/parent_plan:7b528e73a59cae78c62feb199f2fefe5106a32153171ab1f3e995ab69175aa9b"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "19/30",
+        "correct": 11,
+        "exception_witnesses": [
+          "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+          "N8/fresh_min_fill:334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2",
+          "N12/parent_plan:c0b7da93500c684ae2332c6eaa590b987bbafc55b23bde9a4d45105c9e5e4539",
+          "N12/fresh_min_fill:041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34",
+          "N18/parent_plan:e2234b23a4193dd1d81a417cc9b1678931a92090fcdd1752f96eee2c61913af4",
+          "N18/fresh_min_fill:d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56",
+          "N24/fresh_min_fill:661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa",
+          "N36/fresh_min_fill:727d29d95ef64f8371ea00c9313c954fbdc7b69ef8d7d28dcf6b10a77b6a4176"
+        ],
+        "positives": 7,
+        "rows": 22
+      },
+      "tree": {
+        "classification_threshold": "7/22",
+        "feature": 7,
+        "left": {
+          "n": 18,
+          "positive": 7,
+          "probability": "7/18",
+          "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+        },
+        "n": 22,
+        "positive": 7,
+        "probability": "7/22",
+        "right": {
+          "n": 4,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N36/parent_plan:7b528e73a59cae78c62feb199f2fefe5106a32153171ab1f3e995ab69175aa9b"
+        },
+        "threshold": 1,
+        "witness": "N2/fresh_min_fill:b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+      }
+    }
+  },
+  "origin": {
+    "status": "MODEL_UNSEEDED"
+  },
+  "source_binding": {
+    "spin-all96-combined-v1": {
+      "campaign": "GEN4_SPIN_ALL_INTEGER_1_96_TRAINING1",
+      "development_N": [
+        65,
+        80
+      ],
+      "feature_family": "combined",
+      "reserved_N": [
+        81,
+        96
+      ],
+      "roster": "3e90c48e0d08bc06c1351b8d150f8296144cc7dc8c916e0d0fbc7831cbdd9e6d",
+      "sampling": "one per unique nominated plan; two extra repetitions if initial times within15percent",
+      "training_N": [
+        1,
+        64
+      ]
+    },
+    "spin-all96-structural-v1": {
+      "campaign": "GEN4_SPIN_ALL_INTEGER_1_96_TRAINING1",
+      "development_N": [
+        65,
+        80
+      ],
+      "feature_family": "structural",
+      "reserved_N": [
+        81,
+        96
+      ],
+      "roster": "3e90c48e0d08bc06c1351b8d150f8296144cc7dc8c916e0d0fbc7831cbdd9e6d",
+      "sampling": "one per unique nominated plan; two extra repetitions if initial times within15percent",
+      "training_N": [
+        1,
+        64
+      ]
+    },
+    "spin-all96-transition-v1": {
+      "campaign": "GEN4_SPIN_ALL_INTEGER_1_96_TRAINING1",
+      "development_N": [
+        65,
+        80
+      ],
+      "feature_family": "transition",
+      "reserved_N": [
+        81,
+        96
+      ],
+      "roster": "3e90c48e0d08bc06c1351b8d150f8296144cc7dc8c916e0d0fbc7831cbdd9e6d",
+      "sampling": "one per unique nominated plan; two extra repetitions if initial times within15percent",
+      "training_N": [
+        1,
+        64
+      ]
+    },
+    "spin-focused-fast-pairwise-v1": {
+      "campaign": "GEN4_SPIN_FOCUSED_FAST_TRAINING1",
+      "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+      "development_topologies": [
+        3
+      ],
+      "features": [
+        "N",
+        "edges",
+        "width",
+        "log2_branches",
+        "log2_work",
+        "log2_kernel_work",
+        "log2_map_bytes",
+        "roots",
+        "prime_count",
+        "local_bound",
+        "log2_factor_work",
+        "previous_width",
+        "previous_log2_work",
+        "new_edges",
+        "touched_boundary"
+      ],
+      "pairwise_features": "A minus B, then A, then B",
+      "readout_backend": "NUMPY_INT64_BATCHED_INVERSE_NTT_PRECOMPUTED_PYTHON_INTEGER_CRT",
+      "readout_source_sha256": "83dabe060a6d2f2e3fcd8b21c074a90ed93ba4a351f1374588c26523ada36bef",
+      "reserved_topologies": [
+        4,
+        5
+      ],
+      "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+      "training_topologies": [
+        0,
+        1,
+        2
+      ]
+    },
+    "spin-focused-pairwise-v1": {
+      "campaign": "GEN4_SPIN_FOCUSED_TRAINING1",
+      "common_ancestor": "dad9c1331dbc9b401ff729dde21b4e477b7b749ffea3504dab5b38c2c5d8fb44",
+      "development_topologies": [
+        3
+      ],
+      "features": [
+        "N",
+        "edges",
+        "width",
+        "log2_branches",
+        "log2_work",
+        "log2_kernel_work",
+        "log2_map_bytes",
+        "roots",
+        "prime_count",
+        "local_bound",
+        "log2_factor_work",
+        "previous_width",
+        "previous_log2_work",
+        "new_edges",
+        "touched_boundary"
+      ],
+      "reserved_topologies": [
+        4,
+        5
+      ],
+      "sources": "686eb970729dd2b415cb7ec8982c6d23131a06dce0a3accc28ddfeba995c95ff",
+      "training_topologies": [
+        0,
+        1,
+        2
+      ]
+    },
+    "spin-n1-30-combined-v1": {
+      "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+      "development_N": [
+        23,
+        26
+      ],
+      "feature_family": "combined",
+      "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+      "reserved_N": [
+        27,
+        30
+      ],
+      "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+      "training_N": [
+        1,
+        22
+      ]
+    },
+    "spin-n1-30-structural-v1": {
+      "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+      "development_N": [
+        23,
+        26
+      ],
+      "feature_family": "structural",
+      "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+      "reserved_N": [
+        27,
+        30
+      ],
+      "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+      "training_N": [
+        1,
+        22
+      ]
+    },
+    "spin-n1-30-transition-v1": {
+      "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+      "development_N": [
+        23,
+        26
+      ],
+      "feature_family": "transition",
+      "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+      "reserved_N": [
+        27,
+        30
+      ],
+      "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+      "training_N": [
+        1,
+        22
+      ]
+    },
+    "spin-transition-combined-v2": {
+      "campaign": "GEN4_SPIN_TRANSITION_TRAINING1",
+      "catalog_source_roster": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7",
+      "development_N": 84,
+      "features": "combined",
+      "method_roster": [
+        "fresh_min_fill",
+        "transition_priority",
+        "parent_plan",
+        "repair_transfer",
+        "tie_portfolio"
+      ],
+      "reserved_N": 96,
+      "training_max_N": 72
+    },
+    "spin-transition-plan-v1": {
+      "catalog": "GEN4_SPIN_TRANSITION_CATALOG_V1",
+      "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+      "source_roster_sha256": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7"
+    },
+    "spin-transition-structural-v2": {
+      "campaign": "GEN4_SPIN_TRANSITION_TRAINING1",
+      "catalog_source_roster": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7",
+      "development_N": 84,
+      "features": "structural",
+      "method_roster": [
+        "fresh_min_fill",
+        "transition_priority",
+        "parent_plan",
+        "repair_transfer",
+        "tie_portfolio"
+      ],
+      "reserved_N": 96,
+      "training_max_N": 72
+    },
+    "spin-transition-transition-v2": {
+      "campaign": "GEN4_SPIN_TRANSITION_TRAINING1",
+      "catalog_source_roster": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7",
+      "development_N": 84,
+      "features": "transition",
+      "method_roster": [
+        "fresh_min_fill",
+        "transition_priority",
+        "parent_plan",
+        "repair_transfer",
+        "tie_portfolio"
+      ],
+      "reserved_N": 96,
+      "training_max_N": 72
+    }
+  }
+}

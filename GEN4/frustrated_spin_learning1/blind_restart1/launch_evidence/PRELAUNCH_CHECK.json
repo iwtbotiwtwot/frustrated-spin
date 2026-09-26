@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "code_hashes_verified": true,
+  "isolated_checks": {
+    "status": "PASS",
+    "initial_completed": 8,
+    "initial_generated_followups": 109,
+    "checks": {
+      "gauge": {
+        "question_id": "8ee07fb3059cdf46723bda10",
+        "status": "CERTIFIED_EXACT_RULE",
+        "rule": "EXPLICIT_GAUGE_BIJECTION",
+        "N": 12,
+        "scope": "Explicit source/partition or bijection; established finite-sum identity, not a theorem inferred from timings",
+        "independent_verification": true
+      },
+      "permutation": {
+        "question_id": "652e7c9ecb5a0361110f5880",
+        "status": "CERTIFIED_EXACT_RULE",
+        "rule": "EXPLICIT_VERTEX_BIJECTION",
+        "N": 12,
+        "scope": "Explicit source/partition or bijection; established finite-sum identity, not a theorem inferred from timings",
+        "independent_verification": true
+      },
+      "gpu": {
+        "backend": "14_PERSISTENT_CUDA_GRAPH_WORKERS_BATCHED_READOUT",
+        "seconds": 9.187006077,
+        "all14_active": true,
+        "full_density_verified": true
+      },
+      "gpu_followups": [
+        "7bd8a6377207edfc6ed00443",
+        "560893aea15d90555f1aac7c",
+        "20894584bad1d5b64e13c6c2"
+      ],
+      "failure_followups": [
+        "f2036abcf2356df648c6ee83"
+      ],
+      "empty_frontier_review": true,
+      "fresh_cost_model_update": true
+    },
+    "production_state_seeded": false
+  },
+  "semantic_deduplication": true,
+  "repeated_graph_branch_closed": true,
+  "failure_followup": true,
+  "production_state_exists": false,
+  "checked_at": 1790443408.9972613
+}

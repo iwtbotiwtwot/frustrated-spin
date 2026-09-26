@@ -1,0 +1,785 @@
+{
+  "N": 4,
+  "source": {
+    "N": 4,
+    "edges": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "energy_bound_B": 8,
+    "family": "N96_INDUCED_TRANSITION_LADDER_V1",
+    "fields": [
+      1,
+      -2,
+      -1,
+      0
+    ],
+    "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+    "parent_vertices": [
+      6,
+      55,
+      11,
+      78
+    ],
+    "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3"
+  },
+  "plan": {
+    "N": 4,
+    "candidates": [
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "fresh_min_fill",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 3740,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "transition_priority",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 2080,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "parent_plan",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 1440,
+        "weighted_entries": 0,
+        "width": 0
+      }
+    ],
+    "glue": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "local_bound": 4,
+    "mathematical_plan_sha256": "8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b",
+    "parent_elimination_order": [],
+    "planning_ns": 21280,
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "primes": [
+      998244353
+    ],
+    "root_count": 8,
+    "selected": {
+      "branches": 1,
+      "cutset": [],
+      "method": "fresh_min_fill",
+      "order": [],
+      "output_entries": 0,
+      "planning_ns": 3740,
+      "weighted_entries": 0,
+      "width": 0
+    },
+    "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+    "training_method": "fresh_min_fill"
+  },
+  "spectrum": {
+    "N": 4,
+    "checks": {
+      "count": true,
+      "first_moment": true,
+      "polynomial_support": true,
+      "port_counts": true,
+      "second_moment": true
+    },
+    "closed_port_rows": [
+      [
+        [
+          -6,
+          "1"
+        ]
+      ],
+      [
+        [
+          -2,
+          "1"
+        ]
+      ],
+      [
+        [
+          4,
+          "1"
+        ]
+      ],
+      [
+        [
+          -4,
+          "1"
+        ]
+      ],
+      [
+        [
+          -2,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          8,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          -4,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          6,
+          "1"
+        ]
+      ],
+      [
+        [
+          -2,
+          "1"
+        ]
+      ],
+      [
+        [
+          -4,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          6,
+          "1"
+        ]
+      ],
+      [
+        [
+          -2,
+          "1"
+        ]
+      ]
+    ],
+    "configuration_count": "16",
+    "energy_convention": "E=-sum(J*s_u*s_v)-sum(h*s_u); spin bit 0=-1,1=+1",
+    "ground_degeneracy": "1",
+    "ground_energy": -6,
+    "local_energy_bound": 4,
+    "open_y_operator": [
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          4,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ],
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          4,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ]
+    ],
+    "parent_port_vertices": [
+      6,
+      55,
+      11,
+      78
+    ],
+    "reconstruction_ns": 11056182,
+    "removed_glue_edges": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "retained_ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "scalar_dos": [
+      [
+        -6,
+        "1"
+      ],
+      [
+        -4,
+        "3"
+      ],
+      [
+        -2,
+        "4"
+      ],
+      [
+        0,
+        "3"
+      ],
+      [
+        2,
+        "1"
+      ],
+      [
+        4,
+        "1"
+      ],
+      [
+        6,
+        "2"
+      ],
+      [
+        8,
+        "1"
+      ]
+    ],
+    "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+    "spectrum_sha256": "434871a50528aa6275485e220acfc093d349c8e79a70f22532786d77fd10ed7d"
+  },
+  "historical": {
+    "plan": {
+      "N": 4,
+      "candidates": [
+        {
+          "branches": 1,
+          "cutset": [],
+          "method": "fresh_min_fill",
+          "order": [],
+          "output_entries": 0,
+          "planning_ns": 3740,
+          "weighted_entries": 0,
+          "width": 0
+        },
+        {
+          "branches": 1,
+          "cutset": [],
+          "method": "transition_priority",
+          "order": [],
+          "output_entries": 0,
+          "planning_ns": 2080,
+          "weighted_entries": 0,
+          "width": 0
+        },
+        {
+          "branches": 1,
+          "cutset": [],
+          "method": "parent_plan",
+          "order": [],
+          "output_entries": 0,
+          "planning_ns": 1440,
+          "weighted_entries": 0,
+          "width": 0
+        }
+      ],
+      "glue": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "local_bound": 4,
+      "mathematical_plan_sha256": "8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b",
+      "parent_elimination_order": [],
+      "planning_ns": 21280,
+      "ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "primes": [
+        998244353
+      ],
+      "root_count": 8,
+      "selected": {
+        "branches": 1,
+        "cutset": [],
+        "method": "fresh_min_fill",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 3740,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+      "training_method": "fresh_min_fill"
+    },
+    "source": {
+      "N": 4,
+      "edges": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "energy_bound_B": 8,
+      "family": "N96_INDUCED_TRANSITION_LADDER_V1",
+      "fields": [
+        1,
+        -2,
+        -1,
+        0
+      ],
+      "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+      "parent_vertices": [
+        6,
+        55,
+        11,
+        78
+      ],
+      "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3"
+    },
+    "spectrum": {
+      "N": 4,
+      "checks": {
+        "count": true,
+        "first_moment": true,
+        "polynomial_support": true,
+        "port_counts": true,
+        "second_moment": true
+      },
+      "closed_port_rows": [
+        [
+          [
+            -6,
+            "1"
+          ]
+        ],
+        [
+          [
+            -2,
+            "1"
+          ]
+        ],
+        [
+          [
+            4,
+            "1"
+          ]
+        ],
+        [
+          [
+            -4,
+            "1"
+          ]
+        ],
+        [
+          [
+            -2,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            8,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            -4,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            6,
+            "1"
+          ]
+        ],
+        [
+          [
+            -2,
+            "1"
+          ]
+        ],
+        [
+          [
+            -4,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            6,
+            "1"
+          ]
+        ],
+        [
+          [
+            -2,
+            "1"
+          ]
+        ]
+      ],
+      "configuration_count": "16",
+      "energy_convention": "E=-sum(J*s_u*s_v)-sum(h*s_u); spin bit 0=-1,1=+1",
+      "ground_degeneracy": "1",
+      "ground_energy": -6,
+      "local_energy_bound": 4,
+      "open_y_operator": [
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            3,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            4,
+            "1"
+          ]
+        ],
+        [
+          [
+            3,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            3,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            4,
+            "1"
+          ]
+        ],
+        [
+          [
+            3,
+            "1"
+          ]
+        ]
+      ],
+      "parent_port_vertices": [
+        6,
+        55,
+        11,
+        78
+      ],
+      "reconstruction_ns": 11056182,
+      "removed_glue_edges": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "retained_ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "scalar_dos": [
+        [
+          -6,
+          "1"
+        ],
+        [
+          -4,
+          "3"
+        ],
+        [
+          -2,
+          "4"
+        ],
+        [
+          0,
+          "3"
+        ],
+        [
+          2,
+          "1"
+        ],
+        [
+          4,
+          "1"
+        ],
+        [
+          6,
+          "2"
+        ],
+        [
+          8,
+          "1"
+        ]
+      ],
+      "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+      "spectrum_sha256": "434871a50528aa6275485e220acfc093d349c8e79a70f22532786d77fd10ed7d"
+    }
+  },
+  "provenance": {
+    "kind": "INHERITED",
+    "object_ref": "f62d67a3e712db1a7ccf017eca60207e4f67b0149c17d5b2917de96937a9db10",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "timing": {
+    "seconds": 0.011163541,
+    "method": "fresh_min_fill",
+    "hardware": "14_MIG_GPU_retained_readout",
+    "selection": "retrospective best method",
+    "record": {
+      "N": "4",
+      "best_method": "fresh_min_fill",
+      "best_method_median_seconds": "0.011163541",
+      "best_method_repetitions": "1",
+      "fresh_method_median_seconds": "0.011163541",
+      "reduction_vs_fresh_percent": "0.0",
+      "all_training_solve_seconds": "0.011163541",
+      "training_solve_count": "1",
+      "width": "0",
+      "branches": "1",
+      "weighted_entries": "0",
+      "root_count": "8",
+      "primes": "1",
+      "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3"
+    }
+  }
+}

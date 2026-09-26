@@ -1,0 +1,21 @@
+{
+  "parent": "podrun1 STATUS=SEARCH_SATURATED",
+  "input_archive": "sha256-verified on network volume",
+  "holdout": "N121..144 untouched",
+  "per_worker_gpu": 1,
+  "maximum_gpu_workers": 20,
+  "cpu_workers": 8,
+  "separator_depth": 20,
+  "separator_assignment_bound": 100000000,
+  "largest_component": 26,
+  "worker_memory_cap": "min(20GiB, currently available cgroup memory / active slots)",
+  "gpu_memory_admission": "runtime-measured free VRAM, default 90% of free device memory",
+  "exact_deadline_seconds": 7200,
+  "experiment_wall_seconds": 7200,
+  "gpu_operation_seconds": 7000,
+  "max_width": 30,
+  "max_map_bytes": 8589934592,
+  "max_branches": 262144,
+  "max_tasks": 10000000,
+  "launch_duration_seconds": 28800
+}

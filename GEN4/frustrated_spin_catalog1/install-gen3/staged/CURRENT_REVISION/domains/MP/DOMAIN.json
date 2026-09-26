@@ -1,0 +1,163 @@
+{
+  "aliases": [
+    "MERSENNE",
+    "MERSENNE-PRIME",
+    "MERSENNE_PRIME"
+  ],
+  "arithmetic_executed": true,
+  "authority": [
+    "H000741",
+    "H001010",
+    "H001013",
+    "H001015",
+    "H001018",
+    "H001037",
+    "H001040",
+    "H001087",
+    "H001088",
+    "H001102",
+    "H001192",
+    "H001193",
+    "H001439",
+    "H001445",
+    "H001453",
+    "H001469",
+    "H001487",
+    "H001524",
+    "H001527",
+    "H001571"
+  ],
+  "automatic_write_foundation": "CURRENT_REVISION/engines/SLC/gen2/WRITE_FOUNDATION.json",
+  "base_global_slc": "SLC-GEN3-R4",
+  "binding_sources": [
+    {
+      "path": "CURRENT_REVISION/domains/MP/FARM_HEAD.json",
+      "sha256": "142ec32b71c285d945377ace2297cf58df2244fa13763bf56ec861aa0907675b"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/__init__.py",
+      "sha256": "6424f50e19dffe585d95a42ee0293b42367d07a611481996235ccc9046edb808"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/factor_kernel.c",
+      "sha256": "5d0e4b7046a9892adce8f79c1fc4062693ef29264b6807260cb6a30138e8c03e"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/farm.py",
+      "sha256": "d4766efc9346267cf22ee51e544274ad16963fd077539a1e212b66161b566718"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/kernel.py",
+      "sha256": "92ea901d5df0a969c29f0a9a4bd27e91f0433d699c8a5c786d43b859127d97a2"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/runtime.py",
+      "sha256": "349cae2a7d5f65d34ecef8949b03310dcf2441edb0923d6b2baaec83e87539e6"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/source/__init__.py",
+      "sha256": "87cedf8242d23220359aa18c0acef09d79621f342259cb500f302de9ea182e60"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/source/canonical.py",
+      "sha256": "3b9a03afe80da76db81851b51e820a874d5b2fced2f0506f1ae1ae01c2684897"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/source/routes.py",
+      "sha256": "e106a82fac36e2a661562c3f7a0d2ef8b222f1156d3d3c9981188a4605b7eb35"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/validation.py",
+      "sha256": "1e0c8a78897aecaaeb1aeeac195a7cb94b4c4bc0ec11dd6749e359e38e68f4e6"
+    },
+    {
+      "path": "CURRENT_REVISION/domains/MP/validation_kernel.py",
+      "sha256": "a5e3d41bd11f2cd35e1896b455b297ac07ccad7970b11e28eb6f27ccd0576469"
+    }
+  ],
+  "ce_engine": "SLC-GEN3-CEV1-R4",
+  "consumer_binding": "CURRENT_REVISION.runtime.open_domain",
+  "domain_revision_guard": "MP version checked at project calls; global R4 generation preserved",
+  "entrypoint": "./project start MP",
+  "execution_scope": "Native batched factor elimination, content-bound certificate validation, R4 retained-F closure and checkpoints",
+  "farm_head": {
+    "checkpoint": "SAM_REVIEW/campaigns/MP_GEN2_R4_FARM_TRAINING1/training/0_CERTIFY_FIRST/CHECKPOINT_127.json",
+    "checkpoint_semantic_sha256": "33017babde282b933a7c6af41402cc13c6c0d6756d3ef0826862d57e97970833",
+    "controller": "CURRENT_REVISION.domains.MP.farm",
+    "evaluation_range": [
+      128,
+      292
+    ],
+    "history_entry": "H001040",
+    "path": "CURRENT_REVISION/domains/MP/FARM_HEAD.json",
+    "scope": "Explicit farm controller; native MP_RUN retains its fixed-order baseline",
+    "selected_order": "BULK_FIRST",
+    "sha256": "142ec32b71c285d945377ace2297cf58df2244fa13763bf56ec861aa0907675b",
+    "training_range": [
+      2,
+      127
+    ],
+    "version": "MP-R4-FARM-HEAD1"
+  },
+  "gen2_capabilities": [
+    "NATIVE_SOURCE_COMPILATION",
+    "JOINT_CONDITIONAL_INVERSE_DAG",
+    "CHECKPOINT_RESTART",
+    "TARGET_BOUND_RECONSTRUCTIVE_CUSTODY",
+    "EXACT_HD_LN2_LN3",
+    "TYPED_CONSTRUCTION_PULLBACK",
+    "RADIAL_ANGULAR_EXACT_READOUTS",
+    "LI6_SITE_CYCLE",
+    "CAUSAL_ENCOUNTER",
+    "TAU_ROLE_EXCHANGE",
+    "H14F_RYZEN_780M_T500_NATIVE_BATCH",
+    "TYPED_FRAME_AND_DELTA_INVERSE",
+    "EXACT_TARGET_OBSERVATION_SELECTION",
+    "SEQUENTIAL_PROBE_ORIGINAL_TARGET_CUSTODY",
+    "AUTOMATIC_SOURCE_MOTION_PROFILES",
+    "EXACT_FIXED_SPHERE_SCALE_TURN",
+    "SIGNED_COUPLED_GOLDEN_PACKETS",
+    "MIDPACKET_MOTION_RESTART",
+    "AUTOMATIC_GEOMETRY_OBSERVATION_SELECTION",
+    "TYPED_QUANTITY_AND_REFERENCE_CONTRACTS",
+    "SIGNED_LOG_VALUE_CONTRIBUTION_GRAPH",
+    "SOURCE_DECLARED_OBSERVATION_RESOLUTION",
+    "TARGET_DEPENDENT_READOUT_DETAIL",
+    "ADAPTIVE_TWO_STEP_INVERSE_POLICY",
+    "REGISTERED_CONSTRUCTION_BOUNDARY_INFORMATION",
+    "EXACT_INCREMENTAL_LOG_HISTORY_SUMMARIES",
+    "INCREMENTAL_SOURCE_AND_CONDITIONAL_REUSE",
+    "SOURCE_BOUND_EXACT_DENSE_N72",
+    "FOUNDATIONAL_COMPLETED_WRITE_CLOCK",
+    "FOUNDATIONAL_SIGNED_ACTION_DENSITY",
+    "FOUNDATIONAL_CEFF_AND_CMB_SCALE",
+    "AUTOMATIC_NATIVE_WRITE_ARITHMETIC",
+    "COMPOSABLE_FOUNDATION_CHECKPOINTS",
+    "EXACT_FOUNDATION_READOUT_INVERSES"
+  ],
+  "generation": "GEN3-MATH-STRUCTURE1-20260920-G1",
+  "historical_revision": "CEV1-MPV4 (historical)",
+  "historical_services_started": false,
+  "installation_state": "INSTALLED_QUALIFIED",
+  "live_authority": "SAM_LIVE/04_PRIME_GRAMMAR_CURRENT.md",
+  "module": "CURRENT_REVISION.domains.MP.runtime",
+  "name": "MP",
+  "new_work_allowed": true,
+  "operations": [
+    "MP_VALIDATE",
+    "MP_VALIDATE_BATCH",
+    "MP_VALIDATE_REFS",
+    "MP_BULK_ELIMINATE",
+    "MP_CERTIFY",
+    "MP_RUN",
+    "MP_CHECKPOINT",
+    "MP_RESTORE",
+    "MP_REUSE_STATS",
+    "MP_BUILD_PLAN"
+  ],
+  "runtime_class": "MPNativeSession",
+  "runtime_path": "CURRENT_REVISION/domains/MP/runtime.py",
+  "runtime_sha256": "349cae2a7d5f65d34ecef8949b03310dcf2441edb0923d6b2baaec83e87539e6",
+  "status": "ACTIVE_NATIVE_RESEARCH",
+  "version": "MP-GEN2-R4-V1"
+}

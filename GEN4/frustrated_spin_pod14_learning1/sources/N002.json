@@ -1,0 +1,221 @@
+{
+  "key": "N002",
+  "source": {
+    "N": 2,
+    "edges": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "energy_bound_B": 6,
+    "family": "N96_INDUCED_TRANSITION_LADDER_V1",
+    "fields": [
+      1,
+      -2
+    ],
+    "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+    "parent_vertices": [
+      6,
+      55
+    ],
+    "source_sha256": "99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb"
+  },
+  "reference": {
+    "N": 2,
+    "checks": {
+      "count": true,
+      "first_moment": true,
+      "independent_enumeration": true,
+      "polynomial_support": true,
+      "port_counts": true,
+      "second_moment": true
+    },
+    "closed_port_rows": [
+      [
+        [
+          -4,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          6,
+          "1"
+        ]
+      ],
+      [
+        [
+          -2,
+          "1"
+        ]
+      ]
+    ],
+    "configuration_count": "4",
+    "energy_convention": "E=-sum(J*s_u*s_v)-sum(h*s_u); spin bit 0=-1,1=+1",
+    "ground_degeneracy": "1",
+    "ground_energy": -4,
+    "local_energy_bound": 3,
+    "open_y_operator": [
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ]
+    ],
+    "parent_port_vertices": [
+      6,
+      55
+    ],
+    "reconstruction_ns": 2815753,
+    "removed_glue_edges": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "retained_ports": [
+      0,
+      1
+    ],
+    "scalar_dos": [
+      [
+        -4,
+        "1"
+      ],
+      [
+        -2,
+        "1"
+      ],
+      [
+        0,
+        "1"
+      ],
+      [
+        6,
+        "1"
+      ]
+    ],
+    "source_sha256": "99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb",
+    "spectrum_sha256": "225144b6bf775458dfdc32a7f9f1a5934fbe85aada63935d7a23b0cf1e0bc9dd"
+  },
+  "features": {
+    "N": 2,
+    "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+    "graph_hash": "97cae03cf91610ceacc7f88e7f97637763d4a96f50c9da364fc8d3ee33768940",
+    "source_hash": "99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb",
+    "edges": 1,
+    "degree_min": 1,
+    "degree_max": 1,
+    "degree_mean": 1,
+    "degree_std": 0.0,
+    "components": 1,
+    "component_sizes": [
+      2
+    ],
+    "max_component": 2,
+    "local_assignments": 4,
+    "minfill_width": 1,
+    "minfill_work": 3,
+    "minfill_order": [
+      0,
+      1
+    ],
+    "energy_bound": 6,
+    "root_bound": 8,
+    "crt_primes": 1,
+    "arithmetic_burden": 24,
+    "coefficient_bound": "4",
+    "coupling_multiplicities": {
+      "3": 1
+    },
+    "symmetry": "not assumed",
+    "degree_signature": [
+      1,
+      1
+    ]
+  },
+  "plan": {
+    "N": 2,
+    "candidates": [
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "fresh_min_fill",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 5560,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "parent_plan",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 3370,
+        "weighted_entries": 0,
+        "width": 0
+      }
+    ],
+    "glue": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "local_bound": 3,
+    "parent_elimination_order": [],
+    "planning_ns": 23400,
+    "ports": [
+      0,
+      1
+    ],
+    "primes": [
+      998244353
+    ],
+    "root_count": 4,
+    "selected": {
+      "branches": 1,
+      "cutset": [],
+      "method": "fresh_min_fill",
+      "order": [],
+      "output_entries": 0,
+      "planning_ns": 5560,
+      "weighted_entries": 0,
+      "width": 0
+    },
+    "source_sha256": "99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb"
+  },
+  "source_lineage": "N96_INDUCED_TRANSITION_LADDER_V1",
+  "canonical": true
+}

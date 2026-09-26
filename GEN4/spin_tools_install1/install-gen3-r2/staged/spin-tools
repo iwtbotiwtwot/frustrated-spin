@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eu
+spin_tools_root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$spin_tools_root"
+if [ -x "$spin_tools_root/.venv-r3/bin/python" ]; then
+    spin_tools_python="$spin_tools_root/.venv-r3/bin/python"
+    spin_tools_command=''
+    spin_tools_skip=0
+    for spin_tools_arg in "$@"; do
+        if [ "$spin_tools_skip" = 1 ]; then spin_tools_skip=0; continue; fi
+        case "$spin_tools_arg" in
+            --root|--session|--output) spin_tools_skip=1 ;;
+            --full) ;;
+            sources|source|select|solve|contract|readout|call) spin_tools_command="$spin_tools_arg"; break ;;
+        esac
+    done
+    case "$spin_tools_command" in
+        select|solve|contract|readout|call)
+            exec "$spin_tools_python" -B "$spin_tools_root/CURRENT_REVISION/engines/SLC/gen3/resources.py" run --role controller -- "$spin_tools_python" -B "$spin_tools_root/CURRENT_REVISION/engines/SLC/gen3/spin_cli.py" "$@" ;;
+        *) exec "$spin_tools_python" -B "$spin_tools_root/CURRENT_REVISION/engines/SLC/gen3/spin_cli.py" "$@" ;;
+    esac
+fi
+if [ -x /opt/gen4/venv/bin/python ]; then
+    exec /opt/gen4/venv/bin/python -B "$spin_tools_root/CURRENT_REVISION/engines/SLC/gen3/spin_cli.py" "$@"
+fi
+echo 'spin-tools requires the local .venv-r3 or the GEN4 /opt/gen4/venv environment.' >&2
+exit 1

@@ -1,0 +1,336 @@
+{
+  "question_id": "cacd8f22d19e61e9d792",
+  "value": {
+    "status": "EXACT",
+    "answer": {
+      "schema": "GEN3_EXACT_SPIN_DOS_V1",
+      "source_sha256": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+      "N": 4,
+      "energy_convention": "E=-sum(J_uv*s_u*s_v)-sum(h_u*s_u); s_u in {-1,+1}",
+      "ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "port_state_convention": "bit i=1 is +1 at local vertex ports[i]; bit i=0 is -1",
+      "scalar_dos": [
+        [
+          -6,
+          "1"
+        ],
+        [
+          -4,
+          "3"
+        ],
+        [
+          -2,
+          "4"
+        ],
+        [
+          0,
+          "3"
+        ],
+        [
+          2,
+          "1"
+        ],
+        [
+          4,
+          "1"
+        ],
+        [
+          6,
+          "2"
+        ],
+        [
+          8,
+          "1"
+        ]
+      ],
+      "port_rows": [
+        {
+          "state": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -6,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -2,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              4,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -4,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              -2,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              2,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              8,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              0,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -4,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              0,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              6,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -2,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -4,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              0,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              6,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -2,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        }
+      ],
+      "configuration_count": "16",
+      "ground_energy": -6,
+      "ground_degeneracy": "1",
+      "energy_moments": {
+        "0": "16",
+        "1": "0",
+        "2": "256"
+      },
+      "spectrum_sha256": "1c10cc5a60926b04bec1062e6cfacdf118cfbd653e4e410286a2b85fe7f5d21c"
+    },
+    "execution": {
+      "arithmetic_work_units": 96,
+      "elapsed_ns": 838715
+    },
+    "verification": {
+      "full_scalar_equality": true,
+      "port_equality": true,
+      "configuration_count": "16",
+      "checks": "native exact count/first/second moment and all port closures passed"
+    },
+    "independent_verification": {
+      "full_scalar_equality": true,
+      "port_equality": true,
+      "configuration_count": "16",
+      "checks": "native exact count/first/second moment and all port closures passed"
+    }
+  },
+  "seconds": 0.25417705497238785,
+  "session": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/experiments/cacd8f22d19e61e9d792/sessions/MATTER_SEARCH_d38063c4ce3f4352939869f1d58c60e9",
+  "checkpoint": {
+    "schema": "GEN3_CHECKPOINT_REFERENCE_V1",
+    "root": "df7ab93ce2e9a632ebd3d030a83420ea0ae8c9019e2a287a62da2dc80917526d",
+    "binding": {
+      "version": "SLC-GEN4-P1",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "implementation_sha256": "ad3d0a3d7365821deb125b2dfb58a2b576b0a3fdedff4ed65df6bafee0647f86"
+    },
+    "local_durable": true,
+    "replicated": false
+  },
+  "cpu_seconds": 0.220983189,
+  "peak_RSS_KiB": 64152,
+  "source_hashes_verified": true
+}

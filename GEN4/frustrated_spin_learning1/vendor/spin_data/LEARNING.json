@@ -1,0 +1,218 @@
+{
+  "binding": {
+    "catalog": "GEN4_SPIN_TRANSITION_CATALOG_V1",
+    "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+    "source_roster_sha256": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7"
+  },
+  "fit": {
+    "class_weights": {
+      "negative": 1,
+      "positive": 7
+    },
+    "depth": 0,
+    "development": {
+      "balanced_accuracy": "1",
+      "correct": 1,
+      "exception_witnesses": [],
+      "positives": 1,
+      "rows": 1
+    },
+    "execution": {
+      "backend": "NATIVE_CPP_GMP_CPU",
+      "native_source_manifest": "d6804bd175af9ea81b9d23e49ea506121d51a4a6c78b4b7718c05c5d7f43fdaf",
+      "shared_R3_checkpoint": true
+    },
+    "feature_count": 6,
+    "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+    "model_sha256": "35ccdb9c8676fe1b2a5f358f1241736356b14c40dc02b2443daa1d7490f45136",
+    "name": "spin-transition-plan-v1",
+    "rules": [
+      {
+        "all_probability_ties_retained": true,
+        "classification_threshold": "1/8",
+        "conditions": [],
+        "n": 8,
+        "positive": 1,
+        "probability": "1/8",
+        "witness": "N2->N8:fresh=11;transfer=11"
+      }
+    ],
+    "selection": "development balanced accuracy; shallower on tie",
+    "source_binding": {
+      "catalog": "GEN4_SPIN_TRANSITION_CATALOG_V1",
+      "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+      "source_roster_sha256": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7"
+    },
+    "test_rows_reserved": 1,
+    "training": {
+      "balanced_accuracy": "1/2",
+      "correct": 1,
+      "exception_witnesses": [
+        "N2->N8:fresh=11;transfer=11",
+        "N8->N12:fresh=35;transfer=35",
+        "N12->N18:fresh=44;transfer=44",
+        "N18->N24:fresh=53;transfer=53",
+        "N24->N36:fresh=89;transfer=89",
+        "N36->N48:fresh=236;transfer=236",
+        "N48->N60:fresh=2661;transfer=3205"
+      ],
+      "positives": 1,
+      "rows": 8
+    },
+    "tree": {
+      "classification_threshold": "1/8",
+      "n": 8,
+      "positive": 1,
+      "probability": "1/8",
+      "witness": "N2->N8:fresh=11;transfer=11"
+    }
+  },
+  "model": {
+    "record": {
+      "model": {
+        "class_weights": {
+          "negative": 1,
+          "positive": 7
+        },
+        "depth": 0,
+        "development": {
+          "balanced_accuracy": "1",
+          "correct": 1,
+          "exception_witnesses": [],
+          "positives": 1,
+          "rows": 1
+        },
+        "feature_count": 6,
+        "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+        "rules": [
+          {
+            "all_probability_ties_retained": true,
+            "classification_threshold": "1/8",
+            "conditions": [],
+            "n": 8,
+            "positive": 1,
+            "probability": "1/8",
+            "witness": "N2->N8:fresh=11;transfer=11"
+          }
+        ],
+        "selection": "development balanced accuracy; shallower on tie",
+        "test_rows_reserved": 1,
+        "training": {
+          "balanced_accuracy": "1/2",
+          "correct": 1,
+          "exception_witnesses": [
+            "N2->N8:fresh=11;transfer=11",
+            "N8->N12:fresh=35;transfer=35",
+            "N12->N18:fresh=44;transfer=44",
+            "N18->N24:fresh=53;transfer=53",
+            "N24->N36:fresh=89;transfer=89",
+            "N36->N48:fresh=236;transfer=236",
+            "N48->N60:fresh=2661;transfer=3205"
+          ],
+          "positives": 1,
+          "rows": 8
+        },
+        "tree": {
+          "classification_threshold": "1/8",
+          "n": 8,
+          "positive": 1,
+          "probability": "1/8",
+          "witness": "N2->N8:fresh=11;transfer=11"
+        }
+      },
+      "name": "spin-transition-plan-v1",
+      "origin": "NATIVE_CLASS_BALANCED_CART_SUCCESSOR",
+      "source_binding": {
+        "catalog": "GEN4_SPIN_TRANSITION_CATALOG_V1",
+        "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+        "source_roster_sha256": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7"
+      },
+      "training_input_sha256": "e59c03bb8f3ffbbf00b856d03be522672a9a68fa57c4aa1109849f00e24cfa92"
+    },
+    "sha256": "35ccdb9c8676fe1b2a5f358f1241736356b14c40dc02b2443daa1d7490f45136"
+  },
+  "predictions": {
+    "all_ties_retained": true,
+    "execution": {
+      "backend": "NATIVE_CPP_GMP_CPU",
+      "native_source_manifest": "d6804bd175af9ea81b9d23e49ea506121d51a4a6c78b4b7718c05c5d7f43fdaf",
+      "shared_R3_checkpoint": true
+    },
+    "model_sha256": "35ccdb9c8676fe1b2a5f358f1241736356b14c40dc02b2443daa1d7490f45136",
+    "name": "spin-transition-plan-v1",
+    "predictions": [
+      {
+        "id": "0",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "1",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "2",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "3",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "4",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "5",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "6",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "7",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "8",
+        "positive": true,
+        "probability": "1/8"
+      },
+      {
+        "id": "9",
+        "positive": true,
+        "probability": "1/8"
+      }
+    ],
+    "ranked_tie_groups": [
+      {
+        "ids": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "probability": "1/8"
+      }
+    ],
+    "source_binding": {
+      "catalog": "GEN4_SPIN_TRANSITION_CATALOG_V1",
+      "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+      "source_roster_sha256": "a8b74098bc87e126ef6fbe2c9dd22b4396a80faec10a26fb8c4aca3b3aa6c1f7"
+    }
+  }
+}

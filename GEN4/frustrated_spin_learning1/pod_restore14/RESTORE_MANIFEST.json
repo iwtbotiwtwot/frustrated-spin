@@ -1,0 +1,80 @@
+{
+  "status": "RESTORED_AND_QUALIFIED_RESEARCH_RUNNING",
+  "created_utc": "2026-09-26T16:38:30.768065+00:00",
+  "historical_hardware": {
+    "gpu_workers": 14,
+    "gpu": "Blackwell MIG 1g.24gb",
+    "cpu_quota_equivalents": 47.6,
+    "host_memory_bytes": 880000000000
+  },
+  "processes": {
+    "gpu": "14 persistent process owners; shared task queue",
+    "cpu": "shared preparation and exact reconstruction; BLAS/OMP/MKL threads=1; no independent 8-CPU-worker research pool",
+    "exact_readout": "batched inverse NTT and precomputed integer CRT",
+    "focused": "retained expanded source plans, reusable maps and CUDA graphs",
+    "large_sources": "N120 branch-group backend, five-prime support",
+    "storage": "container code/scratch; RAM/VRAM work; compact durable checkpoints"
+  },
+  "files": [
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/runtime-predecessor.tar.gz",
+      "sha256": "5e199683fec507bd230c3dabda8739ec5d626fc9e012cef98044d9db0658ea31",
+      "bytes": 382608419
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/exact-source.tar.gz",
+      "sha256": "0771450e2d8eba055e76e29cd6cdcc4661980c90b8b710271735d84e2c968f45",
+      "bytes": 1148487
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/catalog-code.tar.gz",
+      "sha256": "01823b22ef1963c80da904f143753b8608097ccf69d5eb333521e57d9f70d45b",
+      "bytes": 2930228
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/training-code.tar.gz",
+      "sha256": "c4f125cd2106bdc1d62932eb94b6fe0b985e87f0ff22af06e61deb79960ac836",
+      "bytes": 53322
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/focused-code.tar.gz",
+      "sha256": "1df8e7f9370cb046dabdb954498c0279c1060438b092ead8d2816aa83cb35269",
+      "bytes": 32280
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/n120-code.tar.gz",
+      "sha256": "acad8589ae258c3c12eaff498c99760068b331996a3d48a60d0c6bd7cf5489f8",
+      "bytes": 63516
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_training1/restart/activity.so",
+      "sha256": "ffd071f03bf246f1813588537aff5ea615fa14ccc51ce3ecb9e6af5b6c428759",
+      "bytes": 17816
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_focused_install1/installation.tar.gz",
+      "sha256": "4501f2f51fe88a5b3900e7cdf83aa73e6d2806147de959b662c335d4f5c2583b",
+      "bytes": 823718
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_gap_97_119_1/controller.py",
+      "sha256": "f93317c6d75c94174a5f4e044fd228c28cdd4ef66bba31fe6a88f3343c11382c",
+      "bytes": 3338
+    },
+    {
+      "path": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_gap_97_119_1/prepare_gap.py",
+      "sha256": "009db2f4a957c37665673ac34a9e541e6a94559e358fbbc95621a1c29b80bdee",
+      "bytes": 3013
+    }
+  ],
+  "remote_applied": true,
+  "historical_sources": [
+    "GEN4/frustrated_spin_focused_training1/RESTART.md",
+    "GEN4/frustrated_spin_focused_training1/RESULT.md",
+    "GEN4/spin_gap_97_119_1/README.md"
+  ],
+  "remote_configuration": "results/CONFIGURATION.json",
+  "research_pid": 6331,
+  "ssh": "root@81.27.69.178 -p 32272",
+  "research_deadline_utc": "2026-09-26T23:47:44.255410+00:00"
+}

@@ -1,0 +1,245 @@
+{
+  "kind": "solve",
+  "N": 19,
+  "method": "transition_priority",
+  "variant": null,
+  "question": "solve: N19 transition_priority Counterfactual exact route for cheap source; compare all coefficients",
+  "why_chosen": "Counterfactual exact route for cheap source; compare all coefficients",
+  "expected_information_gain": 7,
+  "predicted_cost_seconds": 0.3,
+  "maximum_admitted_seconds": 120,
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "frozen graph structure and prior completed experiments; no future output",
+  "expected_discriminating_outcomes": [
+    "structural or exact equality supports scoped hypothesis",
+    "counterexample or resource rejection changes next frontier"
+  ],
+  "verification_contract": "native source-bound receipt; every DOS retains full counts/moments/port closure; compare canonical or independent route; structural plans are not new spectra",
+  "plan": {
+    "N": 19,
+    "source_sha256": "326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677",
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "glue": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "local_bound": 44,
+    "root_count": 64,
+    "primes": [
+      998244353
+    ],
+    "selected": {
+      "method": "transition_priority",
+      "cutset": [],
+      "branches": 1,
+      "order": [
+        12,
+        16,
+        18,
+        11,
+        10,
+        13,
+        14,
+        17,
+        15,
+        4,
+        6,
+        5,
+        7,
+        8,
+        9
+      ],
+      "width": 3,
+      "output_entries": 45,
+      "weighted_entries": 45,
+      "planning_ns": 87331
+    },
+    "candidates": [
+      {
+        "method": "fresh_min_fill",
+        "cutset": [],
+        "branches": 1,
+        "order": [
+          12,
+          16,
+          18,
+          11,
+          10,
+          13,
+          14,
+          17,
+          15,
+          4,
+          6,
+          5,
+          7,
+          8,
+          9
+        ],
+        "width": 3,
+        "output_entries": 45,
+        "weighted_entries": 45,
+        "planning_ns": 107942
+      },
+      {
+        "method": "transition_priority",
+        "cutset": [],
+        "branches": 1,
+        "order": [
+          12,
+          16,
+          18,
+          11,
+          10,
+          13,
+          14,
+          17,
+          15,
+          4,
+          6,
+          5,
+          7,
+          8,
+          9
+        ],
+        "width": 3,
+        "output_entries": 45,
+        "weighted_entries": 45,
+        "planning_ns": 87331
+      },
+      {
+        "method": "parent_plan",
+        "cutset": [],
+        "branches": 1,
+        "order": [
+          15,
+          16,
+          11,
+          13,
+          17,
+          8,
+          4,
+          7,
+          5,
+          14,
+          9,
+          10,
+          6,
+          12,
+          18
+        ],
+        "width": 4,
+        "output_entries": 67,
+        "weighted_entries": 67,
+        "planning_ns": 13366
+      }
+    ],
+    "parent_elimination_order": [
+      3,
+      9,
+      15,
+      17,
+      5,
+      4,
+      7,
+      10,
+      8,
+      0,
+      1,
+      12,
+      13,
+      2,
+      14
+    ],
+    "planning_ns": 240741,
+    "execution_admitted": true,
+    "prime_product_sufficient": true,
+    "training_method": "transition_priority",
+    "mathematical_plan_sha256": "a6966000539dcce3f408e75431a40b7cc0e101cad8dbf445bd26577227f0403f"
+  },
+  "question_id": "a4ea7f3a8d564dfa5ea4",
+  "score": 23.333333333333336,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "8ae5ab9d1c0d1dba927765eb4fff00aa821c1bebbb8bf441b4ea43611d3f2f78",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "inputs_hashes": {
+    "canonical/N019.json": "bf3895d7fdc87af26659962158ba0e0cc8126043bff9d171227d159bd21c659f"
+  },
+  "candidate_methods": [
+    "transition_priority"
+  ],
+  "timestamp": 1790403408.4167607,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 23461277696,
+      "prelaunch_available_cpu_equivalents": 1.996007984031936,
+      "cpu_equivalents": 1.3972055888223551,
+      "cpu_quota_percent": 139.72,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 16422894387,
+      "memory_high_bytes": 14780604948,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T06:16:48Z"
+    },
+    "cpu_cap": 1.3972055888223551,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1843205 56.9  0.1 python",
+      "1209887  5.2  2.0 firefox-bin",
+      "1776178  2.8  1.4 Isolated Web Co",
+      "   1925  2.7  0.4 cinnamon",
+      "   1382  2.5  0.4 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  1.0 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  1.9 Isolated Web Co",
+      "1843033  0.6  0.3 cinnamon-screen",
+      "1210108  0.6  0.2 RDD Process",
+      "1776069  0.4  1.5 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "6e0fb3c23e023cf9af399de0c6af8c19a64152c211464e1c0aa0bcc23d3c9bae"
+}

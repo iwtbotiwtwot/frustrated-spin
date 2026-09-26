@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-09-26T20:36:55.999380+00:00",
+  "owner": "Sean Brady",
+  "primary_family": "packet",
+  "secondary_prediction_families": [
+    "signed_packet",
+    "signed_packet_chain"
+  ],
+  "prediction": {
+    "metric": "median of 31 warm exact full-spectrum solves",
+    "threshold_ms": 25,
+    "strict": true,
+    "hardware": "workstation Intel i9-12900HK",
+    "predicted_medians_from_size_scaling_ms": {
+      "packet": 15.554,
+      "signed_packet": 15.983,
+      "signed_packet_chain": 17.12
+    }
+  },
+  "sources": [
+    {
+      "family": "packet",
+      "key": "packet_N300",
+      "N": 300,
+      "source_hash": "b173fbde37f4dabcedaacfe8e9804e14a3fb2c6b696623d1c6acb7fb33c9eb2f",
+      "record_hash": "8c59ea12fc6b0948ec453acd3165e9789d1a82400e75ea0c9ba7108899f54dd8",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ],
+      "components": 20,
+      "edges": 800,
+      "frustrated_triangle_witnesses": 0,
+      "inherited_N120_hash": "5291559bddf1c76bc931f8667cab8b62bf9cc4d9d06d2d08b4e98da8cffb01e5"
+    },
+    {
+      "family": "signed_packet",
+      "key": "signed_packet_N300",
+      "N": 300,
+      "source_hash": "f8e4dbe25702457e872f43a953108e362b66160fb2c448633bab643a8fda643d",
+      "record_hash": "adff39fef7eeb2ad59b876d137f17f922d48b12e7f1ad36f3befc36a5d063a30",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ],
+      "components": 20,
+      "edges": 800,
+      "frustrated_triangle_witnesses": 60,
+      "inherited_N120_hash": "0f00863c83ad09cbfbb2208e2de0226475e1efdcfcd5a02d0a35c2504572e631"
+    },
+    {
+      "family": "signed_packet_chain",
+      "key": "signed_packet_chain_N300",
+      "N": 300,
+      "source_hash": "fe003312d0d7efe73522f56e1659da6fd36704b35a6a7c6ca9d58e4e49faaabb",
+      "record_hash": "36c50b6fff1c437f35a9dfcf9c47f1baa0e16ea0674e3d5ccd2dfe58f5c0a590",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ],
+      "components": 1,
+      "edges": 819,
+      "frustrated_triangle_witnesses": 60,
+      "inherited_N120_hash": "72edd590741aebaf42fb5761c30499a6396f51618e6b256ef407d65a715cfca5"
+    }
+  ],
+  "protocol_sha256": "d9ed0b03d6c2e7a75698337ec149af00ceed7b2811955350a6e3c6da2086372f",
+  "target_size_executed": false,
+  "source_size_holdouts_preserved": [
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144
+  ],
+  "warm_repeats": 31,
+  "empty_cache_repeats": 5,
+  "refinement_repeats": 11,
+  "wrong_controls": 6
+}

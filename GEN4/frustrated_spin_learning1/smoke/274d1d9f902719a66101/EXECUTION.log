@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/worker.py", line 8, in <module>
+    with DomainSession.start('MATTER_SEARCH',objective=q['question'],output_root=out/'sessions',receipt_storage='gzip') as s:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 131, in start
+    return cls(directory, shared_ce=shared_ce, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 83, in __init__
+    self.consumer = open_domain(self.domain)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/CURRENT_REVISION/runtime.py", line 198, in open_domain
+    return Domain(name)
+           ^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/CURRENT_REVISION/domain.py", line 7, in __init__
+    self.ce=open_ce()
+            ^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/CURRENT_REVISION/runtime.py", line 187, in open_ce
+    return module.CurrentCE(pointer_path=current_path(row["binding_path"]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/CURRENT_REVISION/engines/CE/gen2_current.py", line 25, in __init__
+    self.slc = load_slc()
+               ^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/CURRENT_REVISION/runtime.py", line 181, in load_slc
+    return _module("SLC", installed=installed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/CURRENT_REVISION/runtime.py", line 150, in _module
+    raise ValueError(f"current {name} binding differs")
+ValueError: current SLC binding differs
+Traceback (most recent call last):
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/worker.py", line 11, in <module>
+    value=s.execute('GEN4_FRUSTRATED_LEARN1',dict(code_sha256=sha(P/'research.py'),question=q),purpose=q['question'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 201, in execute
+    return self._call(operation, payload,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 174, in _call
+    result = action()
+             ^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 202, in <lambda>
+    lambda: self.consumer.execute(operation, payload), purpose=purpose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/research.py", line 153, in execute
+    if not q.get('variant'):r['verification']=compare_answer(r['answer'],c['spectrum'])
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/research.py", line 95, in compare_answer
+    if set(rows(actual))==set(rows(expected)):assert rows(actual)==rows(expected)
+           ^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/research.py", line 94, in rows
+    def rows(a):return {tuple(r['state']):dos(r['dos']) for r in a['closed_port_rows']}
+                                                                 ~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'closed_port_rows'

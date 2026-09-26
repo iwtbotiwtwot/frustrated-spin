@@ -1,0 +1,3994 @@
+{
+  "ladder": {
+    "calculations": 165,
+    "receipt_count": 177,
+    "complete": {
+      "evaluation": {
+        "combined": {
+          "excess_ns": 0,
+          "median_total_ns": 8035444432,
+          "method": "tie_portfolio"
+        },
+        "exact_structural_cost": {
+          "excess_ns": 0,
+          "median_total_ns": 8035444432,
+          "method": "tie_portfolio"
+        },
+        "fresh_baseline": {
+          "excess_ns": 2999137549,
+          "median_total_ns": 11034581981,
+          "method": "fresh_min_fill"
+        },
+        "nearest_experience": {
+          "excess_ns": 0,
+          "median_total_ns": 8035444432,
+          "method": "tie_portfolio"
+        },
+        "structural": {
+          "excess_ns": 0,
+          "median_total_ns": 8035444432,
+          "method": "tie_portfolio"
+        },
+        "transition": {
+          "excess_ns": 0,
+          "median_total_ns": 8035444432,
+          "method": "tie_portfolio"
+        }
+      },
+      "experience_ref": "9db8383c2190167e1cf519623fea3776efbbfbac2a2d7fe816a0a16b4e67c754",
+      "fresh_exact_solves": 165,
+      "methods": [
+        "fresh_min_fill",
+        "transition_priority",
+        "parent_plan",
+        "repair_transfer",
+        "tie_portfolio"
+      ],
+      "repeats": 3,
+      "session": "/dev/shm/gen4-spin-training1/sessions/MATTER_SEARCH_2cdfa2bcafac47d2a470a69bad3e8c0a",
+      "source_sizes": [
+        2,
+        8,
+        12,
+        18,
+        24,
+        36,
+        48,
+        60,
+        72,
+        84,
+        96
+      ],
+      "status": "COMPLETE"
+    },
+    "session": {
+      "application": null,
+      "application_binding": null,
+      "authority": "SAM_LIVE/06_BINDING_CURRENT.md",
+      "ce": "SLC-GEN4-CE-P1",
+      "chalkboard": "OFF_OWNER_SUSPENDED",
+      "created": "2026-09-25T01:49:00.339457+00:00",
+      "domain": "MATTER_SEARCH",
+      "domain_engine": "GEN3-R4",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "global_slc": "SLC-GEN4-P1",
+      "objective": "Train and compare repeated exact transition methods, then evaluate frozen policies on N96",
+      "receipt_scope": "Only calls made through this session are recorded",
+      "receipt_storage": "gzip",
+      "schema": "SAM_PROJECT_DOMAIN_SESSION_V1",
+      "startup_state": "READY_NO_RESEARCH_EXECUTED"
+    },
+    "measurement_seconds": 277.107416538,
+    "telemetry_seconds": 289.380854845047,
+    "peak_host_GiB": 9.800666809082031,
+    "best": [
+      {
+        "N": 2,
+        "aliases": [
+          "fresh_min_fill",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio",
+          "transition_priority"
+        ],
+        "beats_fresh": 0,
+        "case": 0,
+        "median_arithmetic_ns": 71689,
+        "median_total_ns": 1707019,
+        "method": "fresh_min_fill",
+        "plan_key": "b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+        "repetitions": 15
+      },
+      {
+        "N": 8,
+        "aliases": [
+          "parent_plan"
+        ],
+        "beats_fresh": 1,
+        "case": 7,
+        "median_arithmetic_ns": 351178,
+        "median_total_ns": 41054289,
+        "method": "parent_plan",
+        "plan_key": "5b8c90e07ff8405b1c0319acfe357e15ddffe6311e3cb99edbf3dd45f0b41e69",
+        "repetitions": 3
+      },
+      {
+        "N": 12,
+        "aliases": [
+          "fresh_min_fill",
+          "repair_transfer",
+          "tie_portfolio",
+          "transition_priority"
+        ],
+        "beats_fresh": 0,
+        "case": 10,
+        "median_arithmetic_ns": 716000,
+        "median_total_ns": 82193096,
+        "method": "fresh_min_fill",
+        "plan_key": "041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34",
+        "repetitions": 12
+      },
+      {
+        "N": 18,
+        "aliases": [
+          "fresh_min_fill",
+          "repair_transfer",
+          "tie_portfolio",
+          "transition_priority"
+        ],
+        "beats_fresh": 0,
+        "case": 15,
+        "median_arithmetic_ns": 946554,
+        "median_total_ns": 93315252,
+        "method": "fresh_min_fill",
+        "plan_key": "d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56",
+        "repetitions": 12
+      },
+      {
+        "N": 24,
+        "aliases": [
+          "parent_plan"
+        ],
+        "beats_fresh": 1,
+        "case": 22,
+        "median_arithmetic_ns": 1261722,
+        "median_total_ns": 81684539,
+        "method": "parent_plan",
+        "plan_key": "d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+        "repetitions": 3
+      },
+      {
+        "N": 36,
+        "aliases": [
+          "repair_transfer",
+          "transition_priority"
+        ],
+        "beats_fresh": 1,
+        "case": 26,
+        "median_arithmetic_ns": 3909921,
+        "median_total_ns": 184364520,
+        "method": "transition_priority",
+        "plan_key": "47b0c117c1d86d547bf5f6f8e721690c8bccf810828e45270d8629029b230593",
+        "repetitions": 6
+      },
+      {
+        "N": 48,
+        "aliases": [
+          "repair_transfer",
+          "transition_priority"
+        ],
+        "beats_fresh": 1,
+        "case": 31,
+        "median_arithmetic_ns": 4568827,
+        "median_total_ns": 349949655,
+        "method": "transition_priority",
+        "plan_key": "1f838a238b90f52070bf74357e03e45a74d664980a03b23d86bf3406a6454901",
+        "repetitions": 6
+      },
+      {
+        "N": 60,
+        "aliases": [
+          "repair_transfer",
+          "transition_priority"
+        ],
+        "beats_fresh": 1,
+        "case": 36,
+        "median_arithmetic_ns": 6717744,
+        "median_total_ns": 368636445,
+        "method": "transition_priority",
+        "plan_key": "9ed66c39eeb2d708e9f469e41826abd9aa657c7ad9342fb177257c54abdb884a",
+        "repetitions": 6
+      },
+      {
+        "N": 72,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 44,
+        "median_arithmetic_ns": 12806841,
+        "median_total_ns": 709090285,
+        "method": "tie_portfolio",
+        "plan_key": "017641906e7f6fc870196e5ffd95c6cc58471502d4a162f385413926d500bcf0",
+        "repetitions": 3
+      },
+      {
+        "N": 84,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 49,
+        "median_arithmetic_ns": 45285932,
+        "median_total_ns": 771166914,
+        "method": "tie_portfolio",
+        "plan_key": "3a29e336f0a403c84cd6e7f48b42fa40655b54c6879e270dc39fde5bf40188ac",
+        "repetitions": 3
+      },
+      {
+        "N": 96,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 54,
+        "median_arithmetic_ns": 6132241354,
+        "median_total_ns": 8035444432,
+        "method": "tie_portfolio",
+        "plan_key": "4704bdf032222f53a19667207ae6b4f67011fab61cd8e3f62984ced65b004207",
+        "repetitions": 3
+      }
+    ],
+    "models": {
+      "combined": {
+        "depth": 1,
+        "training": "19/30",
+        "development": "3/4"
+      },
+      "structural": {
+        "depth": 1,
+        "training": "19/30",
+        "development": "3/4"
+      },
+      "transition": {
+        "depth": 1,
+        "training": "19/30",
+        "development": "3/4"
+      }
+    }
+  },
+  "small": {
+    "calculations": 540,
+    "receipt_count": 561,
+    "complete": {
+      "evaluation": {
+        "27:combined": {
+          "best_median_ns": 28173987,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            28173987,
+            28173987
+          ]
+        },
+        "27:structural": {
+          "best_median_ns": 28173987,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            28173987,
+            28173987
+          ]
+        },
+        "27:transition": {
+          "best_median_ns": 28173987,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            28173987,
+            28173987
+          ]
+        },
+        "28:combined": {
+          "best_median_ns": 9544562,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            9544562,
+            9544562
+          ]
+        },
+        "28:structural": {
+          "best_median_ns": 9544562,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            9544562,
+            9544562
+          ]
+        },
+        "28:transition": {
+          "best_median_ns": 9544562,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            9544562,
+            9544562
+          ]
+        },
+        "29:combined": {
+          "best_median_ns": 8519478,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            8519478,
+            8519478
+          ]
+        },
+        "29:structural": {
+          "best_median_ns": 8519478,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            8519478,
+            8519478
+          ]
+        },
+        "29:transition": {
+          "best_median_ns": 8519478,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            8519478,
+            8519478
+          ]
+        },
+        "30:combined": {
+          "best_median_ns": 4517782,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            4517782,
+            4517782
+          ]
+        },
+        "30:structural": {
+          "best_median_ns": 4517782,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            4517782,
+            4517782
+          ]
+        },
+        "30:transition": {
+          "best_median_ns": 4517782,
+          "fastest_in_top_tie": true,
+          "predicted_tied_methods": [
+            "incremental_boundary"
+          ],
+          "selected_median_range_ns": [
+            4517782,
+            4517782
+          ]
+        }
+      },
+      "exact_calculations": 540,
+      "experience_ref": "6172caf37da20fe2495a4b904a047bd3420a0f23e13db05be826a7f9c38a2ae4",
+      "methods": [
+        "fresh_min_fill",
+        "transition_priority",
+        "parent_plan",
+        "repair_transfer",
+        "tie_portfolio",
+        "incremental_boundary"
+      ],
+      "repeats": 3,
+      "session": "/dev/shm/gen4-spin-n1-30-training1/sessions/MATTER_SEARCH_f5508690748342a58c936f218a3052ab",
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "status": "COMPLETE"
+    },
+    "session": {
+      "application": null,
+      "application_binding": null,
+      "authority": "SAM_LIVE/06_BINDING_CURRENT.md",
+      "ce": "SLC-GEN4-CE-P1",
+      "chalkboard": "OFF_OWNER_SUSPENDED",
+      "created": "2026-09-25T01:53:23.655557+00:00",
+      "domain": "MATTER_SEARCH",
+      "domain_engine": "GEN3-R4",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "global_slc": "SLC-GEN4-P1",
+      "objective": "Train every integer N1..30, including exact add-one-spin boundary transfer and native policy comparison",
+      "receipt_scope": "Only calls made through this session are recorded",
+      "receipt_storage": "gzip",
+      "schema": "SAM_PROJECT_DOMAIN_SESSION_V1",
+      "startup_state": "READY_NO_RESEARCH_EXECUTED"
+    },
+    "measurement_seconds": 37.03532193,
+    "telemetry_seconds": 41.672300577163696,
+    "peak_host_GiB": 9.744514465332031,
+    "best": [
+      {
+        "N": 1,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "structural": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1
+          ],
+          "transition": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "median_ns": 20730,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf",
+        "repetitions": 3
+      },
+      {
+        "N": 2,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            2,
+            1,
+            2,
+            1,
+            4,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "structural": [
+            2,
+            1,
+            2,
+            1,
+            4,
+            4,
+            1,
+            1
+          ],
+          "transition": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "median_ns": 25810,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb",
+        "repetitions": 3
+      },
+      {
+        "N": 3,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            3,
+            1,
+            3,
+            1,
+            8,
+            8,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "structural": [
+            3,
+            1,
+            3,
+            1,
+            8,
+            8,
+            1,
+            1
+          ],
+          "transition": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "median_ns": 37580,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+        "repetitions": 3
+      },
+      {
+        "N": 4,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            4,
+            2,
+            4,
+            1,
+            16,
+            8,
+            1,
+            3,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "structural": [
+            4,
+            2,
+            4,
+            1,
+            16,
+            8,
+            1,
+            1
+          ],
+          "transition": [
+            3,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "median_ns": 59219,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+        "repetitions": 3
+      },
+      {
+        "N": 5,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            5,
+            2,
+            5,
+            1,
+            32,
+            8,
+            1,
+            4,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "structural": [
+            5,
+            2,
+            5,
+            1,
+            32,
+            8,
+            1,
+            1
+          ],
+          "transition": [
+            4,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        "median_ns": 88010,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:258c2a4ff949114577ec2e8e11949dbaeec7ef3432cd2f634fefcde861ae0117",
+        "repetitions": 3
+      },
+      {
+        "N": 6,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            6,
+            3,
+            6,
+            1,
+            64,
+            16,
+            1,
+            5,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1
+          ],
+          "structural": [
+            6,
+            3,
+            6,
+            1,
+            64,
+            16,
+            1,
+            1
+          ],
+          "transition": [
+            5,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1
+          ]
+        },
+        "median_ns": 151179,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:473d02574cc7a661b725c821ba67e57e00b12ef300aeb1d47602959376a040a6",
+        "repetitions": 3
+      },
+      {
+        "N": 7,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            7,
+            4,
+            7,
+            1,
+            128,
+            16,
+            1,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            5,
+            3,
+            1
+          ],
+          "structural": [
+            7,
+            4,
+            7,
+            1,
+            128,
+            16,
+            1,
+            1
+          ],
+          "transition": [
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            5,
+            3,
+            1
+          ]
+        },
+        "median_ns": 310938,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:4034394a52387d4c50dc492d42caace86d7da5f5de824fe39a27a1e9eae7882c",
+        "repetitions": 3
+      },
+      {
+        "N": 8,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            8,
+            6,
+            8,
+            1,
+            256,
+            32,
+            1,
+            7,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            11,
+            5,
+            1
+          ],
+          "structural": [
+            8,
+            6,
+            8,
+            1,
+            256,
+            32,
+            1,
+            1
+          ],
+          "transition": [
+            7,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            11,
+            5,
+            1
+          ]
+        },
+        "median_ns": 577687,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:567e11eb337603247dc37b986e36bc1520dd5166e21f234c7e57bdfa812c67e9",
+        "repetitions": 3
+      },
+      {
+        "N": 9,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            9,
+            8,
+            7,
+            1,
+            128,
+            32,
+            1,
+            8,
+            1,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            15,
+            11,
+            1
+          ],
+          "structural": [
+            9,
+            8,
+            7,
+            1,
+            128,
+            32,
+            1,
+            1
+          ],
+          "transition": [
+            8,
+            1,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            15,
+            11,
+            1
+          ]
+        },
+        "median_ns": 945925,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:0de9fb2f1238632cf721304595a3822207684f650a0992dcf900ad92b8618fe3",
+        "repetitions": 3
+      },
+      {
+        "N": 10,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            10,
+            11,
+            6,
+            1,
+            64,
+            32,
+            1,
+            9,
+            1,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            31,
+            15,
+            1
+          ],
+          "structural": [
+            10,
+            11,
+            6,
+            1,
+            64,
+            32,
+            1,
+            1
+          ],
+          "transition": [
+            9,
+            1,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            31,
+            15,
+            1
+          ]
+        },
+        "median_ns": 1349082,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:10a7c79308377a16a943effe68b59a085f69c569b04047ea28a88cb8962b1725",
+        "repetitions": 3
+      },
+      {
+        "N": 11,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            11,
+            12,
+            6,
+            1,
+            64,
+            32,
+            1,
+            10,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            33,
+            31,
+            1
+          ],
+          "structural": [
+            11,
+            12,
+            6,
+            1,
+            64,
+            32,
+            1,
+            1
+          ],
+          "transition": [
+            10,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            33,
+            31,
+            1
+          ]
+        },
+        "median_ns": 1891308,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:2cd005310f5e125be4f3793e7039865435b7cca3f722ecc8b24a5d4ea6683d13",
+        "repetitions": 3
+      },
+      {
+        "N": 12,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            12,
+            13,
+            5,
+            1,
+            32,
+            64,
+            1,
+            11,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            35,
+            33,
+            1
+          ],
+          "structural": [
+            12,
+            13,
+            5,
+            1,
+            32,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            11,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            35,
+            33,
+            1
+          ]
+        },
+        "median_ns": 2198736,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:d43f02bf50cba6c1f979836775c85f22cf565bc1897f098c6c402ce05669c017",
+        "repetitions": 3
+      },
+      {
+        "N": 13,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            13,
+            13,
+            6,
+            1,
+            64,
+            64,
+            1,
+            12,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            36,
+            35,
+            1
+          ],
+          "structural": [
+            13,
+            13,
+            6,
+            1,
+            64,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            12,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            36,
+            35,
+            1
+          ]
+        },
+        "median_ns": 2345636,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:509a79b91dffd206dd81d6c5c95283bdc567735dd9e701df5e5049b25debadec",
+        "repetitions": 3
+      },
+      {
+        "N": 14,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            14,
+            14,
+            7,
+            1,
+            128,
+            64,
+            1,
+            13,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            38,
+            36,
+            1
+          ],
+          "structural": [
+            14,
+            14,
+            7,
+            1,
+            128,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            13,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            38,
+            36,
+            1
+          ]
+        },
+        "median_ns": 4784701,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:855ba61d8a1e476ab9f4a366f2b3cf320b37fb40b4200110740f2c9b86f8e195",
+        "repetitions": 3
+      },
+      {
+        "N": 15,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            15,
+            14,
+            8,
+            1,
+            256,
+            64,
+            1,
+            14,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            39,
+            38,
+            1
+          ],
+          "structural": [
+            15,
+            14,
+            8,
+            1,
+            256,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            14,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            39,
+            38,
+            1
+          ]
+        },
+        "median_ns": 9211333,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:2b8e55b1d695f87b2d8949f5627f50f0b303a3ed7b0a249f18d829714c01617e",
+        "repetitions": 3
+      },
+      {
+        "N": 16,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            16,
+            15,
+            8,
+            1,
+            256,
+            64,
+            1,
+            15,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            41,
+            39,
+            1
+          ],
+          "structural": [
+            16,
+            15,
+            8,
+            1,
+            256,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            15,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            41,
+            39,
+            1
+          ]
+        },
+        "median_ns": 16139511,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:25661c6ee48d9ffc98b3f70adcda03eb3e60f39e301c927fd9a7188bac7634b2",
+        "repetitions": 3
+      },
+      {
+        "N": 17,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            17,
+            15,
+            8,
+            1,
+            256,
+            64,
+            1,
+            16,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            42,
+            41,
+            1
+          ],
+          "structural": [
+            17,
+            15,
+            8,
+            1,
+            256,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            16,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            42,
+            41,
+            1
+          ]
+        },
+        "median_ns": 17274514,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:49df486bd5f14593f7d0c68ccafd2b2662ac87abfe8b9c129ce8b8c1124c0faa",
+        "repetitions": 3
+      },
+      {
+        "N": 18,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            18,
+            16,
+            9,
+            1,
+            512,
+            64,
+            1,
+            17,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            44,
+            42,
+            1
+          ],
+          "structural": [
+            18,
+            16,
+            9,
+            1,
+            512,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            17,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            44,
+            42,
+            1
+          ]
+        },
+        "median_ns": 23505586,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:1232a84a0582bb726c124d0930d0231adee6735906b94ed02e7da25fdc6d8fef",
+        "repetitions": 3
+      },
+      {
+        "N": 19,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            19,
+            16,
+            9,
+            1,
+            512,
+            64,
+            1,
+            18,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            45,
+            44,
+            1
+          ],
+          "structural": [
+            19,
+            16,
+            9,
+            1,
+            512,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            18,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            45,
+            44,
+            1
+          ]
+        },
+        "median_ns": 38898051,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677",
+        "repetitions": 3
+      },
+      {
+        "N": 20,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            20,
+            17,
+            9,
+            1,
+            512,
+            64,
+            1,
+            19,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            47,
+            45,
+            1
+          ],
+          "structural": [
+            20,
+            17,
+            9,
+            1,
+            512,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            19,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            47,
+            45,
+            1
+          ]
+        },
+        "median_ns": 42191081,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:9cb37e3de3b3abb56f127007b4d48f147f82cd8c1708a7eb831754b10a01e84c",
+        "repetitions": 3
+      },
+      {
+        "N": 21,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            21,
+            18,
+            9,
+            1,
+            512,
+            64,
+            1,
+            20,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            49,
+            47,
+            1
+          ],
+          "structural": [
+            21,
+            18,
+            9,
+            1,
+            512,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            20,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            49,
+            47,
+            1
+          ]
+        },
+        "median_ns": 48749542,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:50f6cb3f01e659454ac535833fe01689b82a8280bb7fae86e8ce661b1965ac91",
+        "repetitions": 3
+      },
+      {
+        "N": 22,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            22,
+            19,
+            9,
+            1,
+            512,
+            64,
+            1,
+            21,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            51,
+            49,
+            1
+          ],
+          "structural": [
+            22,
+            19,
+            9,
+            1,
+            512,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            21,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            51,
+            49,
+            1
+          ]
+        },
+        "median_ns": 53893170,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:e2e0b0207a0711b21f93a408e06df2b15201f0f66d8e720aabeeba38272c455e",
+        "repetitions": 3
+      },
+      {
+        "N": 23,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            23,
+            19,
+            10,
+            1,
+            1024,
+            64,
+            1,
+            22,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            52,
+            51,
+            1
+          ],
+          "structural": [
+            23,
+            19,
+            10,
+            1,
+            1024,
+            64,
+            1,
+            1
+          ],
+          "transition": [
+            22,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            52,
+            51,
+            1
+          ]
+        },
+        "median_ns": 70838286,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:0b5b315d2e763c00390a5bf64eb4856563cf3f7b01ecdcaa4b81841d42cc4d72",
+        "repetitions": 3
+      },
+      {
+        "N": 24,
+        "aliases": [
+          "parent_plan"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            24,
+            19,
+            4,
+            1,
+            83,
+            64,
+            1,
+            23,
+            1,
+            0,
+            0,
+            3,
+            1,
+            1,
+            1,
+            83,
+            52,
+            0
+          ],
+          "structural": [
+            24,
+            19,
+            4,
+            1,
+            83,
+            64,
+            1,
+            0
+          ],
+          "transition": [
+            23,
+            1,
+            0,
+            0,
+            3,
+            1,
+            1,
+            1,
+            83,
+            52,
+            0
+          ]
+        },
+        "median_ns": 92684612,
+        "method": "parent_plan",
+        "plan_key": "d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+        "repetitions": 3
+      },
+      {
+        "N": 25,
+        "aliases": [
+          "repair_transfer",
+          "transition_priority"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            25,
+            22,
+            3,
+            1,
+            57,
+            128,
+            1,
+            24,
+            1,
+            3,
+            3,
+            3,
+            1,
+            0,
+            1,
+            57,
+            53,
+            0
+          ],
+          "structural": [
+            25,
+            22,
+            3,
+            1,
+            57,
+            128,
+            1,
+            0
+          ],
+          "transition": [
+            24,
+            1,
+            3,
+            3,
+            3,
+            1,
+            0,
+            1,
+            57,
+            53,
+            0
+          ]
+        },
+        "median_ns": 160681196,
+        "method": "transition_priority",
+        "plan_key": "bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+        "repetitions": 6
+      },
+      {
+        "N": 26,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            26,
+            22,
+            8,
+            1,
+            256,
+            128,
+            1,
+            25,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            58,
+            57,
+            1
+          ],
+          "structural": [
+            26,
+            22,
+            8,
+            1,
+            256,
+            128,
+            1,
+            1
+          ],
+          "transition": [
+            25,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            58,
+            57,
+            1
+          ]
+        },
+        "median_ns": 35077815,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:9cfc8d76c5ed049a3560d62c05e15577c481572e2255ecc5616dd5650242317d",
+        "repetitions": 3
+      },
+      {
+        "N": 27,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            27,
+            25,
+            6,
+            1,
+            64,
+            128,
+            1,
+            26,
+            1,
+            3,
+            3,
+            3,
+            1,
+            0,
+            1,
+            68,
+            58,
+            1
+          ],
+          "structural": [
+            27,
+            25,
+            6,
+            1,
+            64,
+            128,
+            1,
+            1
+          ],
+          "transition": [
+            26,
+            1,
+            3,
+            3,
+            3,
+            1,
+            0,
+            1,
+            68,
+            58,
+            1
+          ]
+        },
+        "median_ns": 28173987,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:9a750cc6dae3c97a69ca9d7b7f81134e5882d31b270df0c6146fb2582561940f",
+        "repetitions": 3
+      },
+      {
+        "N": 28,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            28,
+            25,
+            6,
+            1,
+            64,
+            128,
+            1,
+            27,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            69,
+            68,
+            1
+          ],
+          "structural": [
+            28,
+            25,
+            6,
+            1,
+            64,
+            128,
+            1,
+            1
+          ],
+          "transition": [
+            27,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1,
+            69,
+            68,
+            1
+          ]
+        },
+        "median_ns": 9544562,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:ef6a22075d49330d49a2d9da5d0fdef280f524a6143a454e7cd57aa44d57887f",
+        "repetitions": 3
+      },
+      {
+        "N": 29,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            29,
+            27,
+            5,
+            1,
+            32,
+            128,
+            1,
+            28,
+            1,
+            2,
+            2,
+            3,
+            1,
+            0,
+            1,
+            72,
+            69,
+            1
+          ],
+          "structural": [
+            29,
+            27,
+            5,
+            1,
+            32,
+            128,
+            1,
+            1
+          ],
+          "transition": [
+            28,
+            1,
+            2,
+            2,
+            3,
+            1,
+            0,
+            1,
+            72,
+            69,
+            1
+          ]
+        },
+        "median_ns": 8519478,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:185f08ed8b7f564170edf87a168ac6636aca2012113b6154cc8342a40e44763c",
+        "repetitions": 3
+      },
+      {
+        "N": 30,
+        "aliases": [
+          "incremental_boundary"
+        ],
+        "best_label": 1,
+        "features": {
+          "combined": [
+            30,
+            28,
+            4,
+            1,
+            16,
+            128,
+            2,
+            29,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            74,
+            72,
+            1
+          ],
+          "structural": [
+            30,
+            28,
+            4,
+            1,
+            16,
+            128,
+            2,
+            1
+          ],
+          "transition": [
+            29,
+            1,
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            74,
+            72,
+            1
+          ]
+        },
+        "median_ns": 4517782,
+        "method": "incremental_boundary",
+        "plan_key": "incremental:3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+        "repetitions": 3
+      }
+    ],
+    "models": {
+      "combined": {
+        "depth": 1,
+        "training": "1",
+        "development": "23/36"
+      },
+      "structural": {
+        "depth": 1,
+        "training": "1",
+        "development": "23/36"
+      },
+      "transition": {
+        "depth": 1,
+        "training": "1",
+        "development": "23/36"
+      }
+    }
+  },
+  "full96": {
+    "calculations": 238,
+    "receipt_count": 348,
+    "complete": {
+      "evaluation": {
+        "81:combined": {
+          "best_ns": 835143468,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 835143468
+        },
+        "81:structural": {
+          "best_ns": 835143468,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 835143468
+        },
+        "81:transition": {
+          "best_ns": 835143468,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 835143468
+        },
+        "82:combined": {
+          "best_ns": 829767872,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 829767872
+        },
+        "82:structural": {
+          "best_ns": 829767872,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 829767872
+        },
+        "82:transition": {
+          "best_ns": 829767872,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 829767872
+        },
+        "83:combined": {
+          "best_ns": 866122528,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 866122528
+        },
+        "83:structural": {
+          "best_ns": 866122528,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 866122528
+        },
+        "83:transition": {
+          "best_ns": 866122528,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 866122528
+        },
+        "84:combined": {
+          "best_ns": 938010375,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 938010375
+        },
+        "84:structural": {
+          "best_ns": 938010375,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 938010375
+        },
+        "84:transition": {
+          "best_ns": 938010375,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 938010375
+        },
+        "85:combined": {
+          "best_ns": 937699627,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 937699627
+        },
+        "85:structural": {
+          "best_ns": 937699627,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 937699627
+        },
+        "85:transition": {
+          "best_ns": 937699627,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 937699627
+        },
+        "86:combined": {
+          "best_ns": 917726850,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 917726850
+        },
+        "86:structural": {
+          "best_ns": 917726850,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 917726850
+        },
+        "86:transition": {
+          "best_ns": 917726850,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 917726850
+        },
+        "87:combined": {
+          "best_ns": 1015460888,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 1015460888
+        },
+        "87:structural": {
+          "best_ns": 1015460888,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 1015460888
+        },
+        "87:transition": {
+          "best_ns": 1015460888,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 1015460888
+        },
+        "88:combined": {
+          "best_ns": 1282037157,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 1282037157
+        },
+        "88:structural": {
+          "best_ns": 1282037157,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 1282037157
+        },
+        "88:transition": {
+          "best_ns": 1282037157,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 1282037157
+        },
+        "89:combined": {
+          "best_ns": 1355157078,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 1355157078
+        },
+        "89:structural": {
+          "best_ns": 1355157078,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 1355157078
+        },
+        "89:transition": {
+          "best_ns": 1355157078,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 1355157078
+        },
+        "90:combined": {
+          "best_ns": 2976110858,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 2976110858
+        },
+        "90:structural": {
+          "best_ns": 2976110858,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 2976110858
+        },
+        "90:transition": {
+          "best_ns": 2976110858,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 2976110858
+        },
+        "91:combined": {
+          "best_ns": 3196758329,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 3196758329
+        },
+        "91:structural": {
+          "best_ns": 3196758329,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 3196758329
+        },
+        "91:transition": {
+          "best_ns": 3196758329,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 3196758329
+        },
+        "92:combined": {
+          "best_ns": 3156243429,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 3156243429
+        },
+        "92:structural": {
+          "best_ns": 3156243429,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 3156243429
+        },
+        "92:transition": {
+          "best_ns": 3156243429,
+          "excess_ns": 0,
+          "selected_method": "transition_priority",
+          "selected_ns": 3156243429
+        },
+        "93:combined": {
+          "best_ns": 5575601825,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 5575601825
+        },
+        "93:structural": {
+          "best_ns": 5575601825,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 5575601825
+        },
+        "93:transition": {
+          "best_ns": 5575601825,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 5575601825
+        },
+        "94:combined": {
+          "best_ns": 9384354966,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 9384354966
+        },
+        "94:structural": {
+          "best_ns": 9384354966,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 9384354966
+        },
+        "94:transition": {
+          "best_ns": 9384354966,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 9384354966
+        },
+        "95:combined": {
+          "best_ns": 9240339773,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 9240339773
+        },
+        "95:structural": {
+          "best_ns": 9240339773,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 9240339773
+        },
+        "95:transition": {
+          "best_ns": 9240339773,
+          "excess_ns": 0,
+          "selected_method": "fresh_min_fill",
+          "selected_ns": 9240339773
+        },
+        "96:combined": {
+          "best_ns": 8473945962,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 8473945962
+        },
+        "96:structural": {
+          "best_ns": 8473945962,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 8473945962
+        },
+        "96:transition": {
+          "best_ns": 8473945962,
+          "excess_ns": 0,
+          "selected_method": "tie_portfolio",
+          "selected_ns": 8473945962
+        }
+      },
+      "experience_ref": "4c472e6d22a9a5d912b883108f2744a341e1947fa95dc0d760e9c29d12edf1e4",
+      "fresh_training_solves": 238,
+      "gpu_warmups": 1,
+      "session": "/dev/shm/gen4-spin-full96-training1/sessions/MATTER_SEARCH_582872a1021e4394bdfb160e93383576",
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "status": "COMPLETE",
+      "unique_plan_cases": 134
+    },
+    "session": {
+      "application": null,
+      "application_binding": null,
+      "authority": "SAM_LIVE/06_BINDING_CURRENT.md",
+      "ce": "SLC-GEN4-CE-P1",
+      "chalkboard": "OFF_OWNER_SUSPENDED",
+      "created": "2026-09-25T02:06:48.977512+00:00",
+      "domain": "MATTER_SEARCH",
+      "domain_engine": "GEN3-R4",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "global_slc": "SLC-GEN4-P1",
+      "objective": "Train every integer N1..96 with fresh exact solves, deduplicated method comparisons and adaptive repeats",
+      "receipt_scope": "Only calls made through this session are recorded",
+      "receipt_storage": "gzip",
+      "schema": "SAM_PROJECT_DOMAIN_SESSION_V1",
+      "startup_state": "READY_NO_RESEARCH_EXECUTED"
+    },
+    "measurement_seconds": 216.425650234,
+    "telemetry_seconds": 243.50070571899414,
+    "peak_host_GiB": 10.904083251953125,
+    "best": [
+      {
+        "N": 1,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 0,
+        "median_ns": 964084,
+        "method": "fresh_min_fill",
+        "plan_sha256": "afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72",
+        "repetitions": 1
+      },
+      {
+        "N": 2,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 1,
+        "median_ns": 1725339,
+        "method": "fresh_min_fill",
+        "plan_sha256": "b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9",
+        "repetitions": 1
+      },
+      {
+        "N": 3,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 2,
+        "median_ns": 5727895,
+        "method": "fresh_min_fill",
+        "plan_sha256": "1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d",
+        "repetitions": 1
+      },
+      {
+        "N": 4,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 3,
+        "median_ns": 11163541,
+        "method": "fresh_min_fill",
+        "plan_sha256": "8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b",
+        "repetitions": 1
+      },
+      {
+        "N": 5,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 4,
+        "median_ns": 11275421,
+        "method": "fresh_min_fill",
+        "plan_sha256": "0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e",
+        "repetitions": 1
+      },
+      {
+        "N": 6,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 5,
+        "median_ns": 21103411,
+        "method": "fresh_min_fill",
+        "plan_sha256": "5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1",
+        "repetitions": 1
+      },
+      {
+        "N": 7,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "parent_plan",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 6,
+        "median_ns": 21037050,
+        "method": "fresh_min_fill",
+        "plan_sha256": "3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd",
+        "repetitions": 1
+      },
+      {
+        "N": 8,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 7,
+        "median_ns": 41411615,
+        "method": "fresh_min_fill",
+        "plan_sha256": "334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2",
+        "repetitions": 1
+      },
+      {
+        "N": 9,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 8,
+        "median_ns": 40621970,
+        "method": "fresh_min_fill",
+        "plan_sha256": "9072bb50d2adbc7acafc5ee597ca362d9882adad0514673414896674d4d3f417",
+        "repetitions": 1
+      },
+      {
+        "N": 10,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 9,
+        "median_ns": 42138651,
+        "method": "fresh_min_fill",
+        "plan_sha256": "959c2c94d5beac84d9569a0e22360bb5911c316f7ba1cd80743dc9a69c9e17d4",
+        "repetitions": 1
+      },
+      {
+        "N": 11,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 10,
+        "median_ns": 41135097,
+        "method": "fresh_min_fill",
+        "plan_sha256": "1a2840a6776083049732fa779e213dd0ff8ef557bc5f61868ea61f2f7096d9a5",
+        "repetitions": 1
+      },
+      {
+        "N": 12,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 11,
+        "median_ns": 81917216,
+        "method": "fresh_min_fill",
+        "plan_sha256": "041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34",
+        "repetitions": 1
+      },
+      {
+        "N": 13,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 12,
+        "median_ns": 81135041,
+        "method": "fresh_min_fill",
+        "plan_sha256": "6314f374778b2d6ba31d573150fd97c1efc841a933da9b8e1f50ee5b72a375fe",
+        "repetitions": 1
+      },
+      {
+        "N": 14,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 13,
+        "median_ns": 80012038,
+        "method": "fresh_min_fill",
+        "plan_sha256": "95b94db47724e0c89e2e84824ddb6f8fba8743f303200a4012bb2800305137ef",
+        "repetitions": 1
+      },
+      {
+        "N": 15,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 14,
+        "median_ns": 81020752,
+        "method": "fresh_min_fill",
+        "plan_sha256": "4131aa22800c8eb8a7528c8bfd1a1477f9765abef56e28e9649857fe6ac96cdf",
+        "repetitions": 1
+      },
+      {
+        "N": 16,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 15,
+        "median_ns": 81931955,
+        "method": "fresh_min_fill",
+        "plan_sha256": "a63dcd51edb378160ccb93fc28ef241150cc379db99bd4ce798daebc83527df1",
+        "repetitions": 1
+      },
+      {
+        "N": 17,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 16,
+        "median_ns": 101043598,
+        "method": "fresh_min_fill",
+        "plan_sha256": "63f8cb418fffb26e56078db145acf39ecf7071306a49429b212e40e677043629",
+        "repetitions": 1
+      },
+      {
+        "N": 18,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 17,
+        "median_ns": 80691493,
+        "method": "fresh_min_fill",
+        "plan_sha256": "d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56",
+        "repetitions": 1
+      },
+      {
+        "N": 19,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 18,
+        "median_ns": 80789092,
+        "method": "fresh_min_fill",
+        "plan_sha256": "a6966000539dcce3f408e75431a40b7cc0e101cad8dbf445bd26577227f0403f",
+        "repetitions": 1
+      },
+      {
+        "N": 20,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 19,
+        "median_ns": 82774230,
+        "method": "fresh_min_fill",
+        "plan_sha256": "9427e89610ccca68758f676f8c8b6c654f6e30694fcd9b8e007e48b938fec0cb",
+        "repetitions": 1
+      },
+      {
+        "N": 21,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 20,
+        "median_ns": 82524972,
+        "method": "fresh_min_fill",
+        "plan_sha256": "cd18298d9d8cab891f7773f187a85bc1a6e374829b41b83b168f7ad3ce8c843b",
+        "repetitions": 1
+      },
+      {
+        "N": 22,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 21,
+        "median_ns": 82776460,
+        "method": "fresh_min_fill",
+        "plan_sha256": "8d01bd271753b0212d97d34aa755ca59106c9dccad659f99a8d3fb37d919a4a5",
+        "repetitions": 1
+      },
+      {
+        "N": 23,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 22,
+        "median_ns": 82559831,
+        "method": "fresh_min_fill",
+        "plan_sha256": "f80dc4eaff774a2917d5131caf32ff8eff9ae02dc3f1afe9fd30312471c3e3ee",
+        "repetitions": 1
+      },
+      {
+        "N": 24,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 23,
+        "median_ns": 83306847,
+        "method": "fresh_min_fill",
+        "plan_sha256": "661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa",
+        "repetitions": 1
+      },
+      {
+        "N": 25,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 24,
+        "median_ns": 160507742,
+        "method": "fresh_min_fill",
+        "plan_sha256": "2fa08b36ad9662553210670dbf1d6a7b9594fab7c302e17290bf8b047763d8f8",
+        "repetitions": 1
+      },
+      {
+        "N": 26,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 25,
+        "median_ns": 161445176,
+        "method": "fresh_min_fill",
+        "plan_sha256": "d0c42a27c2867e37b5db84573d41f2c5b70de9f2a87c4d0fd7651cc58cced687",
+        "repetitions": 1
+      },
+      {
+        "N": 27,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 26,
+        "median_ns": 161358117,
+        "method": "fresh_min_fill",
+        "plan_sha256": "634698d19703348984d670d8be53ebec40f285c1d3899aafea0d120759b3b050",
+        "repetitions": 1
+      },
+      {
+        "N": 28,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 27,
+        "median_ns": 160690290,
+        "method": "fresh_min_fill",
+        "plan_sha256": "25d29fe0513b0874303eeb47f492c8d3f225aeb401e4f3dd013b30acbe104cb8",
+        "repetitions": 1
+      },
+      {
+        "N": 29,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 28,
+        "median_ns": 160671691,
+        "method": "fresh_min_fill",
+        "plan_sha256": "0e8e13a3da59919fab5f81ca338c74e2ba00976bd8b14a34f7a464daba1dca81",
+        "repetitions": 1
+      },
+      {
+        "N": 30,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 29,
+        "median_ns": 166381875,
+        "method": "fresh_min_fill",
+        "plan_sha256": "c84f8cb0a465ef387e7e5a8e67d64544dd848a7f31b9ef1a32274bac4e71ee07",
+        "repetitions": 1
+      },
+      {
+        "N": 31,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 30,
+        "median_ns": 183232392,
+        "method": "fresh_min_fill",
+        "plan_sha256": "8d237889742b5c604505cb81ed79f11e73e8ec6842c82deac5a08d4599d06298",
+        "repetitions": 1
+      },
+      {
+        "N": 32,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 31,
+        "median_ns": 185093591,
+        "method": "fresh_min_fill",
+        "plan_sha256": "4d3aae5a193380a02195a79379fa779c048415eb44efa85f2115228742de553d",
+        "repetitions": 1
+      },
+      {
+        "N": 33,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 32,
+        "median_ns": 234611216,
+        "method": "fresh_min_fill",
+        "plan_sha256": "53fac9401660d7b23b219f7cb038298da0e692040f0bf57c3d381273939b7181",
+        "repetitions": 1
+      },
+      {
+        "N": 34,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 33,
+        "median_ns": 194114145,
+        "method": "fresh_min_fill",
+        "plan_sha256": "02021d63ddbabdbde98184bc34860e8b2205353bd9929fafbe0693c3c577f330",
+        "repetitions": 1
+      },
+      {
+        "N": 35,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 34,
+        "median_ns": 194650611,
+        "method": "fresh_min_fill",
+        "plan_sha256": "cf6e806c8475003d8f62d3ad336eb23d9c4ea3b7aa7908a2b79db059e83f8694",
+        "repetitions": 1
+      },
+      {
+        "N": 36,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 35,
+        "median_ns": 201039262,
+        "method": "fresh_min_fill",
+        "plan_sha256": "727d29d95ef64f8371ea00c9313c954fbdc7b69ef8d7d28dcf6b10a77b6a4176",
+        "repetitions": 1
+      },
+      {
+        "N": 37,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 36,
+        "median_ns": 188424130,
+        "method": "fresh_min_fill",
+        "plan_sha256": "94a1ae1fdf421c7f03aa3b7f36fefe3af701e94b61d145dc62b144cdd9b6ef40",
+        "repetitions": 1
+      },
+      {
+        "N": 38,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 37,
+        "median_ns": 196067203,
+        "method": "fresh_min_fill",
+        "plan_sha256": "d472e8f5053bf1917708a1fd05123e703b0299e8a161fdbb7879dcadd1c916e5",
+        "repetitions": 1
+      },
+      {
+        "N": 39,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 38,
+        "median_ns": 292336930,
+        "method": "fresh_min_fill",
+        "plan_sha256": "1b5b0bfa38e6062b4f3a0d5ca25b8a9354619e5cbe6e0cd4f26c70ec6dc5c0ae",
+        "repetitions": 1
+      },
+      {
+        "N": 40,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 39,
+        "median_ns": 200627995,
+        "method": "fresh_min_fill",
+        "plan_sha256": "bdce6c58a1ab8cb1c30f8b59d9f775f5189e582a0e309d1f78fc5926d0915e73",
+        "repetitions": 1
+      },
+      {
+        "N": 41,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 40,
+        "median_ns": 361906872,
+        "method": "fresh_min_fill",
+        "plan_sha256": "1f98e5830867237ae1953fb206b164947d97ffe0459621fc491d37974fc8eeb6",
+        "repetitions": 1
+      },
+      {
+        "N": 42,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 41,
+        "median_ns": 359212499,
+        "method": "fresh_min_fill",
+        "plan_sha256": "9cebfff74aa89e848c96db49147b976bfef20a6bc2c3a4dec6e23ceeacce4107",
+        "repetitions": 1
+      },
+      {
+        "N": 43,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 42,
+        "median_ns": 357199501,
+        "method": "fresh_min_fill",
+        "plan_sha256": "607fd5fccb75b7f2dd6b7cf4e0256f44b46e56c84e1ce8a723a5d71967d2b5fa",
+        "repetitions": 1
+      },
+      {
+        "N": 44,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 43,
+        "median_ns": 363718871,
+        "method": "fresh_min_fill",
+        "plan_sha256": "1be2bed2ffb889b3a0fbb0178a94c14985c192cb2f51c21d78ff0bc9dd579694",
+        "repetitions": 1
+      },
+      {
+        "N": 45,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 44,
+        "median_ns": 369011989,
+        "method": "fresh_min_fill",
+        "plan_sha256": "3a2a3f962cd90fd9e883d1029439b87145cb8d3d18b5064dd9ab0f3fa2bbf803",
+        "repetitions": 1
+      },
+      {
+        "N": 46,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 45,
+        "median_ns": 371543943,
+        "method": "fresh_min_fill",
+        "plan_sha256": "c04e6ee789869b545bd9e819916bf1f7efa93f7017659c1e699a8e80e851ca44",
+        "repetitions": 1
+      },
+      {
+        "N": 47,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 46,
+        "median_ns": 368883109,
+        "method": "fresh_min_fill",
+        "plan_sha256": "beede4c88ffbd445acfc21345b7979a84766fc93fe7dc8f64ebf4feb235d9058",
+        "repetitions": 1
+      },
+      {
+        "N": 48,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 47,
+        "median_ns": 374349666,
+        "method": "fresh_min_fill",
+        "plan_sha256": "e0e53f14dad6749819ce6389118d2ae1db1e18fe729d0197a74316182ddc3bf2",
+        "repetitions": 1
+      },
+      {
+        "N": 49,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 49,
+        "median_ns": 367541927,
+        "method": "tie_portfolio",
+        "plan_sha256": "409068ac9b71f65bb8559cba407e72b62066132b159e91d0aa0d0d51fa18ea7f",
+        "repetitions": 3
+      },
+      {
+        "N": 50,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 50,
+        "median_ns": 365534310,
+        "method": "fresh_min_fill",
+        "plan_sha256": "3948df2ac2e870d54e32e9e13152f4b7162d1d7fdf3e2f8475f20903e5b03c07",
+        "repetitions": 3
+      },
+      {
+        "N": 51,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 53,
+        "median_ns": 373547570,
+        "method": "transition_priority",
+        "plan_sha256": "db4b98208e851afd056b7d429f5f35b9ffd3a5824e0c876f390688339ba286c6",
+        "repetitions": 1
+      },
+      {
+        "N": 52,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 55,
+        "median_ns": 369624895,
+        "method": "transition_priority",
+        "plan_sha256": "99f4e4a19ef7ddd1fcbf136806826d277481e71c08cd22161397e5eaeaa09cad",
+        "repetitions": 3
+      },
+      {
+        "N": 53,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 56,
+        "median_ns": 370547359,
+        "method": "fresh_min_fill",
+        "plan_sha256": "0b04d427125f42944ee898134c06f14561122ba09d7432eea7861dc6460ef7a3",
+        "repetitions": 1
+      },
+      {
+        "N": 54,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 58,
+        "median_ns": 372714525,
+        "method": "transition_priority",
+        "plan_sha256": "083fe6040b09c8b8616bf5593c280f9e342a0a791f21f2bb587fc306df28a1f0",
+        "repetitions": 3
+      },
+      {
+        "N": 55,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 60,
+        "median_ns": 366231185,
+        "method": "transition_priority",
+        "plan_sha256": "6209a4271227ada3808c763ca03cb07f8caeea27fec611c32afd104a265eeac1",
+        "repetitions": 3
+      },
+      {
+        "N": 56,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 61,
+        "median_ns": 357533689,
+        "method": "fresh_min_fill",
+        "plan_sha256": "ac438b7cac4603ba3aeea6b7419a762938ae6a263f7d136d8fab5cc113f56191",
+        "repetitions": 3
+      },
+      {
+        "N": 57,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 64,
+        "median_ns": 377525696,
+        "method": "tie_portfolio",
+        "plan_sha256": "2094c18265eda8594b050785cfae17142612e47f69c755b0025146d6eec604d0",
+        "repetitions": 1
+      },
+      {
+        "N": 58,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 66,
+        "median_ns": 373003144,
+        "method": "tie_portfolio",
+        "plan_sha256": "82f3efa157e0a09adfe9122a088df5bf0cd29a68d30651bd334269c1af9161d1",
+        "repetitions": 3
+      },
+      {
+        "N": 59,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 67,
+        "median_ns": 373817409,
+        "method": "fresh_min_fill",
+        "plan_sha256": "a499a13431ca19211645f20e94cee1d0ef32f535a05572380a5031445fb629b4",
+        "repetitions": 3
+      },
+      {
+        "N": 60,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 69,
+        "median_ns": 375024852,
+        "method": "fresh_min_fill",
+        "plan_sha256": "cfb81ab131900e4686042c83955212ec398192f2589a0dc70ba6e0d8f3e00990",
+        "repetitions": 1
+      },
+      {
+        "N": 61,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 70,
+        "median_ns": 376629841,
+        "method": "fresh_min_fill",
+        "plan_sha256": "7de9dace9f34af82856869300ec56bbbab02ba66fe9173f5b9a38843b0f5518d",
+        "repetitions": 3
+      },
+      {
+        "N": 62,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 72,
+        "median_ns": 715100107,
+        "method": "fresh_min_fill",
+        "plan_sha256": "70869335507fae769fe86e6526362e5dc465f422b960f10a792406f203eb26ca",
+        "repetitions": 3
+      },
+      {
+        "N": 63,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 74,
+        "median_ns": 733872582,
+        "method": "fresh_min_fill",
+        "plan_sha256": "5b06d510dd77e095dfce49eb33b98d027ed6ff7020e15e9696c07039a7bb779d",
+        "repetitions": 3
+      },
+      {
+        "N": 64,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 76,
+        "median_ns": 746583753,
+        "method": "fresh_min_fill",
+        "plan_sha256": "7469e42dc1b0384630de80ccedbe3ee01f821638dc99b98e296e7ae6bd8fc1d6",
+        "repetitions": 1
+      },
+      {
+        "N": 65,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 77,
+        "median_ns": 757182848,
+        "method": "fresh_min_fill",
+        "plan_sha256": "47ae52198dde993d3f0055b99368bd0cf0813af78a18595e998128e4704fc455",
+        "repetitions": 1
+      },
+      {
+        "N": 66,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 78,
+        "median_ns": 709148664,
+        "method": "fresh_min_fill",
+        "plan_sha256": "a3d65cea61fa698796679dbde402adaddb29fa41e5451129f00fa9d988eba0e1",
+        "repetitions": 1
+      },
+      {
+        "N": 67,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 79,
+        "median_ns": 746650833,
+        "method": "fresh_min_fill",
+        "plan_sha256": "ce9a0aaa6dfa514b65b8fcf7448392d5d067ebe2894ed46c3884ccaf12ac80fe",
+        "repetitions": 1
+      },
+      {
+        "N": 68,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 80,
+        "median_ns": 724157172,
+        "method": "fresh_min_fill",
+        "plan_sha256": "5e09e4fdce867e5812542d5f6019aa7e79052b07ff217745b372dfcca0f29831",
+        "repetitions": 3
+      },
+      {
+        "N": 69,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 83,
+        "median_ns": 727340092,
+        "method": "tie_portfolio",
+        "plan_sha256": "e402e537d8d3bc572e111553e7db84683bb767d046d3a28bda24c34b8cb0915b",
+        "repetitions": 3
+      },
+      {
+        "N": 70,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 85,
+        "median_ns": 728133827,
+        "method": "tie_portfolio",
+        "plan_sha256": "099f6545015820a57b3cc5655e3c59e6c203a507cad2699c053f54658bf40251",
+        "repetitions": 3
+      },
+      {
+        "N": 71,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 87,
+        "median_ns": 726827316,
+        "method": "tie_portfolio",
+        "plan_sha256": "572404ac9e01473a171be38e8e221592cda2629c5719bd6600d73af4fc3e4504",
+        "repetitions": 3
+      },
+      {
+        "N": 72,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 89,
+        "median_ns": 734869106,
+        "method": "tie_portfolio",
+        "plan_sha256": "017641906e7f6fc870196e5ffd95c6cc58471502d4a162f385413926d500bcf0",
+        "repetitions": 1
+      },
+      {
+        "N": 73,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 91,
+        "median_ns": 728120338,
+        "method": "tie_portfolio",
+        "plan_sha256": "a6281945e8be8be8720bd9ef749fbe210846ea020ae2c22e3ef14cfb8c59cfbb",
+        "repetitions": 3
+      },
+      {
+        "N": 74,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 92,
+        "median_ns": 738483414,
+        "method": "fresh_min_fill",
+        "plan_sha256": "f7972e1b5ddafed70c1ccce338d0dc0a681a5b412052c975ef5ed051776654ab",
+        "repetitions": 3
+      },
+      {
+        "N": 75,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 94,
+        "median_ns": 744142219,
+        "method": "fresh_min_fill",
+        "plan_sha256": "f4971f261823955c804276076adb495b0aca596f8aa04847b3c4f817f4c01184",
+        "repetitions": 3
+      },
+      {
+        "N": 76,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 96,
+        "median_ns": 745728668,
+        "method": "fresh_min_fill",
+        "plan_sha256": "e7d88893bbae05b9d1b2be2c9f067b0ae1870d2e49417ab0aa3f66dd8e918d16",
+        "repetitions": 1
+      },
+      {
+        "N": 77,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 97,
+        "median_ns": 775793253,
+        "method": "fresh_min_fill",
+        "plan_sha256": "cf76a0d74bdbfd959315711cfef517ff049167a72381107227a834b3187d4411",
+        "repetitions": 3
+      },
+      {
+        "N": 78,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 100,
+        "median_ns": 780967252,
+        "method": "transition_priority",
+        "plan_sha256": "db3c96bbe439ac6ff41712c4701f72f91f134f1e692569e279ec6a9b43d5423f",
+        "repetitions": 3
+      },
+      {
+        "N": 79,
+        "aliases": [
+          "fresh_min_fill"
+        ],
+        "beats_fresh": 0,
+        "case": 101,
+        "median_ns": 782065815,
+        "method": "fresh_min_fill",
+        "plan_sha256": "0351ea0e98daca6d4a8426e3f64c2a64db05f0b095c30bdb3237c421cfcd3496",
+        "repetitions": 3
+      },
+      {
+        "N": 80,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 104,
+        "median_ns": 808799461,
+        "method": "transition_priority",
+        "plan_sha256": "0e0da7808bebe32b8231fd9b8ff72ecd09f4d325f0fb4f758704b5f72a11152f",
+        "repetitions": 3
+      },
+      {
+        "N": 81,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 106,
+        "median_ns": 835143468,
+        "method": "tie_portfolio",
+        "plan_sha256": "c85599251ef259cbcf1e53f4cef938557c2472e866f33db95a2ce3ce862070e8",
+        "repetitions": 3
+      },
+      {
+        "N": 82,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 108,
+        "median_ns": 829767872,
+        "method": "transition_priority",
+        "plan_sha256": "41f2079edba50c10cb4498bc7d72e275d68106a4d10a29e87f8669e746ad6da1",
+        "repetitions": 3
+      },
+      {
+        "N": 83,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 110,
+        "median_ns": 866122528,
+        "method": "tie_portfolio",
+        "plan_sha256": "33b812f9af5cc8314f243e25945728578480f3f9ce388f7af4605385508d62ec",
+        "repetitions": 3
+      },
+      {
+        "N": 84,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 112,
+        "median_ns": 938010375,
+        "method": "tie_portfolio",
+        "plan_sha256": "3a29e336f0a403c84cd6e7f48b42fa40655b54c6879e270dc39fde5bf40188ac",
+        "repetitions": 3
+      },
+      {
+        "N": 85,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 114,
+        "median_ns": 937699627,
+        "method": "tie_portfolio",
+        "plan_sha256": "bc38f2a7f6ae0efa18ee4db9ae8f49b3b92626e50f7a97d64943aff9adf564a3",
+        "repetitions": 1
+      },
+      {
+        "N": 86,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 116,
+        "median_ns": 917726850,
+        "method": "tie_portfolio",
+        "plan_sha256": "4fd10b2bcf0b878e37efe7fc488d6b82635ef83edcee2cf1f08a07bc76dee42c",
+        "repetitions": 1
+      },
+      {
+        "N": 87,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 118,
+        "median_ns": 1015460888,
+        "method": "tie_portfolio",
+        "plan_sha256": "6dd955133f14d830cd63fbd52104baeec8fc64913d8dde293a0f645e49157e12",
+        "repetitions": 1
+      },
+      {
+        "N": 88,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 120,
+        "median_ns": 1282037157,
+        "method": "tie_portfolio",
+        "plan_sha256": "93ee43b3892160c0bbdcc147f547c8ab506d77bb5886a0fbab3bc36c166a0e78",
+        "repetitions": 1
+      },
+      {
+        "N": 89,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 121,
+        "median_ns": 1355157078,
+        "method": "fresh_min_fill",
+        "plan_sha256": "4c115869a9cb40b60b4d019389f9f6b325fc66b9799cf4aec09b85fe6a4e613f",
+        "repetitions": 1
+      },
+      {
+        "N": 90,
+        "aliases": [
+          "fresh_min_fill",
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 122,
+        "median_ns": 2976110858,
+        "method": "fresh_min_fill",
+        "plan_sha256": "85b855a31f767bfadf02a46d1eb9145d05754020437aca5ef6718b99130d4602",
+        "repetitions": 1
+      },
+      {
+        "N": 91,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 124,
+        "median_ns": 3196758329,
+        "method": "transition_priority",
+        "plan_sha256": "dfc8f83d71e119eeaa02197bd25316180d81a8cc8678367ef62f14bbe94a4468",
+        "repetitions": 1
+      },
+      {
+        "N": 92,
+        "aliases": [
+          "transition_priority",
+          "repair_transfer",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 126,
+        "median_ns": 3156243429,
+        "method": "transition_priority",
+        "plan_sha256": "c9e3645cfebcc2c4d530fce48f4c7fb4432272b30bf1fcb8feb8b975663f3116",
+        "repetitions": 1
+      },
+      {
+        "N": 93,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 128,
+        "median_ns": 5575601825,
+        "method": "tie_portfolio",
+        "plan_sha256": "bcba293c963ada84be76725c4c3cd5caf319bea6866a41ef63fe562f841d4194",
+        "repetitions": 1
+      },
+      {
+        "N": 94,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 130,
+        "median_ns": 9384354966,
+        "method": "tie_portfolio",
+        "plan_sha256": "ecdc033a2a7d1a6fdcae503025d1a7d0e596ef216b65523e8c1630b31129d6ad",
+        "repetitions": 1
+      },
+      {
+        "N": 95,
+        "aliases": [
+          "fresh_min_fill",
+          "tie_portfolio"
+        ],
+        "beats_fresh": 0,
+        "case": 131,
+        "median_ns": 9240339773,
+        "method": "fresh_min_fill",
+        "plan_sha256": "f6dd395db578f0bb5cde9f84714136fb4cc6a0b09ef10b5ed7733a67534816cb",
+        "repetitions": 1
+      },
+      {
+        "N": 96,
+        "aliases": [
+          "tie_portfolio"
+        ],
+        "beats_fresh": 1,
+        "case": 133,
+        "median_ns": 8473945962,
+        "method": "tie_portfolio",
+        "plan_sha256": "4704bdf032222f53a19667207ae6b4f67011fab61cd8e3f62984ced65b004207",
+        "repetitions": 1
+      }
+    ],
+    "models": {
+      "combined": {
+        "depth": 0,
+        "training": "1/2",
+        "development": "1/2"
+      },
+      "structural": {
+        "depth": 0,
+        "training": "1/2",
+        "development": "1/2"
+      },
+      "transition": {
+        "depth": 0,
+        "training": "1/2",
+        "development": "1/2"
+      }
+    },
+    "kernel_records": 10042576,
+    "N96_activity": {
+      "full": {
+        "window_seconds": 6.137152737006545,
+        "mean_active_gpus": 13.26467156208355,
+        "mean_gpu_busy_fraction": 0.947476540148825,
+        "all14_busy_fraction": 0.8549736316817756,
+        "atleast13_busy_fraction": 0.9091786032892584,
+        "busy_fraction_by_worker": {
+          "12": 0.931106395547021,
+          "13": 0.9472523682393554,
+          "3": 0.930991675000729,
+          "11": 0.9807227777862275,
+          "8": 0.9783592598015644,
+          "2": 0.9295561837382016,
+          "10": 0.9328157610658778,
+          "5": 0.9324701174211506,
+          "7": 0.9373542384230866,
+          "0": 0.9846161576939231,
+          "4": 0.9851173925287864,
+          "9": 0.9308166908702179,
+          "6": 0.9311185132135376,
+          "1": 0.9323740307538709
+        },
+        "active_count_seconds": {
+          "0": 0.0426595713943243,
+          "1": 0.0015669744461774826,
+          "2": 0.026380350813269615,
+          "3": 0.002806268632411957,
+          "4": 0.18711215443909168,
+          "5": 0.07236853800714016,
+          "6": 0.003685513511300087,
+          "7": 0.001949729397892952,
+          "8": 0.02969128079712391,
+          "9": 0.008822614327073097,
+          "10": 0.01186048798263073,
+          "11": 0.042885005474090576,
+          "12": 0.12559629417955875,
+          "13": 0.3326641898602247,
+          "14": 5.247103763744235
+        }
+      },
+      "steady": {
+        "window_seconds": 4.137152737006545,
+        "mean_active_gpus": 13.856121390127802,
+        "mean_gpu_busy_fraction": 0.9897229564377001,
+        "all14_busy_fraction": 0.9025744413262581,
+        "atleast13_busy_fraction": 0.9662830025399253,
+        "busy_fraction_by_worker": {
+          "12": 0.988447983412209,
+          "13": 0.9883957619389898,
+          "3": 0.9899986446593988,
+          "11": 0.9923563944255015,
+          "8": 0.9899768200545682,
+          "2": 0.9881052468464715,
+          "10": 0.9915943769234092,
+          "5": 0.9867044241739916,
+          "7": 0.990631570355532,
+          "0": 0.9917329468434661,
+          "4": 0.9922772662197709,
+          "9": 0.9883542684014881,
+          "6": 0.989115046437111,
+          "1": 0.9884306394358936
+        },
+        "active_count_seconds": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.00039095617830753326,
+          "10": 0.007950419560074806,
+          "11": 0.035617291927337646,
+          "12": 0.0955337006598711,
+          "13": 0.2635720483958721,
+          "14": 3.734088320285082
+        }
+      }
+    }
+  }
+}

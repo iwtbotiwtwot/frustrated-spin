@@ -1,0 +1,99 @@
+{
+  "kind": "plans",
+  "N": 120,
+  "method": null,
+  "variant": "variants/N120_swap2.json",
+  "question": "plans: N120  Same-N/different-structure control; avoid N-to-recipe memorization",
+  "why_chosen": "Same-N/different-structure control; avoid N-to-recipe memorization",
+  "expected_information_gain": 6,
+  "predicted_cost_seconds": 4.8,
+  "maximum_admitted_seconds": 120,
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "frozen graph structure and prior completed experiments; no future output",
+  "expected_discriminating_outcomes": [
+    "structural or exact equality supports scoped hypothesis",
+    "counterexample or resource rejection changes next frontier"
+  ],
+  "verification_contract": "native source-bound receipt; every DOS retains full counts/moments/port closure; compare canonical or independent route; structural plans are not new spectra",
+  "question_id": "16afab98b6b392e3a6e5",
+  "score": 1.25,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "cbe7e2d9820d8ddfe83d186546efff3f96e9716dea8b632ab305e0127361236c",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N120_FIVE_REGULAR_DEGREE_PRESERVING_N96_EXTENSION_V1"
+  },
+  "inputs_hashes": {
+    "canonical/N120.json": "c163630f5dd1d1e97e5b42f78f7ccf055fc1b0a2d495f8b542e70de85ecccbc7",
+    "variants/N120_swap2.json": "47bbf5e9ed43619914b8713dc60a416c57350e938bb09cbdb8186924f6889677"
+  },
+  "candidate_methods": [
+    "fresh_min_fill",
+    "transition_priority",
+    "parent_plan",
+    "repair_transfer",
+    "tie_portfolio",
+    "expanded_portfolio",
+    "components",
+    "variable_elimination",
+    "incremental_boundary"
+  ],
+  "timestamp": 1790403796.9061577,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 23690264576,
+      "prelaunch_available_cpu_equivalents": 2.0,
+      "cpu_equivalents": 1.4,
+      "cpu_quota_percent": 140.0,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 16583185203,
+      "memory_high_bytes": 14924866682,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T06:23:16Z"
+    },
+    "cpu_cap": 1.4,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1843205 44.4  0.1 python",
+      "1209887  5.2  1.9 firefox-bin",
+      "1776178  2.8  1.4 Isolated Web Co",
+      "   1925  2.7  0.4 cinnamon",
+      "   1382  2.5  0.4 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  1.1 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  1.9 Isolated Web Co",
+      "1210108  0.6  0.1 RDD Process",
+      "1776069  0.4  1.5 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray",
+      "1843033  0.1  0.3 cinnamon-screen"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "6e0fb3c23e023cf9af399de0c6af8c19a64152c211464e1c0aa0bcc23d3c9bae"
+}

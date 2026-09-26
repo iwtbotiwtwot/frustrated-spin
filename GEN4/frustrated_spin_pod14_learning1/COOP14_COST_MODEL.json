@@ -1,0 +1,676 @@
+{
+  "models": {
+    "COOP14_MIG_BRANCH_GROUP|tie_portfolio|WARM_SAME_SOURCE|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "tie_portfolio",
+      "cache_state": "WARM_SAME_SOURCE",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 9,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -6.610901394526354,
+          "log_work_slope": 0.24151262508548652,
+          "log_residual_sd": 0.16314576913323156,
+          "leave_one_source_plan_out_log_MAE": 0.17685030099170848,
+          "independent_source_plans": 9,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -7.97715729662654,
+          "log_work_slope": 0.28757656033220896,
+          "log_residual_sd": 0.13517288821658494,
+          "leave_one_source_plan_out_log_MAE": 0.13703954632551588,
+          "independent_source_plans": 9,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -5.009345409868518,
+          "log_work_slope": 0.04524987822934622,
+          "log_residual_sd": 0.14612819117767906,
+          "leave_one_source_plan_out_log_MAE": 0.16895828441121397,
+          "independent_source_plans": 9,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -7.634997721487789,
+          "log_work_slope": 0.20865131230711917,
+          "log_residual_sd": 0.4211395125488532,
+          "leave_one_source_plan_out_log_MAE": 0.39099048670742254,
+          "independent_source_plans": 9,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|expanded_portfolio|WARM_SAME_SOURCE|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "expanded_portfolio",
+      "cache_state": "WARM_SAME_SOURCE",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 4,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -11.453039085245612,
+          "log_work_slope": 0.46175187457201344,
+          "log_residual_sd": 0.01997559041635509,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 4,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -5.256006245675684,
+          "log_work_slope": 0.16966589704196472,
+          "log_residual_sd": 0.07954679467853189,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 4,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -6.353857115917074,
+          "log_work_slope": 0.1098852495323366,
+          "log_residual_sd": 0.016482186337354363,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 4,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -18.14976545513276,
+          "log_work_slope": 0.6982560471003678,
+          "log_residual_sd": 0.006170478642202269,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 4,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|fresh_min_fill|WARM_SAME_SOURCE|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "fresh_min_fill",
+      "cache_state": "WARM_SAME_SOURCE",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 10,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -8.203446679546303,
+          "log_work_slope": 0.3343287882384578,
+          "log_residual_sd": 0.5659315518332372,
+          "leave_one_source_plan_out_log_MAE": 0.6615128174837418,
+          "independent_source_plans": 10,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -6.945392992948355,
+          "log_work_slope": 0.24056438453619264,
+          "log_residual_sd": 0.3051115364819744,
+          "leave_one_source_plan_out_log_MAE": 0.34650067052275724,
+          "independent_source_plans": 10,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -6.168439245257733,
+          "log_work_slope": 0.0984774115914577,
+          "log_residual_sd": 0.20715561109592312,
+          "leave_one_source_plan_out_log_MAE": 0.1816145137031413,
+          "independent_source_plans": 10,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -11.219010939250298,
+          "log_work_slope": 0.41678109282785347,
+          "log_residual_sd": 1.0046205811002364,
+          "leave_one_source_plan_out_log_MAE": 1.1621138032439058,
+          "independent_source_plans": 10,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|expanded_portfolio|WARM_NEW_PLAN|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "expanded_portfolio",
+      "cache_state": "WARM_NEW_PLAN",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 2,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": 0.12922411635466435,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 1.08879598375094,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -0.9929857991786168,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.3355925689108306,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -3.6363069008732536,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.2609899908887101,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -0.6798295327486428,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 1.6959163734035494,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|fresh_min_fill|WARM_NEW_PLAN|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "fresh_min_fill",
+      "cache_state": "WARM_NEW_PLAN",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 3,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -1.5630122056779683,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 2.0377834667964283,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 3,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -1.8724908669941822,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 1.141616879148664,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 3,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -3.87643359022614,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.2363673910967003,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 3,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -3.456277415654124,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 2.745006475232236,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 3,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|transition_priority|WARM_SAME_SOURCE|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "transition_priority",
+      "cache_state": "WARM_SAME_SOURCE",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 5,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -10.175835517991125,
+          "log_work_slope": 0.4104362520039977,
+          "log_residual_sd": 0.171758440926084,
+          "leave_one_source_plan_out_log_MAE": 0.20240240787003447,
+          "independent_source_plans": 5,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -7.9343992939324215,
+          "log_work_slope": 0.2906309384198724,
+          "log_residual_sd": 0.1669920332530184,
+          "leave_one_source_plan_out_log_MAE": 0.22636170879911205,
+          "independent_source_plans": 5,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -6.475221916742065,
+          "log_work_slope": 0.11629058962560515,
+          "log_residual_sd": 0.09312356654639323,
+          "leave_one_source_plan_out_log_MAE": 0.11213551304561387,
+          "independent_source_plans": 5,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -18.162302017926386,
+          "log_work_slope": 0.6914014979638873,
+          "log_residual_sd": 0.298785214670907,
+          "leave_one_source_plan_out_log_MAE": 0.3499101208965795,
+          "independent_source_plans": 5,
+          "fit": "LOG_LINEAR_PRE_WORK"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|tie_portfolio|WARM_NEW_PLAN|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "tie_portfolio",
+      "cache_state": "WARM_NEW_PLAN",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 2,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -1.9832239040733002,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.4101034077629533,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -2.3953697260201308,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.40135001333428555,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -4.319421992681451,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.4242108678608971,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -3.505963014663287,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.4272115664829941,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 2,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|repair_transfer|WARM_SAME_SOURCE|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "repair_transfer",
+      "cache_state": "WARM_SAME_SOURCE",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 1,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -1.7440758484806136,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -2.0065444434810273,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -4.180098913577435,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -3.8355375171641772,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    },
+    "COOP14_MIG_BRANCH_GROUP|repair_transfer|WARM_NEW_PLAN|NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT|1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4": {
+      "backend": "COOP14_MIG_BRANCH_GROUP",
+      "method": "repair_transfer",
+      "cache_state": "WARM_NEW_PLAN",
+      "readout_backend": "NUMPY_BATCHED_INVERSE_NTT_INTEGER_CRT",
+      "topology": "1d2a6f95014703ca171206e42701c52355b89dab08ba0a9b72b3d193a3b620d4",
+      "independent_sources": 1,
+      "targets": {
+        "end_to_end_solve_seconds": {
+          "intercept": -1.6851983052369923,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "worker_preparation_seconds": {
+          "intercept": -1.9871942003073408,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "crt_reconstruction_seconds": {
+          "intercept": -3.964793281316785,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        },
+        "modular_gpu_seconds": {
+          "intercept": -3.7078385676678827,
+          "log_work_slope": 0.0,
+          "log_residual_sd": 0.0,
+          "leave_one_source_plan_out_log_MAE": null,
+          "independent_source_plans": 1,
+          "fit": "LOCAL_MEDIAN_PENDING_DIVERSE_SOURCES"
+        }
+      },
+      "status": "LEARNED_HEURISTIC",
+      "features": [
+        "PRE weighted factor entries",
+        "PRE roots",
+        "PRE prime count"
+      ],
+      "conditioning": [
+        "backend",
+        "method",
+        "topology",
+        "cache state",
+        "readout"
+      ],
+      "plan_identity": "Every sample grouped by source and exact plan hash; held-out source/plan grouping used for error",
+      "memory_model": "Observed allocations retained; no fitted memory forecast until multiple matched measurements"
+    }
+  },
+  "training_origin": "Fresh qualified cooperative14 only",
+  "exclusions": [
+    {
+      "question": "07038db5aac24bb7e823e742",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "9dde4ca1719442aae86d0d44",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "197cc0f45f3d045624685aed",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "397ed4ce5c9f15dcaffe998c",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "397ed4ce5c9f15dcaffe998c",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "b5d60a71c85c85deb39ad86e",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "5d39c43351fcc8732dd71700",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "1f3fa1f45e07708b8089b6fd",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "b5fad9d6a8cbd26357edd4db",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "3a12e1169182049281893c35",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "34a37ff4b41b6ef764e7ceff",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "b2836d9781e388fc610a298f",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "685de9468b897b9c21699741",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "c42b86cd05c893d8c62d02fc",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "52280a7bd7458e6416d8c7b4",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "549d34c0733f80c42aba1b6c",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "b5b92434b2ab29140be32089",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "fad608fe1a541847c57e048b",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "fad608fe1a541847c57e048b",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "fc94e6df0d84dfeb06504917",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "7c6ab23d6fbf169fb173c6ba",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "7c6ab23d6fbf169fb173c6ba",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "8b955982a31033ce00751df9",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "734f47f8c1584ff7eca7f9bf",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "3d4692910a8986b68dc6461c",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "a2217169c209ec2f4e8a5147",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "736d80936eadb892814046cd",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "736d80936eadb892814046cd",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "087bbe09f30c9beb59e890b6",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "b7e0ba182e5ef8b3436336c8",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "82228d5d7d0d19fd908d79ef",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "c57b8d587aefcc9681bf74a7",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "c57b8d587aefcc9681bf74a7",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "05914b8c5a3e62a6e759f419",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "8821bdf31236f75d70664164",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "87b920825fc05e4780c4f4d9",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "491fda4a8d7e0749ba4452c8",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "6f129e6efeb0ba92c50ade5f",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    },
+    {
+      "question": "5c2f11067d82e4df68ad5ce2",
+      "reason": "COLD_OR_INITIAL_LOADING_MEASUREMENT"
+    }
+  ]
+}

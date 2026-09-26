@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "controls": {
+    "stale_plan": {
+      "rejected": true,
+      "exception": "AssertionError",
+      "message": "SOURCE_PLAN_BINDING_CHANGED",
+      "reason": "changed source with stale plan",
+      "artifact": {
+        "path": "artifacts/CONTROL_STALE_PLAN.json.gz",
+        "sha256": "22bc613539e02701decd9d0ba70fbf9f3a9a7b97d25ac5c9ecc33464d5593e18"
+      }
+    },
+    "unaccounted_edge": {
+      "rejected": true,
+      "exception": "AssertionError",
+      "message": "UNACCOUNTED_INTERPACKET_INTERACTION",
+      "reason": "missing interface edge",
+      "artifact": {
+        "path": "artifacts/CONTROL_EXTRA_EDGE.json.gz",
+        "sha256": "204016693d0355ea0448226a9ca0be3e48200192c184ff6b516c3ccb76118d82"
+      }
+    },
+    "wrong_cache": {
+      "rejected": true,
+      "exception": "AssertionError",
+      "message": "",
+      "reason": "positive coefficients under signed cache key",
+      "count_and_moment_checks_passed": true,
+      "artifact": {
+        "path": "artifacts/CONTROL_WRONG_CACHE.json.gz",
+        "sha256": "bdcca93a8a99823d2fe3368b1ac3a6bba6c8a105a91907871506fc7ea146f54f"
+      }
+    },
+    "moment_preserving_corruption": {
+      "rejected": true,
+      "exception": "AssertionError",
+      "message": "",
+      "reason": "altered coefficients preserve first three moments",
+      "count_and_moment_checks_passed": true,
+      "energies": [
+        -674,
+        -672,
+        -670,
+        -668
+      ],
+      "deltas": [
+        1,
+        -3,
+        3,
+        -1
+      ],
+      "artifact": {
+        "path": "artifacts/CONTROL_MOMENT_PRESERVING.json.gz",
+        "sha256": "3e1bca86d5bdc0db1ef5d6cec732b6ba601899965ded24188e632aa4cfeedea4"
+      }
+    },
+    "wrong_port_order": {
+      "rejected": true,
+      "exception": "AssertionError",
+      "message": "",
+      "reason": "exchanged conditional rows",
+      "scalar_and_moments_unchanged": true,
+      "swapped": [
+        0,
+        1
+      ],
+      "artifact": {
+        "path": "artifacts/CONTROL_PORT_ROWS.json.gz",
+        "sha256": "2a93fb3aced79f7d68a8fd326294c959f0c44532ddcf8b220cc9d4f5d2b6dfdb"
+      }
+    },
+    "invalid_symmetry_shortcut": {
+      "rejected": true,
+      "fallback_verified": true,
+      "verification_hash": "1af72f0f8215f0a7cec4c2ba79800cad56f47360cde37ddc39bdd5f61ad45d04",
+      "artifact": {
+        "path": "artifacts/CONTROL_FIELD_SYMMETRY.json.gz",
+        "sha256": "11e3a86bc0a375e7cfe47144d1dd6a0dc0e2dd79af2228d5f476a29a6119a830"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "kind": "planning",
+  "N": 44,
+  "methods": [],
+  "variant": "followup1/variants/N44_swap_13.json",
+  "question": "Diagnose a failed exact route: identify the separator/work boundary and a different admissible method",
+  "parent_question": "2aae2e822462004db4446db6",
+  "stage": 0,
+  "repeats": 3,
+  "maximum_admitted_seconds": 180,
+  "predicted_cost_seconds": 0.4757822079700418,
+  "expected_information_gain": 25,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "0559377e710631fff65fc10ea5ebb304e25e1cb32d0ba8c2faec22fd04e9ed9a",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "source features, prior outcomes and measured timing dispersion",
+  "expected_discriminating_outcomes": [
+    "repeated advantage survives matched-source controls",
+    "counterexample changes method choice",
+    "certificate verifies exact transformation",
+    "capacity failure identifies boundary"
+  ],
+  "verification_contract": "Full DOS and all ordered port rows equal retained canonical or a second exact route; exact count and moments retained",
+  "seed": 128,
+  "neutral": 3,
+  "inputs_hashes": {
+    "canonical/N044.json": "11898676d725e6346cd851404095d73a3a895b774c98700dce3db274dbd6e6a8",
+    "followup1/variants/N44_swap_13.json": "53f94aa69d38aecb67b9a4cd8f97c0637d792ab28271cdf2b670d0273966d113"
+  },
+  "question_id": "4f6cfadd7efb5d024031df3c",
+  "timestamp": 1790405917.0211933,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 24421277696,
+      "prelaunch_available_cpu_equivalents": 1.992,
+      "cpu_equivalents": 1.3943999999999999,
+      "cpu_quota_percent": 139.44,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 17094894387,
+      "memory_high_bytes": 15385404948,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T06:58:37Z"
+    },
+    "cpu_cap": 1.3943999999999999,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1209887  5.1  1.8 firefox-bin",
+      "1844963  2.9  0.1 python",
+      "   1925  2.7  0.4 cinnamon",
+      "1776178  2.5  1.4 Isolated Web Co",
+      "   1382  2.5  0.2 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  1.0 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  2.0 Isolated Web Co",
+      "1210108  0.6  0.1 RDD Process",
+      "1776069  0.4  1.4 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray",
+      "1778884  0.1  0.7 codex"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "2d7899deca6383ea65c67c71b2a2a1fb0f3224a561ef131d02b97b6fa2d8f20c"
+}

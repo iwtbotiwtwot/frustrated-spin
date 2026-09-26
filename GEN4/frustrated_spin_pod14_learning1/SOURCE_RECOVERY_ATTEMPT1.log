@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/opt/gen4-learning/GEN4/frustrated_spin_pod14_learning1/runner.py", line 74, in <module>
+    try:qualify()
+        ^^^^^^^^^
+  File "/opt/gen4-learning/GEN4/frustrated_spin_pod14_learning1/runner.py", line 16, in qualify
+    prepare_sources();s=load(P/'N96_SPEC.json');p=s['plan'];assert p['selected']['method']=='expanded_portfolio'
+    ^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-learning/GEN4/frustrated_spin_pod14_learning1/execution.py", line 79, in prepare_sources
+    r=json.load(gzip.open(refpath,'rt'))['answer'];f=features(s);key=f'N{n:03d}_prefix'
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/gzip.py", line 61, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/gzip.py", line 192, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/gen4-learning/GEN4/frustrated_spin_learning1/inputs/spin-gap-97-119-1/N100/RESULT1.json.gz'

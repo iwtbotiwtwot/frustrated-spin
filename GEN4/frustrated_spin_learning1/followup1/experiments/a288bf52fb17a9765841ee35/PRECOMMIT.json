@@ -1,0 +1,93 @@
+{
+  "kind": "paired",
+  "N": 4,
+  "methods": [
+    "variable_elimination",
+    "components"
+  ],
+  "variant": null,
+  "question": "Test route choice on low-width sources beyond the previous size ceiling",
+  "parent_question": null,
+  "stage": 0,
+  "repeats": 3,
+  "maximum_admitted_seconds": 180,
+  "predicted_cost_seconds": 0.3700977779808454,
+  "expected_information_gain": 11,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "f62d67a3e712db1a7ccf017eca60207e4f67b0149c17d5b2917de96937a9db10",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "source features, prior outcomes and measured timing dispersion",
+  "expected_discriminating_outcomes": [
+    "repeated advantage survives matched-source controls",
+    "counterexample changes method choice",
+    "certificate verifies exact transformation",
+    "capacity failure identifies boundary"
+  ],
+  "verification_contract": "Full DOS and all ordered port rows equal retained canonical or a second exact route; exact count and moments retained",
+  "inputs_hashes": {
+    "canonical/N004.json": "899dae30ff3ef997e5240a0597259c3ee67197ff1d9ff70d83a2ffcada7cb10f"
+  },
+  "question_id": "a288bf52fb17a9765841ee35",
+  "timestamp": 1790406018.8748443,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 24431964160,
+      "prelaunch_available_cpu_equivalents": 1.9920159680638723,
+      "cpu_equivalents": 1.3944111776447106,
+      "cpu_quota_percent": 139.44,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 17102374911,
+      "memory_high_bytes": 15392137419,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T07:00:18Z"
+    },
+    "cpu_cap": 1.3944111776447106,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1209887  5.1  1.8 firefox-bin",
+      "1844963  4.7  0.1 python",
+      "   1925  2.7  0.4 cinnamon",
+      "1776178  2.5  1.4 Isolated Web Co",
+      "   1382  2.5  0.2 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  0.9 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  2.0 Isolated Web Co",
+      "1210108  0.6  0.1 RDD Process",
+      "1776069  0.4  1.4 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0+i915_flip",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray",
+      "1778884  0.1  0.7 codex"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "2d7899deca6383ea65c67c71b2a2a1fb0f3224a561ef131d02b97b6fa2d8f20c"
+}

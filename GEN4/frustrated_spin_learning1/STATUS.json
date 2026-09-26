@@ -1,0 +1,108 @@
+{
+  "status": "NO_ADMISSIBLE_QUESTION",
+  "pid": 1843205,
+  "session": "detached local Python process",
+  "start_utc": "2026-09-26T06:12:11.503756+00:00",
+  "deadline_utc": "2026-09-26T14:12:11.503756+00:00",
+  "completed": 407,
+  "attempted": 438,
+  "current_question": {
+    "kind": "plans",
+    "N": 118,
+    "method": null,
+    "variant": null,
+    "question": "plans: N118  Explain anomalies and compare six planning routes without expensive DOS",
+    "why_chosen": "Explain anomalies and compare six planning routes without expensive DOS",
+    "expected_information_gain": 2,
+    "predicted_cost_seconds": 4.641333333333334,
+    "maximum_admitted_seconds": 120,
+    "claim_type": "NEWLY_PRECOMMITTED",
+    "features_used": "frozen graph structure and prior completed experiments; no future output",
+    "expected_discriminating_outcomes": [
+      "structural or exact equality supports scoped hypothesis",
+      "counterexample or resource rejection changes next frontier"
+    ],
+    "verification_contract": "native source-bound receipt; every DOS retains full counts/moments/port closure; compare canonical or independent route; structural plans are not new spectra",
+    "question_id": "7105e55abc750f09489b",
+    "score": 0.4309106578569376,
+    "source_lineage": {
+      "kind": "INHERITED",
+      "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_gap_97_119_1/completion/spin-gap-97-119-1-complete.tar.gz",
+      "lineage": "N120_INDUCED_PREFIX_GAP1"
+    },
+    "inputs_hashes": {
+      "canonical/N118.json": "946d0c4fc5e2ace36a9372ca3433c077a37ee4114d5a4e605ac4a98d63df9a7a"
+    },
+    "candidate_methods": [
+      "fresh_min_fill",
+      "transition_priority",
+      "parent_plan",
+      "repair_transfer",
+      "tie_portfolio",
+      "expanded_portfolio",
+      "components",
+      "variable_elimination",
+      "incremental_boundary"
+    ]
+  },
+  "resource_policy": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 23729790976,
+      "prelaunch_available_cpu_equivalents": 1.992,
+      "cpu_equivalents": 1.3943999999999999,
+      "cpu_quota_percent": 139.44,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 16610853683,
+      "memory_high_bytes": 14949768314,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T06:32:14Z"
+    },
+    "cpu_cap": 1.3943999999999999,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1843205 38.0  0.1 python",
+      "1209887  5.2  1.9 firefox-bin",
+      "   1925  2.7  0.4 cinnamon",
+      "1776178  2.7  1.5 Isolated Web Co",
+      "   1382  2.5  0.4 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  0.9 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  1.9 Isolated Web Co",
+      "1210108  0.6  0.1 RDD Process",
+      "1776069  0.4  1.5 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray",
+      "1778884  0.1  0.6 codex"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "stop_command": "kill -TERM 1843205",
+  "restart": "same command; completed question IDs skipped",
+  "hosted_calls": 0,
+  "holdout_execution": false
+}

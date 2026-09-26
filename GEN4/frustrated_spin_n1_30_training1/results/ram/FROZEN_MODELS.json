@@ -1,0 +1,4941 @@
+{
+  "combined": {
+    "binding": {
+      "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+      "development_N": [
+        23,
+        26
+      ],
+      "feature_family": "combined",
+      "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+      "reserved_N": [
+        27,
+        30
+      ],
+      "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+      "training_N": [
+        1,
+        22
+      ]
+    },
+    "fit": {
+      "class_weights": {
+        "negative": 22,
+        "positive": 38
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "23/36",
+        "correct": 9,
+        "exception_witnesses": [
+          "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+          "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+          "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+          "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+        ],
+        "positives": 4,
+        "rows": 13
+      },
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "b592fe6731a18c4ed0b14e119412bd6f86e6e88434ab541217a986bfb40e65ab",
+        "shared_R3_checkpoint": true
+      },
+      "feature_count": 18,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "model_sha256": "ea1a69e42d0e8200baf60fc1f44bb5310ea012784a290639cf8dfdb812acc951",
+      "name": "spin-n1-30-combined-v1",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 17,
+              "threshold": 0
+            }
+          ],
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 17,
+              "threshold": 0
+            }
+          ],
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "source_binding": {
+        "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+        "development_N": [
+          23,
+          26
+        ],
+        "feature_family": "combined",
+        "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+        "reserved_N": [
+          27,
+          30
+        ],
+        "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+        "training_N": [
+          1,
+          22
+        ]
+      },
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1",
+        "correct": 60,
+        "exception_witnesses": [],
+        "positives": 22,
+        "rows": 60
+      },
+      "tree": {
+        "classification_threshold": "11/30",
+        "feature": 17,
+        "left": {
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        "n": 60,
+        "positive": 22,
+        "probability": "11/30",
+        "right": {
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        },
+        "threshold": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      }
+    },
+    "model": {
+      "record": {
+        "model": {
+          "class_weights": {
+            "negative": 22,
+            "positive": 38
+          },
+          "depth": 1,
+          "development": {
+            "balanced_accuracy": "23/36",
+            "correct": 9,
+            "exception_witnesses": [
+              "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+              "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+              "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+              "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+            ],
+            "positives": 4,
+            "rows": 13
+          },
+          "feature_count": 18,
+          "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+          "rules": [
+            {
+              "all_probability_ties_retained": true,
+              "conditions": [
+                {
+                  "comparison": "<=",
+                  "feature": 17,
+                  "threshold": 0
+                }
+              ],
+              "n": 38,
+              "positive": 0,
+              "probability": "0",
+              "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+            },
+            {
+              "all_probability_ties_retained": true,
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "feature": 17,
+                  "threshold": 0
+                }
+              ],
+              "n": 22,
+              "positive": 22,
+              "probability": "1",
+              "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+            }
+          ],
+          "selection": "development balanced accuracy; shallower on tie",
+          "test_rows_reserved": 0,
+          "training": {
+            "balanced_accuracy": "1",
+            "correct": 60,
+            "exception_witnesses": [],
+            "positives": 22,
+            "rows": 60
+          },
+          "tree": {
+            "classification_threshold": "11/30",
+            "feature": 17,
+            "left": {
+              "n": 38,
+              "positive": 0,
+              "probability": "0",
+              "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+            },
+            "n": 60,
+            "positive": 22,
+            "probability": "11/30",
+            "right": {
+              "n": 22,
+              "positive": 22,
+              "probability": "1",
+              "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+            },
+            "threshold": 0,
+            "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+          }
+        },
+        "name": "spin-n1-30-combined-v1",
+        "origin": "NATIVE_CLASS_BALANCED_CART_SUCCESSOR",
+        "source_binding": {
+          "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+          "development_N": [
+            23,
+            26
+          ],
+          "feature_family": "combined",
+          "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+          "reserved_N": [
+            27,
+            30
+          ],
+          "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+          "training_N": [
+            1,
+            22
+          ]
+        },
+        "training_input_sha256": "f1d2094cea4b4443e1db3a48a4da6d02fbe82000b49749d545d337e67aa58567"
+      },
+      "sha256": "ea1a69e42d0e8200baf60fc1f44bb5310ea012784a290639cf8dfdb812acc951"
+    },
+    "rows": [
+      {
+        "features": [
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      },
+      {
+        "features": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+      },
+      {
+        "features": [
+          2,
+          1,
+          0,
+          1,
+          0,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N2/fresh_min_fill/b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+      },
+      {
+        "features": [
+          2,
+          1,
+          2,
+          1,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N2/incremental_boundary/incremental:99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb"
+      },
+      {
+        "features": [
+          3,
+          1,
+          0,
+          1,
+          0,
+          8,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N3/fresh_min_fill/1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d"
+      },
+      {
+        "features": [
+          3,
+          1,
+          3,
+          1,
+          8,
+          8,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N3/incremental_boundary/incremental:2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052"
+      },
+      {
+        "features": [
+          4,
+          2,
+          0,
+          1,
+          0,
+          8,
+          1,
+          3,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N4/fresh_min_fill/8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b"
+      },
+      {
+        "features": [
+          4,
+          2,
+          4,
+          1,
+          16,
+          8,
+          1,
+          3,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N4/incremental_boundary/incremental:5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3"
+      },
+      {
+        "features": [
+          5,
+          2,
+          0,
+          1,
+          1,
+          8,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N5/fresh_min_fill/0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e"
+      },
+      {
+        "features": [
+          5,
+          2,
+          5,
+          1,
+          32,
+          8,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N5/incremental_boundary/incremental:258c2a4ff949114577ec2e8e11949dbaeec7ef3432cd2f634fefcde861ae0117"
+      },
+      {
+        "features": [
+          6,
+          3,
+          1,
+          1,
+          3,
+          16,
+          1,
+          5,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N6/fresh_min_fill/5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1"
+      },
+      {
+        "features": [
+          6,
+          3,
+          6,
+          1,
+          64,
+          16,
+          1,
+          5,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N6/incremental_boundary/incremental:473d02574cc7a661b725c821ba67e57e00b12ef300aeb1d47602959376a040a6"
+      },
+      {
+        "features": [
+          7,
+          4,
+          1,
+          1,
+          5,
+          16,
+          1,
+          6,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          5,
+          3,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N7/fresh_min_fill/3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd"
+      },
+      {
+        "features": [
+          7,
+          4,
+          7,
+          1,
+          128,
+          16,
+          1,
+          6,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          5,
+          3,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N7/incremental_boundary/incremental:4034394a52387d4c50dc492d42caace86d7da5f5de824fe39a27a1e9eae7882c"
+      },
+      {
+        "features": [
+          8,
+          6,
+          2,
+          1,
+          11,
+          32,
+          1,
+          7,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N8/fresh_min_fill/334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2"
+      },
+      {
+        "features": [
+          8,
+          6,
+          8,
+          1,
+          256,
+          32,
+          1,
+          7,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N8/incremental_boundary/incremental:567e11eb337603247dc37b986e36bc1520dd5166e21f234c7e57bdfa812c67e9"
+      },
+      {
+        "features": [
+          8,
+          6,
+          2,
+          1,
+          11,
+          32,
+          1,
+          7,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N8/parent_plan/5b8c90e07ff8405b1c0319acfe357e15ddffe6311e3cb99edbf3dd45f0b41e69"
+      },
+      {
+        "features": [
+          9,
+          8,
+          2,
+          1,
+          15,
+          32,
+          1,
+          8,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          15,
+          11,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N9/fresh_min_fill/9072bb50d2adbc7acafc5ee597ca362d9882adad0514673414896674d4d3f417"
+      },
+      {
+        "features": [
+          9,
+          8,
+          2,
+          1,
+          15,
+          32,
+          1,
+          8,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          15,
+          11,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N9/parent_plan/11c95ac46d0fda3cc28f1c917f4a4f31fa11b81783b66be713eeb8276b5fa086"
+      },
+      {
+        "features": [
+          9,
+          8,
+          7,
+          1,
+          128,
+          32,
+          1,
+          8,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          15,
+          11,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N9/incremental_boundary/incremental:0de9fb2f1238632cf721304595a3822207684f650a0992dcf900ad92b8618fe3"
+      },
+      {
+        "features": [
+          10,
+          11,
+          6,
+          1,
+          64,
+          32,
+          1,
+          9,
+          1,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          31,
+          15,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N10/incremental_boundary/incremental:10a7c79308377a16a943effe68b59a085f69c569b04047ea28a88cb8962b1725"
+      },
+      {
+        "features": [
+          10,
+          11,
+          3,
+          1,
+          31,
+          32,
+          1,
+          9,
+          1,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          31,
+          15,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N10/parent_plan/323b3728f165d3b7eb1c5563e66cffb7da127b387dd2100c6d8f1382e19c7c9a"
+      },
+      {
+        "features": [
+          10,
+          11,
+          3,
+          1,
+          31,
+          32,
+          1,
+          9,
+          1,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          31,
+          15,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N10/fresh_min_fill/959c2c94d5beac84d9569a0e22360bb5911c316f7ba1cd80743dc9a69c9e17d4"
+      },
+      {
+        "features": [
+          11,
+          12,
+          6,
+          1,
+          64,
+          32,
+          1,
+          10,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          33,
+          31,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N11/incremental_boundary/incremental:2cd005310f5e125be4f3793e7039865435b7cca3f722ecc8b24a5d4ea6683d13"
+      },
+      {
+        "features": [
+          11,
+          12,
+          3,
+          1,
+          33,
+          32,
+          1,
+          10,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          33,
+          31,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N11/fresh_min_fill/1a2840a6776083049732fa779e213dd0ff8ef557bc5f61868ea61f2f7096d9a5"
+      },
+      {
+        "features": [
+          11,
+          12,
+          4,
+          1,
+          55,
+          32,
+          1,
+          10,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          55,
+          31,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N11/parent_plan/52ac6aa4b2e2e0d69a1b8e17f1e307b3f39abebb7c3ce92eb77630a8570593dc"
+      },
+      {
+        "features": [
+          12,
+          13,
+          4,
+          1,
+          57,
+          64,
+          1,
+          11,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          57,
+          33,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N12/parent_plan/c0b7da93500c684ae2332c6eaa590b987bbafc55b23bde9a4d45105c9e5e4539"
+      },
+      {
+        "features": [
+          12,
+          13,
+          5,
+          1,
+          32,
+          64,
+          1,
+          11,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          35,
+          33,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N12/incremental_boundary/incremental:d43f02bf50cba6c1f979836775c85f22cf565bc1897f098c6c402ce05669c017"
+      },
+      {
+        "features": [
+          12,
+          13,
+          3,
+          1,
+          35,
+          64,
+          1,
+          11,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          35,
+          33,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N12/fresh_min_fill/041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34"
+      },
+      {
+        "features": [
+          13,
+          13,
+          3,
+          1,
+          36,
+          64,
+          1,
+          12,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          36,
+          35,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N13/fresh_min_fill/6314f374778b2d6ba31d573150fd97c1efc841a933da9b8e1f50ee5b72a375fe"
+      },
+      {
+        "features": [
+          13,
+          13,
+          6,
+          1,
+          64,
+          64,
+          1,
+          12,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          36,
+          35,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N13/incremental_boundary/incremental:509a79b91dffd206dd81d6c5c95283bdc567735dd9e701df5e5049b25debadec"
+      },
+      {
+        "features": [
+          13,
+          13,
+          4,
+          1,
+          58,
+          64,
+          1,
+          12,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          58,
+          35,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N13/parent_plan/44c584449565a012e0eefc2a519dbb41dca2d0b70fcf3903ffcad617be8d7f89"
+      },
+      {
+        "features": [
+          14,
+          14,
+          3,
+          1,
+          38,
+          64,
+          1,
+          13,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          38,
+          36,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N14/fresh_min_fill/95b94db47724e0c89e2e84824ddb6f8fba8743f303200a4012bb2800305137ef"
+      },
+      {
+        "features": [
+          14,
+          14,
+          4,
+          1,
+          60,
+          64,
+          1,
+          13,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          60,
+          36,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N14/parent_plan/88e9dcd02f97a3a7b85830f819ded3cf85bde23b8ce0de03e2478f0a8fe458a6"
+      },
+      {
+        "features": [
+          14,
+          14,
+          7,
+          1,
+          128,
+          64,
+          1,
+          13,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          38,
+          36,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N14/incremental_boundary/incremental:855ba61d8a1e476ab9f4a366f2b3cf320b37fb40b4200110740f2c9b86f8e195"
+      },
+      {
+        "features": [
+          15,
+          14,
+          4,
+          1,
+          61,
+          64,
+          1,
+          14,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          61,
+          38,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N15/parent_plan/b2205ef4c88d678e8bc63392836dcc30ac7635585559af1f83afb3973b76205b"
+      },
+      {
+        "features": [
+          15,
+          14,
+          3,
+          1,
+          39,
+          64,
+          1,
+          14,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          39,
+          38,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N15/fresh_min_fill/4131aa22800c8eb8a7528c8bfd1a1477f9765abef56e28e9649857fe6ac96cdf"
+      },
+      {
+        "features": [
+          15,
+          14,
+          8,
+          1,
+          256,
+          64,
+          1,
+          14,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          39,
+          38,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N15/incremental_boundary/incremental:2b8e55b1d695f87b2d8949f5627f50f0b303a3ed7b0a249f18d829714c01617e"
+      },
+      {
+        "features": [
+          16,
+          15,
+          4,
+          1,
+          63,
+          64,
+          1,
+          15,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          63,
+          39,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N16/parent_plan/aa237ac055b83174de6389bc9e1861944dc6290be3fe8e858c705609fdd4149b"
+      },
+      {
+        "features": [
+          16,
+          15,
+          3,
+          1,
+          41,
+          64,
+          1,
+          15,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          41,
+          39,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N16/fresh_min_fill/a63dcd51edb378160ccb93fc28ef241150cc379db99bd4ce798daebc83527df1"
+      },
+      {
+        "features": [
+          16,
+          15,
+          8,
+          1,
+          256,
+          64,
+          1,
+          15,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          41,
+          39,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N16/incremental_boundary/incremental:25661c6ee48d9ffc98b3f70adcda03eb3e60f39e301c927fd9a7188bac7634b2"
+      },
+      {
+        "features": [
+          17,
+          15,
+          4,
+          1,
+          64,
+          64,
+          1,
+          16,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          64,
+          41,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N17/parent_plan/8b23d28098eb7ec6ef75f3eeeaaf6d7122bdcc5164371c4dd3961abe74cc238a"
+      },
+      {
+        "features": [
+          17,
+          15,
+          8,
+          1,
+          256,
+          64,
+          1,
+          16,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          42,
+          41,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N17/incremental_boundary/incremental:49df486bd5f14593f7d0c68ccafd2b2662ac87abfe8b9c129ce8b8c1124c0faa"
+      },
+      {
+        "features": [
+          17,
+          15,
+          3,
+          1,
+          42,
+          64,
+          1,
+          16,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          42,
+          41,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N17/fresh_min_fill/63f8cb418fffb26e56078db145acf39ecf7071306a49429b212e40e677043629"
+      },
+      {
+        "features": [
+          18,
+          16,
+          4,
+          1,
+          66,
+          64,
+          1,
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          66,
+          42,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/parent_plan/e2234b23a4193dd1d81a417cc9b1678931a92090fcdd1752f96eee2c61913af4"
+      },
+      {
+        "features": [
+          18,
+          16,
+          3,
+          1,
+          44,
+          64,
+          1,
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          44,
+          42,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/transition_priority/5db51a33a71af0abea534756694a55fbfb245960b86ab63df8f883a8eb6ceb22"
+      },
+      {
+        "features": [
+          18,
+          16,
+          3,
+          1,
+          44,
+          64,
+          1,
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          44,
+          42,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/fresh_min_fill/d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56"
+      },
+      {
+        "features": [
+          18,
+          16,
+          9,
+          1,
+          512,
+          64,
+          1,
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          44,
+          42,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N18/incremental_boundary/incremental:1232a84a0582bb726c124d0930d0231adee6735906b94ed02e7da25fdc6d8fef"
+      },
+      {
+        "features": [
+          19,
+          16,
+          3,
+          1,
+          45,
+          64,
+          1,
+          18,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          45,
+          44,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N19/fresh_min_fill/a6966000539dcce3f408e75431a40b7cc0e101cad8dbf445bd26577227f0403f"
+      },
+      {
+        "features": [
+          19,
+          16,
+          4,
+          1,
+          67,
+          64,
+          1,
+          18,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          67,
+          44,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N19/parent_plan/b1ffd8b8a2b3234f0867938661d0262e050015e2f62eca88e4d9f95d53c30fac"
+      },
+      {
+        "features": [
+          19,
+          16,
+          9,
+          1,
+          512,
+          64,
+          1,
+          18,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          45,
+          44,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N19/incremental_boundary/incremental:326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677"
+      },
+      {
+        "features": [
+          20,
+          17,
+          9,
+          1,
+          512,
+          64,
+          1,
+          19,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          47,
+          45,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N20/incremental_boundary/incremental:9cb37e3de3b3abb56f127007b4d48f147f82cd8c1708a7eb831754b10a01e84c"
+      },
+      {
+        "features": [
+          20,
+          17,
+          4,
+          1,
+          69,
+          64,
+          1,
+          19,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          69,
+          45,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N20/parent_plan/b881c5fa7f94a882a31a59c0206012dafbb648ef0ee0e7a9d4ddd7fd99ba1f71"
+      },
+      {
+        "features": [
+          20,
+          17,
+          3,
+          1,
+          47,
+          64,
+          1,
+          19,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          47,
+          45,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N20/fresh_min_fill/9427e89610ccca68758f676f8c8b6c654f6e30694fcd9b8e007e48b938fec0cb"
+      },
+      {
+        "features": [
+          21,
+          18,
+          4,
+          1,
+          71,
+          64,
+          1,
+          20,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          71,
+          47,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N21/parent_plan/15a10a1663bb28968fd6dea6b03430b8a1268e475a5002727572f30fb90a921a"
+      },
+      {
+        "features": [
+          21,
+          18,
+          9,
+          1,
+          512,
+          64,
+          1,
+          20,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          49,
+          47,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N21/incremental_boundary/incremental:50f6cb3f01e659454ac535833fe01689b82a8280bb7fae86e8ce661b1965ac91"
+      },
+      {
+        "features": [
+          21,
+          18,
+          3,
+          1,
+          49,
+          64,
+          1,
+          20,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          49,
+          47,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N21/fresh_min_fill/cd18298d9d8cab891f7773f187a85bc1a6e374829b41b83b168f7ad3ce8c843b"
+      },
+      {
+        "features": [
+          22,
+          19,
+          3,
+          1,
+          51,
+          64,
+          1,
+          21,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          51,
+          49,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N22/fresh_min_fill/8d01bd271753b0212d97d34aa755ca59106c9dccad659f99a8d3fb37d919a4a5"
+      },
+      {
+        "features": [
+          22,
+          19,
+          4,
+          1,
+          81,
+          64,
+          1,
+          21,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          81,
+          49,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N22/parent_plan/28cf3e574ccbe43555b1455270b24f177b6a4bdd3d673082627eced862b4393c"
+      },
+      {
+        "features": [
+          22,
+          19,
+          9,
+          1,
+          512,
+          64,
+          1,
+          21,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          51,
+          49,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N22/incremental_boundary/incremental:e2e0b0207a0711b21f93a408e06df2b15201f0f66d8e720aabeeba38272c455e"
+      },
+      {
+        "features": [
+          23,
+          19,
+          4,
+          1,
+          82,
+          64,
+          1,
+          22,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          82,
+          51,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N23/parent_plan/ecc1ec4a2a2aaa7d22cdd0ef461abfee985f3d24a38b48f0dd688fea15487c82"
+      },
+      {
+        "features": [
+          23,
+          19,
+          3,
+          1,
+          52,
+          64,
+          1,
+          22,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          52,
+          51,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N23/fresh_min_fill/f80dc4eaff774a2917d5131caf32ff8eff9ae02dc3f1afe9fd30312471c3e3ee"
+      },
+      {
+        "features": [
+          23,
+          19,
+          10,
+          1,
+          1024,
+          64,
+          1,
+          22,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          52,
+          51,
+          1
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N23/incremental_boundary/incremental:0b5b315d2e763c00390a5bf64eb4856563cf3f7b01ecdcaa4b81841d42cc4d72"
+      },
+      {
+        "features": [
+          24,
+          19,
+          11,
+          1,
+          2048,
+          64,
+          1,
+          23,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          53,
+          52,
+          1
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6"
+      },
+      {
+        "features": [
+          24,
+          19,
+          3,
+          1,
+          53,
+          64,
+          1,
+          23,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          53,
+          52,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N24/fresh_min_fill/661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa"
+      },
+      {
+        "features": [
+          24,
+          19,
+          4,
+          1,
+          83,
+          64,
+          1,
+          23,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          83,
+          52,
+          0
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5"
+      },
+      {
+        "features": [
+          25,
+          22,
+          4,
+          1,
+          95,
+          128,
+          1,
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          95,
+          53,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/parent_plan/a2496f5bdc8661739c4fc089776c803f6a918dd33f19759d1db1038eaef8fe0a"
+      },
+      {
+        "features": [
+          25,
+          22,
+          3,
+          1,
+          57,
+          128,
+          1,
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          0,
+          1,
+          57,
+          53,
+          0
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c"
+      },
+      {
+        "features": [
+          25,
+          22,
+          3,
+          1,
+          57,
+          128,
+          1,
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          0,
+          1,
+          57,
+          53,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/fresh_min_fill/2fa08b36ad9662553210670dbf1d6a7b9594fab7c302e17290bf8b047763d8f8"
+      },
+      {
+        "features": [
+          25,
+          22,
+          8,
+          1,
+          256,
+          128,
+          1,
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          0,
+          1,
+          57,
+          53,
+          1
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+      },
+      {
+        "features": [
+          26,
+          22,
+          8,
+          1,
+          256,
+          128,
+          1,
+          25,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          58,
+          57,
+          1
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N26/incremental_boundary/incremental:9cfc8d76c5ed049a3560d62c05e15577c481572e2255ecc5616dd5650242317d"
+      },
+      {
+        "features": [
+          26,
+          22,
+          4,
+          1,
+          96,
+          128,
+          1,
+          25,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          96,
+          57,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N26/parent_plan/fcc2f0509b3d10669d0d6d6e763e62317c48a3fb2b10b5e9d3bab3b592b7f3b1"
+      },
+      {
+        "features": [
+          26,
+          22,
+          3,
+          1,
+          58,
+          128,
+          1,
+          25,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          58,
+          57,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N26/fresh_min_fill/d0c42a27c2867e37b5db84573d41f2c5b70de9f2a87c4d0fd7651cc58cced687"
+      }
+    ]
+  },
+  "structural": {
+    "binding": {
+      "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+      "development_N": [
+        23,
+        26
+      ],
+      "feature_family": "structural",
+      "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+      "reserved_N": [
+        27,
+        30
+      ],
+      "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+      "training_N": [
+        1,
+        22
+      ]
+    },
+    "fit": {
+      "class_weights": {
+        "negative": 22,
+        "positive": 38
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "23/36",
+        "correct": 9,
+        "exception_witnesses": [
+          "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+          "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+          "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+          "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+        ],
+        "positives": 4,
+        "rows": 13
+      },
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "b592fe6731a18c4ed0b14e119412bd6f86e6e88434ab541217a986bfb40e65ab",
+        "shared_R3_checkpoint": true
+      },
+      "feature_count": 8,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "model_sha256": "983316621e68cb4a9384513c03c5cc7dc7c19327f36a9794a838efed3a8fdbf9",
+      "name": "spin-n1-30-structural-v1",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 7,
+              "threshold": 0
+            }
+          ],
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 7,
+              "threshold": 0
+            }
+          ],
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "source_binding": {
+        "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+        "development_N": [
+          23,
+          26
+        ],
+        "feature_family": "structural",
+        "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+        "reserved_N": [
+          27,
+          30
+        ],
+        "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+        "training_N": [
+          1,
+          22
+        ]
+      },
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1",
+        "correct": 60,
+        "exception_witnesses": [],
+        "positives": 22,
+        "rows": 60
+      },
+      "tree": {
+        "classification_threshold": "11/30",
+        "feature": 7,
+        "left": {
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        "n": 60,
+        "positive": 22,
+        "probability": "11/30",
+        "right": {
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        },
+        "threshold": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      }
+    },
+    "model": {
+      "record": {
+        "model": {
+          "class_weights": {
+            "negative": 22,
+            "positive": 38
+          },
+          "depth": 1,
+          "development": {
+            "balanced_accuracy": "23/36",
+            "correct": 9,
+            "exception_witnesses": [
+              "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+              "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+              "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+              "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+            ],
+            "positives": 4,
+            "rows": 13
+          },
+          "feature_count": 8,
+          "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+          "rules": [
+            {
+              "all_probability_ties_retained": true,
+              "conditions": [
+                {
+                  "comparison": "<=",
+                  "feature": 7,
+                  "threshold": 0
+                }
+              ],
+              "n": 38,
+              "positive": 0,
+              "probability": "0",
+              "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+            },
+            {
+              "all_probability_ties_retained": true,
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "feature": 7,
+                  "threshold": 0
+                }
+              ],
+              "n": 22,
+              "positive": 22,
+              "probability": "1",
+              "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+            }
+          ],
+          "selection": "development balanced accuracy; shallower on tie",
+          "test_rows_reserved": 0,
+          "training": {
+            "balanced_accuracy": "1",
+            "correct": 60,
+            "exception_witnesses": [],
+            "positives": 22,
+            "rows": 60
+          },
+          "tree": {
+            "classification_threshold": "11/30",
+            "feature": 7,
+            "left": {
+              "n": 38,
+              "positive": 0,
+              "probability": "0",
+              "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+            },
+            "n": 60,
+            "positive": 22,
+            "probability": "11/30",
+            "right": {
+              "n": 22,
+              "positive": 22,
+              "probability": "1",
+              "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+            },
+            "threshold": 0,
+            "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+          }
+        },
+        "name": "spin-n1-30-structural-v1",
+        "origin": "NATIVE_CLASS_BALANCED_CART_SUCCESSOR",
+        "source_binding": {
+          "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+          "development_N": [
+            23,
+            26
+          ],
+          "feature_family": "structural",
+          "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+          "reserved_N": [
+            27,
+            30
+          ],
+          "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+          "training_N": [
+            1,
+            22
+          ]
+        },
+        "training_input_sha256": "40964c6a9c3e198e196bf2caede177c828a91a1a137f51f446ee6341301902f9"
+      },
+      "sha256": "983316621e68cb4a9384513c03c5cc7dc7c19327f36a9794a838efed3a8fdbf9"
+    },
+    "rows": [
+      {
+        "features": [
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      },
+      {
+        "features": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+      },
+      {
+        "features": [
+          2,
+          1,
+          0,
+          1,
+          0,
+          4,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N2/fresh_min_fill/b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+      },
+      {
+        "features": [
+          2,
+          1,
+          2,
+          1,
+          4,
+          4,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N2/incremental_boundary/incremental:99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb"
+      },
+      {
+        "features": [
+          3,
+          1,
+          0,
+          1,
+          0,
+          8,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N3/fresh_min_fill/1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d"
+      },
+      {
+        "features": [
+          3,
+          1,
+          3,
+          1,
+          8,
+          8,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N3/incremental_boundary/incremental:2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052"
+      },
+      {
+        "features": [
+          4,
+          2,
+          0,
+          1,
+          0,
+          8,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N4/fresh_min_fill/8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b"
+      },
+      {
+        "features": [
+          4,
+          2,
+          4,
+          1,
+          16,
+          8,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N4/incremental_boundary/incremental:5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3"
+      },
+      {
+        "features": [
+          5,
+          2,
+          0,
+          1,
+          1,
+          8,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N5/fresh_min_fill/0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e"
+      },
+      {
+        "features": [
+          5,
+          2,
+          5,
+          1,
+          32,
+          8,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N5/incremental_boundary/incremental:258c2a4ff949114577ec2e8e11949dbaeec7ef3432cd2f634fefcde861ae0117"
+      },
+      {
+        "features": [
+          6,
+          3,
+          1,
+          1,
+          3,
+          16,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N6/fresh_min_fill/5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1"
+      },
+      {
+        "features": [
+          6,
+          3,
+          6,
+          1,
+          64,
+          16,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N6/incremental_boundary/incremental:473d02574cc7a661b725c821ba67e57e00b12ef300aeb1d47602959376a040a6"
+      },
+      {
+        "features": [
+          7,
+          4,
+          1,
+          1,
+          5,
+          16,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N7/fresh_min_fill/3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd"
+      },
+      {
+        "features": [
+          7,
+          4,
+          7,
+          1,
+          128,
+          16,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N7/incremental_boundary/incremental:4034394a52387d4c50dc492d42caace86d7da5f5de824fe39a27a1e9eae7882c"
+      },
+      {
+        "features": [
+          8,
+          6,
+          2,
+          1,
+          11,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N8/fresh_min_fill/334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2"
+      },
+      {
+        "features": [
+          8,
+          6,
+          8,
+          1,
+          256,
+          32,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N8/incremental_boundary/incremental:567e11eb337603247dc37b986e36bc1520dd5166e21f234c7e57bdfa812c67e9"
+      },
+      {
+        "features": [
+          8,
+          6,
+          2,
+          1,
+          11,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N8/parent_plan/5b8c90e07ff8405b1c0319acfe357e15ddffe6311e3cb99edbf3dd45f0b41e69"
+      },
+      {
+        "features": [
+          9,
+          8,
+          2,
+          1,
+          15,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N9/fresh_min_fill/9072bb50d2adbc7acafc5ee597ca362d9882adad0514673414896674d4d3f417"
+      },
+      {
+        "features": [
+          9,
+          8,
+          2,
+          1,
+          15,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N9/parent_plan/11c95ac46d0fda3cc28f1c917f4a4f31fa11b81783b66be713eeb8276b5fa086"
+      },
+      {
+        "features": [
+          9,
+          8,
+          7,
+          1,
+          128,
+          32,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N9/incremental_boundary/incremental:0de9fb2f1238632cf721304595a3822207684f650a0992dcf900ad92b8618fe3"
+      },
+      {
+        "features": [
+          10,
+          11,
+          6,
+          1,
+          64,
+          32,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N10/incremental_boundary/incremental:10a7c79308377a16a943effe68b59a085f69c569b04047ea28a88cb8962b1725"
+      },
+      {
+        "features": [
+          10,
+          11,
+          3,
+          1,
+          31,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N10/parent_plan/323b3728f165d3b7eb1c5563e66cffb7da127b387dd2100c6d8f1382e19c7c9a"
+      },
+      {
+        "features": [
+          10,
+          11,
+          3,
+          1,
+          31,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N10/fresh_min_fill/959c2c94d5beac84d9569a0e22360bb5911c316f7ba1cd80743dc9a69c9e17d4"
+      },
+      {
+        "features": [
+          11,
+          12,
+          6,
+          1,
+          64,
+          32,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N11/incremental_boundary/incremental:2cd005310f5e125be4f3793e7039865435b7cca3f722ecc8b24a5d4ea6683d13"
+      },
+      {
+        "features": [
+          11,
+          12,
+          3,
+          1,
+          33,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N11/fresh_min_fill/1a2840a6776083049732fa779e213dd0ff8ef557bc5f61868ea61f2f7096d9a5"
+      },
+      {
+        "features": [
+          11,
+          12,
+          4,
+          1,
+          55,
+          32,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N11/parent_plan/52ac6aa4b2e2e0d69a1b8e17f1e307b3f39abebb7c3ce92eb77630a8570593dc"
+      },
+      {
+        "features": [
+          12,
+          13,
+          4,
+          1,
+          57,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N12/parent_plan/c0b7da93500c684ae2332c6eaa590b987bbafc55b23bde9a4d45105c9e5e4539"
+      },
+      {
+        "features": [
+          12,
+          13,
+          5,
+          1,
+          32,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N12/incremental_boundary/incremental:d43f02bf50cba6c1f979836775c85f22cf565bc1897f098c6c402ce05669c017"
+      },
+      {
+        "features": [
+          12,
+          13,
+          3,
+          1,
+          35,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N12/fresh_min_fill/041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34"
+      },
+      {
+        "features": [
+          13,
+          13,
+          3,
+          1,
+          36,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N13/fresh_min_fill/6314f374778b2d6ba31d573150fd97c1efc841a933da9b8e1f50ee5b72a375fe"
+      },
+      {
+        "features": [
+          13,
+          13,
+          6,
+          1,
+          64,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N13/incremental_boundary/incremental:509a79b91dffd206dd81d6c5c95283bdc567735dd9e701df5e5049b25debadec"
+      },
+      {
+        "features": [
+          13,
+          13,
+          4,
+          1,
+          58,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N13/parent_plan/44c584449565a012e0eefc2a519dbb41dca2d0b70fcf3903ffcad617be8d7f89"
+      },
+      {
+        "features": [
+          14,
+          14,
+          3,
+          1,
+          38,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N14/fresh_min_fill/95b94db47724e0c89e2e84824ddb6f8fba8743f303200a4012bb2800305137ef"
+      },
+      {
+        "features": [
+          14,
+          14,
+          4,
+          1,
+          60,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N14/parent_plan/88e9dcd02f97a3a7b85830f819ded3cf85bde23b8ce0de03e2478f0a8fe458a6"
+      },
+      {
+        "features": [
+          14,
+          14,
+          7,
+          1,
+          128,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N14/incremental_boundary/incremental:855ba61d8a1e476ab9f4a366f2b3cf320b37fb40b4200110740f2c9b86f8e195"
+      },
+      {
+        "features": [
+          15,
+          14,
+          4,
+          1,
+          61,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N15/parent_plan/b2205ef4c88d678e8bc63392836dcc30ac7635585559af1f83afb3973b76205b"
+      },
+      {
+        "features": [
+          15,
+          14,
+          3,
+          1,
+          39,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N15/fresh_min_fill/4131aa22800c8eb8a7528c8bfd1a1477f9765abef56e28e9649857fe6ac96cdf"
+      },
+      {
+        "features": [
+          15,
+          14,
+          8,
+          1,
+          256,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N15/incremental_boundary/incremental:2b8e55b1d695f87b2d8949f5627f50f0b303a3ed7b0a249f18d829714c01617e"
+      },
+      {
+        "features": [
+          16,
+          15,
+          4,
+          1,
+          63,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N16/parent_plan/aa237ac055b83174de6389bc9e1861944dc6290be3fe8e858c705609fdd4149b"
+      },
+      {
+        "features": [
+          16,
+          15,
+          3,
+          1,
+          41,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N16/fresh_min_fill/a63dcd51edb378160ccb93fc28ef241150cc379db99bd4ce798daebc83527df1"
+      },
+      {
+        "features": [
+          16,
+          15,
+          8,
+          1,
+          256,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N16/incremental_boundary/incremental:25661c6ee48d9ffc98b3f70adcda03eb3e60f39e301c927fd9a7188bac7634b2"
+      },
+      {
+        "features": [
+          17,
+          15,
+          4,
+          1,
+          64,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N17/parent_plan/8b23d28098eb7ec6ef75f3eeeaaf6d7122bdcc5164371c4dd3961abe74cc238a"
+      },
+      {
+        "features": [
+          17,
+          15,
+          8,
+          1,
+          256,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N17/incremental_boundary/incremental:49df486bd5f14593f7d0c68ccafd2b2662ac87abfe8b9c129ce8b8c1124c0faa"
+      },
+      {
+        "features": [
+          17,
+          15,
+          3,
+          1,
+          42,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N17/fresh_min_fill/63f8cb418fffb26e56078db145acf39ecf7071306a49429b212e40e677043629"
+      },
+      {
+        "features": [
+          18,
+          16,
+          4,
+          1,
+          66,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/parent_plan/e2234b23a4193dd1d81a417cc9b1678931a92090fcdd1752f96eee2c61913af4"
+      },
+      {
+        "features": [
+          18,
+          16,
+          3,
+          1,
+          44,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/transition_priority/5db51a33a71af0abea534756694a55fbfb245960b86ab63df8f883a8eb6ceb22"
+      },
+      {
+        "features": [
+          18,
+          16,
+          3,
+          1,
+          44,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/fresh_min_fill/d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56"
+      },
+      {
+        "features": [
+          18,
+          16,
+          9,
+          1,
+          512,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N18/incremental_boundary/incremental:1232a84a0582bb726c124d0930d0231adee6735906b94ed02e7da25fdc6d8fef"
+      },
+      {
+        "features": [
+          19,
+          16,
+          3,
+          1,
+          45,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N19/fresh_min_fill/a6966000539dcce3f408e75431a40b7cc0e101cad8dbf445bd26577227f0403f"
+      },
+      {
+        "features": [
+          19,
+          16,
+          4,
+          1,
+          67,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N19/parent_plan/b1ffd8b8a2b3234f0867938661d0262e050015e2f62eca88e4d9f95d53c30fac"
+      },
+      {
+        "features": [
+          19,
+          16,
+          9,
+          1,
+          512,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N19/incremental_boundary/incremental:326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677"
+      },
+      {
+        "features": [
+          20,
+          17,
+          9,
+          1,
+          512,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N20/incremental_boundary/incremental:9cb37e3de3b3abb56f127007b4d48f147f82cd8c1708a7eb831754b10a01e84c"
+      },
+      {
+        "features": [
+          20,
+          17,
+          4,
+          1,
+          69,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N20/parent_plan/b881c5fa7f94a882a31a59c0206012dafbb648ef0ee0e7a9d4ddd7fd99ba1f71"
+      },
+      {
+        "features": [
+          20,
+          17,
+          3,
+          1,
+          47,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N20/fresh_min_fill/9427e89610ccca68758f676f8c8b6c654f6e30694fcd9b8e007e48b938fec0cb"
+      },
+      {
+        "features": [
+          21,
+          18,
+          4,
+          1,
+          71,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N21/parent_plan/15a10a1663bb28968fd6dea6b03430b8a1268e475a5002727572f30fb90a921a"
+      },
+      {
+        "features": [
+          21,
+          18,
+          9,
+          1,
+          512,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N21/incremental_boundary/incremental:50f6cb3f01e659454ac535833fe01689b82a8280bb7fae86e8ce661b1965ac91"
+      },
+      {
+        "features": [
+          21,
+          18,
+          3,
+          1,
+          49,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N21/fresh_min_fill/cd18298d9d8cab891f7773f187a85bc1a6e374829b41b83b168f7ad3ce8c843b"
+      },
+      {
+        "features": [
+          22,
+          19,
+          3,
+          1,
+          51,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N22/fresh_min_fill/8d01bd271753b0212d97d34aa755ca59106c9dccad659f99a8d3fb37d919a4a5"
+      },
+      {
+        "features": [
+          22,
+          19,
+          4,
+          1,
+          81,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N22/parent_plan/28cf3e574ccbe43555b1455270b24f177b6a4bdd3d673082627eced862b4393c"
+      },
+      {
+        "features": [
+          22,
+          19,
+          9,
+          1,
+          512,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N22/incremental_boundary/incremental:e2e0b0207a0711b21f93a408e06df2b15201f0f66d8e720aabeeba38272c455e"
+      },
+      {
+        "features": [
+          23,
+          19,
+          4,
+          1,
+          82,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N23/parent_plan/ecc1ec4a2a2aaa7d22cdd0ef461abfee985f3d24a38b48f0dd688fea15487c82"
+      },
+      {
+        "features": [
+          23,
+          19,
+          3,
+          1,
+          52,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N23/fresh_min_fill/f80dc4eaff774a2917d5131caf32ff8eff9ae02dc3f1afe9fd30312471c3e3ee"
+      },
+      {
+        "features": [
+          23,
+          19,
+          10,
+          1,
+          1024,
+          64,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N23/incremental_boundary/incremental:0b5b315d2e763c00390a5bf64eb4856563cf3f7b01ecdcaa4b81841d42cc4d72"
+      },
+      {
+        "features": [
+          24,
+          19,
+          11,
+          1,
+          2048,
+          64,
+          1,
+          1
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6"
+      },
+      {
+        "features": [
+          24,
+          19,
+          3,
+          1,
+          53,
+          64,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N24/fresh_min_fill/661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa"
+      },
+      {
+        "features": [
+          24,
+          19,
+          4,
+          1,
+          83,
+          64,
+          1,
+          0
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5"
+      },
+      {
+        "features": [
+          25,
+          22,
+          4,
+          1,
+          95,
+          128,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/parent_plan/a2496f5bdc8661739c4fc089776c803f6a918dd33f19759d1db1038eaef8fe0a"
+      },
+      {
+        "features": [
+          25,
+          22,
+          3,
+          1,
+          57,
+          128,
+          1,
+          0
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c"
+      },
+      {
+        "features": [
+          25,
+          22,
+          3,
+          1,
+          57,
+          128,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/fresh_min_fill/2fa08b36ad9662553210670dbf1d6a7b9594fab7c302e17290bf8b047763d8f8"
+      },
+      {
+        "features": [
+          25,
+          22,
+          8,
+          1,
+          256,
+          128,
+          1,
+          1
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+      },
+      {
+        "features": [
+          26,
+          22,
+          8,
+          1,
+          256,
+          128,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N26/incremental_boundary/incremental:9cfc8d76c5ed049a3560d62c05e15577c481572e2255ecc5616dd5650242317d"
+      },
+      {
+        "features": [
+          26,
+          22,
+          4,
+          1,
+          96,
+          128,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N26/parent_plan/fcc2f0509b3d10669d0d6d6e763e62317c48a3fb2b10b5e9d3bab3b592b7f3b1"
+      },
+      {
+        "features": [
+          26,
+          22,
+          3,
+          1,
+          58,
+          128,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N26/fresh_min_fill/d0c42a27c2867e37b5db84573d41f2c5b70de9f2a87c4d0fd7651cc58cced687"
+      }
+    ]
+  },
+  "transition": {
+    "binding": {
+      "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+      "development_N": [
+        23,
+        26
+      ],
+      "feature_family": "transition",
+      "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+      "reserved_N": [
+        27,
+        30
+      ],
+      "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+      "training_N": [
+        1,
+        22
+      ]
+    },
+    "fit": {
+      "class_weights": {
+        "negative": 22,
+        "positive": 38
+      },
+      "depth": 1,
+      "development": {
+        "balanced_accuracy": "23/36",
+        "correct": 9,
+        "exception_witnesses": [
+          "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+          "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+          "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+          "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+        ],
+        "positives": 4,
+        "rows": 13
+      },
+      "execution": {
+        "backend": "NATIVE_CPP_GMP_CPU",
+        "native_source_manifest": "b592fe6731a18c4ed0b14e119412bd6f86e6e88434ab541217a986bfb40e65ab",
+        "shared_R3_checkpoint": true
+      },
+      "feature_count": 11,
+      "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+      "model_sha256": "b206c763d31a376220215ca05f88b69317ae9ada67b929331bd28d713bc435d0",
+      "name": "spin-n1-30-transition-v1",
+      "rules": [
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": "<=",
+              "feature": 10,
+              "threshold": 0
+            }
+          ],
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        {
+          "all_probability_ties_retained": true,
+          "conditions": [
+            {
+              "comparison": ">",
+              "feature": 10,
+              "threshold": 0
+            }
+          ],
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        }
+      ],
+      "selection": "development balanced accuracy; shallower on tie",
+      "source_binding": {
+        "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+        "development_N": [
+          23,
+          26
+        ],
+        "feature_family": "transition",
+        "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+        "reserved_N": [
+          27,
+          30
+        ],
+        "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+        "training_N": [
+          1,
+          22
+        ]
+      },
+      "test_rows_reserved": 0,
+      "training": {
+        "balanced_accuracy": "1",
+        "correct": 60,
+        "exception_witnesses": [],
+        "positives": 22,
+        "rows": 60
+      },
+      "tree": {
+        "classification_threshold": "11/30",
+        "feature": 10,
+        "left": {
+          "n": 38,
+          "positive": 0,
+          "probability": "0",
+          "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+        },
+        "n": 60,
+        "positive": 22,
+        "probability": "11/30",
+        "right": {
+          "n": 22,
+          "positive": 22,
+          "probability": "1",
+          "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+        },
+        "threshold": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      }
+    },
+    "model": {
+      "record": {
+        "model": {
+          "class_weights": {
+            "negative": 22,
+            "positive": 38
+          },
+          "depth": 1,
+          "development": {
+            "balanced_accuracy": "23/36",
+            "correct": 9,
+            "exception_witnesses": [
+              "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+              "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5",
+              "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c",
+              "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+            ],
+            "positives": 4,
+            "rows": 13
+          },
+          "feature_count": 11,
+          "fit": "NATIVE_CPP_EXACT_GMP_CLASS_BALANCED_CART",
+          "rules": [
+            {
+              "all_probability_ties_retained": true,
+              "conditions": [
+                {
+                  "comparison": "<=",
+                  "feature": 10,
+                  "threshold": 0
+                }
+              ],
+              "n": 38,
+              "positive": 0,
+              "probability": "0",
+              "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+            },
+            {
+              "all_probability_ties_retained": true,
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "feature": 10,
+                  "threshold": 0
+                }
+              ],
+              "n": 22,
+              "positive": 22,
+              "probability": "1",
+              "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+            }
+          ],
+          "selection": "development balanced accuracy; shallower on tie",
+          "test_rows_reserved": 0,
+          "training": {
+            "balanced_accuracy": "1",
+            "correct": 60,
+            "exception_witnesses": [],
+            "positives": 22,
+            "rows": 60
+          },
+          "tree": {
+            "classification_threshold": "11/30",
+            "feature": 10,
+            "left": {
+              "n": 38,
+              "positive": 0,
+              "probability": "0",
+              "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+            },
+            "n": 60,
+            "positive": 22,
+            "probability": "11/30",
+            "right": {
+              "n": 22,
+              "positive": 22,
+              "probability": "1",
+              "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+            },
+            "threshold": 0,
+            "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+          }
+        },
+        "name": "spin-n1-30-transition-v1",
+        "origin": "NATIVE_CLASS_BALANCED_CART_SUCCESSOR",
+        "source_binding": {
+          "campaign": "GEN4_SPIN_N1_30_TRANSITION_TRAINING1",
+          "development_N": [
+            23,
+            26
+          ],
+          "feature_family": "transition",
+          "incremental_horizon_source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+          "reserved_N": [
+            27,
+            30
+          ],
+          "roster": "4969ab74b7d6d0949ef80c17f4bb74ceec9318a3884ea74fccfa40fd4a70baf4",
+          "training_N": [
+            1,
+            22
+          ]
+        },
+        "training_input_sha256": "faffdfdb54d05165e42df7759d35ab6280a744b2e0939bee904bd14b557a92fc"
+      },
+      "sha256": "b206c763d31a376220215ca05f88b69317ae9ada67b929331bd28d713bc435d0"
+    },
+    "rows": [
+      {
+        "features": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N1/incremental_boundary/incremental:a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf"
+      },
+      {
+        "features": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N1/fresh_min_fill/afb6640b76fbeaff802d4700ad5921de7f85c6adcf1a58b802b2709c8e138b72"
+      },
+      {
+        "features": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N2/fresh_min_fill/b21c15769a4f532a063761aa410136d1742f7b43bc7455a46d5c18ddfdd55bf9"
+      },
+      {
+        "features": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N2/incremental_boundary/incremental:99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb"
+      },
+      {
+        "features": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N3/fresh_min_fill/1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d"
+      },
+      {
+        "features": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N3/incremental_boundary/incremental:2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052"
+      },
+      {
+        "features": [
+          3,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N4/fresh_min_fill/8012d75b19e92a4a24ee101550e2319f8420cf5a5e3e8eff964c9f02aa897f7b"
+      },
+      {
+        "features": [
+          3,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N4/incremental_boundary/incremental:5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3"
+      },
+      {
+        "features": [
+          4,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N5/fresh_min_fill/0d8d25bc216ccdc12341ae425298fe32ebf73553ae480163c88b32e20f6c235e"
+      },
+      {
+        "features": [
+          4,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N5/incremental_boundary/incremental:258c2a4ff949114577ec2e8e11949dbaeec7ef3432cd2f634fefcde861ae0117"
+      },
+      {
+        "features": [
+          5,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N6/fresh_min_fill/5fcec2aab1fc7dbb86d63268e81d83a422d7c43873132ae11c01c5c72c3df8d1"
+      },
+      {
+        "features": [
+          5,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N6/incremental_boundary/incremental:473d02574cc7a661b725c821ba67e57e00b12ef300aeb1d47602959376a040a6"
+      },
+      {
+        "features": [
+          6,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          5,
+          3,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N7/fresh_min_fill/3392ec06a855ac5a51444a743641c15bdb16f1c5bcc3578daa605c07047089dd"
+      },
+      {
+        "features": [
+          6,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          5,
+          3,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N7/incremental_boundary/incremental:4034394a52387d4c50dc492d42caace86d7da5f5de824fe39a27a1e9eae7882c"
+      },
+      {
+        "features": [
+          7,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N8/fresh_min_fill/334404299d113f51b805e2a9d5697bcf9949c2536a876d8d4397ffd69044d2b2"
+      },
+      {
+        "features": [
+          7,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N8/incremental_boundary/incremental:567e11eb337603247dc37b986e36bc1520dd5166e21f234c7e57bdfa812c67e9"
+      },
+      {
+        "features": [
+          7,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N8/parent_plan/5b8c90e07ff8405b1c0319acfe357e15ddffe6311e3cb99edbf3dd45f0b41e69"
+      },
+      {
+        "features": [
+          8,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          15,
+          11,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N9/fresh_min_fill/9072bb50d2adbc7acafc5ee597ca362d9882adad0514673414896674d4d3f417"
+      },
+      {
+        "features": [
+          8,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          15,
+          11,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N9/parent_plan/11c95ac46d0fda3cc28f1c917f4a4f31fa11b81783b66be713eeb8276b5fa086"
+      },
+      {
+        "features": [
+          8,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          15,
+          11,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N9/incremental_boundary/incremental:0de9fb2f1238632cf721304595a3822207684f650a0992dcf900ad92b8618fe3"
+      },
+      {
+        "features": [
+          9,
+          1,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          31,
+          15,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N10/incremental_boundary/incremental:10a7c79308377a16a943effe68b59a085f69c569b04047ea28a88cb8962b1725"
+      },
+      {
+        "features": [
+          9,
+          1,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          31,
+          15,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N10/parent_plan/323b3728f165d3b7eb1c5563e66cffb7da127b387dd2100c6d8f1382e19c7c9a"
+      },
+      {
+        "features": [
+          9,
+          1,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          31,
+          15,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N10/fresh_min_fill/959c2c94d5beac84d9569a0e22360bb5911c316f7ba1cd80743dc9a69c9e17d4"
+      },
+      {
+        "features": [
+          10,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          33,
+          31,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N11/incremental_boundary/incremental:2cd005310f5e125be4f3793e7039865435b7cca3f722ecc8b24a5d4ea6683d13"
+      },
+      {
+        "features": [
+          10,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          33,
+          31,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N11/fresh_min_fill/1a2840a6776083049732fa779e213dd0ff8ef557bc5f61868ea61f2f7096d9a5"
+      },
+      {
+        "features": [
+          10,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          55,
+          31,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N11/parent_plan/52ac6aa4b2e2e0d69a1b8e17f1e307b3f39abebb7c3ce92eb77630a8570593dc"
+      },
+      {
+        "features": [
+          11,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          57,
+          33,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N12/parent_plan/c0b7da93500c684ae2332c6eaa590b987bbafc55b23bde9a4d45105c9e5e4539"
+      },
+      {
+        "features": [
+          11,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          35,
+          33,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N12/incremental_boundary/incremental:d43f02bf50cba6c1f979836775c85f22cf565bc1897f098c6c402ce05669c017"
+      },
+      {
+        "features": [
+          11,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          35,
+          33,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N12/fresh_min_fill/041c8b45a94ade2717cdd35a68e72a6a8f0446efa24c5fb63fadfd98e0b68b34"
+      },
+      {
+        "features": [
+          12,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          36,
+          35,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N13/fresh_min_fill/6314f374778b2d6ba31d573150fd97c1efc841a933da9b8e1f50ee5b72a375fe"
+      },
+      {
+        "features": [
+          12,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          36,
+          35,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N13/incremental_boundary/incremental:509a79b91dffd206dd81d6c5c95283bdc567735dd9e701df5e5049b25debadec"
+      },
+      {
+        "features": [
+          12,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          58,
+          35,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N13/parent_plan/44c584449565a012e0eefc2a519dbb41dca2d0b70fcf3903ffcad617be8d7f89"
+      },
+      {
+        "features": [
+          13,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          38,
+          36,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N14/fresh_min_fill/95b94db47724e0c89e2e84824ddb6f8fba8743f303200a4012bb2800305137ef"
+      },
+      {
+        "features": [
+          13,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          60,
+          36,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N14/parent_plan/88e9dcd02f97a3a7b85830f819ded3cf85bde23b8ce0de03e2478f0a8fe458a6"
+      },
+      {
+        "features": [
+          13,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          38,
+          36,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N14/incremental_boundary/incremental:855ba61d8a1e476ab9f4a366f2b3cf320b37fb40b4200110740f2c9b86f8e195"
+      },
+      {
+        "features": [
+          14,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          61,
+          38,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N15/parent_plan/b2205ef4c88d678e8bc63392836dcc30ac7635585559af1f83afb3973b76205b"
+      },
+      {
+        "features": [
+          14,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          39,
+          38,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N15/fresh_min_fill/4131aa22800c8eb8a7528c8bfd1a1477f9765abef56e28e9649857fe6ac96cdf"
+      },
+      {
+        "features": [
+          14,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          39,
+          38,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N15/incremental_boundary/incremental:2b8e55b1d695f87b2d8949f5627f50f0b303a3ed7b0a249f18d829714c01617e"
+      },
+      {
+        "features": [
+          15,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          63,
+          39,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N16/parent_plan/aa237ac055b83174de6389bc9e1861944dc6290be3fe8e858c705609fdd4149b"
+      },
+      {
+        "features": [
+          15,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          41,
+          39,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N16/fresh_min_fill/a63dcd51edb378160ccb93fc28ef241150cc379db99bd4ce798daebc83527df1"
+      },
+      {
+        "features": [
+          15,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          41,
+          39,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N16/incremental_boundary/incremental:25661c6ee48d9ffc98b3f70adcda03eb3e60f39e301c927fd9a7188bac7634b2"
+      },
+      {
+        "features": [
+          16,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          64,
+          41,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N17/parent_plan/8b23d28098eb7ec6ef75f3eeeaaf6d7122bdcc5164371c4dd3961abe74cc238a"
+      },
+      {
+        "features": [
+          16,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          42,
+          41,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N17/incremental_boundary/incremental:49df486bd5f14593f7d0c68ccafd2b2662ac87abfe8b9c129ce8b8c1124c0faa"
+      },
+      {
+        "features": [
+          16,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          42,
+          41,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N17/fresh_min_fill/63f8cb418fffb26e56078db145acf39ecf7071306a49429b212e40e677043629"
+      },
+      {
+        "features": [
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          66,
+          42,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/parent_plan/e2234b23a4193dd1d81a417cc9b1678931a92090fcdd1752f96eee2c61913af4"
+      },
+      {
+        "features": [
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          44,
+          42,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/transition_priority/5db51a33a71af0abea534756694a55fbfb245960b86ab63df8f883a8eb6ceb22"
+      },
+      {
+        "features": [
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          44,
+          42,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N18/fresh_min_fill/d6cb9bc4b549c7a480a84e12a047b528c6b829067b3c4088d50fc3f4195dbf56"
+      },
+      {
+        "features": [
+          17,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          44,
+          42,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N18/incremental_boundary/incremental:1232a84a0582bb726c124d0930d0231adee6735906b94ed02e7da25fdc6d8fef"
+      },
+      {
+        "features": [
+          18,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          45,
+          44,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N19/fresh_min_fill/a6966000539dcce3f408e75431a40b7cc0e101cad8dbf445bd26577227f0403f"
+      },
+      {
+        "features": [
+          18,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          67,
+          44,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N19/parent_plan/b1ffd8b8a2b3234f0867938661d0262e050015e2f62eca88e4d9f95d53c30fac"
+      },
+      {
+        "features": [
+          18,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          45,
+          44,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N19/incremental_boundary/incremental:326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677"
+      },
+      {
+        "features": [
+          19,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          47,
+          45,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N20/incremental_boundary/incremental:9cb37e3de3b3abb56f127007b4d48f147f82cd8c1708a7eb831754b10a01e84c"
+      },
+      {
+        "features": [
+          19,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          69,
+          45,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N20/parent_plan/b881c5fa7f94a882a31a59c0206012dafbb648ef0ee0e7a9d4ddd7fd99ba1f71"
+      },
+      {
+        "features": [
+          19,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          47,
+          45,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N20/fresh_min_fill/9427e89610ccca68758f676f8c8b6c654f6e30694fcd9b8e007e48b938fec0cb"
+      },
+      {
+        "features": [
+          20,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          71,
+          47,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N21/parent_plan/15a10a1663bb28968fd6dea6b03430b8a1268e475a5002727572f30fb90a921a"
+      },
+      {
+        "features": [
+          20,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          49,
+          47,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N21/incremental_boundary/incremental:50f6cb3f01e659454ac535833fe01689b82a8280bb7fae86e8ce661b1965ac91"
+      },
+      {
+        "features": [
+          20,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          49,
+          47,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N21/fresh_min_fill/cd18298d9d8cab891f7773f187a85bc1a6e374829b41b83b168f7ad3ce8c843b"
+      },
+      {
+        "features": [
+          21,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          51,
+          49,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N22/fresh_min_fill/8d01bd271753b0212d97d34aa755ca59106c9dccad659f99a8d3fb37d919a4a5"
+      },
+      {
+        "features": [
+          21,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          81,
+          49,
+          0
+        ],
+        "label": 0,
+        "split": 0,
+        "witness": "N22/parent_plan/28cf3e574ccbe43555b1455270b24f177b6a4bdd3d673082627eced862b4393c"
+      },
+      {
+        "features": [
+          21,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          1,
+          51,
+          49,
+          1
+        ],
+        "label": 1,
+        "split": 0,
+        "witness": "N22/incremental_boundary/incremental:e2e0b0207a0711b21f93a408e06df2b15201f0f66d8e720aabeeba38272c455e"
+      },
+      {
+        "features": [
+          22,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          82,
+          51,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N23/parent_plan/ecc1ec4a2a2aaa7d22cdd0ef461abfee985f3d24a38b48f0dd688fea15487c82"
+      },
+      {
+        "features": [
+          22,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          52,
+          51,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N23/fresh_min_fill/f80dc4eaff774a2917d5131caf32ff8eff9ae02dc3f1afe9fd30312471c3e3ee"
+      },
+      {
+        "features": [
+          22,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          52,
+          51,
+          1
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N23/incremental_boundary/incremental:0b5b315d2e763c00390a5bf64eb4856563cf3f7b01ecdcaa4b81841d42cc4d72"
+      },
+      {
+        "features": [
+          23,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          53,
+          52,
+          1
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N24/incremental_boundary/incremental:23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6"
+      },
+      {
+        "features": [
+          23,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          53,
+          52,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N24/fresh_min_fill/661e529a92b2245ce51493f4896fd84e1bb9e0c858307f92559d602057338bfa"
+      },
+      {
+        "features": [
+          23,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          83,
+          52,
+          0
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N24/parent_plan/d49364d69c3ae9780fda4d20bc0aec751176d34d9ef56eaee22f7825cd2f69d5"
+      },
+      {
+        "features": [
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          95,
+          53,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/parent_plan/a2496f5bdc8661739c4fc089776c803f6a918dd33f19759d1db1038eaef8fe0a"
+      },
+      {
+        "features": [
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          0,
+          1,
+          57,
+          53,
+          0
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N25/transition_priority/bda087b8ad4587b1bd4be53cffa5b016589bc4f14fcfe452a7d19e29aef3a40c"
+      },
+      {
+        "features": [
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          0,
+          1,
+          57,
+          53,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/fresh_min_fill/2fa08b36ad9662553210670dbf1d6a7b9594fab7c302e17290bf8b047763d8f8"
+      },
+      {
+        "features": [
+          24,
+          1,
+          3,
+          3,
+          3,
+          1,
+          0,
+          1,
+          57,
+          53,
+          1
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N25/incremental_boundary/incremental:73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447"
+      },
+      {
+        "features": [
+          25,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          58,
+          57,
+          1
+        ],
+        "label": 1,
+        "split": 1,
+        "witness": "N26/incremental_boundary/incremental:9cfc8d76c5ed049a3560d62c05e15577c481572e2255ecc5616dd5650242317d"
+      },
+      {
+        "features": [
+          25,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1,
+          96,
+          57,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N26/parent_plan/fcc2f0509b3d10669d0d6d6e763e62317c48a3fb2b10b5e9d3bab3b592b7f3b1"
+      },
+      {
+        "features": [
+          25,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          58,
+          57,
+          0
+        ],
+        "label": 0,
+        "split": 1,
+        "witness": "N26/fresh_min_fill/d0c42a27c2867e37b5db84573d41f2c5b70de9f2a87c4d0fd7651cc58cced687"
+      }
+    ]
+  }
+}

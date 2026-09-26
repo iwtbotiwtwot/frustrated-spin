@@ -1,0 +1,94 @@
+{
+  "kind": "paired",
+  "N": 26,
+  "methods": [
+    "variable_elimination",
+    "conditional_components"
+  ],
+  "variant": "followup1/variants/N26_swap_14.json",
+  "question": "Does a newly found structural regime actually change exact method cost?",
+  "parent_question": "ee7cc140d7b4d5b97a95c335",
+  "stage": 0,
+  "repeats": 3,
+  "maximum_admitted_seconds": 180,
+  "predicted_cost_seconds": 0.4675451769726351,
+  "expected_information_gain": 30,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "8ddc83a094658a7eebf8a64af8de84f578d0467f41da4ca88d28b6a96ab8e6e8",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "source features, prior outcomes and measured timing dispersion",
+  "expected_discriminating_outcomes": [
+    "repeated advantage survives matched-source controls",
+    "counterexample changes method choice",
+    "certificate verifies exact transformation",
+    "capacity failure identifies boundary"
+  ],
+  "verification_contract": "Full DOS and all ordered port rows equal retained canonical or a second exact route; exact count and moments retained",
+  "inputs_hashes": {
+    "canonical/N026.json": "4ceb63662b599bde427a357d30229f3fe9ebd9aab1513433feec18199c270540",
+    "followup1/variants/N26_swap_14.json": "bbc3d5158e6bb5e2fbe550f750f96274b212fb9ba6a163b29cda3f5dcaa686eb"
+  },
+  "question_id": "32edbc8834a35b29c181e685",
+  "timestamp": 1790406368.280836,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 23793659904,
+      "prelaunch_available_cpu_equivalents": 1.9919839679358717,
+      "cpu_equivalents": 1.39438877755511,
+      "cpu_quota_percent": 139.44,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 16655561932,
+      "memory_high_bytes": 14990005738,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T07:06:08Z"
+    },
+    "cpu_cap": 1.39438877755511,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1846576 22.6  0.3 cinnamon-screen",
+      "1844963  9.6  0.1 python",
+      "1209887  5.1  1.8 firefox-bin",
+      "   1925  2.7  0.4 cinnamon",
+      "   1382  2.5  0.4 Xorg",
+      "1776178  2.5  1.4 Isolated Web Co",
+      "   3117  2.0  0.2 terminator",
+      "1846590  1.7  0.0 cs-backup-locke",
+      "1210268  1.6  0.9 Isolated Web Co",
+      "1076230  1.4  0.9 codex",
+      "1718157  1.3  2.0 Isolated Web Co",
+      "1210108  0.6  0.1 RDD Process",
+      "1776069  0.4  1.4 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "     15  0.1  0.0 rcu_preempt"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "2d7899deca6383ea65c67c71b2a2a1fb0f3224a561ef131d02b97b6fa2d8f20c"
+}

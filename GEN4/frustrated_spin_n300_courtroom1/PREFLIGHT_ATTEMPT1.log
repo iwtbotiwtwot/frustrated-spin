@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_n300_courtroom1/run.py", line 122, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_n300_courtroom1/run.py", line 105, in main
+    frozen();assert not (P/'RESULTS.json').exists(),'Scored run cannot be silently repeated'
+    ^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_n300_courtroom1/run.py", line 16, in frozen
+    assert load(P/'WITNESS.json')['precommit_archive_sha256']==sha(P/'PRECOMMIT.tar.gz')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_n300_courtroom1/packet.py", line 10, in load
+    def load(p):return json.loads(Path(p).read_text())
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

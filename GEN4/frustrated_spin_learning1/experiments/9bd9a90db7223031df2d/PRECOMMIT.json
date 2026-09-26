@@ -1,0 +1,90 @@
+{
+  "kind": "solve",
+  "N": 105,
+  "method": "components",
+  "variant": null,
+  "question": "solve: N105 components Distinguish decomposition from nominal N; retain full density equality",
+  "why_chosen": "Distinguish decomposition from nominal N; retain full density equality",
+  "expected_information_gain": 500,
+  "predicted_cost_seconds": 20,
+  "maximum_admitted_seconds": 120,
+  "claim_type": "NEWLY_PRECOMMITTED",
+  "features_used": "frozen graph structure and prior completed experiments; no future output",
+  "expected_discriminating_outcomes": [
+    "structural or exact equality supports scoped hypothesis",
+    "counterexample or resource rejection changes next frontier"
+  ],
+  "verification_contract": "native source-bound receipt; every DOS retains full counts/moments/port closure; compare canonical or independent route; structural plans are not new spectra",
+  "question_id": "9bd9a90db7223031df2d",
+  "score": 25.0,
+  "source_lineage": {
+    "kind": "INHERITED",
+    "object_ref": "02fb6e9bac27fe479f14c177986b8f5a2490e37fbe1423191cd35f1ecab49058",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N105_P9G0_HISTORICAL_PACKET_RESTORATION_V1"
+  },
+  "inputs_hashes": {
+    "canonical/N105.json": "4e7f59700f171908983967542fd0e0a5527f2db0b20d43c2cacf8ff17f6e8140"
+  },
+  "candidate_methods": [
+    "components"
+  ],
+  "timestamp": 1790403136.037815,
+  "resource_gate": {
+    "admitted": true,
+    "resource_manager": "/home/sam/PycharmProjects/SAM_Research_Project/CURRENT_REVISION/engines/SLC/gen3/resources.py",
+    "budget": {
+      "host": "i9",
+      "fraction_of_available": 0.7,
+      "prelaunch_mem_available": 24390230016,
+      "prelaunch_available_cpu_equivalents": 1.9879518072289157,
+      "cpu_equivalents": 1.391566265060241,
+      "cpu_quota_percent": 139.16,
+      "allowed_cpus": [
+        4,
+        5
+      ],
+      "memory_max_bytes": 17073161011,
+      "memory_high_bytes": 15365844909,
+      "memory_swap_max_bytes": 0,
+      "cpu_worker_order": [
+        4,
+        5
+      ],
+      "controller_cpus": [
+        4,
+        5
+      ],
+      "io_cpus": [],
+      "initial_workers": 2,
+      "sampled_utc": "2026-09-26T06:12:16Z"
+    },
+    "cpu_cap": 1.391566265060241,
+    "affinity": [
+      4,
+      5
+    ],
+    "experiment_address_space_limit": 4294967296,
+    "process_snapshot": [
+      "    PID %CPU %MEM COMMAND",
+      "1842804 26.1  0.1 python",
+      "1209887  5.2  2.0 firefox-bin",
+      "1776178  2.9  1.4 Isolated Web Co",
+      "   1925  2.7  0.4 cinnamon",
+      "   1382  2.5  0.2 Xorg",
+      "   3117  2.0  0.2 terminator",
+      "1210268  1.6  1.0 Isolated Web Co",
+      "1076230  1.4  1.0 codex",
+      "1718157  1.3  1.9 Isolated Web Co",
+      "1210108  0.6  0.3 RDD Process",
+      "1776069  0.4  1.5 Isolated Web Co",
+      "    190  0.2  0.0 kworker/u81:0-i915_flip",
+      "1842364  0.2  0.0 kworker/u80:19-kcryptd-252:0-1",
+      "     15  0.1  0.0 rcu_preempt",
+      "   3108  0.1  0.1 mintreport-tray"
+    ],
+    "GPU": "unavailable locally; no remote hardware contacted",
+    "policy": "one child; nice10; existing-manager snapshot + exclusive existing run lock; no configure()/services; no intentional swap use"
+  },
+  "code_sha256": "8562d75b10adace7ce40effb64f0aebf246148c84329e561c84ccaf8f98642bd"
+}

@@ -1,0 +1,2802 @@
+{
+  "value": {
+    "status": "REPEATED_EMPIRICAL_RULE",
+    "N": 19,
+    "source_hash": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+    "features": {
+      "N": 19,
+      "source_family": "FOLLOWUP1_swap",
+      "graph_hash": "6a521e996e877a71077cc316a766a39a50f2840bfdd9a73695c5257380ddd319",
+      "source_hash": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+      "edges": 16,
+      "degree_min": 0,
+      "degree_max": 4,
+      "degree_mean": 1.6842105263157894,
+      "degree_std": 1.1721609184905308,
+      "components": 5,
+      "component_sizes": [
+        1,
+        1,
+        1,
+        2,
+        14
+      ],
+      "max_component": 14,
+      "local_assignments": 16394,
+      "minfill_width": 2,
+      "minfill_work": 39,
+      "minfill_order": [
+        12,
+        16,
+        18,
+        0,
+        1,
+        11,
+        10,
+        13,
+        5,
+        14,
+        15,
+        2,
+        3,
+        17,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "energy_bound": 48,
+      "root_bound": 64,
+      "crt_primes": 1,
+      "arithmetic_burden": 2496,
+      "coefficient_bound": "524288",
+      "coupling_multiplicities": {
+        "3": 3,
+        "1": 3,
+        "-1": 4,
+        "-2": 4,
+        "-3": 2
+      },
+      "symmetry": "not assumed",
+      "degree_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4
+      ]
+    },
+    "timings": [
+      {
+        "method": "variable_elimination",
+        "rep": 0,
+        "seconds": 0.001083036,
+        "cpu_seconds": 0.000998739,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [
+            12,
+            16,
+            18,
+            11,
+            10,
+            13,
+            14,
+            15,
+            17,
+            5,
+            4,
+            6,
+            8,
+            9,
+            7
+          ],
+          "energy_shift": 48,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 1003865,
+          "recomputed": true,
+          "arithmetic_work_units": 440,
+          "peak_factor_entries": 16,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "524288",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 0,
+        "seconds": 0.012623646,
+        "cpu_seconds": 0.012998091,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            14,
+            1,
+            1,
+            1
+          ],
+          "enumerated_assignments": 16394,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 12560718,
+          "recomputed": true,
+          "arithmetic_work_units": 16462,
+          "peak_factor_entries": 63,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "524288",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 1,
+        "seconds": 0.012519746,
+        "cpu_seconds": 0.012999067,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            14,
+            1,
+            1,
+            1
+          ],
+          "enumerated_assignments": 16394,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 12459978,
+          "recomputed": true,
+          "arithmetic_work_units": 16462,
+          "peak_factor_entries": 63,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "524288",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "variable_elimination",
+        "rep": 1,
+        "seconds": 0.000961323,
+        "cpu_seconds": 0.001000439,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [
+            12,
+            16,
+            18,
+            11,
+            10,
+            13,
+            14,
+            15,
+            17,
+            5,
+            4,
+            6,
+            8,
+            9,
+            7
+          ],
+          "energy_shift": 48,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 903964,
+          "recomputed": true,
+          "arithmetic_work_units": 440,
+          "peak_factor_entries": 16,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "524288",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "variable_elimination",
+        "rep": 2,
+        "seconds": 0.00095516,
+        "cpu_seconds": 0.000999951,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [
+            12,
+            16,
+            18,
+            11,
+            10,
+            13,
+            14,
+            15,
+            17,
+            5,
+            4,
+            6,
+            8,
+            9,
+            7
+          ],
+          "energy_shift": 48,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 892522,
+          "recomputed": true,
+          "arithmetic_work_units": 440,
+          "peak_factor_entries": 16,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "524288",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 2,
+        "seconds": 0.012918975,
+        "cpu_seconds": 0.012998479,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            14,
+            1,
+            1,
+            1
+          ],
+          "enumerated_assignments": 16394,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 12858893,
+          "recomputed": true,
+          "arithmetic_work_units": 16462,
+          "peak_factor_entries": 63,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "524288",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      }
+    ],
+    "median_seconds": {
+      "variable_elimination": 0.000961323,
+      "components": 0.012623646
+    },
+    "coefficient_of_variation": {
+      "variable_elimination": 0.05889191314276409,
+      "components": 0.013329288853002748
+    },
+    "fastest": "variable_elimination",
+    "speedup": 13.131534354218093,
+    "answer": {
+      "schema": "GEN3_EXACT_SPIN_DOS_V1",
+      "source_sha256": "d1ae7b4c44c40db21307904242409a183dd8453ddf8075eb96a8497313a5004a",
+      "N": 19,
+      "energy_convention": "E=-sum(J_uv*s_u*s_v)-sum(h_u*s_u); s_u in {-1,+1}",
+      "ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "port_state_convention": "bit i=1 is +1 at local vertex ports[i]; bit i=0 is -1",
+      "scalar_dos": [
+        [
+          -36,
+          "2"
+        ],
+        [
+          -34,
+          "14"
+        ],
+        [
+          -32,
+          "48"
+        ],
+        [
+          -30,
+          "150"
+        ],
+        [
+          -28,
+          "390"
+        ],
+        [
+          -26,
+          "870"
+        ],
+        [
+          -24,
+          "1774"
+        ],
+        [
+          -22,
+          "3236"
+        ],
+        [
+          -20,
+          "5370"
+        ],
+        [
+          -18,
+          "8270"
+        ],
+        [
+          -16,
+          "11966"
+        ],
+        [
+          -14,
+          "16458"
+        ],
+        [
+          -12,
+          "21444"
+        ],
+        [
+          -10,
+          "26568"
+        ],
+        [
+          -8,
+          "31504"
+        ],
+        [
+          -6,
+          "35782"
+        ],
+        [
+          -4,
+          "39062"
+        ],
+        [
+          -2,
+          "41092"
+        ],
+        [
+          0,
+          "41638"
+        ],
+        [
+          2,
+          "40528"
+        ],
+        [
+          4,
+          "37988"
+        ],
+        [
+          6,
+          "34398"
+        ],
+        [
+          8,
+          "29944"
+        ],
+        [
+          10,
+          "25104"
+        ],
+        [
+          12,
+          "20334"
+        ],
+        [
+          14,
+          "15806"
+        ],
+        [
+          16,
+          "11754"
+        ],
+        [
+          18,
+          "8386"
+        ],
+        [
+          20,
+          "5716"
+        ],
+        [
+          22,
+          "3692"
+        ],
+        [
+          24,
+          "2280"
+        ],
+        [
+          26,
+          "1350"
+        ],
+        [
+          28,
+          "736"
+        ],
+        [
+          30,
+          "354"
+        ],
+        [
+          32,
+          "162"
+        ],
+        [
+          34,
+          "78"
+        ],
+        [
+          36,
+          "30"
+        ],
+        [
+          38,
+          "8"
+        ],
+        [
+          40,
+          "2"
+        ]
+      ],
+      "port_rows": [
+        {
+          "state": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -36,
+              "2"
+            ],
+            [
+              -34,
+              "4"
+            ],
+            [
+              -32,
+              "12"
+            ],
+            [
+              -30,
+              "32"
+            ],
+            [
+              -28,
+              "76"
+            ],
+            [
+              -26,
+              "152"
+            ],
+            [
+              -24,
+              "290"
+            ],
+            [
+              -22,
+              "540"
+            ],
+            [
+              -20,
+              "842"
+            ],
+            [
+              -18,
+              "1214"
+            ],
+            [
+              -16,
+              "1662"
+            ],
+            [
+              -14,
+              "2084"
+            ],
+            [
+              -12,
+              "2484"
+            ],
+            [
+              -10,
+              "2800"
+            ],
+            [
+              -8,
+              "2964"
+            ],
+            [
+              -6,
+              "2966"
+            ],
+            [
+              -4,
+              "2850"
+            ],
+            [
+              -2,
+              "2644"
+            ],
+            [
+              0,
+              "2324"
+            ],
+            [
+              2,
+              "1948"
+            ],
+            [
+              4,
+              "1552"
+            ],
+            [
+              6,
+              "1164"
+            ],
+            [
+              8,
+              "822"
+            ],
+            [
+              10,
+              "556"
+            ],
+            [
+              12,
+              "354"
+            ],
+            [
+              14,
+              "202"
+            ],
+            [
+              16,
+              "114"
+            ],
+            [
+              18,
+              "64"
+            ],
+            [
+              20,
+              "32"
+            ],
+            [
+              22,
+              "12"
+            ],
+            [
+              24,
+              "4"
+            ],
+            [
+              26,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -32,
+              "2"
+            ],
+            [
+              -30,
+              "4"
+            ],
+            [
+              -28,
+              "12"
+            ],
+            [
+              -26,
+              "32"
+            ],
+            [
+              -24,
+              "76"
+            ],
+            [
+              -22,
+              "152"
+            ],
+            [
+              -20,
+              "290"
+            ],
+            [
+              -18,
+              "540"
+            ],
+            [
+              -16,
+              "842"
+            ],
+            [
+              -14,
+              "1214"
+            ],
+            [
+              -12,
+              "1662"
+            ],
+            [
+              -10,
+              "2084"
+            ],
+            [
+              -8,
+              "2484"
+            ],
+            [
+              -6,
+              "2800"
+            ],
+            [
+              -4,
+              "2964"
+            ],
+            [
+              -2,
+              "2966"
+            ],
+            [
+              0,
+              "2850"
+            ],
+            [
+              2,
+              "2644"
+            ],
+            [
+              4,
+              "2324"
+            ],
+            [
+              6,
+              "1948"
+            ],
+            [
+              8,
+              "1552"
+            ],
+            [
+              10,
+              "1164"
+            ],
+            [
+              12,
+              "822"
+            ],
+            [
+              14,
+              "556"
+            ],
+            [
+              16,
+              "354"
+            ],
+            [
+              18,
+              "202"
+            ],
+            [
+              20,
+              "114"
+            ],
+            [
+              22,
+              "64"
+            ],
+            [
+              24,
+              "32"
+            ],
+            [
+              26,
+              "12"
+            ],
+            [
+              28,
+              "4"
+            ],
+            [
+              30,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -26,
+              "2"
+            ],
+            [
+              -24,
+              "4"
+            ],
+            [
+              -22,
+              "12"
+            ],
+            [
+              -20,
+              "32"
+            ],
+            [
+              -18,
+              "76"
+            ],
+            [
+              -16,
+              "152"
+            ],
+            [
+              -14,
+              "290"
+            ],
+            [
+              -12,
+              "540"
+            ],
+            [
+              -10,
+              "842"
+            ],
+            [
+              -8,
+              "1214"
+            ],
+            [
+              -6,
+              "1662"
+            ],
+            [
+              -4,
+              "2084"
+            ],
+            [
+              -2,
+              "2484"
+            ],
+            [
+              0,
+              "2800"
+            ],
+            [
+              2,
+              "2964"
+            ],
+            [
+              4,
+              "2966"
+            ],
+            [
+              6,
+              "2850"
+            ],
+            [
+              8,
+              "2644"
+            ],
+            [
+              10,
+              "2324"
+            ],
+            [
+              12,
+              "1948"
+            ],
+            [
+              14,
+              "1552"
+            ],
+            [
+              16,
+              "1164"
+            ],
+            [
+              18,
+              "822"
+            ],
+            [
+              20,
+              "556"
+            ],
+            [
+              22,
+              "354"
+            ],
+            [
+              24,
+              "202"
+            ],
+            [
+              26,
+              "114"
+            ],
+            [
+              28,
+              "64"
+            ],
+            [
+              30,
+              "32"
+            ],
+            [
+              32,
+              "12"
+            ],
+            [
+              34,
+              "4"
+            ],
+            [
+              36,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -34,
+              "2"
+            ],
+            [
+              -32,
+              "4"
+            ],
+            [
+              -30,
+              "12"
+            ],
+            [
+              -28,
+              "32"
+            ],
+            [
+              -26,
+              "76"
+            ],
+            [
+              -24,
+              "152"
+            ],
+            [
+              -22,
+              "290"
+            ],
+            [
+              -20,
+              "540"
+            ],
+            [
+              -18,
+              "842"
+            ],
+            [
+              -16,
+              "1214"
+            ],
+            [
+              -14,
+              "1662"
+            ],
+            [
+              -12,
+              "2084"
+            ],
+            [
+              -10,
+              "2484"
+            ],
+            [
+              -8,
+              "2800"
+            ],
+            [
+              -6,
+              "2964"
+            ],
+            [
+              -4,
+              "2966"
+            ],
+            [
+              -2,
+              "2850"
+            ],
+            [
+              0,
+              "2644"
+            ],
+            [
+              2,
+              "2324"
+            ],
+            [
+              4,
+              "1948"
+            ],
+            [
+              6,
+              "1552"
+            ],
+            [
+              8,
+              "1164"
+            ],
+            [
+              10,
+              "822"
+            ],
+            [
+              12,
+              "556"
+            ],
+            [
+              14,
+              "354"
+            ],
+            [
+              16,
+              "202"
+            ],
+            [
+              18,
+              "114"
+            ],
+            [
+              20,
+              "64"
+            ],
+            [
+              22,
+              "32"
+            ],
+            [
+              24,
+              "12"
+            ],
+            [
+              26,
+              "4"
+            ],
+            [
+              28,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              -32,
+              "2"
+            ],
+            [
+              -30,
+              "4"
+            ],
+            [
+              -28,
+              "12"
+            ],
+            [
+              -26,
+              "32"
+            ],
+            [
+              -24,
+              "76"
+            ],
+            [
+              -22,
+              "152"
+            ],
+            [
+              -20,
+              "290"
+            ],
+            [
+              -18,
+              "540"
+            ],
+            [
+              -16,
+              "842"
+            ],
+            [
+              -14,
+              "1214"
+            ],
+            [
+              -12,
+              "1662"
+            ],
+            [
+              -10,
+              "2084"
+            ],
+            [
+              -8,
+              "2484"
+            ],
+            [
+              -6,
+              "2800"
+            ],
+            [
+              -4,
+              "2964"
+            ],
+            [
+              -2,
+              "2966"
+            ],
+            [
+              0,
+              "2850"
+            ],
+            [
+              2,
+              "2644"
+            ],
+            [
+              4,
+              "2324"
+            ],
+            [
+              6,
+              "1948"
+            ],
+            [
+              8,
+              "1552"
+            ],
+            [
+              10,
+              "1164"
+            ],
+            [
+              12,
+              "822"
+            ],
+            [
+              14,
+              "556"
+            ],
+            [
+              16,
+              "354"
+            ],
+            [
+              18,
+              "202"
+            ],
+            [
+              20,
+              "114"
+            ],
+            [
+              22,
+              "64"
+            ],
+            [
+              24,
+              "32"
+            ],
+            [
+              26,
+              "12"
+            ],
+            [
+              28,
+              "4"
+            ],
+            [
+              30,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              -28,
+              "2"
+            ],
+            [
+              -26,
+              "4"
+            ],
+            [
+              -24,
+              "12"
+            ],
+            [
+              -22,
+              "32"
+            ],
+            [
+              -20,
+              "76"
+            ],
+            [
+              -18,
+              "152"
+            ],
+            [
+              -16,
+              "290"
+            ],
+            [
+              -14,
+              "540"
+            ],
+            [
+              -12,
+              "842"
+            ],
+            [
+              -10,
+              "1214"
+            ],
+            [
+              -8,
+              "1662"
+            ],
+            [
+              -6,
+              "2084"
+            ],
+            [
+              -4,
+              "2484"
+            ],
+            [
+              -2,
+              "2800"
+            ],
+            [
+              0,
+              "2964"
+            ],
+            [
+              2,
+              "2966"
+            ],
+            [
+              4,
+              "2850"
+            ],
+            [
+              6,
+              "2644"
+            ],
+            [
+              8,
+              "2324"
+            ],
+            [
+              10,
+              "1948"
+            ],
+            [
+              12,
+              "1552"
+            ],
+            [
+              14,
+              "1164"
+            ],
+            [
+              16,
+              "822"
+            ],
+            [
+              18,
+              "556"
+            ],
+            [
+              20,
+              "354"
+            ],
+            [
+              22,
+              "202"
+            ],
+            [
+              24,
+              "114"
+            ],
+            [
+              26,
+              "64"
+            ],
+            [
+              28,
+              "32"
+            ],
+            [
+              30,
+              "12"
+            ],
+            [
+              32,
+              "4"
+            ],
+            [
+              34,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              -22,
+              "2"
+            ],
+            [
+              -20,
+              "4"
+            ],
+            [
+              -18,
+              "12"
+            ],
+            [
+              -16,
+              "32"
+            ],
+            [
+              -14,
+              "76"
+            ],
+            [
+              -12,
+              "152"
+            ],
+            [
+              -10,
+              "290"
+            ],
+            [
+              -8,
+              "540"
+            ],
+            [
+              -6,
+              "842"
+            ],
+            [
+              -4,
+              "1214"
+            ],
+            [
+              -2,
+              "1662"
+            ],
+            [
+              0,
+              "2084"
+            ],
+            [
+              2,
+              "2484"
+            ],
+            [
+              4,
+              "2800"
+            ],
+            [
+              6,
+              "2964"
+            ],
+            [
+              8,
+              "2966"
+            ],
+            [
+              10,
+              "2850"
+            ],
+            [
+              12,
+              "2644"
+            ],
+            [
+              14,
+              "2324"
+            ],
+            [
+              16,
+              "1948"
+            ],
+            [
+              18,
+              "1552"
+            ],
+            [
+              20,
+              "1164"
+            ],
+            [
+              22,
+              "822"
+            ],
+            [
+              24,
+              "556"
+            ],
+            [
+              26,
+              "354"
+            ],
+            [
+              28,
+              "202"
+            ],
+            [
+              30,
+              "114"
+            ],
+            [
+              32,
+              "64"
+            ],
+            [
+              34,
+              "32"
+            ],
+            [
+              36,
+              "12"
+            ],
+            [
+              38,
+              "4"
+            ],
+            [
+              40,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              -30,
+              "2"
+            ],
+            [
+              -28,
+              "4"
+            ],
+            [
+              -26,
+              "12"
+            ],
+            [
+              -24,
+              "32"
+            ],
+            [
+              -22,
+              "76"
+            ],
+            [
+              -20,
+              "152"
+            ],
+            [
+              -18,
+              "290"
+            ],
+            [
+              -16,
+              "540"
+            ],
+            [
+              -14,
+              "842"
+            ],
+            [
+              -12,
+              "1214"
+            ],
+            [
+              -10,
+              "1662"
+            ],
+            [
+              -8,
+              "2084"
+            ],
+            [
+              -6,
+              "2484"
+            ],
+            [
+              -4,
+              "2800"
+            ],
+            [
+              -2,
+              "2964"
+            ],
+            [
+              0,
+              "2966"
+            ],
+            [
+              2,
+              "2850"
+            ],
+            [
+              4,
+              "2644"
+            ],
+            [
+              6,
+              "2324"
+            ],
+            [
+              8,
+              "1948"
+            ],
+            [
+              10,
+              "1552"
+            ],
+            [
+              12,
+              "1164"
+            ],
+            [
+              14,
+              "822"
+            ],
+            [
+              16,
+              "556"
+            ],
+            [
+              18,
+              "354"
+            ],
+            [
+              20,
+              "202"
+            ],
+            [
+              22,
+              "114"
+            ],
+            [
+              24,
+              "64"
+            ],
+            [
+              26,
+              "32"
+            ],
+            [
+              28,
+              "12"
+            ],
+            [
+              30,
+              "4"
+            ],
+            [
+              32,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -34,
+              "4"
+            ],
+            [
+              -32,
+              "10"
+            ],
+            [
+              -30,
+              "34"
+            ],
+            [
+              -28,
+              "82"
+            ],
+            [
+              -26,
+              "164"
+            ],
+            [
+              -24,
+              "316"
+            ],
+            [
+              -22,
+              "500"
+            ],
+            [
+              -20,
+              "722"
+            ],
+            [
+              -18,
+              "998"
+            ],
+            [
+              -16,
+              "1312"
+            ],
+            [
+              -14,
+              "1642"
+            ],
+            [
+              -12,
+              "1948"
+            ],
+            [
+              -10,
+              "2242"
+            ],
+            [
+              -8,
+              "2448"
+            ],
+            [
+              -6,
+              "2588"
+            ],
+            [
+              -4,
+              "2690"
+            ],
+            [
+              -2,
+              "2652"
+            ],
+            [
+              0,
+              "2494"
+            ],
+            [
+              2,
+              "2258"
+            ],
+            [
+              4,
+              "1950"
+            ],
+            [
+              6,
+              "1604"
+            ],
+            [
+              8,
+              "1280"
+            ],
+            [
+              10,
+              "984"
+            ],
+            [
+              12,
+              "714"
+            ],
+            [
+              14,
+              "490"
+            ],
+            [
+              16,
+              "312"
+            ],
+            [
+              18,
+              "178"
+            ],
+            [
+              20,
+              "84"
+            ],
+            [
+              22,
+              "38"
+            ],
+            [
+              24,
+              "20"
+            ],
+            [
+              26,
+              "8"
+            ],
+            [
+              28,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -30,
+              "4"
+            ],
+            [
+              -28,
+              "10"
+            ],
+            [
+              -26,
+              "34"
+            ],
+            [
+              -24,
+              "82"
+            ],
+            [
+              -22,
+              "164"
+            ],
+            [
+              -20,
+              "316"
+            ],
+            [
+              -18,
+              "500"
+            ],
+            [
+              -16,
+              "722"
+            ],
+            [
+              -14,
+              "998"
+            ],
+            [
+              -12,
+              "1312"
+            ],
+            [
+              -10,
+              "1642"
+            ],
+            [
+              -8,
+              "1948"
+            ],
+            [
+              -6,
+              "2242"
+            ],
+            [
+              -4,
+              "2448"
+            ],
+            [
+              -2,
+              "2588"
+            ],
+            [
+              0,
+              "2690"
+            ],
+            [
+              2,
+              "2652"
+            ],
+            [
+              4,
+              "2494"
+            ],
+            [
+              6,
+              "2258"
+            ],
+            [
+              8,
+              "1950"
+            ],
+            [
+              10,
+              "1604"
+            ],
+            [
+              12,
+              "1280"
+            ],
+            [
+              14,
+              "984"
+            ],
+            [
+              16,
+              "714"
+            ],
+            [
+              18,
+              "490"
+            ],
+            [
+              20,
+              "312"
+            ],
+            [
+              22,
+              "178"
+            ],
+            [
+              24,
+              "84"
+            ],
+            [
+              26,
+              "38"
+            ],
+            [
+              28,
+              "20"
+            ],
+            [
+              30,
+              "8"
+            ],
+            [
+              32,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -24,
+              "4"
+            ],
+            [
+              -22,
+              "10"
+            ],
+            [
+              -20,
+              "34"
+            ],
+            [
+              -18,
+              "82"
+            ],
+            [
+              -16,
+              "164"
+            ],
+            [
+              -14,
+              "316"
+            ],
+            [
+              -12,
+              "500"
+            ],
+            [
+              -10,
+              "722"
+            ],
+            [
+              -8,
+              "998"
+            ],
+            [
+              -6,
+              "1312"
+            ],
+            [
+              -4,
+              "1642"
+            ],
+            [
+              -2,
+              "1948"
+            ],
+            [
+              0,
+              "2242"
+            ],
+            [
+              2,
+              "2448"
+            ],
+            [
+              4,
+              "2588"
+            ],
+            [
+              6,
+              "2690"
+            ],
+            [
+              8,
+              "2652"
+            ],
+            [
+              10,
+              "2494"
+            ],
+            [
+              12,
+              "2258"
+            ],
+            [
+              14,
+              "1950"
+            ],
+            [
+              16,
+              "1604"
+            ],
+            [
+              18,
+              "1280"
+            ],
+            [
+              20,
+              "984"
+            ],
+            [
+              22,
+              "714"
+            ],
+            [
+              24,
+              "490"
+            ],
+            [
+              26,
+              "312"
+            ],
+            [
+              28,
+              "178"
+            ],
+            [
+              30,
+              "84"
+            ],
+            [
+              32,
+              "38"
+            ],
+            [
+              34,
+              "20"
+            ],
+            [
+              36,
+              "8"
+            ],
+            [
+              38,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -32,
+              "4"
+            ],
+            [
+              -30,
+              "10"
+            ],
+            [
+              -28,
+              "34"
+            ],
+            [
+              -26,
+              "82"
+            ],
+            [
+              -24,
+              "164"
+            ],
+            [
+              -22,
+              "316"
+            ],
+            [
+              -20,
+              "500"
+            ],
+            [
+              -18,
+              "722"
+            ],
+            [
+              -16,
+              "998"
+            ],
+            [
+              -14,
+              "1312"
+            ],
+            [
+              -12,
+              "1642"
+            ],
+            [
+              -10,
+              "1948"
+            ],
+            [
+              -8,
+              "2242"
+            ],
+            [
+              -6,
+              "2448"
+            ],
+            [
+              -4,
+              "2588"
+            ],
+            [
+              -2,
+              "2690"
+            ],
+            [
+              0,
+              "2652"
+            ],
+            [
+              2,
+              "2494"
+            ],
+            [
+              4,
+              "2258"
+            ],
+            [
+              6,
+              "1950"
+            ],
+            [
+              8,
+              "1604"
+            ],
+            [
+              10,
+              "1280"
+            ],
+            [
+              12,
+              "984"
+            ],
+            [
+              14,
+              "714"
+            ],
+            [
+              16,
+              "490"
+            ],
+            [
+              18,
+              "312"
+            ],
+            [
+              20,
+              "178"
+            ],
+            [
+              22,
+              "84"
+            ],
+            [
+              24,
+              "38"
+            ],
+            [
+              26,
+              "20"
+            ],
+            [
+              28,
+              "8"
+            ],
+            [
+              30,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -34,
+              "4"
+            ],
+            [
+              -32,
+              "10"
+            ],
+            [
+              -30,
+              "34"
+            ],
+            [
+              -28,
+              "82"
+            ],
+            [
+              -26,
+              "164"
+            ],
+            [
+              -24,
+              "316"
+            ],
+            [
+              -22,
+              "500"
+            ],
+            [
+              -20,
+              "722"
+            ],
+            [
+              -18,
+              "998"
+            ],
+            [
+              -16,
+              "1312"
+            ],
+            [
+              -14,
+              "1642"
+            ],
+            [
+              -12,
+              "1948"
+            ],
+            [
+              -10,
+              "2242"
+            ],
+            [
+              -8,
+              "2448"
+            ],
+            [
+              -6,
+              "2588"
+            ],
+            [
+              -4,
+              "2690"
+            ],
+            [
+              -2,
+              "2652"
+            ],
+            [
+              0,
+              "2494"
+            ],
+            [
+              2,
+              "2258"
+            ],
+            [
+              4,
+              "1950"
+            ],
+            [
+              6,
+              "1604"
+            ],
+            [
+              8,
+              "1280"
+            ],
+            [
+              10,
+              "984"
+            ],
+            [
+              12,
+              "714"
+            ],
+            [
+              14,
+              "490"
+            ],
+            [
+              16,
+              "312"
+            ],
+            [
+              18,
+              "178"
+            ],
+            [
+              20,
+              "84"
+            ],
+            [
+              22,
+              "38"
+            ],
+            [
+              24,
+              "20"
+            ],
+            [
+              26,
+              "8"
+            ],
+            [
+              28,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -30,
+              "4"
+            ],
+            [
+              -28,
+              "10"
+            ],
+            [
+              -26,
+              "34"
+            ],
+            [
+              -24,
+              "82"
+            ],
+            [
+              -22,
+              "164"
+            ],
+            [
+              -20,
+              "316"
+            ],
+            [
+              -18,
+              "500"
+            ],
+            [
+              -16,
+              "722"
+            ],
+            [
+              -14,
+              "998"
+            ],
+            [
+              -12,
+              "1312"
+            ],
+            [
+              -10,
+              "1642"
+            ],
+            [
+              -8,
+              "1948"
+            ],
+            [
+              -6,
+              "2242"
+            ],
+            [
+              -4,
+              "2448"
+            ],
+            [
+              -2,
+              "2588"
+            ],
+            [
+              0,
+              "2690"
+            ],
+            [
+              2,
+              "2652"
+            ],
+            [
+              4,
+              "2494"
+            ],
+            [
+              6,
+              "2258"
+            ],
+            [
+              8,
+              "1950"
+            ],
+            [
+              10,
+              "1604"
+            ],
+            [
+              12,
+              "1280"
+            ],
+            [
+              14,
+              "984"
+            ],
+            [
+              16,
+              "714"
+            ],
+            [
+              18,
+              "490"
+            ],
+            [
+              20,
+              "312"
+            ],
+            [
+              22,
+              "178"
+            ],
+            [
+              24,
+              "84"
+            ],
+            [
+              26,
+              "38"
+            ],
+            [
+              28,
+              "20"
+            ],
+            [
+              30,
+              "8"
+            ],
+            [
+              32,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -24,
+              "4"
+            ],
+            [
+              -22,
+              "10"
+            ],
+            [
+              -20,
+              "34"
+            ],
+            [
+              -18,
+              "82"
+            ],
+            [
+              -16,
+              "164"
+            ],
+            [
+              -14,
+              "316"
+            ],
+            [
+              -12,
+              "500"
+            ],
+            [
+              -10,
+              "722"
+            ],
+            [
+              -8,
+              "998"
+            ],
+            [
+              -6,
+              "1312"
+            ],
+            [
+              -4,
+              "1642"
+            ],
+            [
+              -2,
+              "1948"
+            ],
+            [
+              0,
+              "2242"
+            ],
+            [
+              2,
+              "2448"
+            ],
+            [
+              4,
+              "2588"
+            ],
+            [
+              6,
+              "2690"
+            ],
+            [
+              8,
+              "2652"
+            ],
+            [
+              10,
+              "2494"
+            ],
+            [
+              12,
+              "2258"
+            ],
+            [
+              14,
+              "1950"
+            ],
+            [
+              16,
+              "1604"
+            ],
+            [
+              18,
+              "1280"
+            ],
+            [
+              20,
+              "984"
+            ],
+            [
+              22,
+              "714"
+            ],
+            [
+              24,
+              "490"
+            ],
+            [
+              26,
+              "312"
+            ],
+            [
+              28,
+              "178"
+            ],
+            [
+              30,
+              "84"
+            ],
+            [
+              32,
+              "38"
+            ],
+            [
+              34,
+              "20"
+            ],
+            [
+              36,
+              "8"
+            ],
+            [
+              38,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -32,
+              "4"
+            ],
+            [
+              -30,
+              "10"
+            ],
+            [
+              -28,
+              "34"
+            ],
+            [
+              -26,
+              "82"
+            ],
+            [
+              -24,
+              "164"
+            ],
+            [
+              -22,
+              "316"
+            ],
+            [
+              -20,
+              "500"
+            ],
+            [
+              -18,
+              "722"
+            ],
+            [
+              -16,
+              "998"
+            ],
+            [
+              -14,
+              "1312"
+            ],
+            [
+              -12,
+              "1642"
+            ],
+            [
+              -10,
+              "1948"
+            ],
+            [
+              -8,
+              "2242"
+            ],
+            [
+              -6,
+              "2448"
+            ],
+            [
+              -4,
+              "2588"
+            ],
+            [
+              -2,
+              "2690"
+            ],
+            [
+              0,
+              "2652"
+            ],
+            [
+              2,
+              "2494"
+            ],
+            [
+              4,
+              "2258"
+            ],
+            [
+              6,
+              "1950"
+            ],
+            [
+              8,
+              "1604"
+            ],
+            [
+              10,
+              "1280"
+            ],
+            [
+              12,
+              "984"
+            ],
+            [
+              14,
+              "714"
+            ],
+            [
+              16,
+              "490"
+            ],
+            [
+              18,
+              "312"
+            ],
+            [
+              20,
+              "178"
+            ],
+            [
+              22,
+              "84"
+            ],
+            [
+              24,
+              "38"
+            ],
+            [
+              26,
+              "20"
+            ],
+            [
+              28,
+              "8"
+            ],
+            [
+              30,
+              "2"
+            ]
+          ],
+          "configuration_count": "32768"
+        }
+      ],
+      "configuration_count": "524288",
+      "ground_energy": -36,
+      "ground_degeneracy": "2",
+      "energy_moments": {
+        "0": "524288",
+        "1": "0",
+        "2": "50331648"
+      },
+      "spectrum_sha256": "6f8a84885a6e1cff406aa37b8d1924c369ae2248ad0cbb58dc29a29c4e7d6b2f"
+    },
+    "all_full_density_equal": true,
+    "variant_reference": "second independent exact route",
+    "candidate_optimization": "project-local exact repeated-component or conditional-separator compiler route"
+  },
+  "seconds": 0.295012561022304,
+  "session": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/followup1/experiments/f38187e76fa2d624c9b506e9/sessions/MATTER_SEARCH_8fab7e7178c3443d8fa2502d5a45ee1c",
+  "checkpoint": {
+    "schema": "GEN3_CHECKPOINT_REFERENCE_V1",
+    "root": "df7ab93ce2e9a632ebd3d030a83420ea0ae8c9019e2a287a62da2dc80917526d",
+    "binding": {
+      "version": "SLC-GEN4-P1",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "implementation_sha256": "ad3d0a3d7365821deb125b2dfb58a2b576b0a3fdedff4ed65df6bafee0647f86"
+    },
+    "local_durable": true,
+    "replicated": false
+  },
+  "peak_RSS_KiB": 63360
+}

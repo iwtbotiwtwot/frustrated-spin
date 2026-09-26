@@ -1,0 +1,537 @@
+{
+  "N": 3,
+  "source": {
+    "N": 3,
+    "edges": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "energy_bound_B": 7,
+    "family": "N96_INDUCED_TRANSITION_LADDER_V1",
+    "fields": [
+      1,
+      -2,
+      -1
+    ],
+    "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+    "parent_vertices": [
+      6,
+      55,
+      11
+    ],
+    "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052"
+  },
+  "plan": {
+    "N": 3,
+    "candidates": [
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "fresh_min_fill",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 3890,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "transition_priority",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 1950,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      {
+        "branches": 1,
+        "cutset": [],
+        "method": "parent_plan",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 1340,
+        "weighted_entries": 0,
+        "width": 0
+      }
+    ],
+    "glue": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "local_bound": 4,
+    "mathematical_plan_sha256": "1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d",
+    "parent_elimination_order": [],
+    "planning_ns": 20470,
+    "ports": [
+      0,
+      1,
+      2
+    ],
+    "primes": [
+      998244353
+    ],
+    "root_count": 8,
+    "selected": {
+      "branches": 1,
+      "cutset": [],
+      "method": "fresh_min_fill",
+      "order": [],
+      "output_entries": 0,
+      "planning_ns": 3890,
+      "weighted_entries": 0,
+      "width": 0
+    },
+    "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+    "training_method": "fresh_min_fill"
+  },
+  "spectrum": {
+    "N": 3,
+    "checks": {
+      "count": true,
+      "first_moment": true,
+      "polynomial_support": true,
+      "port_counts": true,
+      "second_moment": true
+    },
+    "closed_port_rows": [
+      [
+        [
+          -5,
+          "1"
+        ]
+      ],
+      [
+        [
+          -1,
+          "1"
+        ]
+      ],
+      [
+        [
+          5,
+          "1"
+        ]
+      ],
+      [
+        [
+          -3,
+          "1"
+        ]
+      ],
+      [
+        [
+          -3,
+          "1"
+        ]
+      ],
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          7,
+          "1"
+        ]
+      ],
+      [
+        [
+          -1,
+          "1"
+        ]
+      ]
+    ],
+    "configuration_count": "8",
+    "energy_convention": "E=-sum(J*s_u*s_v)-sum(h*s_u); spin bit 0=-1,1=+1",
+    "ground_degeneracy": "1",
+    "ground_energy": -5,
+    "local_energy_bound": 4,
+    "open_y_operator": [
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          0,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          2,
+          "1"
+        ]
+      ],
+      [
+        [
+          1,
+          "1"
+        ]
+      ],
+      [
+        [
+          4,
+          "1"
+        ]
+      ],
+      [
+        [
+          3,
+          "1"
+        ]
+      ]
+    ],
+    "parent_port_vertices": [
+      6,
+      55,
+      11
+    ],
+    "reconstruction_ns": 5622735,
+    "removed_glue_edges": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "retained_ports": [
+      0,
+      1,
+      2
+    ],
+    "scalar_dos": [
+      [
+        -5,
+        "1"
+      ],
+      [
+        -3,
+        "2"
+      ],
+      [
+        -1,
+        "2"
+      ],
+      [
+        1,
+        "1"
+      ],
+      [
+        5,
+        "1"
+      ],
+      [
+        7,
+        "1"
+      ]
+    ],
+    "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+    "spectrum_sha256": "ef03209e96f21f0cf23a1601d425a033780c45f06ae3b253b20e0fce801555bc"
+  },
+  "historical": {
+    "plan": {
+      "N": 3,
+      "candidates": [
+        {
+          "branches": 1,
+          "cutset": [],
+          "method": "fresh_min_fill",
+          "order": [],
+          "output_entries": 0,
+          "planning_ns": 3890,
+          "weighted_entries": 0,
+          "width": 0
+        },
+        {
+          "branches": 1,
+          "cutset": [],
+          "method": "transition_priority",
+          "order": [],
+          "output_entries": 0,
+          "planning_ns": 1950,
+          "weighted_entries": 0,
+          "width": 0
+        },
+        {
+          "branches": 1,
+          "cutset": [],
+          "method": "parent_plan",
+          "order": [],
+          "output_entries": 0,
+          "planning_ns": 1340,
+          "weighted_entries": 0,
+          "width": 0
+        }
+      ],
+      "glue": [
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "local_bound": 4,
+      "mathematical_plan_sha256": "1e7024e1864f149c10a96ea685defc2eddcf23a2b3a10c22c9ee6da7f6b1aa0d",
+      "parent_elimination_order": [],
+      "planning_ns": 20470,
+      "ports": [
+        0,
+        1,
+        2
+      ],
+      "primes": [
+        998244353
+      ],
+      "root_count": 8,
+      "selected": {
+        "branches": 1,
+        "cutset": [],
+        "method": "fresh_min_fill",
+        "order": [],
+        "output_entries": 0,
+        "planning_ns": 3890,
+        "weighted_entries": 0,
+        "width": 0
+      },
+      "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+      "training_method": "fresh_min_fill"
+    },
+    "source": {
+      "N": 3,
+      "edges": [
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "energy_bound_B": 7,
+      "family": "N96_INDUCED_TRANSITION_LADDER_V1",
+      "fields": [
+        1,
+        -2,
+        -1
+      ],
+      "parent_instance_sha256": "625bcd4327e678fa9541d7ab4109449e432d199aad1fba6e1f254395ebdd203d",
+      "parent_vertices": [
+        6,
+        55,
+        11
+      ],
+      "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052"
+    },
+    "spectrum": {
+      "N": 3,
+      "checks": {
+        "count": true,
+        "first_moment": true,
+        "polynomial_support": true,
+        "port_counts": true,
+        "second_moment": true
+      },
+      "closed_port_rows": [
+        [
+          [
+            -5,
+            "1"
+          ]
+        ],
+        [
+          [
+            -1,
+            "1"
+          ]
+        ],
+        [
+          [
+            5,
+            "1"
+          ]
+        ],
+        [
+          [
+            -3,
+            "1"
+          ]
+        ],
+        [
+          [
+            -3,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            7,
+            "1"
+          ]
+        ],
+        [
+          [
+            -1,
+            "1"
+          ]
+        ]
+      ],
+      "configuration_count": "8",
+      "energy_convention": "E=-sum(J*s_u*s_v)-sum(h*s_u); spin bit 0=-1,1=+1",
+      "ground_degeneracy": "1",
+      "ground_energy": -5,
+      "local_energy_bound": 4,
+      "open_y_operator": [
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            3,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            4,
+            "1"
+          ]
+        ],
+        [
+          [
+            3,
+            "1"
+          ]
+        ]
+      ],
+      "parent_port_vertices": [
+        6,
+        55,
+        11
+      ],
+      "reconstruction_ns": 5622735,
+      "removed_glue_edges": [
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "retained_ports": [
+        0,
+        1,
+        2
+      ],
+      "scalar_dos": [
+        [
+          -5,
+          "1"
+        ],
+        [
+          -3,
+          "2"
+        ],
+        [
+          -1,
+          "2"
+        ],
+        [
+          1,
+          "1"
+        ],
+        [
+          5,
+          "1"
+        ],
+        [
+          7,
+          "1"
+        ]
+      ],
+      "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+      "spectrum_sha256": "ef03209e96f21f0cf23a1601d425a033780c45f06ae3b253b20e0fce801555bc"
+    }
+  },
+  "provenance": {
+    "kind": "INHERITED",
+    "object_ref": "4888a3e5143ca03e520114254416bba763ca4203d64740230b80e15f73aa9e27",
+    "input": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_tools_install1/BUNDLE.json.gz",
+    "lineage": "N96_INDUCED_TRANSITION_LADDER_V1"
+  },
+  "timing": {
+    "seconds": 0.005727895,
+    "method": "fresh_min_fill",
+    "hardware": "14_MIG_GPU_retained_readout",
+    "selection": "retrospective best method",
+    "record": {
+      "N": "3",
+      "best_method": "fresh_min_fill",
+      "best_method_median_seconds": "0.005727895",
+      "best_method_repetitions": "1",
+      "fresh_method_median_seconds": "0.005727895",
+      "reduction_vs_fresh_percent": "0.0",
+      "all_training_solve_seconds": "0.005727895",
+      "training_solve_count": "1",
+      "width": "0",
+      "branches": "1",
+      "weighted_entries": "0",
+      "root_count": "8",
+      "primes": "1",
+      "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052"
+    }
+  }
+}

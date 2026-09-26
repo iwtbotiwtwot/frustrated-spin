@@ -1,0 +1,611 @@
+{
+  "value": {
+    "status": "REPEATED_EMPIRICAL_RULE",
+    "N": 3,
+    "source_hash": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+    "features": {
+      "N": 3,
+      "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+      "graph_hash": "f265fe2e57b727c320898db59998da41ac85e6d5e31c74c62f500f035949bed0",
+      "source_hash": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+      "edges": 1,
+      "degree_min": 0,
+      "degree_max": 1,
+      "degree_mean": 0.6666666666666666,
+      "degree_std": 0.4714045207910317,
+      "components": 2,
+      "component_sizes": [
+        1,
+        2
+      ],
+      "max_component": 2,
+      "local_assignments": 6,
+      "minfill_width": 1,
+      "minfill_work": 4,
+      "minfill_order": [
+        2,
+        0,
+        1
+      ],
+      "energy_bound": 7,
+      "root_bound": 8,
+      "crt_primes": 1,
+      "arithmetic_burden": 32,
+      "coefficient_bound": "8",
+      "coupling_multiplicities": {
+        "3": 1
+      },
+      "symmetry": "not assumed",
+      "degree_signature": [
+        0,
+        1,
+        1
+      ]
+    },
+    "timings": [
+      {
+        "method": "variable_elimination",
+        "rep": 0,
+        "seconds": 0.000206047,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [],
+          "energy_shift": 7,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 161676,
+          "recomputed": true,
+          "arithmetic_work_units": 32,
+          "peak_factor_entries": 8,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 0,
+        "seconds": 0.000133514,
+        "cpu_seconds": 0.000983794,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            1
+          ],
+          "enumerated_assignments": 6,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 102518,
+          "recomputed": true,
+          "arithmetic_work_units": 18,
+          "peak_factor_entries": 4,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 1,
+        "seconds": 0.000101633,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            1
+          ],
+          "enumerated_assignments": 6,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 77598,
+          "recomputed": true,
+          "arithmetic_work_units": 18,
+          "peak_factor_entries": 4,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "variable_elimination",
+        "rep": 1,
+        "seconds": 0.00011081,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [],
+          "energy_shift": 7,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 89386,
+          "recomputed": true,
+          "arithmetic_work_units": 32,
+          "peak_factor_entries": 8,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "variable_elimination",
+        "rep": 2,
+        "seconds": 0.000101683,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [],
+          "energy_shift": 7,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 80761,
+          "recomputed": true,
+          "arithmetic_work_units": 32,
+          "peak_factor_entries": 8,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 2,
+        "seconds": 9.1041e-05,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            1
+          ],
+          "enumerated_assignments": 6,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 71209,
+          "recomputed": true,
+          "arithmetic_work_units": 18,
+          "peak_factor_entries": 4,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 3,
+        "seconds": 0.000140583,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            1
+          ],
+          "enumerated_assignments": 6,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 121287,
+          "recomputed": true,
+          "arithmetic_work_units": 18,
+          "peak_factor_entries": 4,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "variable_elimination",
+        "rep": 3,
+        "seconds": 0.000117836,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [],
+          "energy_shift": 7,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 92222,
+          "recomputed": true,
+          "arithmetic_work_units": 32,
+          "peak_factor_entries": 8,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "variable_elimination",
+        "rep": 4,
+        "seconds": 0.000106573,
+        "cpu_seconds": 0.0,
+        "metadata": {
+          "method": "NATIVE_FLINT_POLYNOMIAL_VARIABLE_ELIMINATION",
+          "elimination_order": [],
+          "energy_shift": 7,
+          "polynomial_backend": "FLINT fmpz_poly sum/product",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 83481,
+          "recomputed": true,
+          "arithmetic_work_units": 32,
+          "peak_factor_entries": 8,
+          "limits": {
+            "method": "variable_elimination",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      },
+      {
+        "method": "components",
+        "rep": 4,
+        "seconds": 0.000101303,
+        "cpu_seconds": 0.000999361,
+        "metadata": {
+          "method": "NATIVE_FLINT_GRAY_COMPONENTS_AND_POLYNOMIAL_CONVOLUTION",
+          "component_sizes": [
+            2,
+            1
+          ],
+          "enumerated_assignments": 6,
+          "polynomial_backend": "FLINT fmpz_poly multiplication",
+          "backend": "PROJECT_LOCAL_NATIVE_FLINT_CPU",
+          "elapsed_ns": 75054,
+          "recomputed": true,
+          "arithmetic_work_units": 18,
+          "peak_factor_entries": 4,
+          "limits": {
+            "method": "components",
+            "max_component_size": 18,
+            "max_assignments": 400000,
+            "max_factor_work": 3000000,
+            "max_intermediate_entries": 65536,
+            "max_output_rows": 1000000,
+            "max_energy_span": 200000,
+            "max_port_states": 256,
+            "max_seconds": 55
+          },
+          "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+          "retained_outcome_used": false
+        },
+        "verified": {
+          "full_scalar_equality": true,
+          "port_equality": true,
+          "configuration_count": "8",
+          "checks": "native exact count/first/second moment and all port closures passed"
+        }
+      }
+    ],
+    "median_seconds": {
+      "variable_elimination": 0.00011081,
+      "components": 0.000101633
+    },
+    "coefficient_of_variation": {
+      "variable_elimination": 0.303989065029243,
+      "components": 0.17283496997424172
+    },
+    "fastest": "components",
+    "speedup": 1.0902954748949654,
+    "answer": {
+      "schema": "GEN3_EXACT_SPIN_DOS_V1",
+      "source_sha256": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+      "N": 3,
+      "energy_convention": "E=-sum(J_uv*s_u*s_v)-sum(h_u*s_u); s_u in {-1,+1}",
+      "ports": [
+        0,
+        1,
+        2
+      ],
+      "port_state_convention": "bit i=1 is +1 at local vertex ports[i]; bit i=0 is -1",
+      "scalar_dos": [
+        [
+          -5,
+          "1"
+        ],
+        [
+          -3,
+          "2"
+        ],
+        [
+          -1,
+          "2"
+        ],
+        [
+          1,
+          "1"
+        ],
+        [
+          5,
+          "1"
+        ],
+        [
+          7,
+          "1"
+        ]
+      ],
+      "port_rows": [
+        {
+          "state": [
+            -1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -5,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            -1
+          ],
+          "dos": [
+            [
+              -1,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              5,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            1,
+            -1
+          ],
+          "dos": [
+            [
+              -3,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              -3,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            -1,
+            1
+          ],
+          "dos": [
+            [
+              1,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            -1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              7,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        },
+        {
+          "state": [
+            1,
+            1,
+            1
+          ],
+          "dos": [
+            [
+              -1,
+              "1"
+            ]
+          ],
+          "configuration_count": "1"
+        }
+      ],
+      "configuration_count": "8",
+      "ground_energy": -5,
+      "ground_degeneracy": "1",
+      "energy_moments": {
+        "0": "8",
+        "1": "0",
+        "2": "120"
+      },
+      "spectrum_sha256": "2e72b217be031da44364eb20665619db5d1aa69857f1258636f1f72f1fd8afac"
+    },
+    "all_full_density_equal": true,
+    "variant_reference": "canonical retained full density",
+    "candidate_optimization": "project-local exact repeated-component or conditional-separator compiler route"
+  },
+  "seconds": 0.24967982299858704,
+  "session": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/followup1/experiments/ca5027781973eee44701938f/sessions/MATTER_SEARCH_a8003cc765384fe484ffef364adc8014",
+  "checkpoint": {
+    "schema": "GEN3_CHECKPOINT_REFERENCE_V1",
+    "root": "df7ab93ce2e9a632ebd3d030a83420ea0ae8c9019e2a287a62da2dc80917526d",
+    "binding": {
+      "version": "SLC-GEN4-P1",
+      "generation": "GEN4-BLACKWELL-P1-20260922-G1",
+      "implementation_sha256": "ad3d0a3d7365821deb125b2dfb58a2b576b0a3fdedff4ed65df6bafee0647f86"
+    },
+    "local_durable": true,
+    "replicated": false
+  },
+  "peak_RSS_KiB": 63056
+}

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/followup1/worker.py", line 10, in <module>
+    r=s.execute('GEN4_SPIN_FOLLOWUP1',dict(code_sha256=sha(P/'operations.py'),question=q),purpose=q['question']);cp=s.execute('GEN3_CHECKPOINT',{},purpose='Retain follow-up exact results and learned evidence')
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 201, in execute
+    return self._call(operation, payload,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 174, in _call
+    result = action()
+             ^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/runtime/SAM_PROJECT/session.py", line 202, in <lambda>
+    lambda: self.consumer.execute(operation, payload), purpose=purpose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/followup1/operations.py", line 105, in execute
+    elif m=='conditional_components':a,meta=conditioned(s,ps)
+                                            ^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_learning1/followup1/operations.py", line 51, in conditioned
+    if max(map(len,groups),default=0)>18:raise exact.CapacityError('No admitted one/two-spin decomposition; retain as structural boundary')
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vendor.spin_exact.CapacityError: No admitted one/two-spin decomposition; retain as structural boundary

@@ -1,0 +1,1650 @@
+{
+  "calibration_remaining": [],
+  "active_frontier": [],
+  "candidate_count": 30,
+  "candidate_catalog": [
+    {
+      "question_id": "fb3c4d6194281871836d999d",
+      "kind": "diagnostic",
+      "source_key": "N012",
+      "N": 12,
+      "theme": "capacity_diagnosis",
+      "narrow_family": "c13246c4bb12fd07",
+      "novelty_fingerprint": {
+        "source_hash": "d43f02bf50cba6c1f979836775c85f22cf565bc1897f098c6c402ce05669c017",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "capacity_diagnosis",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "cooperative_gpu"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which concrete source or verifier capacity condition explains this failure?",
+      "parent_question": "7035a50e18deb75053565608",
+      "why_chosen": "One targeted follow-up for this failed attempt",
+      "methods": [],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 3.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 3.0,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "d43f02bf50cba6c1f979836775c85f22cf565bc1897f098c6c402ce05669c017",
+        "source_record": "41cae1b5f6b1962bae4a6138fe39cd44e230eae0f821b6e02d10b60c5f9aa723"
+      },
+      "enqueued_step": 0
+    },
+    {
+      "question_id": "66320ca6b1d8f1f904850b51",
+      "kind": "cpu",
+      "source_key": "N001",
+      "N": 1,
+      "theme": "unmeasured_regime",
+      "narrow_family": "3f5963c9a588f7ba",
+      "novelty_fingerprint": {
+        "source_hash": "a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          false,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "a491b793e84c1e1b274a7012e3d86241c5344fabe6412f3ea99ebfd03ac603cf",
+        "source_record": "af43e2614089bc6f49976dc4a3d55c2285dc01ca3bfe61ce7fb23fa5bc8c55f4"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "7d31292ac6576affec95ea6d",
+      "kind": "cpu",
+      "source_key": "N002",
+      "N": 2,
+      "theme": "unmeasured_regime",
+      "narrow_family": "3f5963c9a588f7ba",
+      "novelty_fingerprint": {
+        "source_hash": "99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          false,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "99c151a7f54c9f60633fb0580f3836cc4fccdbca6f9762c6376ef037b21b6eeb",
+        "source_record": "6ef72eb36a5a595877fad050419a1a318b3c5220df412d3308a9c25be89d019e"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "51ae6663e663f6e5420d7e50",
+      "kind": "cpu",
+      "source_key": "N003",
+      "N": 3,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "2bfd67b1ad8c9744f8345f8a84d2cd13d21a3e0442576b86e3c57419801cd052",
+        "source_record": "aff5aa88816f4418c10b6f2bc402f60aece565db39645053bc1758003e24dabb"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "3806b6e27b6a41ab03d28bfb",
+      "kind": "cpu",
+      "source_key": "N004",
+      "N": 4,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "5e20e2d2ff7a6f1a772bf7de96200cd3bcfb51157387d3446a196ba0e2ec64d3",
+        "source_record": "1a575f6f65a446b901a575cd0392638087538b325283e7e3b8e98fe031a036e1"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "ec1a0691fa46f6bacf1ab4c7",
+      "kind": "cpu",
+      "source_key": "N005",
+      "N": 5,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "258c2a4ff949114577ec2e8e11949dbaeec7ef3432cd2f634fefcde861ae0117",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "258c2a4ff949114577ec2e8e11949dbaeec7ef3432cd2f634fefcde861ae0117",
+        "source_record": "bd16ac3a5f35f25f90238ec411f5a83a888db489ab98724f6c456894bb73c711"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "c16f5546a5fd59a06708f09a",
+      "kind": "cpu",
+      "source_key": "N006",
+      "N": 6,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "473d02574cc7a661b725c821ba67e57e00b12ef300aeb1d47602959376a040a6",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "473d02574cc7a661b725c821ba67e57e00b12ef300aeb1d47602959376a040a6",
+        "source_record": "1963b9a31e51d66d43da870c244a6470648482b46cf5d9216336087f916a6231"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "0848d099ddae7ba79eacc348",
+      "kind": "cpu",
+      "source_key": "N007",
+      "N": 7,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "4034394a52387d4c50dc492d42caace86d7da5f5de824fe39a27a1e9eae7882c",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "4034394a52387d4c50dc492d42caace86d7da5f5de824fe39a27a1e9eae7882c",
+        "source_record": "600a8c28d07dedbd28e28ba768ea9b81d5deddb713196e99df4e0789ce54547e"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "81c0cccd81457d6d6f125c96",
+      "kind": "cpu",
+      "source_key": "N008",
+      "N": 8,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "567e11eb337603247dc37b986e36bc1520dd5166e21f234c7e57bdfa812c67e9",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "567e11eb337603247dc37b986e36bc1520dd5166e21f234c7e57bdfa812c67e9",
+        "source_record": "29e814a0862ea52d9ea8b299cf2f76a608b0d5e648647b67a485919aaa86dfb0"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "1b7219eb0513e64a5c302909",
+      "kind": "cpu",
+      "source_key": "N009",
+      "N": 9,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "0de9fb2f1238632cf721304595a3822207684f650a0992dcf900ad92b8618fe3",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "0de9fb2f1238632cf721304595a3822207684f650a0992dcf900ad92b8618fe3",
+        "source_record": "d21452674a6300ea4e04e435cf00b47cbf50220cb3f01c06b36b071356869b94"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "c91cbd20c9b967a0ecba80f8",
+      "kind": "cpu",
+      "source_key": "N010",
+      "N": 10,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "10a7c79308377a16a943effe68b59a085f69c569b04047ea28a88cb8962b1725",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "10a7c79308377a16a943effe68b59a085f69c569b04047ea28a88cb8962b1725",
+        "source_record": "28d1902d31401696a06168ed791703c3c276358b53587167bef706980fbc7688"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "9f482010c5db1ce58d4ec4b9",
+      "kind": "cpu",
+      "source_key": "N011",
+      "N": 11,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "2cd005310f5e125be4f3793e7039865435b7cca3f722ecc8b24a5d4ea6683d13",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "2cd005310f5e125be4f3793e7039865435b7cca3f722ecc8b24a5d4ea6683d13",
+        "source_record": "1beacf8873a52d9b90e525341496bc8c66358d8e7d08a40d06420c125dabcce4"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "e2b0a3c4fca36093ed2bf135",
+      "kind": "cpu",
+      "source_key": "N013",
+      "N": 13,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "509a79b91dffd206dd81d6c5c95283bdc567735dd9e701df5e5049b25debadec",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "509a79b91dffd206dd81d6c5c95283bdc567735dd9e701df5e5049b25debadec",
+        "source_record": "0023e8df376c3c01642446035d83793d9edc7280b75e185a86e4a15c56f4c1ae"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "b8eda378ab6ac92cee961ed2",
+      "kind": "cpu",
+      "source_key": "N014",
+      "N": 14,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "855ba61d8a1e476ab9f4a366f2b3cf320b37fb40b4200110740f2c9b86f8e195",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "855ba61d8a1e476ab9f4a366f2b3cf320b37fb40b4200110740f2c9b86f8e195",
+        "source_record": "d4f7c9e0a5a088a2948d2a873c0a715154c5807338c27ba820c3381e74090f57"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "3e95c7a1943cbd0d31736a50",
+      "kind": "cpu",
+      "source_key": "N015",
+      "N": 15,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "2b8e55b1d695f87b2d8949f5627f50f0b303a3ed7b0a249f18d829714c01617e",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "2b8e55b1d695f87b2d8949f5627f50f0b303a3ed7b0a249f18d829714c01617e",
+        "source_record": "f71b62d819e43c6bfafe173521c9784ec38b9a152d656e16bc8f254615570ac8"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "1f1a7498b3fc7810ad9b9e1b",
+      "kind": "cpu",
+      "source_key": "N016",
+      "N": 16,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "25661c6ee48d9ffc98b3f70adcda03eb3e60f39e301c927fd9a7188bac7634b2",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "25661c6ee48d9ffc98b3f70adcda03eb3e60f39e301c927fd9a7188bac7634b2",
+        "source_record": "3c3695686e38f6e65dd969f2ca2b9b6c259a0cae70a47077fbea3df028ec2717"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "c95881e37deb3783b4fed151",
+      "kind": "cpu",
+      "source_key": "N017",
+      "N": 17,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "49df486bd5f14593f7d0c68ccafd2b2662ac87abfe8b9c129ce8b8c1124c0faa",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "49df486bd5f14593f7d0c68ccafd2b2662ac87abfe8b9c129ce8b8c1124c0faa",
+        "source_record": "913845534c13f2568a07774282a6673901d14c85262cbf0e296357aee506d784"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "5580c4c73f5b3ab29b89a825",
+      "kind": "cpu",
+      "source_key": "N018",
+      "N": 18,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "1232a84a0582bb726c124d0930d0231adee6735906b94ed02e7da25fdc6d8fef",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "1232a84a0582bb726c124d0930d0231adee6735906b94ed02e7da25fdc6d8fef",
+        "source_record": "59bfbc6d28cb9463d74a48a2079e93317279e39c97810b387dffbd151dd3b4d0"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "affa3e3c73678a316beee898",
+      "kind": "cpu",
+      "source_key": "N019",
+      "N": 19,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "326689f0a8d846691dec4fc4750ee2bc9275755d76ea466e214eeb6c6788d677",
+        "source_record": "c8fb261e20fe25e9f70c5f2b47093d3bd8ad4f645f0677a1d621701b12667df9"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "93d3fa4ab57384aac550c3bf",
+      "kind": "cpu",
+      "source_key": "N020",
+      "N": 20,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "9cb37e3de3b3abb56f127007b4d48f147f82cd8c1708a7eb831754b10a01e84c",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "9cb37e3de3b3abb56f127007b4d48f147f82cd8c1708a7eb831754b10a01e84c",
+        "source_record": "27f0330b070fd6c39cea21ee8e17af658671280b56283b26edcb5186ad0d39e6"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "c695fcba5be8c55fb58691c8",
+      "kind": "cpu",
+      "source_key": "N021",
+      "N": 21,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "50f6cb3f01e659454ac535833fe01689b82a8280bb7fae86e8ce661b1965ac91",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "50f6cb3f01e659454ac535833fe01689b82a8280bb7fae86e8ce661b1965ac91",
+        "source_record": "55eb4f427a71e1c0758cae5e058e35e87d2ea890560467fa9df98ee0b2450df7"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "f198591cd31877264abed8a0",
+      "kind": "cpu",
+      "source_key": "N022",
+      "N": 22,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "e2e0b0207a0711b21f93a408e06df2b15201f0f66d8e720aabeeba38272c455e",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "e2e0b0207a0711b21f93a408e06df2b15201f0f66d8e720aabeeba38272c455e",
+        "source_record": "46db305f97efbc3166c4ac8430a56f4cba8ae17b9eb38253ee3a87172bc0ffc3"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "f64d7bcf065e0f8fa40cc31d",
+      "kind": "cpu",
+      "source_key": "N023",
+      "N": 23,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "0b5b315d2e763c00390a5bf64eb4856563cf3f7b01ecdcaa4b81841d42cc4d72",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "0b5b315d2e763c00390a5bf64eb4856563cf3f7b01ecdcaa4b81841d42cc4d72",
+        "source_record": "8d234f85a80e0df5699042524bf92c6d1552c177e463ea5f15b5ec7fce58c1c1"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "7bc6bbde156d0bd98b61fda5",
+      "kind": "cpu",
+      "source_key": "N024",
+      "N": 24,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "23e5189c367e97c6f5689f15ec54e6d0aa61cd43346758be28ea6c77327c3ed6",
+        "source_record": "d8bee1c34ebc087c970991c15d4509025bf09d1fb711017c916840af564d068c"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "41e0c31ab8d38bd4a27b26ec",
+      "kind": "cpu",
+      "source_key": "N025",
+      "N": 25,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "73c9dcb5319a4ef289b3c6705a2570b06ea5bf03af865fa465fca046687fe447",
+        "source_record": "eac86565be51b6c61c8c90cb117911d8344f4c94c2c19856435ad0bbe57b4f60"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "7984812ae537d2e956f79de9",
+      "kind": "cpu",
+      "source_key": "N026",
+      "N": 26,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "9cfc8d76c5ed049a3560d62c05e15577c481572e2255ecc5616dd5650242317d",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "9cfc8d76c5ed049a3560d62c05e15577c481572e2255ecc5616dd5650242317d",
+        "source_record": "3d27fd2a79fb844a815c967a4e2200625c8c123207b3b30d2fed10ea09259534"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "05e6b61aa9cc1ddba880d55e",
+      "kind": "cpu",
+      "source_key": "N027",
+      "N": 27,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "9a750cc6dae3c97a69ca9d7b7f81134e5882d31b270df0c6146fb2582561940f",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "9a750cc6dae3c97a69ca9d7b7f81134e5882d31b270df0c6146fb2582561940f",
+        "source_record": "0ce05cdb1c988bd0daac8a34d809ddb4de9fac7bd9020f305b7d2b33def0b6d9"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "c4490c180ac232931e0cc6fd",
+      "kind": "cpu",
+      "source_key": "N028",
+      "N": 28,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "ef6a22075d49330d49a2d9da5d0fdef280f524a6143a454e7cd57aa44d57887f",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination",
+          "components"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination",
+        "components"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "ef6a22075d49330d49a2d9da5d0fdef280f524a6143a454e7cd57aa44d57887f",
+        "source_record": "ed649e1e16d2a080525307fbdfb7358d2003dbbc70c3b934e1b9fcf533867142"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "c9aaef17724a950bf5e4c149",
+      "kind": "cpu",
+      "source_key": "N029",
+      "N": 29,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "185f08ed8b7f564170edf87a168ac6636aca2012113b6154cc8342a40e44763c",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "185f08ed8b7f564170edf87a168ac6636aca2012113b6154cc8342a40e44763c",
+        "source_record": "a72d364fbf77606bdb4defe19f9ae8af3ae6a1b6821beba93a19de3f3bc49572"
+      },
+      "enqueued_step": 1
+    },
+    {
+      "question_id": "1fc0c481369d08f1b52e3ea4",
+      "kind": "cpu",
+      "source_key": "N030",
+      "N": 30,
+      "theme": "unmeasured_regime",
+      "narrow_family": "2e8b054f9265c5be",
+      "novelty_fingerprint": {
+        "source_hash": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+        "source_family": "N96_INDUCED_TRANSITION_LADDER_V1",
+        "intervention_class": "unmeasured_regime",
+        "ordered_ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method_pair": [
+          "variable_elimination"
+        ],
+        "plan_family": "source_selected",
+        "structural_feature_bucket": [
+          true,
+          0,
+          0
+        ],
+        "repeat_round": 0
+      },
+      "question": "Which admitted exact CPU method is cheapest for this source and cache state?",
+      "parent_question": null,
+      "why_chosen": "Unmeasured structural regime chosen from fresh model coverage",
+      "methods": [
+        "variable_elimination"
+      ],
+      "alternate": false,
+      "repeats": 3,
+      "repeat_round": 0,
+      "predicted_seconds": 15.0,
+      "maximum_seconds": 360,
+      "expected_information_gain": 13,
+      "expected_discriminating_outcomes": [
+        "Backend/method ranking changes with source structure",
+        "Work-to-time residual points to preparation, factors or readout",
+        "Exact reduction survives or fails its explicit source preconditions"
+      ],
+      "verification_contract": "All scalar coefficients and ordered port rows, count and first/second moments; GPU open and closed operators; canonical or independently derived exact reference; no unadmitted fallback verifier",
+      "claim_type": "NEWLY_PRECOMMITTED",
+      "inputs_hashes": {
+        "source": "3804183b232bc107520e8c8c56d448788353792550cff504d5216a5171684499",
+        "source_record": "cf3d7140c11909c7422d3a58338c5755e1e93e9e560517d27a7c372e1987e1a0"
+      },
+      "enqueued_step": 1
+    }
+  ],
+  "active_limit": 25,
+  "candidate_limit": 40,
+  "narrow_family_max_fraction": 0.2,
+  "formula": "(uncertainty/novelty information + underrepresented-family bonus)/sqrt(expected seconds) + bounded waiting age",
+  "no_gpu_starvation": "at most two CPU/analysis choices while GPU work is admissible",
+  "closed_or_deprioritized": [],
+  "one_followup_per_capacity_failure": true
+}
