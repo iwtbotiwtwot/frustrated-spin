@@ -1,3 +1,11 @@
+# N2000 reproducibility supplement — September 27, 2026
+
+The [portable N2000 package](reproduce/n2000/README.md) adds the completed six-case exact g(E,M,b) result, all 16 boundary states per case, both independent encodings' scientific receipts, frozen complete-graph sources, original code, and a separate portable native runner. Full primary data are 63.223 GB uncompressed or 37.398 GB losslessly compressed. The [Google Drive folder](https://drive.google.com/drive/folders/1F8wvIRqL3pdB34db-llz0YjnIbFbRg9Y) hosts the public data; DATA_MANIFEST.json records confirmed availability and per-file SHA256. Bulk data are kept out of Git history.
+
+Public-runtime qualification uses fresh sessions and pinned numpy 2.1.2 / python-flint 0.8.0. It reproduces all 32 files of the complete N2000 packet/+1 case byte-for-byte and checks N12/N30 independently. The other five large cases retain their original completed receipts; this publication did not rerun the full expensive campaign. The old runtime export omitted its 143,710-byte sealed foundation source ZIP; the exact original, already bound by the runtime's hash, is supplied in runtime_supplement. No runtime validation is bypassed.
+
+Private original sessions and custody keys are excluded. The original scientific receipts and older records retain their original bytes. The new publication manifests describe only the additive public files. N3000 stopped checkpoints are not presented as a completed joint result. Existing licensing, attribution and stewardship apply.
+
 # Standalone repository copy
 
 The published frustrated-spin directory was copied from SLC-GEN3-R3 commit

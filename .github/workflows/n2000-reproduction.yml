@@ -1,0 +1,24 @@
+name: N2000 reproduction
+on:
+  push:
+    paths: ["reproduce/n2000/**", ".github/workflows/n2000-reproduction.yml"]
+  pull_request:
+    paths: ["reproduce/n2000/**", ".github/workflows/n2000-reproduction.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r reproduce/n2000/requirements.txt
+      - run: python reproduce/n2000/run.py verify-record
+      - run: python reproduce/n2000/run.py fetch-runtime --destination runs/n2000-runtime
+      - run: python reproduce/n2000/run.py prepare --runtime runs/n2000-runtime/runtime --work-dir runs/n2000
+      - run: python reproduce/n2000/run.py qualify --runtime runs/n2000-runtime/runtime --work-dir runs/n2000
+      - run: python reproduce/n2000/run.py smoke --runtime runs/n2000-runtime/runtime --work-dir runs/n2000
