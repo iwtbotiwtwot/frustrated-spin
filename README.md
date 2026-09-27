@@ -1,9 +1,15 @@
 # GEN4 frustrated-spin research
 
-This new addition collects the exact spin atlas, solver development, learning
+This standalone repository collects the exact spin atlas, solver development, learning
 campaigns, packet-family extension, the September 26, 2026 N300 courtroom
 test, and the subsequent joint-response capability and phase experiments. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and
 Codex are AI research collaborators and co-authors.
+
+This is the standalone copy of the [frustrated-spin publication in SLC-GEN3-R3](https://github.com/SAMresearchproject/SLC-GEN3-R3/tree/74dbef016c96a58593fed362713c111a55f85071/frustrated-spin).
+Its three publication commits are preserved as directory-filtered history.
+[Copy provenance](provenance/STANDALONE_COPY.json) binds the original and extracted commits.
+The existing [research-only licence](LICENSE.md), [attribution](NOTICE.md) and
+[stewardship](STEWARDSHIP.md) are preserved.
 
 ## Start here
 
@@ -105,8 +111,9 @@ are separately identified sources alongside the original canonical atlas.
   the later authorized continuation did. The N300 sources
   were constructed directly from the packet grammar.
 
-This is a research addition inside `frustrated-spin/`. Its isolated GEN4
-runtime snapshot does not change the repository's portable R3 installation.
+This repository contains the spin research and evidence. Its isolated GEN4
+runtime is supplied as a release asset; the parent repository's portable R3
+installation remains in SLC-GEN3-R3.
 
 ## Verify the downloaded record
 
@@ -114,6 +121,7 @@ From this directory:
 
 ```sh
 python3 verify_publication.py
+python3 verify_latest.py
 ```
 
 This checks the public SHA-256 manifest, the original N300 frozen manifest and

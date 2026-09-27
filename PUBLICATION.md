@@ -1,3 +1,19 @@
+# Standalone repository copy
+
+The published frustrated-spin directory was copied from SLC-GEN3-R3 commit
+74dbef016c96a58593fed362713c111a55f85071 into iwtbotiwtwot/frustrated-spin.
+Its three directory-specific commits are preserved, with source/extracted IDs
+in [STANDALONE_COPY.json](provenance/STANDALONE_COPY.json). Scientific evidence
+and the N300 frozen record retain their original bytes. The entry-point
+README and current runtime download descriptors now refer to this repository.
+Both runtime assets are copied byte-for-byte from the parent publication.
+The parent licence, notices, legal records and stewardship remain included;
+those inherited documents retain their original release scope and references.
+
+The bulk-data boundary is unchanged: verified local/T500 custody and published
+manifests, rather than all raw multi-gigabyte production data on GitHub.
+The original publication record follows.
+
 # Publication record and reproduction
 
 Publication requested by Sean Brady on September 26, 2026, as a new addition
@@ -60,7 +76,7 @@ qualified CUDA, package, plan and cooperative-14 topology in
 `GEN4/frustrated_spin_pod14_learning1/POD_QUALIFICATION.json`.
 
 One shared, sanitized runtime snapshot is supplied as a
-[release asset](https://github.com/SAMresearchproject/SLC-GEN3-R3/releases/download/frustrated-spin-2026-09-26/RUNTIME.public.tar.gz).
+[release asset](https://github.com/iwtbotiwtwot/frustrated-spin/releases/download/frustrated-spin-2026-09-26/RUNTIME.public.tar.gz).
 Its SHA-256 is recorded in
 [RELEASE_ASSETS.json](provenance/RELEASE_ASSETS.json).
 Download it to `GEN4/frustrated_spin_learning1/RUNTIME.public.tar.gz` and check
@@ -128,7 +144,7 @@ The upgraded scoped runtime is available through
 SHA-256 before extracting into a fresh working directory. Its original package
 manifests describe the private snapshot; public export omits authentication
 keys and execution caches. Initialize new sessions and keys for new executions.
-The portable R3 runtime at this repository's root is unchanged.
+The parent repository's portable R3 runtime is not duplicated in this copy.
 
 To reproduce the new small phase experiments in a compatible isolated runtime,
 place the selected run.py/analyze.py in a fresh GEN4 project directory there,
