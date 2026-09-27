@@ -1,3 +1,7 @@
+# Open licensing supplement — September 27, 2026
+
+Owner-authorized scoped spin release: MIT software and CC BY 4.0 data, reports and figures. [LICENSING.md](LICENSING.md) explicitly covers the public dataset, manuscript foundation and identical materials in earlier spin releases. [RUNTIME_LICENSE.md](RUNTIME_LICENSE.md) identifies frozen runtime copies and grants additional open permissions without changing archive/scientific bytes. Third-party rights remain separate. The inherited research-only records below and in historical archives describe prior terms; current recipients may elect the new grant. Preferred citation: [CITATION.cff](CITATION.cff), DOI https://doi.org/10.5281/zenodo.22989862.
+
 # N2000 reproducibility supplement — September 27, 2026
 
 The [portable N2000 package](reproduce/n2000/README.md) adds the completed six-case exact g(E,M,b) result, all 16 boundary states per case, both independent encodings' scientific receipts, frozen complete-graph sources, original code, and a separate portable native runner. Full primary data are 63.223 GB uncompressed or 37.398 GB losslessly compressed. The [Google Drive folder](https://drive.google.com/drive/folders/1F8wvIRqL3pdB34db-llz0YjnIbFbRg9Y) hosts the public data; DATA_MANIFEST.json records confirmed availability and per-file SHA256. Bulk data are kept out of Git history.
@@ -15,8 +19,7 @@ in [STANDALONE_COPY.json](provenance/STANDALONE_COPY.json). Scientific evidence
 and the N300 frozen record retain their original bytes. The entry-point
 README and current runtime download descriptors now refer to this repository.
 Both runtime assets are copied byte-for-byte from the parent publication.
-The parent licence, notices, legal records and stewardship remain included;
-those inherited documents retain their original release scope and references.
+The inherited parent legal documents are preserved in `legal/historical/2026-09-07/`; the open licensing supplement above governs the current scoped spin grant.
 
 The bulk-data boundary is unchanged: verified local/T500 custody and published
 manifests, rather than all raw multi-gigabyte production data on GitHub.

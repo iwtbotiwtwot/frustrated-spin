@@ -1,24 +1,9 @@
-# Contributing research work
+# Contributing to frustrated-spin
 
-This project uses the research-only licence in LICENSE.md. Reports, reproducible
-examples and proposed fixes are welcome. Include the release version, exact
-input and output, expected behavior, and any checkpoint or receipt needed to
-reproduce the issue. Do not submit credentials, private datasets or third-party
-material you are not authorized to share.
+Reports, reproducible examples and fixes are welcome. Include the release version, input/output, expected behavior and relevant public receipts. Do not submit credentials or material you lack permission to share.
 
-Code patches should preserve native mathematical definitions and exact source
-bindings. Changes to a sealed computational component belong in an explicitly
-identified successor with refreshed provenance and corresponding checks.
+Contributions to project-owned code are offered under MIT; contributions to research data, report prose and figures are offered under CC BY 4.0, following [LICENSING.md](LICENSING.md). By submitting a contribution, confirm that you have the authority to offer it under those terms, including any employer/client rights. Contributors retain ownership; no assignment is required by this contribution process.
 
-Before a substantive human-authored patch is merged, the maintainer needs a
-completed rights record: either an appropriate assignment or a contributor
-permission that allows the intended research and separately licensed commercial
-distributions. The unsigned template is in
-legal/CONTRIBUTOR_PERMISSION_TEMPLATE.md. Employer/client rights must be addressed
-when applicable. A commit sign-off is not automatically an assignment or broad
-relicensing grant.
+Preserve native mathematical definitions and exact source bindings. Changes to a sealed computational component belong in an identified successor with refreshed provenance and appropriate checks. Disclose AI assistance and borrowed source accurately, preserve third-party notices, and identify separately licensed material explicitly.
 
-Disclose AI assistance and borrowed source material accurately. Research credit
-and legal ownership are recorded separately. Sending a patch does not itself
-transfer its ownership. Sean Brady controls acceptance of contributions and
-additional permissions to the extent of the rights he holds.
+The earlier contributor agreement template is retained as historical provenance, not a required condition for contributing under the current licenses.

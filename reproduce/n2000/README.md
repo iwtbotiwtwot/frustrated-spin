@@ -23,7 +23,7 @@ python -m pip install -r reproduce/n2000/requirements.txt
 python reproduce/n2000/run.py fetch-runtime --destination runs/n2000-runtime
 ```
 
-The runtime downloader checks the existing 386MB public release SHA256 before extraction. It also restores a 143,710-byte sealed foundation source archive that the prior public exporter omitted. `RUNTIME_SUPPLEMENT.json` records this correction; the supplement matches the runtime's existing foundation hash. No authentication check is bypassed and no bound runtime code is changed. New native sessions generate their own private state under the new work directory. Original private custody keys are not published.
+The runtime downloader checks the existing 386MB public release SHA256 before extraction. It also restores a 143,710-byte sealed foundation source archive that the prior public exporter omitted. `RUNTIME_SUPPLEMENT.json` records this correction; the supplement matches the runtime's existing foundation hash. No authentication check is bypassed and no bound runtime code is changed. Installation also copies the checksum-verified open license grant and texts into `runtime/PUBLIC_LICENSES`, alongside the unchanged sealed runtime files. New native sessions generate their own private state under the new work directory. Original private custody keys are not published.
 
 ## Small qualification and an actual N2000 reproduction
 
@@ -85,6 +85,6 @@ The binary format starts with `GEMB001\n`, then a four-byte little-endian JSON-h
 
 ## Scope and attribution
 
-This publication installs completed N2000 joint results and a tested portable reproduction path. N3000 was stopped at 12 reusable boundary rows and is not advertised as a complete joint result. Prior contiguous graph construction through N1408 and later N2000/N3000/N4000/N5000 construction milestones are distinct from solved joint-table coverage. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and Codex are AI research collaborators. The repository's existing research-only licence, notices and stewardship terms apply.
+This publication installs completed N2000 joint results and a tested portable reproduction path. N3000 was stopped at 12 reusable boundary rows and is not advertised as a complete joint result. Prior contiguous graph construction through N1408 and later N2000/N3000/N4000/N5000 construction milestones are distinct from solved joint-table coverage. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and Codex are AI research collaborators. Project-owned code is MIT; data, reports and figures are CC BY 4.0. See [license scope](../../LICENSING.md), [frozen runtime grant](../../RUNTIME_LICENSE.md) and [citation](../../CITATION.cff). The original hashes and scientific receipts are unchanged.
 
 The pinned GitHub Actions workflow runs retained-record verification, public-runtime installation, CPU preparation, N12/N30 qualification and the complete N2000 packet/+1 smoke case. It does not launch the six-case large-memory production run.

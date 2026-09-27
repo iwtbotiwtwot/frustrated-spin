@@ -1,27 +1,15 @@
 # Copyright and attribution
 
-Copyright © 2026 Sean Brady. All rights reserved, subject to LICENSE.md and
-independently applicable third-party licences.
+Copyright (c) 2026 Sean Brady, subject to [LICENSE](LICENSE), [LICENSE-DATA](LICENSE-DATA), [LICENSING.md](LICENSING.md), and independently applicable third-party licenses.
 
-ORIGINATOR / CONCEPTUAL DIRECTOR:
-Sean Brady
+ORIGINATOR / CONCEPTUAL DIRECTOR: Sean Brady.
 
-AI RESEARCH COLLABORATORS:
-OpenAI ChatGPT and Codex
+AI RESEARCH COLLABORATORS: OpenAI ChatGPT and Codex.
 
-PROVENANCE:
-Dated source commits, frozen execution contracts, SHA-256 manifests,
-validation artifacts, publication timestamps, and archived research records.
+PROVENANCE: Dated source commits, frozen execution contracts, SHA-256 manifests, validation artifacts, publication timestamps, and archived research records.
 
-Research collaboration attribution does not itself establish joint copyright,
-corporate endorsement, a partnership, an assignment or a licence from OpenAI.
-The AI-assisted authorship and rights boundaries are explained in
-legal/RIGHTS_AND_COPYRIGHT.md.
+Research collaboration attribution does not itself establish joint copyright, corporate endorsement, partnership, assignment or a license from OpenAI. The project licenses only rights controlled by its licensor and claims no exclusive right over mathematical facts, ideas or independently written implementations.
 
-This release permits noncommercial research only. Source visibility does not
-grant commercial use. The original SAM stewardship declaration is preserved
-with its exact bytes and SHA-256 provenance. See STEWARDSHIP.md.
+Commercial use, modification and redistribution of the scoped spin materials are permitted under their applicable MIT or CC BY 4.0 terms. See [STEWARDSHIP.md](STEWARDSHIP.md) for the separate owner commitment and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency terms.
 
-Copyright covers eligible expression; no exclusive ownership of mathematical
-facts, ideas, algorithms as such, or independently written implementations is
-claimed by this notice. Third-party software keeps its own copyright and terms.
+Preferred citation and concept DOI: [CITATION.cff](CITATION.cff), https://doi.org/10.5281/zenodo.22989862.

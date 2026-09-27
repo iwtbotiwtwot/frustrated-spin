@@ -24,8 +24,7 @@ Codex are AI research collaborators and co-authors.
 This is the standalone copy of the [frustrated-spin publication in SLC-GEN3-R3](https://github.com/SAMresearchproject/SLC-GEN3-R3/tree/74dbef016c96a58593fed362713c111a55f85071/frustrated-spin).
 Its three publication commits are preserved as directory-filtered history.
 [Copy provenance](provenance/STANDALONE_COPY.json) binds the original and extracted commits.
-The existing [research-only licence](LICENSE.md), [attribution](NOTICE.md) and
-[stewardship](STEWARDSHIP.md) are preserved.
+Software is **[MIT licensed](LICENSE)**; research data, reports and figures are **[CC BY 4.0](LICENSE-DATA)**. [License scope](LICENSING.md) includes the frozen runtime and public N2000 dataset. [Attribution](NOTICE.md), [citation/DOI](CITATION.cff), and the owner [stewardship commitment](STEWARDSHIP.md) are retained.
 
 ## Start here
 

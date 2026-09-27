@@ -40,11 +40,6 @@ rights have been assigned to an entity, or that every contemplated successor
 obligation has already been executed. The rights register records documents
 actually supplied for this release.
 
-## Relationship to the research licence
+## Relationship to the open spin licenses
 
-The current release grants **noncommercial research permission only**.
-Commercial use requires a separate written grant from the rights holder.
-Agreeing to donate, or sending a payment, does not create that grant. The
-90% floor concerns the specified receipts of SAM Research Project LC or its
-successor; it is not silently expanded into a levy on every research user's
-income or all downstream revenue.
+The scoped spin release is available under MIT for software and CC BY 4.0 for research materials, as defined in [LICENSING.md](LICENSING.md). Commercial use does not require a separate permission or donation. The 90% commitment concerns the specified receipts of SAM Research Project LC or its successor; it adds no condition, royalty or revenue allocation to downstream MIT/CC BY users. The original declaration remains preserved as owner-governance provenance.

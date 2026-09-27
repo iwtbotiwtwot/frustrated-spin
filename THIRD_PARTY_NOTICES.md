@@ -1,28 +1,19 @@
 # Dependencies and separate rights
 
-The SAM Research-Only Licence applies only to rights controlled by its licensor.
-It does not restrict independent rights in the following software, which is
-installed separately and not vendored in this release.
+MIT/CC BY grants apply only to project-owned material as specified in [LICENSING.md](LICENSING.md). Dependencies are installed separately and retain their own terms, including all bundled-library notices in the actual distribution used.
 
-| Component | Use | Licence/source |
+| Component | Role | License/source |
 |---|---|---|
-| Python | Interpreter and standard library | [PSF licence and bundled notices](https://docs.python.org/3/license.html) |
-| NumPy | Required by the retained V6 foundation; array and numerical helpers | [BSD 3-Clause](https://numpy.org/doc/stable/license.html) |
-| PyOpenCL | Optional retained hardware source; not required by the portable core tests | [MIT licence](https://documen.tician.de/pyopencl/misc.html#license) |
-| System C compiler/OpenCL implementation | Optional hardware-specific modules | Provider-specific licences; not included |
+| Python 3.12 | Interpreter and standard library | [PSF and bundled notices](https://docs.python.org/3/license.html) |
+| NumPy 2.1.2 | Required by the N2000 runtime and retained foundation | [BSD-3-Clause and distribution notices](https://numpy.org/doc/stable/license.html) |
+| python-flint 0.8.0 | **Required** for N2000 exact integer/polynomial arithmetic | [MIT wrapper](https://github.com/flintlib/python-flint/blob/0.8.0/LICENSE) |
+| FLINT | Native arithmetic library used/bundled by python-flint | [LGPL-3.0-or-later](https://github.com/flintlib/flint/blob/v3.3.1/COPYING.LESSER); installed binary distribution notices apply |
+| GMP/MPFR and other libraries bundled in arithmetic wheels | Native dependencies | Their own licenses and source/distribution notices, as included with the installed wheel |
+| gdown 5.2.0 | Optional public data download helper | [MIT](https://github.com/wkentaro/gdown/blob/v5.2.0/LICENSE) and its dependency notices |
+| Zstandard | Optional compressed-data verification/restoration | [Upstream licensing](https://github.com/facebook/zstd#license); BSD/GPL alternatives as distributed |
+| PyOpenCL | Optional earlier hardware routes | [MIT](https://documen.tician.de/pyopencl/misc.html#license) |
+| CUDA/CuPy/compiler/OpenCL implementations | Optional historical GPU/hardware routes | Respective vendor/project terms; not required by portable CPU reproduction |
 
-The tested NumPy version is recorded in requirements-tested.txt. Installed
-NumPy distributions can include further components and notices, which remain
-with that distribution. This repository does not relicense those packages.
+A license on the Python wrapper does not replace FLINT or bundled-library licenses. Anyone redistributing those dependency binaries must retain and comply with their own accompanying licenses. The N2000 requirements are pinned in `reproduce/n2000/requirements.txt` and `requirements-download.txt`.
 
-The exported Q3/Q2/Q1 compatibility code, V6 source archive, native kernels and
-J4/Li-6 source data are identified project components in
-provenance/SOURCE_MANIFEST.json. The historical names preserve provenance; they
-are not new third-party licences. Earlier grants covering particular copies
-remain effective according to their terms. See legal/RIGHTS_AND_COPYRIGHT.md.
-
-The supporting `SAMA/` collection retains its independent licences and originating
-Courtroom notices. See [SAMA licences](SAMA/LICENSE.md) and
-[SAMA licence directory](SAMA/LICENSES/README.md). Optional python-flint is not
-vendored; its independently applicable licence and dependency notices accompany
-its installed distribution. It is not needed by the required NumPy-only setup.
+The sealed foundation source supplement is a project-owned component included by its exact hash in [RUNTIME_LICENSE.md](RUNTIME_LICENSE.md). Separately licensed third-party materials, including any historical collections with their own notices, remain under those notices. This spin release does not change licenses of the unrelated SAMA collection in the parent repository.

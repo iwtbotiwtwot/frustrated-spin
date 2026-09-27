@@ -85,7 +85,19 @@ def fetch_runtime(destination):
     supplement_runtime(destination/'runtime')
     print(destination/'runtime')
 
+def install_runtime_licenses(root):
+    """Carry the scoped open grant with the otherwise unchanged frozen runtime."""
+    target = Path(root)/'PUBLIC_LICENSES'
+    for record in load(HERE/'LICENSE_BUNDLE.json')['files']:
+        source = HERE/record['source']
+        if sha(source) != record['sha256']:
+            raise ValueError('Runtime license bundle hash mismatch')
+        target.mkdir(parents=True,exist_ok=True)
+        shutil.copyfile(source,target/record['filename'])
+
+
 def supplement_runtime(root):
+    install_runtime_licenses(root)
     for record in load(HERE/'RUNTIME_SUPPLEMENT.json')['files']:
         source=HERE/record['path'];target=root/record['destination']
         if sha(source)!=record['sha256']:
