@@ -1,0 +1,168 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 300,
+  "family": "signed_packet_chain",
+  "fill_coupling": -1,
+  "result": "results/production_signed_packet_chain_N000300_-1.json.gz",
+  "sha256": "82cdc4797fcd8238829cb0aab14618ee7086642473677b3c26ca640db763ac86",
+  "timing": {
+    "local_seconds": 0.09293216210789979,
+    "local_stages": [
+      {
+        "table_key": "101c99225ce430c2247601dc93e64cd5b26a78e6c383c67c30a38ab73970eaea",
+        "upload_seconds": 0.0008652869146317244,
+        "gpu_arithmetic_seconds": 7.767602801322937e-05,
+        "readout_seconds": 5.36011066287756e-05,
+        "histogram_seconds": 0.0007918369956314564,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.022573154186829925
+      },
+      {
+        "table_key": "d5d806f71825f08534e7777640220fffd69810d683250effd26e53a86086f98a",
+        "upload_seconds": 0.0002088630571961403,
+        "gpu_arithmetic_seconds": 2.1281884983181953e-05,
+        "readout_seconds": 3.796699456870556e-05,
+        "histogram_seconds": 0.00028788112103939056,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.021710769971832633
+      },
+      {
+        "table_key": "11c58c710e8bc5ac13f5038981bf90cee22bf6e4f34249c225bfd3552cb8f868",
+        "upload_seconds": 0.0015637138858437538,
+        "gpu_arithmetic_seconds": 1.8026912584900856e-05,
+        "readout_seconds": 3.6144163459539413e-05,
+        "histogram_seconds": 0.00027352990582585335,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.021518170833587646
+      },
+      {
+        "table_key": "2d65959e090e8f56e23e7557687bfc388e3ff5cc26e581d483cc6a092cbf465c",
+        "upload_seconds": 0.00018692109733819962,
+        "gpu_arithmetic_seconds": 1.877802424132824e-05,
+        "readout_seconds": 3.500189632177353e-05,
+        "histogram_seconds": 0.0002655580174177885,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.021666584070771933
+      }
+    ],
+    "component_seconds": 0.028611777117475867,
+    "primary_seconds": 7.576952564995736,
+    "reference_seconds": 6.701995465205982,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.3803235339000821,
+      "port_row_multiply_seconds": 4.3695028107613325,
+      "decode_seconds": 2.825525428634137
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 0.2938707659486681,
+      "port_row_multiply_seconds": 3.3930520033463836,
+      "decode_seconds": 3.013698465190828
+    },
+    "verification_seconds": 2.0557288059499115,
+    "total_solve_and_verification_seconds": 16.495696400059387
+  },
+  "cuda_initialization_seconds": 0.2393134799785912,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 1084600,
+  "plan_hash": "9d95373516183cb9d95d71a0a5e6216c785ece810f6b802dab9c751a75002324",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-magnetization2/project/inputs/N000300/signed_packet_chain_N000300_fill_minus.json",
+    "manifest_sha256": "72a67b67f2baab3d85a449a75fa48217d1fcb3d540793433df091517e88653a6",
+    "parent_sha256": "b5507bc08678302ad7016072dc99a26a7d4b29176533079058151af9a62171e1",
+    "raw_couplings_sha256": "680b0cd294f474b781bf04b7aaa95ea550c2c9a36d1a2194d38d9dabf7367bf7",
+    "graph_sha256": "d43f36588f269cd850890404df9299fb08a8c5163b87dc179d5125e4b3b76e63",
+    "dense_source_sha256": "f2107a5f13b6364d1477806327cc19a6bd33ff7ff7b76df3418ffb96da69540f",
+    "parent_source_sha256": "68d0ca2bd93abe8cdf1bb678153a9e4d7585323c6e6723d8f89c612186e563eb",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "spectrum_sha256": "83d3f811cf189db7ef6f27cde69f5fe90a1aad9a391d914d7eb30b3cdc774335",
+  "session": "/opt/gen4-spin-magnetization2/project/sessions/MATTER_SEARCH_dfc7137120284206b6b6cd7d8975d2b9",
+  "controls": null,
+  "reductions": {
+    "zero_correction_bridges": 9,
+    "correction_components": 10,
+    "component_sizes": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "distinct_component_tables": 5,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": {
+    "planning_seconds": 0.0013273500371724367,
+    "local_tables_and_verification_seconds": 0.13724747695960104,
+    "local_stages": [
+      {
+        "table_key": "101c99225ce430c2247601dc93e64cd5b26a78e6c383c67c30a38ab73970eaea",
+        "upload_seconds": 0.0008941809646785259,
+        "gpu_arithmetic_seconds": 7.147691212594509e-05,
+        "readout_seconds": 6.241421215236187e-05,
+        "histogram_seconds": 0.0008759628981351852,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.06667148717679083
+      },
+      {
+        "table_key": "d5d806f71825f08534e7777640220fffd69810d683250effd26e53a86086f98a",
+        "upload_seconds": 0.0006421520374715328,
+        "gpu_arithmetic_seconds": 5.6104036048054695e-05,
+        "readout_seconds": 4.8513058573007584e-05,
+        "histogram_seconds": 0.00043773604556918144,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02171928295865655
+      },
+      {
+        "table_key": "11c58c710e8bc5ac13f5038981bf90cee22bf6e4f34249c225bfd3552cb8f868",
+        "upload_seconds": 0.0003004001919180155,
+        "gpu_arithmetic_seconds": 4.088087007403374e-05,
+        "readout_seconds": 4.375609569251537e-05,
+        "histogram_seconds": 0.00035031489096581936,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02176233706995845
+      },
+      {
+        "table_key": "2d65959e090e8f56e23e7557687bfc388e3ff5cc26e581d483cc6a092cbf465c",
+        "upload_seconds": 0.00027304980903863907,
+        "gpu_arithmetic_seconds": 3.633415326476097e-05,
+        "readout_seconds": 4.2493920773267746e-05,
+        "histogram_seconds": 0.000308031914755702,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02168747503310442
+      }
+    ],
+    "cpu_primary_composition_seconds": 11.57102588005364,
+    "primary_readout_seconds": 2.727083100937307,
+    "cpu_reference_composition_seconds": 97.21087596495636,
+    "reference_readout_seconds": 2.8746606551576406,
+    "direct_dense_enumeration_seconds": null,
+    "final_verification_seconds": 2.047992041101679,
+    "total_solve_and_verification_seconds": 116.58620622800663
+  },
+  "retained_baseline_seconds": 121.45573270600289
+}

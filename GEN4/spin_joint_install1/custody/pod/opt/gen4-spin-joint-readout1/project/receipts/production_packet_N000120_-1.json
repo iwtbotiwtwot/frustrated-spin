@@ -1,0 +1,126 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 120,
+  "family": "packet",
+  "fill_coupling": -1,
+  "result": "results/production_packet_N000120_-1.json.gz",
+  "sha256": "0d97d5bac965ba79aa5a0d7444352511172355e6b195762081e8a86700bc225c",
+  "timing": {
+    "local_seconds": 0.13298747898079455,
+    "local_stages": [
+      {
+        "table_key": "dd69604fe92c40af44a9952be1c964c40c56ad3a9b537a3650d98b3963a56710",
+        "upload_seconds": 0.0006365440785884857,
+        "gpu_arithmetic_seconds": 4.774192348122597e-05,
+        "readout_seconds": 4.068110138177872e-05,
+        "histogram_seconds": 0.0008900838438421488,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.031088443007320166
+      },
+      {
+        "table_key": "f2271eb1a9a29a8d42dc022876746165cc6ada8cda73adbd1e118ae2c21b83a8",
+        "upload_seconds": 0.0002587169874459505,
+        "gpu_arithmetic_seconds": 2.2293999791145325e-05,
+        "readout_seconds": 3.3118994906544685e-05,
+        "histogram_seconds": 0.00032173306681215763,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02981619513593614
+      },
+      {
+        "table_key": "adaa0c9ac97a1534a5ea167af6f69826ad2629d2fd9545144b494d019aee70b7",
+        "upload_seconds": 0.00020551797933876514,
+        "gpu_arithmetic_seconds": 1.952890306711197e-05,
+        "readout_seconds": 3.28191090375185e-05,
+        "histogram_seconds": 0.00030400604009628296,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02950522000901401
+      },
+      {
+        "table_key": "09c8fc05732350eb0e2d92cda8d726af1b731210fbb5e165a972a1cc7773121e",
+        "upload_seconds": 0.00019428180530667305,
+        "gpu_arithmetic_seconds": 1.6094185411930084e-05,
+        "readout_seconds": 3.145681694149971e-05,
+        "histogram_seconds": 0.000292428070679307,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.03851360105909407
+      }
+    ],
+    "component_seconds": 0.0059915699530392885,
+    "primary_seconds": 1.6888921239878982,
+    "reference_seconds": 0.4857910277787596,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.025452265981584787,
+      "port_row_multiply_seconds": 0.3628743526060134,
+      "decode_seconds": 1.3003607790451497
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 0.01153141213580966,
+      "port_row_multiply_seconds": 0.1760694170370698,
+      "decode_seconds": 0.29804986831732094
+    },
+    "verification_seconds": 0.7377312930766493,
+    "total_solve_and_verification_seconds": 3.0534085729159415
+  },
+  "cuda_initialization_seconds": 0.2333132780622691,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 243536,
+  "plan_hash": "2ecbe06f97b274dbabe5ba6b6e6aae8fb8fc60d35d5f075f4c3da4e198816d36",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-joint-readout1/project/inputs/N000120/packet_N000120_fill_minus.json",
+    "manifest_sha256": "46300e2e46c386ab5ab23867407693f67512b5f9d874097d9d36a72a2ea198ee",
+    "parent_sha256": "54b10a3f4436b11ca794296586e97cfc49035f98592f2b5398545e02a8576c8a",
+    "raw_couplings_sha256": "aaf04a56b3d594a3880eb17db516f835e8ab6ed45117bca2c80b862ea9d4bbc1",
+    "graph_sha256": "8319ecc60f09f5682d2851f5ce4e4a76dbdbf7dceedcccbb4a3eef985a8d5e92",
+    "dense_source_sha256": "7dd20f552271031bfc8cef9c0614677db3fa4695b007fb59043c59e70b5fb539",
+    "parent_source_sha256": "5291559bddf1c76bc931f8667cab8b62bf9cc4d9d06d2d08b4e98da8cffb01e5",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "spectrum_sha256": "8344c73d9489262511ea99e3921f8c64bb77b384d2cfa45a6f89cc0e66ed9f6b",
+  "session": "/opt/gen4-spin-joint-readout1/project/sessions/MATTER_SEARCH_3d572fd384ca41c592b2dcf404c3561c",
+  "controls": null,
+  "joint_readout": {
+    "manifest": "/opt/gen4-spin-joint-readout1/project/joint/production_packet_N000120_-1/MANIFEST.json",
+    "sha256": "a31f3ea5c284b05e5cb666f15e89e93b5b0b0cda166a5f28780273d35a445839",
+    "stored_bytes": 3396586,
+    "records": 239764,
+    "verification": {
+      "full_DOS_projection": true,
+      "all_boundary_magnetization_binomials": true,
+      "independent_global_joint_hash": true,
+      "direct_dense_joint": false
+    }
+  },
+  "reductions": {
+    "zero_correction_bridges": 0,
+    "correction_components": 8,
+    "component_sizes": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "distinct_component_tables": 4,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": null,
+  "retained_baseline_seconds": 1.7970058668870479
+}

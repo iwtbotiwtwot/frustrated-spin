@@ -1,0 +1,98 @@
+{
+  "schema": "GEN4_RESOURCES_V1",
+  "timestamp": 1790466848.9381301,
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "host_logical_cpus": 20,
+  "advertised_cpus": null,
+  "advertised_cpu_source": "UNKNOWN",
+  "enforced_cpu_capacity": 20,
+  "arithmetic_threads": 18,
+  "cgroups": [
+    {
+      "path": "/sys/fs/cgroup/user.slice/user-1000.slice/session-c2.scope",
+      "version": 2,
+      "controllers": [
+        ""
+      ],
+      "cpu.max": "max 100000",
+      "cpu.stat": "usage_usec 81155836870\nuser_usec 64919662966\nsystem_usec 16236173903\nnice_usec 3862059000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+      "memory.max": "max",
+      "memory.current": "20767055872",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 218",
+      "memory.peak": "27487596544",
+      "memory_current_path": "/sys/fs/cgroup/user.slice/user-1000.slice/session-c2.scope/memory.current"
+    },
+    {
+      "path": "/sys/fs/cgroup/user.slice/user-1000.slice",
+      "version": 2,
+      "controllers": [
+        ""
+      ],
+      "cpu.max": "max 100000",
+      "cpu.stat": "usage_usec 170953676995\nuser_usec 144428732568\nsystem_usec 26524944427\nnice_usec 3915224000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+      "memory.max": "max",
+      "memory.current": "23598055424",
+      "memory.events": "low 0\nhigh 1989861\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 218",
+      "memory.peak": "30345211904",
+      "memory_current_path": "/sys/fs/cgroup/user.slice/user-1000.slice/memory.current"
+    },
+    {
+      "path": "/sys/fs/cgroup/user.slice",
+      "version": 2,
+      "controllers": [
+        ""
+      ],
+      "cpu.max": "max 100000",
+      "cpu.stat": "usage_usec 170954697977\nuser_usec 144429465701\nsystem_usec 26525232275\nnice_usec 3915224000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+      "memory.max": "max",
+      "memory.current": "23601926144",
+      "memory.events": "low 0\nhigh 1989861\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 218",
+      "memory.peak": "30376357888",
+      "memory_current_path": "/sys/fs/cgroup/user.slice/memory.current"
+    },
+    {
+      "path": "/sys/fs/cgroup",
+      "version": 2,
+      "controllers": [
+        ""
+      ],
+      "cpu.stat": "usage_usec 183522538000\nuser_usec 146530350000\nsystem_usec 36992188000\nnice_usec 3920713000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+      "cpuset.cpus.effective": "0-19"
+    }
+  ],
+  "hidden_ancestor_limits": "UNKNOWN",
+  "memory_limit_bytes": 33368432640,
+  "memory_current_bytes": 0,
+  "memory_admission_bytes": 12398235648,
+  "scratch_free_bytes": 90407350272,
+  "scratch_total_bytes": 979019075584,
+  "scratch_mount": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/home/sam\",\n         \"source\": \"/home/sam/.Private\",\n         \"fstype\": \"ecryptfs\",\n         \"options\": \"rw,nosuid,nodev,relatime,ecryptfs_fnek_sig=187ef4d1169e4542,ecryptfs_sig=378327a4b8918a90,ecryptfs_cipher=aes,ecryptfs_key_bytes=16,ecryptfs_unlink_sigs\"\n      }\n   ]\n}",
+  "gpus": [],
+  "topology": null,
+  "persistent_root": "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/frustrated_spin_dense_extension1/persistent",
+  "persistent_budget_bytes": 107374182400,
+  "persistent_reserve_bytes": 5368709120,
+  "persistent_budget_source": "FIRST_BOOT_CONFIGURATION_NOT_YET_RECORDED",
+  "shared_memory_is_part_of_memory_limit": true
+}

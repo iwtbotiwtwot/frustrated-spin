@@ -106,3 +106,40 @@ configuration; the source records in this publication remain unchanged.
 
 Existing repository license, notice, and stewardship terms apply. Originating
 third-party notices retained in runtime and source bundles remain applicable.
+
+## Joint capability and response supplement
+
+The latest sync adds the completed N1408 workstation extension, dense-source
+extension, magnetization/joint methods, installed shared capability and two
+bounded Volume II response experiments. It preserves existing scientific source
+records and the original N300 precommit. See
+[SYNC_JOINT_20260926.json](provenance/SYNC_JOINT_20260926.json) for every new
+export exclusion and large-file identity.
+
+Complete N1408 packet answers and compact source-bound production receipts are
+included. Bulk joint shards, older full packet outputs, private session state,
+and duplicate staging runtimes remain in verified owner custody. Publication of
+their manifests records availability and provenance; it does not place those
+bulk bytes on GitHub. Local custody paths in historical records require the
+corresponding archive; large streamed queries cannot run from metadata alone.
+
+The upgraded scoped runtime is available through
+[RELEASE_JOINT_20260926.json](provenance/RELEASE_JOINT_20260926.json). Check its
+SHA-256 before extracting into a fresh working directory. Its original package
+manifests describe the private snapshot; public export omits authentication
+keys and execution caches. Initialize new sessions and keys for new executions.
+The portable R3 runtime at this repository's root is unchanged.
+
+To reproduce the new small phase experiments in a compatible isolated runtime,
+place the selected run.py/analyze.py in a fresh GEN4 project directory there,
+and copy PHASE_ADOPTION_INPUTS.json into GEN4/spin_joint_install1/. Follow its
+REPRODUCE.md using that runtime's Python and resource configuration. Keep all
+published execution directories immutable. The known source-data dependencies
+are included, and these small experiments do not require the large joint shards.
+
+Run `python3 verify_publication.py` for published-byte and retained N300 checks,
+and `python3 verify_latest.py` for the retained new response results. Neither
+command performs a fresh production solve or timing trial. The latest transport
+manifest includes both original and new Git files; historical campaign hashes
+retain their original scope and may include deliberately unexported private or
+bulk files.

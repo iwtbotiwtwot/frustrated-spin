@@ -1,0 +1,102 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 450,
+  "family": "signed_packet_chain",
+  "fill_coupling": 1,
+  "result": "results/production_signed_packet_chain_N000450_+1.json.gz",
+  "sha256": "dbabe1f20fe67377e48447cf97504deb9bd6828d576b6e5752499a11cc1de32f",
+  "timing": {
+    "local_seconds": 0.053937518037855625,
+    "local_stages": [
+      {
+        "table_key": "5d8314f7b587c05456dd5f39df54d855314a55cfb6ba1a815a148585ccd36d56",
+        "upload_seconds": 0.000703844940289855,
+        "gpu_arithmetic_seconds": 5.2378978580236435e-05,
+        "readout_seconds": 4.552793689072132e-05,
+        "histogram_seconds": 0.0005866889841854572,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.025601129047572613
+      },
+      {
+        "table_key": "6695ba677274099f06977b122b1c43cb94ce0bd7c2a9c7ac5e6ccd6b0b3630e8",
+        "upload_seconds": 0.00023492309264838696,
+        "gpu_arithmetic_seconds": 1.898803748190403e-05,
+        "readout_seconds": 3.330991603434086e-05,
+        "histogram_seconds": 0.0004205601289868355,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02580743795260787
+      }
+    ],
+    "component_seconds": 0.0034084299113601446,
+    "primary_seconds": 3.033507561078295,
+    "reference_seconds": 2.6943755538668483,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.22460844204761088,
+      "port_row_multiply_seconds": 1.4984284406527877,
+      "decode_seconds": 1.3099130645859987
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 0.171734208939597,
+      "port_row_multiply_seconds": 1.32409697631374,
+      "decode_seconds": 1.197979825315997
+    },
+    "verification_seconds": 2.6361492660362273,
+    "total_solve_and_verification_seconds": 8.467312229098752
+  },
+  "cuda_initialization_seconds": 0.2662356458604336,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 487404,
+  "plan_hash": "dd03e94263a17370411b6324b48de8a6f9984b2a34e13d864cdcde55ecd37983",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-magnetization2/project/inputs/N000450/signed_packet_chain_N000450_fill_plus.json",
+    "manifest_sha256": "8bb932cf07338c1c481ae9f8ad470c20ae002f79663fa712725fee516d02d054",
+    "parent_sha256": "1c6bc5798edbe9ddb67682d6310ae5f6e273e1384231f16ac749f1c4b463dbad",
+    "raw_couplings_sha256": "81c037fe865766ca48d483d478aad3977a2a12bd0d022e87ecd9bc746943b681",
+    "graph_sha256": "927bbba62de290f57ac292d57b7395db255d132bba26ba63b3bd5297a462444d",
+    "dense_source_sha256": "6ebe5bfa73b9dc6772cd5f4cab4ba1b8c7992285ed8f2f6bb49e9de9db3da7e3",
+    "parent_source_sha256": "fe3fd261ac8114e5d63f9164934329b3a329010e73ed62bccf5afa1c1d8d034c",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "spectrum_sha256": "97162aaca397f11e472ab53455d69e6d345583992b96412ee267b6cd6fdacae8",
+  "session": "/opt/gen4-spin-magnetization2/project/sessions/MATTER_SEARCH_04cc3ac9aea24606a11cf7179769f216",
+  "controls": null,
+  "reductions": {
+    "zero_correction_bridges": 15,
+    "correction_components": 16,
+    "component_sizes": [
+      15,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      15
+    ],
+    "distinct_component_tables": 3,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": null,
+  "retained_baseline_seconds": null
+}

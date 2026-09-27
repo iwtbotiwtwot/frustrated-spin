@@ -1,0 +1,69 @@
+{
+  "schema": "GEN4_COMPLETE_SIGNED_GRAPH_BITS_V1",
+  "status": "SOURCE_GENERATED_NOT_DOS_SOLVED",
+  "key": "packet_N000012_fill_minus",
+  "N": 12,
+  "pair_count": 66,
+  "couplings_file": "packet_N000012_fill_minus.couplings.bits.gz",
+  "raw_couplings_sha256": "3408232c988a2045a7f156565f8f3fbb380419a0f0a3968450036de9a94a74a5",
+  "raw_coupling_bytes": 9,
+  "encoding": "Lexicographic unordered pairs (u,v), u<v; least-significant bit first in each byte; 1 means J=+1, 0 means J=-1; zero unused padding",
+  "pair_index_formula": "u*(2*N-u-1)//2 + v-u-1",
+  "fields": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "parent_vertices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "ordered_ports": [
+    0,
+    1
+  ],
+  "parent_record": "packet.parent.json.gz",
+  "parent_source_sha256": "86f12ef2c7795363b85c187819549a0128246526cd404eac287410b36fdd364d",
+  "parent_provenance": {
+    "source_path": "/opt/gen4-spin-dense-follower1/seed_catalog/sources/packet_N012.json",
+    "source_file_sha256": "a96ca4f3cd038535f19b82315de2311ab91f91cab6aa0812b6009e935ca12e86",
+    "parent_source_sha256": "86f12ef2c7795363b85c187819549a0128246526cd404eac287410b36fdd364d",
+    "verified_result_path": "/opt/gen4-spin-dense-follower1/seed_catalog/results/packet_N012.json.gz",
+    "verified_result_file_sha256": "59c608b48f358b8ded22f4aa3e5861c56c34dbc824dd78f329f6cf581a54ff52",
+    "receipt": null
+  },
+  "fill_coupling": -1,
+  "checks": {
+    "pair_count": 66,
+    "positive_couplings": 12,
+    "negative_couplings": 54,
+    "parent_couplings_preserved": 12,
+    "all_missing_pairs_verified": true,
+    "padding_verified": true
+  },
+  "full_density_solved": false,
+  "graph_sha256": "3367cf5887f264969fa3d9e937417db736fca58ca88fbd8a37c23342cda2a292",
+  "exact_representation": "Every pair coupling is explicitly stored as one bit; this is not an omitted-edge recipe",
+  "energy_identity": "E=-J0*(M^2-N)/2-sum_parent((Juv-J0)*su*sv)-sum_i(hi*si)",
+  "generation_and_readback_seconds": 0.00035741599276661873,
+  "code_manifest_sha256": "e975105e1c5f4f6d50228f3b3dfbf62a167c849044788c2f989ef9a9e3333258"
+}

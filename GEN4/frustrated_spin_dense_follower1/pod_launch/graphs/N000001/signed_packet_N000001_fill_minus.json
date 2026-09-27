@@ -1,0 +1,46 @@
+{
+  "schema": "GEN4_COMPLETE_SIGNED_GRAPH_BITS_V1",
+  "status": "SOURCE_GENERATED_NOT_DOS_SOLVED",
+  "key": "signed_packet_N000001_fill_minus",
+  "N": 1,
+  "pair_count": 0,
+  "couplings_file": "signed_packet_N000001_fill_minus.couplings.bits.gz",
+  "raw_couplings_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "raw_coupling_bytes": 0,
+  "encoding": "Lexicographic unordered pairs (u,v), u<v; least-significant bit first in each byte; 1 means J=+1, 0 means J=-1; zero unused padding",
+  "pair_index_formula": "u*(2*N-u-1)//2 + v-u-1",
+  "fields": [
+    0
+  ],
+  "parent_vertices": [
+    0
+  ],
+  "ordered_ports": [
+    0
+  ],
+  "parent_record": "signed_packet.parent.json.gz",
+  "parent_source_sha256": "99127e3cc6674794aae7fbc55c87ec075b39d341aaddcd10e7327f56f0d98e7c",
+  "parent_provenance": {
+    "source_path": "/opt/gen4-spin-dense-follower1/seed_catalog/sources/signed_packet_N001.json",
+    "source_file_sha256": "f47f11f31b53aa3a340f0e9459d815963e1ef2b5ae47e5da66df44df025f8c43",
+    "parent_source_sha256": "99127e3cc6674794aae7fbc55c87ec075b39d341aaddcd10e7327f56f0d98e7c",
+    "verified_result_path": "/opt/gen4-spin-dense-follower1/seed_catalog/results/signed_packet_N001.json.gz",
+    "verified_result_file_sha256": "b6cbce41edac8322695ac1941172cbe53472e3284391032846f1d47075bafd3a",
+    "receipt": null
+  },
+  "fill_coupling": -1,
+  "checks": {
+    "pair_count": 0,
+    "positive_couplings": 0,
+    "negative_couplings": 0,
+    "parent_couplings_preserved": 0,
+    "all_missing_pairs_verified": true,
+    "padding_verified": true
+  },
+  "full_density_solved": false,
+  "graph_sha256": "a853f7b967348a034d62b58830bc9649022eca5450e0facb72ae337ad36d2338",
+  "exact_representation": "Every pair coupling is explicitly stored as one bit; this is not an omitted-edge recipe",
+  "energy_identity": "E=-J0*(M^2-N)/2-sum_parent((Juv-J0)*su*sv)-sum_i(hi*si)",
+  "generation_and_readback_seconds": 0.00040536699816584587,
+  "code_manifest_sha256": "e975105e1c5f4f6d50228f3b3dfbf62a167c849044788c2f989ef9a9e3333258"
+}

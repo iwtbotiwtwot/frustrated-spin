@@ -1,0 +1,88 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 60,
+  "family": "packet",
+  "fill_coupling": -1,
+  "result": "results/production_packet_N000060_-1.json.gz",
+  "sha256": "2cd09965af49cf30d87263757641dfed44a14d957eb039a3a2316add9b7a2543",
+  "timing": {
+    "planning_seconds": 0.0001403498463332653,
+    "local_tables_and_verification_seconds": 0.002608940936625004,
+    "local_stages": [
+      {
+        "table_key": "6e8fa3376bf24f3dd148b5b8cd5499b26e3f11a1eb0e31a224852b178e659ebc",
+        "upload_seconds": 0.0005405100528150797,
+        "gpu_arithmetic_seconds": 3.9458973333239555e-05,
+        "readout_seconds": 1.9268831238150597e-05,
+        "histogram_seconds": 0.00015337998047471046,
+        "gpu_output_bytes": 4096,
+        "assignments": 512,
+        "cpu_independent_seconds": 0.0003435150720179081
+      },
+      {
+        "table_key": "3973bac78451a0b0a913ef07f478d7deec7d77c8f11fac460fab4c0a606f6b95",
+        "upload_seconds": 0.0001705449540168047,
+        "gpu_arithmetic_seconds": 1.5143072232604027e-05,
+        "readout_seconds": 1.409091055393219e-05,
+        "histogram_seconds": 5.060597322881222e-05,
+        "gpu_output_bytes": 4096,
+        "assignments": 512,
+        "cpu_independent_seconds": 0.0003102049231529236
+      },
+      {
+        "table_key": "808c1880c4f3a386fbe59247990c906dfdca6a879d7f343d067419194a14c2dd",
+        "upload_seconds": 0.00014449702575802803,
+        "gpu_arithmetic_seconds": 1.5182886272668839e-05,
+        "readout_seconds": 1.130695454776287e-05,
+        "histogram_seconds": 2.6660040020942688e-05,
+        "gpu_output_bytes": 512,
+        "assignments": 64,
+        "cpu_independent_seconds": 4.247389733791351e-05
+      },
+      {
+        "table_key": "174ff72fbf2ff0d776f9b01202a7b972da897e4eed6bdbd248d4eed0aec67eee",
+        "upload_seconds": 0.0001243571750819683,
+        "gpu_arithmetic_seconds": 1.1456897482275963e-05,
+        "readout_seconds": 2.3514963686466217e-05,
+        "histogram_seconds": 1.7907004803419113e-05,
+        "gpu_output_bytes": 64,
+        "assignments": 8,
+        "cpu_independent_seconds": 8.89296643435955e-06
+      }
+    ],
+    "cpu_primary_composition_seconds": 0.004840717185288668,
+    "primary_readout_seconds": 0.010231530060991645,
+    "cpu_reference_composition_seconds": 0.009516506921499968,
+    "reference_readout_seconds": 0.010254133027046919,
+    "direct_dense_enumeration_seconds": null,
+    "final_verification_seconds": 0.0061378320679068565,
+    "total_solve_and_verification_seconds": 0.04382522404193878
+  },
+  "cuda_initialization_seconds": 0.22009425098076463,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 223072,
+  "plan_hash": "f8acb84ac111d721bb013ec40f404047dcf2aa3062f08359ac66b90ce10301fc",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-dense-solver1/project/inputs/N000060/packet_N000060_fill_minus.json",
+    "manifest_sha256": "6211f473477f3ff1f1be029e4f3228298cc3683d0b34604b4090066abb6f48b1",
+    "parent_sha256": "db5d3803e4a12d61eede4307da04836082ae7173d37607b58414d896d17cb3f4",
+    "raw_couplings_sha256": "805930defbebdcdbd31f3948193d7e151084c309244fff03a998af96cce52dd4",
+    "graph_sha256": "5474d1915212d6f826ea98d975e9a258ad04a1f6317c53ae194133fd6470c5fc",
+    "dense_source_sha256": "f03f898578235a0b1ab980f212972dbc7e0a41adda46b4ace1caf2df6bf033bf",
+    "parent_source_sha256": "36cb6f8680c9a40395cb620fa07c9b9fc76b604d70fa74fc291237757aec3599",
+    "ordered_ports_hash": "463f2998327eb3a694145e6014444480b2235be84aa6cfd57871cc64f1cd816c"
+  },
+  "spectrum_sha256": "b73dfa58532e092a4bee74d90115f40b96e7e7ad80657107e96c9bc673eb6df1",
+  "session": "/opt/gen4-spin-dense-solver1/project/sessions/MATTER_SEARCH_59d3244e0b9f4f068ef3b0b92acb353b",
+  "controls": null
+}

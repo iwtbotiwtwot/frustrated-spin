@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-09-27T01:30:20.488428+00:00",
+  "question": "How do alignment and fixing the first contact phase change the complete ground-state response of the two retained C4 sources?",
+  "scope": "One bounded step; two inherited sources, three boundary conditions; no automatic follow-up.",
+  "input_sha256": "5b620cbb70003e3327c1f7ac4c531b53fbec9fd17645f930897608553bdbfc32",
+  "source": "Retained Volume II C4 sources from the installed adoption input",
+  "transformation": "E_spin(h)=E_spin(0)-h*M; H_phase(h)=H_phase(0)-h*sum Re(z)",
+  "collective_coupling": "0",
+  "boundaries": {
+    "FREE": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "Z0_REAL_PLUS": [
+      1,
+      1,
+      null,
+      null
+    ],
+    "Z0_IMAG_PLUS": [
+      1,
+      -1,
+      null,
+      null
+    ]
+  },
+  "design_provenance": "Codex technical design under Sean Brady authorization to proceed one step and assess",
+  "independent_check": "64-state direct source enumeration; all ground crossings from pairwise line intersections; full DOS and moments at every crossing and one point per interval"
+}

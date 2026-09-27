@@ -1,14 +1,18 @@
 # GEN4 frustrated-spin research
 
 This new addition collects the exact spin atlas, solver development, learning
-campaigns, packet-family extension, and the September 26, 2026 N300 courtroom
-test. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and
+campaigns, packet-family extension, the September 26, 2026 N300 courtroom
+test, and the subsequent joint-response capability and phase experiments. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and
 Codex are AI research collaborators and co-authors.
 
 ## Start here
 
 | Record | Contents |
 |---|---|
+| [Latest joint capability and results](GEN4/spin_joint_install1/RESULT.md) | Installed shared packet/joint solver; N1408 construction coverage, 54 dense magnetization cases and 24 joint datasets |
+| [Phase response, step 1](GEN4/vol_ii_joint_response1/REPORT.md) | Equal zero-field spectra with different contact-conditioned alignment responses |
+| [Collective response, step 2](GEN4/vol_ii_joint_response2/REPORT.md) | Exact coupling thresholds and full-spectrum reflection around h=1 |
+| [N1408 dense-source extension](GEN4/frustrated_spin_dense_extension1/README.md) | 348 additional complete graphs; combined construction catalog contains 8,448 graphs |
 | [Fully connected N300 sources](GEN4/frustrated_spin_dense_completion1/README.md) | Six complete graphs with 44,850 interactions each; preserved parent couplings and an exact collective-magnetization representation |
 | [Consecutive packet continuation](GEN4/frustrated_spin_packet_continuation1/README.md) | Resumable CPU campaign starting at N121, independent exact verification, and retained launch/recovery evidence |
 | [N300 report](GEN4/frustrated_spin_n300_courtroom1/REPORT.md) | Prospective timing prediction, sealed protocol, independent exact comparisons, six wrong controls, and every timing sample |
@@ -22,22 +26,40 @@ Codex are AI research collaborators and co-authors.
 | [N96 plan/backend study](GEN4/frustrated_spin_pod14_learning1/N96_PLAN_BACKEND.md) | Expanded versus older plans on the cooperative-14 backend |
 | [Publication and reproduction](PUBLICATION.md) | Export boundary, verification, archive mapping, and runtime setup |
 
-## Fully connected extension and consecutive continuation
+## Latest continuation, magnetization and joint response
 
-The [dense-completion project](GEN4/frustrated_spin_dense_completion1/RESULTS.json)
-constructs six fully connected N300 sources from the three existing families.
-Each preserves its parent's couplings and fills absent pairs with either +1
-or −1. Pair coverage, inherited couplings, and the collective-magnetization
-energy identity are checked. **Their full density-of-states calculations have
-not been run.** The proposed exact route extends packet tables to retain joint
-correction energy, magnetization, and ordered ports.
+The three packet-family exact catalogs now reach **N1408**. Complete signed graph
+construction covers six variants at each N1..1408, for **8,448 graph sources**.
+Completed dense magnetization production covers **54 cases through N900**;
+full joint energy–magnetization–boundary output covers **24 datasets at
+N120, N300, N750 and N900**. These coverage categories retain separate identities.
 
-Separately, the packet continuation launched on the cheaper pod with three
-CPU workers. Its retained launch check confirms every N121–N259 in all three
-families: **417 independently verified source cases**. This is a dated launch
-snapshot, not a live progress feed. Sources, code, qualification, N121/N122
-outputs, and checkpoint-recovery evidence are included. Later running results
-remain on the pod until a subsequent export.
+The [shared capability](GEN4/spin_joint_install1/GUIDE.md) extends existing
+SLC/CE/GEN3/GEN4 operations and has executed SB/A3D41 adoption. Local installation
+qualification passes369checks; scoped GEN4 qualification passes381checks including
+CUDA comparisons. It adds source-structure selection, exact packet composition,
+joint readout and reusable field/pair/boundary transformations.
+
+Two subsequent Volume II experiments use that installed capability. Step1 gives
+six exact contact/alignment response curves. Step2 gives coupling thresholds
+-1 and17/3 and a source-specific full-spectrum identity relating fields h and2-h.
+Their code, complete numerical responses, independent checks and source identity
+are included. No follow-up is running.
+
+This supplement includes all three complete N1408 packet answers, compact
+production receipts, generated extension graphs, executable source and complete
+small-case response evidence. The large earlier packet catalog and bulk joint
+shards remain in verified workstation/T500 custody; **they are not all embedded
+in this Git checkout**. Their inventory hashes and export dispositions are in
+[the latest sync receipt](provenance/SYNC_JOINT_20260926.json) and the original
+[custody manifest](GEN4/spin_joint_install1/custody/FINAL_INVENTORY.json).
+The upgraded runtime is a separately downloadable
+[release asset](provenance/RELEASE_JOINT_20260926.json).
+
+The older continuation publication was a launch-time N121–N259 snapshot. Its
+original receipt remains at `provenance/SYNC_CONTINUATION_DENSE_20260926.json`.
+The N300 generated-only record describes that earlier stage; later solved cases
+are separately identified by source hashes in the new coverage inventory.
 
 ## Precommitted packet-family N300 result
 
@@ -79,7 +101,8 @@ are separately identified sources alongside the original canonical atlas.
 - CPU, single-MIG, and cooperative-14 measurements retain their backend,
   topology, plan, cache state, and timing scope. No new model merges these
   measurements in this publication.
-- The packet and N300 campaigns did not execute N121–144. The N300 sources
+- The initial packet-catalog and N300 campaigns did not execute N121–144;
+  the later authorized continuation did. The N300 sources
   were constructed directly from the packet grammar.
 
 This is a research addition inside `frustrated-spin/`. Its isolated GEN4

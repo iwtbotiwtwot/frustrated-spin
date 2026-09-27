@@ -1,0 +1,126 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 300,
+  "family": "signed_packet",
+  "fill_coupling": -1,
+  "result": "results/production_signed_packet_N000300_-1.json.gz",
+  "sha256": "2134c0518f9eedff0bd085853cda17790f7c5c8159edced7be84b98abf8bf540",
+  "timing": {
+    "local_seconds": 0.08745645196177065,
+    "local_stages": [
+      {
+        "table_key": "101c99225ce430c2247601dc93e64cd5b26a78e6c383c67c30a38ab73970eaea",
+        "upload_seconds": 0.0008432238828390837,
+        "gpu_arithmetic_seconds": 7.557310163974762e-05,
+        "readout_seconds": 5.816691555082798e-05,
+        "histogram_seconds": 0.0007901950739324093,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.021803810028359294
+      },
+      {
+        "table_key": "d118e7265382e73c5c1cc79f922bc3b8853e2653210cef057bd45508bf20fc9d",
+        "upload_seconds": 0.00021104607731103897,
+        "gpu_arithmetic_seconds": 1.992005854845047e-05,
+        "readout_seconds": 3.979983739554882e-05,
+        "histogram_seconds": 0.0002727292012423277,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02062397194094956
+      },
+      {
+        "table_key": "6f011932d54bd6eacab3c3dd76a34f628685f6461f5a9c481bf41784e9e8e2c0",
+        "upload_seconds": 0.00015655485913157463,
+        "gpu_arithmetic_seconds": 1.685507595539093e-05,
+        "readout_seconds": 3.539305180311203e-05,
+        "histogram_seconds": 0.00024452689103782177,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02056517289020121
+      },
+      {
+        "table_key": "aaa1e6951ded5c9b5692cbf67120f8a038bfd1acdca1843050166bd43834d343",
+        "upload_seconds": 0.00016653002239763737,
+        "gpu_arithmetic_seconds": 1.6635050997138023e-05,
+        "readout_seconds": 3.508199006319046e-05,
+        "histogram_seconds": 0.00024555809795856476,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.020553786074742675
+      }
+    ],
+    "component_seconds": 0.004897482926025987,
+    "primary_seconds": 7.472937367158011,
+    "reference_seconds": 6.776181670837104,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.4999573091045022,
+      "port_row_multiply_seconds": 4.214286507340148,
+      "decode_seconds": 2.7572815746534616
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 0.38992475788109004,
+      "port_row_multiply_seconds": 3.4406703973654658,
+      "decode_seconds": 2.9443069177214056
+    },
+    "verification_seconds": 1.915298428852111,
+    "total_solve_and_verification_seconds": 16.291982292197645
+  },
+  "cuda_initialization_seconds": 0.21054761111736298,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 456824,
+  "plan_hash": "3a891bc61fdc9209ef1e7104ce8414b2dfa5f8efb38775223bf6ea5ff9393f66",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-magnetization2/project/inputs/N000300/signed_packet_N000300_fill_minus.json",
+    "manifest_sha256": "b6aa884800b81f40a0f226fc2f695d2a116039b089001b1b26b8e46977511803",
+    "parent_sha256": "66012d8dba1ff774c253ca67183dd608010c2e19351e838820196935419101b8",
+    "raw_couplings_sha256": "75c479b251bc3ac0129fb603e1993c08a3df1014e36d1f2410bc76b5441b5b7d",
+    "graph_sha256": "3a27b8cb499ed96f07c3029a9a2ea6d6b261302a9e0da0dca695fe002ddf3b8a",
+    "dense_source_sha256": "52cf6a1096698c7557552ad28b325c82be11e17f1fb1425779d0db701f4fb1cc",
+    "parent_source_sha256": "027ad371757ab48a1b9fc6fe9034c5ea65921883e91dfa05dd643ef97155795d",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "spectrum_sha256": "04507106c37bbe5ad0d92a500e0eaf548066e41a5b917f34827944807f1a5bf9",
+  "session": "/opt/gen4-spin-magnetization2/project/sessions/MATTER_SEARCH_a5f21011d5864e80bdb197d94c5e183c",
+  "controls": null,
+  "reductions": {
+    "zero_correction_bridges": 0,
+    "correction_components": 20,
+    "component_sizes": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "distinct_component_tables": 4,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": null,
+  "retained_baseline_seconds": 36.91233908501454
+}

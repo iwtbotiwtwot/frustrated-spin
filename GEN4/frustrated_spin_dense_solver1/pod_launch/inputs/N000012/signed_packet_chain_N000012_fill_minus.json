@@ -1,0 +1,69 @@
+{
+  "schema": "GEN4_COMPLETE_SIGNED_GRAPH_BITS_V1",
+  "status": "SOURCE_GENERATED_NOT_DOS_SOLVED",
+  "key": "signed_packet_chain_N000012_fill_minus",
+  "N": 12,
+  "pair_count": 66,
+  "couplings_file": "signed_packet_chain_N000012_fill_minus.couplings.bits.gz",
+  "raw_couplings_sha256": "1741b2a32fbd79eff25fd5ee31ab2e2e3bc27710eb5b7bdf78e4a9f92912ed8d",
+  "raw_coupling_bytes": 9,
+  "encoding": "Lexicographic unordered pairs (u,v), u<v; least-significant bit first in each byte; 1 means J=+1, 0 means J=-1; zero unused padding",
+  "pair_index_formula": "u*(2*N-u-1)//2 + v-u-1",
+  "fields": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "parent_vertices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "ordered_ports": [
+    0,
+    1
+  ],
+  "parent_record": "signed_packet_chain.parent.json.gz",
+  "parent_source_sha256": "654e646c0669facc455a20b8c602afcbb3f067618ad2bb1ff42fab505358dd0d",
+  "parent_provenance": {
+    "source_path": "/opt/gen4-spin-dense-follower1/seed_catalog/sources/signed_packet_chain_N012.json",
+    "source_file_sha256": "550918ec200817417c8e7434c985cf607ffa749fd81645fcf718a020e9d2b59d",
+    "parent_source_sha256": "654e646c0669facc455a20b8c602afcbb3f067618ad2bb1ff42fab505358dd0d",
+    "verified_result_path": "/opt/gen4-spin-dense-follower1/seed_catalog/results/signed_packet_chain_N012.json.gz",
+    "verified_result_file_sha256": "c77e2d2b914262cd84b384828b1054afac186c13d39b10cba8113672f725f002",
+    "receipt": null
+  },
+  "fill_coupling": -1,
+  "checks": {
+    "pair_count": 66,
+    "positive_couplings": 10,
+    "negative_couplings": 56,
+    "parent_couplings_preserved": 15,
+    "all_missing_pairs_verified": true,
+    "padding_verified": true
+  },
+  "full_density_solved": false,
+  "graph_sha256": "c64b884d1f0d83dd35fa9e69635c6f7059938dd216f97def63b5a103d761fbce",
+  "exact_representation": "Every pair coupling is explicitly stored as one bit; this is not an omitted-edge recipe",
+  "energy_identity": "E=-J0*(M^2-N)/2-sum_parent((Juv-J0)*su*sv)-sum_i(hi*si)",
+  "generation_and_readback_seconds": 0.00036061089485883713,
+  "code_manifest_sha256": "e975105e1c5f4f6d50228f3b3dfbf62a167c849044788c2f989ef9a9e3333258"
+}

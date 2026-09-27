@@ -1,0 +1,68 @@
+{
+  "schema": "GEN4_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1",
+  "status": "EXACT_JOINT_VERIFIED",
+  "N": 12,
+  "fill_coupling": 1,
+  "ordered_ports": [
+    0,
+    1
+  ],
+  "boundary_encoding": "bit i corresponds to ordered_ports[i]; 1 is spin +1 and 0 is spin -1",
+  "row_columns": [
+    "energy",
+    "magnetization",
+    "configuration_count_decimal_string"
+  ],
+  "energy_convention": "E=-sum_(u<v) Juv*su*sv-sum_i hi*si",
+  "magnetization_convention": "M=sum_i si",
+  "field_extension": "E_h=E-h*M; h exact rational; original couplings and fields fixed",
+  "correction_energy_recovery": "Ecorr=E+J0*(M*M-N)/2",
+  "source_identity": {
+    "dense_source_sha256": "2aac42d015f0d2e5b29d2cb2bb78668373e89c062e9535cf9502b4ea23cd24c9",
+    "scope": "QUALIFICATION_NONZERO_FIELD_VARIANT"
+  },
+  "plan_sha256": "a4d1a823ab7e19a6eed51177a32dcaf4ed020802b46b9a1408641af481529305",
+  "joint_spectrum_sha256": "c047970d4e50f21f425471fe797623104e5d4cef573facb09d01e642d4fed762",
+  "configurations": "4096",
+  "shards": [
+    {
+      "boundary_state": 0,
+      "file": "boundary_0000.jsonl.gz",
+      "sha256": "630b0e1f8bfaa08b82fbf53b8ea7410926a823df081a5368bf0e8d28fc34d9a1",
+      "records": 47,
+      "configurations": "1024",
+      "bytes": 271
+    },
+    {
+      "boundary_state": 1,
+      "file": "boundary_0001.jsonl.gz",
+      "sha256": "51b16a2a0e055eb101f9126e9adcab3482a0e249e35208a644ff06386b49b6da",
+      "records": 47,
+      "configurations": "1024",
+      "bytes": 261
+    },
+    {
+      "boundary_state": 2,
+      "file": "boundary_0002.jsonl.gz",
+      "sha256": "6b1661ff888ce570a0798aa8b921f19f2d4cb9a0bd0b55fd017da3ef47f88920",
+      "records": 47,
+      "configurations": "1024",
+      "bytes": 265
+    },
+    {
+      "boundary_state": 3,
+      "file": "boundary_0003.jsonl.gz",
+      "sha256": "b67549f7c45b8a3d7b1a98f67f4244a21551aead0bb475ced0c5b469b457f735",
+      "records": 47,
+      "configurations": "1024",
+      "bytes": 267
+    }
+  ],
+  "verification": {
+    "full_DOS_projection": true,
+    "all_boundary_magnetization_binomials": true,
+    "independent_global_joint_hash": true,
+    "direct_dense_joint": true
+  },
+  "stored_bytes": 1064
+}

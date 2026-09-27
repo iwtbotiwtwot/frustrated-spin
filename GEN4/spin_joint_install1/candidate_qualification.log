@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/slcq3_rz_current.py", line 146, in file_sha256
+    with Path(path).open("rb") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/SLC/18_SAM_NATIVE_QC/SLCV33_RZ_NATIVE_EXACT_INFORMATION_ALGEBRA_CANDIDATE_Q3/release/RELEASE_MANIFEST.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/qualify.py", line 32, in <module>
+    with DomainSession.start('MATTER_SEARCH',objective='Qualify installed shared packet/joint exact source methods',output_root=P/'sessions',receipt_storage='gzip') as s:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/SAM_PROJECT/session.py", line 123, in start
+    return cls(directory)
+           ^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/SAM_PROJECT/session.py", line 82, in __init__
+    self.consumer = open_domain(self.domain)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/runtime.py", line 198, in open_domain
+    return Domain(name)
+           ^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/domain.py", line 7, in __init__
+    self.ce=open_ce()
+            ^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/runtime.py", line 185, in open_ce
+    module = _module("CE", installed=installed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/runtime.py", line 171, in _module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/CE/gen2_current.py", line 3, in <module>
+    from CURRENT_REVISION.engines.CE.cev1_hfm5_current import CurrentCE as ComponentCE
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/CE/cev1_hfm5_current.py", line 4, in <module>
+    from ..SLC import q3_runtime
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/q3_runtime.py", line 2, in <module>
+    from .gen3_runtime import *
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/gen3_runtime.py", line 8, in <module>
+    from .gen2_runtime import (GEN2Runtime, CandidateGroupInput, FrozenSLCQ3RZModel,
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/gen2_runtime.py", line 2, in <module>
+    from CURRENT_REVISION.engines.SLC.slcq3_rz_current import (
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/slcq3_rz_current.py", line 295, in <module>
+    _verify_runtime_helpers()
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/slcq3_rz_current.py", line 247, in _verify_runtime_helpers
+    if file_sha256(RELEASE_MANIFEST_PATH) != EXPECTED_RELEASE_MANIFEST_FILE_SHA256:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/CURRENT_REVISION/engines/SLC/slcq3_rz_current.py", line 150, in file_sha256
+    raise SLCQ3RZError(f"required frozen artifact cannot be read: {path}") from exc
+CURRENT_REVISION.engines.SLC.slcq3_rz_current.SLCQ3RZError: required frozen artifact cannot be read: /home/sam/PycharmProjects/SAM_Research_Project/GEN4/spin_joint_install1/candidate/SLC/18_SAM_NATIVE_QC/SLCV33_RZ_NATIVE_EXACT_INFORMATION_ALGEBRA_CANDIDATE_Q3/release/RELEASE_MANIFEST.json

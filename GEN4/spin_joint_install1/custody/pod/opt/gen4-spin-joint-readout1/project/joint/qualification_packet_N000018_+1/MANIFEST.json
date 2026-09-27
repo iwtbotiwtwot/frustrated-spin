@@ -1,0 +1,74 @@
+{
+  "schema": "GEN4_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1",
+  "status": "EXACT_JOINT_VERIFIED",
+  "N": 18,
+  "fill_coupling": 1,
+  "ordered_ports": [
+    0,
+    1
+  ],
+  "boundary_encoding": "bit i corresponds to ordered_ports[i]; 1 is spin +1 and 0 is spin -1",
+  "row_columns": [
+    "energy",
+    "magnetization",
+    "configuration_count_decimal_string"
+  ],
+  "energy_convention": "E=-sum_(u<v) Juv*su*sv-sum_i hi*si",
+  "magnetization_convention": "M=sum_i si",
+  "field_extension": "E_h=E-h*M; h exact rational; original couplings and fields fixed",
+  "correction_energy_recovery": "Ecorr=E+J0*(M*M-N)/2",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-joint-readout1/project/inputs/N000018/packet_N000018_fill_plus.json",
+    "manifest_sha256": "15395f70b0b81611ebc3fbb02b186631dab5cbbb535c51a776e1a4682007d207",
+    "parent_sha256": "bed671bca53f11bc8f11f436553313c028ffe318d190c419419da3a6b94f0213",
+    "raw_couplings_sha256": "4dbcec36dcb3a55dbbf5f9079b6b4f42d6f06ba0edbb0ae07653b47f56309cb4",
+    "graph_sha256": "411ca8a6e62d5c34cf8a7a8a4cea6082d7f531e73e83340cc2198c88b033559c",
+    "dense_source_sha256": "b28cce490b9f3dce19ec370467b651e886f8fb1d73fa298104644d34cd1f80ba",
+    "parent_source_sha256": "242cf7e04796a91789ceaa74179eebe51c121cde2e1c35fb17fa9c49cc6e68c4",
+    "ordered_ports_hash": "463f2998327eb3a694145e6014444480b2235be84aa6cfd57871cc64f1cd816c"
+  },
+  "plan_sha256": "67d929f9e6700faccdef80fed975301e1cf66e00bb73c4d8666f5a7a14e8d144",
+  "joint_spectrum_sha256": "507aa440d9b0b9b90d9d6dc8d55945510003ce29cf68d8194c12487787ba7f0f",
+  "configurations": "262144",
+  "shards": [
+    {
+      "boundary_state": 0,
+      "file": "boundary_0000.jsonl.gz",
+      "sha256": "3f538d7e6d84c6660798f4106fbcc9c750aa1d6282f27b26452e716ec0737d0d",
+      "records": 17,
+      "configurations": "65536",
+      "bytes": 159
+    },
+    {
+      "boundary_state": 1,
+      "file": "boundary_0001.jsonl.gz",
+      "sha256": "c13f625f4d1a3733dad15e9257ab0465654de0ebd315d7dd3a7c713c1af39c50",
+      "records": 17,
+      "configurations": "65536",
+      "bytes": 156
+    },
+    {
+      "boundary_state": 2,
+      "file": "boundary_0002.jsonl.gz",
+      "sha256": "0d36e71599b179c38da9ef8e8fdecfa339118fb1796a5315ca9548452d71c0da",
+      "records": 17,
+      "configurations": "65536",
+      "bytes": 156
+    },
+    {
+      "boundary_state": 3,
+      "file": "boundary_0003.jsonl.gz",
+      "sha256": "35d79e5acc8aeff193a3b7888e1fb750e8271710a65bd46f079678311241efff",
+      "records": 17,
+      "configurations": "65536",
+      "bytes": 167
+    }
+  ],
+  "verification": {
+    "full_DOS_projection": true,
+    "all_boundary_magnetization_binomials": true,
+    "independent_global_joint_hash": true,
+    "direct_dense_joint": false
+  },
+  "stored_bytes": 638
+}

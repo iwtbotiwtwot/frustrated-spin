@@ -1,0 +1,42 @@
+MATTER_SEARCH Domain, SLC-GEN4-P1 — verified; CE: SLC-GEN4-CE-P1; domain engine: GEN3-R4; Chalkboard: OFF (owner-suspended)
+Traceback (most recent call last):
+  File "/opt/gen4-spin-joint-upgrade1/package/qualify.py", line 43, in <module>
+    out=call('GEN3_SPIN_READOUT',{'result_ref':src['result_ref']},'Exercise original scalar readout with newly installed gap result')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/package/qualify.py", line 34, in call
+    def call(op,p,why):return s.execute(op,p,purpose=why)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/SAM_PROJECT/session.py", line 201, in execute
+    return self._call(operation, payload,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/SAM_PROJECT/session.py", line 174, in _call
+    result = action()
+             ^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/SAM_PROJECT/session.py", line 202, in <lambda>
+    lambda: self.consumer.execute(operation, payload), purpose=purpose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/domain.py", line 13, in execute
+    return self.ce.execute(self.name,operation,payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/CE/gen2_current.py", line 168, in execute
+    result = self.runtime_for(policy['name']).execute(operation, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/SLC/gen3_runtime.py", line 79, in execute
+    result = dispatch(self, operation, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/SLC/gen3/spin_tools.py", line 57, in dispatch
+    return exact_dispatch(runtime,operation,p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/SLC/gen3/spin_exact.py", line 664, in dispatch
+    canonical = canonical_retained(original)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/SLC/gen3/spin_exact.py", line 545, in canonical_retained
+    source = validate_source(value['source'])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/SLC/gen3/spin_exact.py", line 119, in validate_source
+    return normalize(source)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-joint-upgrade1/runtime/CURRENT_REVISION/engines/SLC/gen3/spin_catalog.py", line 39, in validate_source
+    if raw.get('source_sha256',source['source_sha256'])!=source['source_sha256']:raise ValueError('Source hash differs from supplied graph')
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Source hash differs from supplied graph

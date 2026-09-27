@@ -1,0 +1,134 @@
+# Dense solver bounded test
+
+Status: COMPLETED
+
+[
+  {
+    "N": 300,
+    "family": "packet",
+    "fill": 1,
+    "seconds": 0.28546448214910924,
+    "peak_rss_kib": 231892
+  },
+  {
+    "N": 300,
+    "family": "packet",
+    "fill": -1,
+    "seconds": 18.05295184883289,
+    "peak_rss_kib": 443840
+  },
+  {
+    "N": 300,
+    "family": "signed_packet",
+    "fill": 1,
+    "seconds": 2.2217955458909273,
+    "peak_rss_kib": 307284
+  },
+  {
+    "N": 300,
+    "family": "signed_packet",
+    "fill": -1,
+    "seconds": 16.291982292197645,
+    "peak_rss_kib": 456824
+  },
+  {
+    "N": 300,
+    "family": "signed_packet_chain",
+    "fill": 1,
+    "seconds": 2.5840880961623043,
+    "peak_rss_kib": 328120
+  },
+  {
+    "N": 300,
+    "family": "signed_packet_chain",
+    "fill": -1,
+    "seconds": 16.495696400059387,
+    "peak_rss_kib": 1084600
+  },
+  {
+    "N": 450,
+    "family": "packet",
+    "fill": 1,
+    "seconds": 0.834994737058878,
+    "peak_rss_kib": 258864
+  },
+  {
+    "N": 450,
+    "family": "packet",
+    "fill": -1,
+    "seconds": 63.76113831112161,
+    "peak_rss_kib": 805952
+  },
+  {
+    "N": 450,
+    "family": "signed_packet",
+    "fill": 1,
+    "seconds": 7.261574104893953,
+    "peak_rss_kib": 451164
+  },
+  {
+    "N": 450,
+    "family": "signed_packet",
+    "fill": -1,
+    "seconds": 59.69526133593172,
+    "peak_rss_kib": 805376
+  },
+  {
+    "N": 450,
+    "family": "signed_packet_chain",
+    "fill": 1,
+    "seconds": 8.467312229098752,
+    "peak_rss_kib": 487404
+  },
+  {
+    "N": 450,
+    "family": "signed_packet_chain",
+    "fill": -1,
+    "seconds": 58.845120171085,
+    "peak_rss_kib": 810352
+  },
+  {
+    "N": 600,
+    "family": "packet",
+    "fill": 1,
+    "seconds": 1.410092239966616,
+    "peak_rss_kib": 287504
+  },
+  {
+    "N": 600,
+    "family": "packet",
+    "fill": -1,
+    "seconds": 142.58726942399517,
+    "peak_rss_kib": 1613300
+  },
+  {
+    "N": 600,
+    "family": "signed_packet",
+    "fill": 1,
+    "seconds": 16.275285990908742,
+    "peak_rss_kib": 673820
+  },
+  {
+    "N": 600,
+    "family": "signed_packet",
+    "fill": -1,
+    "seconds": 139.9220995460637,
+    "peak_rss_kib": 1418592
+  },
+  {
+    "N": 600,
+    "family": "signed_packet_chain",
+    "fill": 1,
+    "seconds": 18.720066416077316,
+    "peak_rss_kib": 778088
+  },
+  {
+    "N": 600,
+    "family": "signed_packet_chain",
+    "fill": -1,
+    "seconds": 136.93633133498952,
+    "peak_rss_kib": 1608860
+  }
+]
+
+Existing packet and graph-generation campaigns were not modified. Full outputs and exact certificates remain under results/.

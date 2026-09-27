@@ -1,0 +1,44 @@
+# Consecutive packet-family continuation
+
+Owner: Sean Brady.
+
+All N121–1408 completed in three families with full independent verification.
+
+Last batch: {
+  "signed_packet_chain": {
+    "planning_seconds": 0.026040675002150238,
+    "preparation_seconds": 3.739842213690281e-07,
+    "warm_solve_seconds": [
+      0.29123740701470524,
+      0.28007702803006396,
+      0.3107866320060566
+    ],
+    "warm_median_ms": 291.23740701470524,
+    "independent_full_graph_VE_seconds": 2.6424035649979487,
+    "full_comparison_seconds": 0.04319709102855995
+  },
+  "packet": {
+    "planning_seconds": 0.018822964979335666,
+    "preparation_seconds": 1.5599653124809265e-07,
+    "warm_solve_seconds": [
+      0.2782239210209809,
+      0.2660541519871913,
+      0.30536007799673826
+    ],
+    "warm_median_ms": 278.2239210209809,
+    "independent_full_graph_VE_seconds": 5.748559828964062,
+    "full_comparison_seconds": 0.03449194895802066
+  },
+  "signed_packet": {
+    "planning_seconds": 0.021601574029773474,
+    "preparation_seconds": 3.00002284348011e-07,
+    "warm_solve_seconds": [
+      0.2834061610046774,
+      0.27572129399050027,
+      0.30470474995672703
+    ],
+    "warm_median_ms": 283.4061610046774,
+    "independent_full_graph_VE_seconds": 6.318052727961913,
+    "full_comparison_seconds": 0.0431201679748483
+  }
+}

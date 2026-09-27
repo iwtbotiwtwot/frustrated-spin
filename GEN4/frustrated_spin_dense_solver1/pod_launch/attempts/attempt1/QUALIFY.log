@@ -1,0 +1,18 @@
+ADMIT {'N': 12, 'family': 'packet', 'fill': 1}
+COMPLETE {'N': 12, 'family': 'packet', 'fill': 1, 'seconds': 0.0033833030611276627, 'peak_rss_kib': 241484}
+ADMIT {'N': 12, 'family': 'packet', 'fill': -1}
+COMPLETE {'N': 12, 'family': 'packet', 'fill': -1, 'seconds': 0.0037703439593315125, 'peak_rss_kib': 220932}
+ADMIT {'N': 12, 'family': 'signed_packet', 'fill': 1}
+COMPLETE {'N': 12, 'family': 'signed_packet', 'fill': 1, 'seconds': 0.0038052049931138754, 'peak_rss_kib': 220216}
+ADMIT {'N': 12, 'family': 'signed_packet', 'fill': -1}
+COMPLETE {'N': 12, 'family': 'signed_packet', 'fill': -1, 'seconds': 0.003946217009797692, 'peak_rss_kib': 223056}
+ADMIT {'N': 12, 'family': 'signed_packet_chain', 'fill': 1}
+Traceback (most recent call last):
+  File "/opt/gen4-spin-dense-solver1/project/run.py", line 211, in main
+    row=execute_case(n,family,fill,phase,ih,controls_flag=a.qualify and n==12 and family=='signed_packet_chain' and fill==1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/gen4-spin-dense-solver1/project/run.py", line 179, in execute_case
+    append('EVENTS.jsonl',dict(event='FAILED',timestamp=now(),**failure));raise RuntimeError(json.dumps(failure))
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: {"status": "FAILED", "question_id": "qualification_signed_packet_chain_N000012_+1", "reason": null, "returncode": 1, "receipt": "receipts/qualification_signed_packet_chain_N000012_+1.json"}
+

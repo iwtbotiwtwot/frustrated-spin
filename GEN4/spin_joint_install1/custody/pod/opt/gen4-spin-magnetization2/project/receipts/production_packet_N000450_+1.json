@@ -1,0 +1,116 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 450,
+  "family": "packet",
+  "fill_coupling": 1,
+  "result": "results/production_packet_N000450_+1.json.gz",
+  "sha256": "5ac948fbf498f026db09635b50d2b59d4ad65c94a9095685eed430cb6a7dd38f",
+  "timing": {
+    "local_seconds": 0.04926178511232138,
+    "local_stages": [
+      {
+        "table_key": "4ae0c411c1b0546d7147cb9d64a644f41361cb56a4524d47cae252622789fec5",
+        "upload_seconds": 0.0006854180246591568,
+        "gpu_arithmetic_seconds": 5.1446957513689995e-05,
+        "readout_seconds": 4.5879045501351357e-05,
+        "histogram_seconds": 0.0004293229430913925,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.024279841920360923
+      },
+      {
+        "table_key": "85f1e03676ccd82ce753b5a69bf82df200941ef3be8391ffb644a83557a9519e",
+        "upload_seconds": 0.0002339209895581007,
+        "gpu_arithmetic_seconds": 2.0690960809588432e-05,
+        "readout_seconds": 3.5593053326010704e-05,
+        "histogram_seconds": 0.000271867960691452,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.02278311806730926
+      }
+    ],
+    "component_seconds": 0.0009085920173674822,
+    "primary_seconds": 0.04647833202034235,
+    "reference_seconds": 0.04467480815947056,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.0005522880237549543,
+      "port_row_multiply_seconds": 0.0022853673435747623,
+      "decode_seconds": 0.04360769968479872
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 0.00023186695761978626,
+      "port_row_multiply_seconds": 0.002195169683545828,
+      "decode_seconds": 0.04222027654759586
+    },
+    "verification_seconds": 0.6915510811377317,
+    "total_solve_and_verification_seconds": 0.834994737058878
+  },
+  "cuda_initialization_seconds": 0.2635495241265744,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 258864,
+  "plan_hash": "7b9ac58e12d492117b616ef2a7870d3b675b987400073ddb24b3ec7234cbe037",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-magnetization2/project/inputs/N000450/packet_N000450_fill_plus.json",
+    "manifest_sha256": "a5b48289b87ab591e6b9b13fae13719e4d7cc0e9880ee01f7a89065b202d8cd0",
+    "parent_sha256": "df560c3aaa5aec36609f222ae824a3947c06ef432c0fbcf1f79010162ae927c8",
+    "raw_couplings_sha256": "a46f6d69f87b13cd952a22e5c635cac09244ba0b24f1b0acb4ba20efc9ca71e0",
+    "graph_sha256": "2e3a8da70845de87b0c51e2ff3d59664668112d6ffd2d6fda1934667a8278ae5",
+    "dense_source_sha256": "47d8b9139ace1f3e41364f0142a907d65556e971d62ca983bb6f3359bb956ee7",
+    "parent_source_sha256": "56e8750e11ec777a1cfd7abb0d85004f4a0b9675ee532d93d8bf2ec24e8e9f1b",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "spectrum_sha256": "57d3f78a89ff0839fddd1b6430883077b95263028c24759c91628b8cd4b8f08f",
+  "session": "/opt/gen4-spin-magnetization2/project/sessions/MATTER_SEARCH_b9169cb16221409cb11603183fee789a",
+  "controls": null,
+  "reductions": {
+    "zero_correction_bridges": 0,
+    "correction_components": 30,
+    "component_sizes": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "distinct_component_tables": 2,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": null,
+  "retained_baseline_seconds": null
+}

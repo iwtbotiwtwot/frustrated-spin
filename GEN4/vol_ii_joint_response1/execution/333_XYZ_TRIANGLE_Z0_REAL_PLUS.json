@@ -1,0 +1,1530 @@
+{
+  "source": "333_XYZ_TRIANGLE",
+  "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+  "condition": "Z0_REAL_PLUS",
+  "boundary": [
+    1,
+    1,
+    null,
+    null
+  ],
+  "configuration_count": 16,
+  "crossings": [
+    {
+      "field": "-8",
+      "coexisting_magnetizations": [
+        {
+          "M": -2,
+          "degeneracy": "1"
+        },
+        {
+          "M": 0,
+          "degeneracy": "1"
+        }
+      ]
+    },
+    {
+      "field": "-4",
+      "coexisting_magnetizations": [
+        {
+          "M": 0,
+          "degeneracy": "1"
+        },
+        {
+          "M": 2,
+          "degeneracy": "2"
+        }
+      ]
+    },
+    {
+      "field": "0",
+      "coexisting_magnetizations": [
+        {
+          "M": 2,
+          "degeneracy": "2"
+        },
+        {
+          "M": 4,
+          "degeneracy": "1"
+        }
+      ]
+    },
+    {
+      "field": "4",
+      "coexisting_magnetizations": [
+        {
+          "M": 4,
+          "degeneracy": "1"
+        },
+        {
+          "M": 6,
+          "degeneracy": "1"
+        }
+      ]
+    }
+  ],
+  "intervals": [
+    {
+      "lower": "-infinity",
+      "upper": "-8",
+      "sample": "-9",
+      "ground_M_counts": {
+        "-2": "1"
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "-1"
+        ]
+      ]
+    },
+    {
+      "lower": "-8",
+      "upper": "-4",
+      "sample": "-6",
+      "ground_M_counts": {
+        "0": "1"
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "i"
+        ]
+      ]
+    },
+    {
+      "lower": "-4",
+      "upper": "0",
+      "sample": "-2",
+      "ground_M_counts": {
+        "2": "2"
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "1",
+          "-i",
+          "i"
+        ]
+      ]
+    },
+    {
+      "lower": "0",
+      "upper": "4",
+      "sample": "2",
+      "ground_M_counts": {
+        "4": "1"
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-i",
+          "1"
+        ]
+      ]
+    },
+    {
+      "lower": "4",
+      "upper": "+infinity",
+      "sample": "5",
+      "ground_M_counts": {
+        "6": "1"
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "field": "-9",
+      "native": {
+        "result_ref": "529c2e299aa152056856f304048b9d1099a41f3ee40c2974c4c2c7abcb9c91be",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "-9",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-6",
+            "ground_degeneracy": "1",
+            "ground_magnetization_counts": {
+              "-2": "1"
+            },
+            "energy_sum": "288",
+            "energy_square_sum": "8960",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "1024",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-6",
+                "1"
+              ],
+              [
+                "-4",
+                "1"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "6",
+                "2"
+              ],
+              [
+                "12",
+                "1"
+              ],
+              [
+                "22",
+                "4"
+              ],
+              [
+                "24",
+                "1"
+              ],
+              [
+                "32",
+                "2"
+              ],
+              [
+                "40",
+                "1"
+              ],
+              [
+                "50",
+                "1"
+              ]
+            ],
+            "energy_magnetization_covariance": "28",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "335cb068b272066b61f82b701127358ca49e5a24848e7997387da87d4a491cbd",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "-8",
+      "native": {
+        "result_ref": "6cb801a50f719620a912ae8730d8dd7d238d408561de753ee844b7d80dd8ea08",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "-8",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-4",
+            "ground_degeneracy": "2",
+            "ground_magnetization_counts": {
+              "-2": "1",
+              "0": "1"
+            },
+            "energy_sum": "256",
+            "energy_square_sum": "7040",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "896",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-4",
+                "2"
+              ],
+              [
+                "4",
+                "4"
+              ],
+              [
+                "12",
+                "1"
+              ],
+              [
+                "20",
+                "5"
+              ],
+              [
+                "28",
+                "2"
+              ],
+              [
+                "36",
+                "1"
+              ],
+              [
+                "44",
+                "1"
+              ]
+            ],
+            "energy_magnetization_covariance": "24",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "5ba10b602604e4f41f30c9651ff0bb88f63e8e575a0a22027caabd91e1fadcab",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "1",
+          "-1",
+          "i"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "-6",
+      "native": {
+        "result_ref": "47511c3cceee280620d7edcba800fcb5e19ec64b6dff0af6f2411c71af74fb09",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "-6",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-4",
+            "ground_degeneracy": "1",
+            "ground_magnetization_counts": {
+              "0": "1"
+            },
+            "energy_sum": "192",
+            "energy_square_sum": "3968",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "640",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-4",
+                "1"
+              ],
+              [
+                "0",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "12",
+                "2"
+              ],
+              [
+                "16",
+                "4"
+              ],
+              [
+                "20",
+                "2"
+              ],
+              [
+                "28",
+                "1"
+              ],
+              [
+                "32",
+                "1"
+              ]
+            ],
+            "energy_magnetization_covariance": "16",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "51f8ee74cd61497b84b82872dc5e15634b6c2559d988a935e0325ff3dd6c49b9",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "i"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "-4",
+      "native": {
+        "result_ref": "dbd80f778d75614cdd51654d4fac289987d6bb74ecb3294d8078aa9f63db5645",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "-4",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-4",
+            "ground_degeneracy": "3",
+            "ground_magnetization_counts": {
+              "0": "1",
+              "2": "2"
+            },
+            "energy_sum": "128",
+            "energy_square_sum": "1920",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "384",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-4",
+                "3"
+              ],
+              [
+                "4",
+                "4"
+              ],
+              [
+                "12",
+                "7"
+              ],
+              [
+                "20",
+                "2"
+              ]
+            ],
+            "energy_magnetization_covariance": "8",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "723841eeb957c249b4799e89063eba6460ae51b946d64fa59e753a8bd9ba984f",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "i"
+        ],
+        [
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "1",
+          "-i",
+          "i"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "-2",
+      "native": {
+        "result_ref": "471525c927f0cde236431990f508f58732ce3ceda30a6ebf8a8ddb4c8cbd9fc6",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "-2",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-8",
+            "ground_degeneracy": "2",
+            "ground_magnetization_counts": {
+              "2": "2"
+            },
+            "energy_sum": "64",
+            "energy_square_sum": "896",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "128",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-8",
+                "2"
+              ],
+              [
+                "-4",
+                "2"
+              ],
+              [
+                "4",
+                "4"
+              ],
+              [
+                "8",
+                "6"
+              ],
+              [
+                "12",
+                "2"
+              ]
+            ],
+            "energy_magnetization_covariance": "0",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "fea19c18245361addcb606b56f884d836a9357dc40727e9ce2515057119fe5e2",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "1",
+          "-i",
+          "i"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "0",
+      "native": {
+        "result_ref": "ae8e442bd31db8413c6efefa14a043393a70e31b8854cb62f09b844025e7bf01",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "0",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-12",
+            "ground_degeneracy": "3",
+            "ground_magnetization_counts": {
+              "2": "2",
+              "4": "1"
+            },
+            "energy_sum": "0",
+            "energy_square_sum": "896",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "-128",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-12",
+                "3"
+              ],
+              [
+                "-4",
+                "4"
+              ],
+              [
+                "4",
+                "7"
+              ],
+              [
+                "12",
+                "2"
+              ]
+            ],
+            "energy_magnetization_covariance": "-8",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "52386f8630cac90e7a098df2a318d39e6961a50b8d21ac539ccceb5668aa9204",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "1",
+          "-i",
+          "i"
+        ],
+        [
+          "1",
+          "-i",
+          "1"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "2",
+      "native": {
+        "result_ref": "0e77b61aa11dc787e27dcbb89e67901951ef2bfb4ac1bbc3cf738aa41997fdcc",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "2",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-20",
+            "ground_degeneracy": "1",
+            "ground_magnetization_counts": {
+              "4": "1"
+            },
+            "energy_sum": "-64",
+            "energy_square_sum": "1920",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "-384",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-20",
+                "1"
+              ],
+              [
+                "-16",
+                "3"
+              ],
+              [
+                "-12",
+                "2"
+              ],
+              [
+                "-4",
+                "2"
+              ],
+              [
+                "0",
+                "4"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "12",
+                "1"
+              ],
+              [
+                "16",
+                "1"
+              ]
+            ],
+            "energy_magnetization_covariance": "-16",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "7b20354e4242ac2f3899ebb236524ef99da1e1b7b694dc543418a68d524a7957",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-i",
+          "1"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "4",
+      "native": {
+        "result_ref": "107b54fcbc91f50733a8979dabc110af04733393d9eb05fa459ded30cd589faa",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "4",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-28",
+            "ground_degeneracy": "2",
+            "ground_magnetization_counts": {
+              "4": "1",
+              "6": "1"
+            },
+            "energy_sum": "-128",
+            "energy_square_sum": "3968",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "-640",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-28",
+                "2"
+              ],
+              [
+                "-20",
+                "4"
+              ],
+              [
+                "-12",
+                "1"
+              ],
+              [
+                "-4",
+                "5"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "12",
+                "1"
+              ],
+              [
+                "20",
+                "1"
+              ]
+            ],
+            "energy_magnetization_covariance": "-24",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "fc88481f16b72eeb5db89c698ec5b7979cd101301650cab24b77e3598b55199d",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "-i",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "independent_check": "PASS"
+    },
+    {
+      "field": "5",
+      "native": {
+        "result_ref": "3be948d6ad30ed96426798df23aa4d32e9cb27e8bdc171c7a2cf10bdeda3189a",
+        "result": {
+          "operation": "GEN3_SPIN_READOUT",
+          "answer": {
+            "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1_READOUT",
+            "source_sha256": "a45ddd6e3691e534aee568a5fd7121700261f952bd4a623209f3fe887f3078e0",
+            "N": 6,
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "boundary": [
+              1,
+              1,
+              null,
+              null
+            ],
+            "uniform_field": "5",
+            "collective_coupling": "0",
+            "boundary_fields": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "magnetization": null,
+            "configuration_count": "16",
+            "ground_energy": "-34",
+            "ground_degeneracy": "1",
+            "ground_magnetization_counts": {
+              "6": "1"
+            },
+            "energy_sum": "-160",
+            "energy_square_sum": "5376",
+            "magnetization_sum": "32",
+            "magnetization_square_sum": "128",
+            "energy_magnetization_sum": "-768",
+            "ground_state_crossing_fields": [
+              {
+                "field": "-8",
+                "coexisting_magnetizations": [
+                  {
+                    "M": -2,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "-4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 0,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  }
+                ]
+              },
+              {
+                "field": "0",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 2,
+                    "degeneracy": "2"
+                  },
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  }
+                ]
+              },
+              {
+                "field": "4",
+                "coexisting_magnetizations": [
+                  {
+                    "M": 4,
+                    "degeneracy": "1"
+                  },
+                  {
+                    "M": 6,
+                    "degeneracy": "1"
+                  }
+                ]
+              }
+            ],
+            "arithmetic": "EXACT_INTEGER_COUNTS_RATIONAL_PARAMETERS",
+            "energy_transformation": "E - h*M - g*(M*M-N)/2 - sum(boundary_field_i*s_port_i)",
+            "fresh_spin_enumeration": false,
+            "density": [
+              [
+                "-34",
+                "1"
+              ],
+              [
+                "-32",
+                "1"
+              ],
+              [
+                "-24",
+                "2"
+              ],
+              [
+                "-22",
+                "2"
+              ],
+              [
+                "-16",
+                "1"
+              ],
+              [
+                "-6",
+                "4"
+              ],
+              [
+                "-4",
+                "1"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "12",
+                "1"
+              ],
+              [
+                "22",
+                "1"
+              ]
+            ],
+            "energy_magnetization_covariance": "-28",
+            "magnetization_variance": "4"
+          },
+          "input_result_ref": "a4eb5e0e30a6315d6ef2b276aafbffafa5a022370b54f2af787cc58959176fe0",
+          "spectrum_recomputed": false,
+          "result_ref": "0628810990b935ca0e368be6f01f89d2381dba6ab86d67fb95f2e50a69a3697d",
+          "recomputed": true
+        },
+        "reused": false,
+        "arithmetic_calls": 1
+      },
+      "ground_phase_witnesses": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "independent_check": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "FAILED",
+  "pid": 24378,
+  "start_utc": "2026-09-26T22:20:34.449881+00:00",
+  "deadline_utc": "2026-09-26T22:40:34.449869+00:00",
+  "cpu_workers": 1,
+  "GPU_workers": 1,
+  "maximum_case_seconds": 480,
+  "maximum_host_rss_bytes": 4294967296,
+  "safe_stop": "touch /opt/gen4-spin-dense-solver1/project/STOP",
+  "other_campaigns_modified": false,
+  "completed_this_invocation": [
+    {
+      "N": 12,
+      "family": "packet",
+      "fill": 1,
+      "seconds": 0.0033833030611276627,
+      "peak_rss_kib": 241484
+    },
+    {
+      "N": 12,
+      "family": "packet",
+      "fill": -1,
+      "seconds": 0.0037703439593315125,
+      "peak_rss_kib": 220932
+    },
+    {
+      "N": 12,
+      "family": "signed_packet",
+      "fill": 1,
+      "seconds": 0.0038052049931138754,
+      "peak_rss_kib": 220216
+    },
+    {
+      "N": 12,
+      "family": "signed_packet",
+      "fill": -1,
+      "seconds": 0.003946217009797692,
+      "peak_rss_kib": 223056
+    }
+  ],
+  "current_case": {
+    "N": 12,
+    "family": "signed_packet_chain",
+    "fill": 1
+  },
+  "heartbeat_utc": "2026-09-26T22:20:38.960196+00:00",
+  "last_completed": {
+    "N": 12,
+    "family": "signed_packet",
+    "fill": -1
+  },
+  "error": "Traceback (most recent call last):\n  File \"/opt/gen4-spin-dense-solver1/project/run.py\", line 211, in main\n    row=execute_case(n,family,fill,phase,ih,controls_flag=a.qualify and n==12 and family=='signed_packet_chain' and fill==1)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/gen4-spin-dense-solver1/project/run.py\", line 179, in execute_case\n    append('EVENTS.jsonl',dict(event='FAILED',timestamp=now(),**failure));raise RuntimeError(json.dumps(failure))\n                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: {\"status\": \"FAILED\", \"question_id\": \"qualification_signed_packet_chain_N000012_+1\", \"reason\": null, \"returncode\": 1, \"receipt\": \"receipts/qualification_signed_packet_chain_N000012_+1.json\"}\n",
+  "finished_utc": "2026-09-26T22:20:39.977869+00:00"
+}

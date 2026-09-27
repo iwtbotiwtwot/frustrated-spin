@@ -1,0 +1,126 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 600,
+  "family": "signed_packet",
+  "fill_coupling": 1,
+  "result": "results/production_signed_packet_N000600_+1.json.gz",
+  "sha256": "3ec1ba9657d1521f146462f39184ea59b8722a12c2af10882d02f723491a4838",
+  "timing": {
+    "local_seconds": 0.05210544099099934,
+    "local_stages": [
+      {
+        "table_key": "5d8314f7b587c05456dd5f39df54d855314a55cfb6ba1a815a148585ccd36d56",
+        "upload_seconds": 0.0006702940445393324,
+        "gpu_arithmetic_seconds": 4.924391396343708e-05,
+        "readout_seconds": 4.594889469444752e-05,
+        "histogram_seconds": 0.0006332790944725275,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.025721665006130934
+      },
+      {
+        "table_key": "d5910e2a3fb01be6e63b2aeae1e1ca57f9a33664db67c6c16c669639b857846b",
+        "upload_seconds": 0.00022091087885200977,
+        "gpu_arithmetic_seconds": 1.6925157979130745e-05,
+        "readout_seconds": 3.143795765936375e-05,
+        "histogram_seconds": 0.0002500039990991354,
+        "gpu_output_bytes": 262144,
+        "assignments": 32768,
+        "cpu_independent_seconds": 0.024036178831011057
+      }
+    ],
+    "component_seconds": 0.0036865531001240015,
+    "primary_seconds": 6.181568693835288,
+    "reference_seconds": 5.312464311020449,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.5354318870231509,
+      "port_row_multiply_seconds": 3.2875098609365523,
+      "decode_seconds": 2.357682198518887
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 0.36912780185230076,
+      "port_row_multiply_seconds": 2.741702224360779,
+      "decode_seconds": 2.2008427313994616
+    },
+    "verification_seconds": 4.654035277897492,
+    "total_solve_and_verification_seconds": 16.275285990908742
+  },
+  "cuda_initialization_seconds": 0.25625488394871354,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 673820,
+  "plan_hash": "015ab9f5b23ff69759f600f181709326ef85e26b550f87459f27b5f2084ae4f4",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-magnetization2/project/inputs/N000600/signed_packet_N000600_fill_plus.json",
+    "manifest_sha256": "2023dec4d96bec5f28fb262803a7cfcaef2945933e693dec916ccd9488d9602a",
+    "parent_sha256": "378fc6230fce8d396553a731c5e7a46663a4f5edacab0e70ed10b22ff527c96f",
+    "raw_couplings_sha256": "0c1b5b860b47dcdf3a3bc41b1363442764db549b697366f1cef6195ca885268b",
+    "graph_sha256": "e004186dc38927bf35c91ef66ce570255a545f57cdf10d3a1a3d7dd3997c1ba0",
+    "dense_source_sha256": "f9ce0793a7225a18436153d333c39220b7254869d9eba3caba16cbc817cf758f",
+    "parent_source_sha256": "58323d61f00fd76dd26a7e6d1a34ac17ff0c98584aa32940664c33ab34a849d2",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "spectrum_sha256": "52f418e778f9a21406947122cf583e7b0eb7e2c24982bb9ee66a45073ae0e552",
+  "session": "/opt/gen4-spin-magnetization2/project/sessions/MATTER_SEARCH_658ceee9b31d4a9d9aab56822825fbc0",
+  "controls": null,
+  "reductions": {
+    "zero_correction_bridges": 0,
+    "correction_components": 40,
+    "component_sizes": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "distinct_component_tables": 2,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": null,
+  "retained_baseline_seconds": null
+}

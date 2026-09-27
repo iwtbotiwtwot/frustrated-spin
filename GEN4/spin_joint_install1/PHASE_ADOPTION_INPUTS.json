@@ -1,0 +1,1006 @@
+[
+  {
+    "covers": [
+      "3",
+      "3",
+      "3"
+    ],
+    "rule": "XYZ_TRIANGLE",
+    "example": {
+      "area_classes": [
+        0,
+        1,
+        1
+      ],
+      "catalog_id": 72,
+      "ground_source_states": [
+        [
+          "40",
+          "2946",
+          "296"
+        ],
+        [
+          "40",
+          "3287",
+          "296"
+        ],
+        [
+          "40",
+          "3287",
+          "1661"
+        ]
+      ],
+      "representatives": [
+        "40",
+        "296",
+        "296"
+      ],
+      "result": {
+        "all_configuration_energies": [
+          -2,
+          -2,
+          2,
+          2,
+          -2,
+          2,
+          6,
+          2,
+          -6,
+          -2,
+          6,
+          2,
+          -6,
+          -6,
+          2,
+          2
+        ],
+        "couplings": [
+          [
+            0,
+            2
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "excitation_gap": 4,
+        "frustration_cost": 2,
+        "full_configuration_count": 64,
+        "full_energy_spectrum": [
+          [
+            -6,
+            12
+          ],
+          [
+            -2,
+            16
+          ],
+          [
+            2,
+            28
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "full_ground_degeneracy": 12,
+        "ground_energy": -6,
+        "ground_mean_bond_readouts": [
+          [
+            "4/3",
+            "-2/3"
+          ],
+          [
+            "4/3",
+            "-2/3"
+          ],
+          [
+            "10/3",
+            "0"
+          ]
+        ],
+        "ground_states": [
+          {
+            "bond_readouts": [
+              [
+                0,
+                -2
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "continuous_embedding_bond_derivatives": [
+              -2,
+              0,
+              2
+            ],
+            "continuous_embedding_node_gradient": [
+              4,
+              -2,
+              -2
+            ],
+            "continuous_stationarity": false,
+            "edge_differences": [
+              2,
+              2,
+              0
+            ],
+            "loop_circulation": "0",
+            "relative_phases": [
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "bond_readouts": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                -2
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "continuous_embedding_bond_derivatives": [
+              0,
+              -2,
+              2
+            ],
+            "continuous_embedding_node_gradient": [
+              2,
+              2,
+              -4
+            ],
+            "continuous_stationarity": false,
+            "edge_differences": [
+              3,
+              1,
+              0
+            ],
+            "loop_circulation": "0",
+            "relative_phases": [
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "bond_readouts": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                -4
+              ]
+            ],
+            "continuous_embedding_bond_derivatives": [
+              0,
+              0,
+              -4
+            ],
+            "continuous_embedding_node_gradient": [
+              -4,
+              0,
+              4
+            ],
+            "continuous_stationarity": false,
+            "edge_differences": [
+              3,
+              2,
+              3
+            ],
+            "loop_circulation": "-4/3",
+            "relative_phases": [
+              0,
+              3,
+              1
+            ]
+          }
+        ],
+        "independent_bond_energy": -8,
+        "independent_bond_ground_differences": [
+          [
+            3
+          ],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ],
+        "independent_bond_ground_energies": [
+          -2,
+          -2,
+          -4
+        ],
+        "independent_minima_cycle_compatible": false,
+        "loop_direction": [
+          1,
+          -2
+        ],
+        "loop_product": [
+          8,
+          -16
+        ],
+        "relative_configuration_count": 16,
+        "relative_energy_spectrum": [
+          [
+            -6,
+            3
+          ],
+          [
+            -2,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "relative_ground_degeneracy": 3,
+        "source_zero_bonds": 0,
+        "spin_configuration_checks": 64,
+        "spin_energy_correspondence_zero": true,
+        "spin_full_energy_spectrum": [
+          [
+            -12,
+            12
+          ],
+          [
+            -4,
+            16
+          ],
+          [
+            4,
+            28
+          ],
+          [
+            12,
+            8
+          ]
+        ],
+        "spin_solve_payload": {
+          "backend": "cpu",
+          "mode": "fresh",
+          "options": {
+            "method": "components"
+          },
+          "ports": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "source": {
+            "N": 6,
+            "construction": {
+              "phase_to_spin": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  1
+                ]
+              ],
+              "physical_spin_assignment": false,
+              "source_model": "Unit retained-vertex complex bilinear C4 triangle",
+              "spin_energy_scale": "E_spin = 2 H_phase",
+              "vertices": [
+                "s0",
+                "t0",
+                "s1",
+                "t1",
+                "s2",
+                "t2"
+              ]
+            },
+            "edges": [
+              [
+                0,
+                3,
+                2
+              ],
+              [
+                0,
+                4,
+                4
+              ],
+              [
+                0,
+                5,
+                -2
+              ],
+              [
+                1,
+                2,
+                -2
+              ],
+              [
+                1,
+                4,
+                2
+              ],
+              [
+                1,
+                5,
+                4
+              ],
+              [
+                2,
+                4,
+                -2
+              ],
+              [
+                3,
+                5,
+                -2
+              ]
+            ],
+            "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+            "fields": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "parent_instance_sha256": "e939dd002bc0e0d1f9989135b9ec77704c52d3330534731663ab812927d32744",
+            "parent_vertices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "spin_source": {
+          "N": 6,
+          "construction": {
+            "phase_to_spin": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                -1
+              ],
+              [
+                -1,
+                -1
+              ],
+              [
+                -1,
+                1
+              ]
+            ],
+            "physical_spin_assignment": false,
+            "source_model": "Unit retained-vertex complex bilinear C4 triangle",
+            "spin_energy_scale": "E_spin = 2 H_phase",
+            "vertices": [
+              "s0",
+              "t0",
+              "s1",
+              "t1",
+              "s2",
+              "t2"
+            ]
+          },
+          "edges": [
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              1,
+              2,
+              -2
+            ],
+            [
+              1,
+              4,
+              2
+            ],
+            [
+              1,
+              5,
+              4
+            ],
+            [
+              2,
+              4,
+              -2
+            ],
+            [
+              3,
+              5,
+              -2
+            ]
+          ],
+          "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+          "fields": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "parent_instance_sha256": "e939dd002bc0e0d1f9989135b9ec77704c52d3330534731663ab812927d32744",
+          "parent_vertices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    }
+  },
+  {
+    "covers": [
+      "4",
+      "4",
+      "4"
+    ],
+    "rule": "COMMON_PIVOT",
+    "example": {
+      "area_classes": [
+        1,
+        3,
+        5
+      ],
+      "catalog_id": 4309,
+      "ground_source_states": [
+        [
+          "36",
+          "1393",
+          "97"
+        ]
+      ],
+      "representatives": [
+        "36",
+        "44",
+        "97"
+      ],
+      "result": {
+        "all_configuration_energies": [
+          -20,
+          4,
+          4,
+          -20,
+          -22,
+          -6,
+          10,
+          -6,
+          4,
+          4,
+          12,
+          12,
+          6,
+          14,
+          6,
+          -2
+        ],
+        "couplings": [
+          [
+            8,
+            -6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "excitation_gap": 2,
+        "frustration_cost": 2,
+        "full_configuration_count": 64,
+        "full_energy_spectrum": [
+          [
+            -22,
+            4
+          ],
+          [
+            -20,
+            8
+          ],
+          [
+            -6,
+            8
+          ],
+          [
+            -2,
+            4
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            12,
+            8
+          ],
+          [
+            14,
+            4
+          ]
+        ],
+        "full_ground_degeneracy": 4,
+        "ground_energy": -22,
+        "ground_mean_bond_readouts": [
+          [
+            "6",
+            "8"
+          ],
+          [
+            "8",
+            "-4"
+          ],
+          [
+            "8",
+            "-4"
+          ]
+        ],
+        "ground_states": [
+          {
+            "bond_readouts": [
+              [
+                6,
+                8
+              ],
+              [
+                8,
+                -4
+              ],
+              [
+                8,
+                -4
+              ]
+            ],
+            "continuous_embedding_bond_derivatives": [
+              8,
+              -4,
+              -4
+            ],
+            "continuous_embedding_node_gradient": [
+              -12,
+              12,
+              0
+            ],
+            "continuous_stationarity": false,
+            "edge_differences": [
+              1,
+              3,
+              0
+            ],
+            "loop_circulation": "0",
+            "relative_phases": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "independent_bond_energy": -24,
+        "independent_bond_ground_differences": [
+          [
+            0
+          ],
+          [
+            3
+          ],
+          [
+            0
+          ]
+        ],
+        "independent_bond_ground_energies": [
+          -8,
+          -8,
+          -8
+        ],
+        "independent_minima_cycle_compatible": false,
+        "loop_direction": [
+          1,
+          0
+        ],
+        "loop_product": [
+          800,
+          0
+        ],
+        "relative_configuration_count": 16,
+        "relative_energy_spectrum": [
+          [
+            -22,
+            1
+          ],
+          [
+            -20,
+            2
+          ],
+          [
+            -6,
+            2
+          ],
+          [
+            -2,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            14,
+            1
+          ]
+        ],
+        "relative_ground_degeneracy": 1,
+        "source_zero_bonds": 0,
+        "spin_configuration_checks": 64,
+        "spin_energy_correspondence_zero": true,
+        "spin_full_energy_spectrum": [
+          [
+            -44,
+            4
+          ],
+          [
+            -40,
+            8
+          ],
+          [
+            -12,
+            8
+          ],
+          [
+            -4,
+            4
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            12,
+            8
+          ],
+          [
+            20,
+            4
+          ],
+          [
+            24,
+            8
+          ],
+          [
+            28,
+            4
+          ]
+        ],
+        "spin_solve_payload": {
+          "backend": "cpu",
+          "mode": "fresh",
+          "options": {
+            "method": "components"
+          },
+          "ports": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "source": {
+            "N": 6,
+            "construction": {
+              "phase_to_spin": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  1
+                ]
+              ],
+              "physical_spin_assignment": false,
+              "source_model": "Unit retained-vertex complex bilinear C4 triangle",
+              "spin_energy_scale": "E_spin = 2 H_phase",
+              "vertices": [
+                "s0",
+                "t0",
+                "s1",
+                "t1",
+                "s2",
+                "t2"
+              ]
+            },
+            "edges": [
+              [
+                0,
+                2,
+                8
+              ],
+              [
+                0,
+                3,
+                -6
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                0,
+                5,
+                4
+              ],
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                3,
+                8
+              ],
+              [
+                1,
+                4,
+                -4
+              ],
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                2,
+                4,
+                4
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3,
+                4,
+                -8
+              ],
+              [
+                3,
+                5,
+                4
+              ]
+            ],
+            "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+            "fields": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "parent_instance_sha256": "17406fa0273ad2057a914055671abd3fde14574df7e1dc0c2cd903d5cc59eadb",
+            "parent_vertices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "spin_source": {
+          "N": 6,
+          "construction": {
+            "phase_to_spin": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                -1
+              ],
+              [
+                -1,
+                -1
+              ],
+              [
+                -1,
+                1
+              ]
+            ],
+            "physical_spin_assignment": false,
+            "source_model": "Unit retained-vertex complex bilinear C4 triangle",
+            "spin_energy_scale": "E_spin = 2 H_phase",
+            "vertices": [
+              "s0",
+              "t0",
+              "s1",
+              "t1",
+              "s2",
+              "t2"
+            ]
+          },
+          "edges": [
+            [
+              0,
+              2,
+              8
+            ],
+            [
+              0,
+              3,
+              -6
+            ],
+            [
+              0,
+              4,
+              8
+            ],
+            [
+              0,
+              5,
+              4
+            ],
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              1,
+              3,
+              8
+            ],
+            [
+              1,
+              4,
+              -4
+            ],
+            [
+              1,
+              5,
+              8
+            ],
+            [
+              2,
+              4,
+              4
+            ],
+            [
+              2,
+              5,
+              8
+            ],
+            [
+              3,
+              4,
+              -8
+            ],
+            [
+              3,
+              5,
+              4
+            ]
+          ],
+          "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+          "fields": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "parent_instance_sha256": "17406fa0273ad2057a914055671abd3fde14574df7e1dc0c2cd903d5cc59eadb",
+          "parent_vertices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "schema": "GEN4_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1",
+  "status": "EXACT_JOINT_VERIFIED",
+  "N": 120,
+  "fill_coupling": 1,
+  "ordered_ports": [
+    0,
+    1,
+    60,
+    61
+  ],
+  "boundary_encoding": "bit i corresponds to ordered_ports[i]; 1 is spin +1 and 0 is spin -1",
+  "row_columns": [
+    "energy",
+    "magnetization",
+    "configuration_count_decimal_string"
+  ],
+  "energy_convention": "E=-sum_(u<v) Juv*su*sv-sum_i hi*si",
+  "magnetization_convention": "M=sum_i si",
+  "field_extension": "E_h=E-h*M; h exact rational; original couplings and fields fixed",
+  "correction_energy_recovery": "Ecorr=E+J0*(M*M-N)/2",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-joint-readout1/project/inputs/N000120/signed_packet_chain_N000120_fill_plus.json",
+    "manifest_sha256": "d48f7f479bf184956751d7f5a9bad13f6629aabe528aff4662053eca553b43c8",
+    "parent_sha256": "f38d09f35950d7b58d675c68eeea8142c641c0614562595da983d1c1869a8425",
+    "raw_couplings_sha256": "4b16f914c8107489af176112cfc790b2a090d969bd50a80deca00d8369dfce38",
+    "graph_sha256": "7bc8378f2529d7d329b537919ae6bd79f31654d20ed4144dff5a6480f6b34d48",
+    "dense_source_sha256": "9750d654a669732b74fd89f15a52d80f8278c278f9bda69f4e0f54cfde7fc2b6",
+    "parent_source_sha256": "72edd590741aebaf42fb5761c30499a6396f51618e6b256ef407d65a715cfca5",
+    "ordered_ports_hash": "46f1f2fd7b1710ed745060e45f24f9db60f681e8010208e52e657f6e531da178"
+  },
+  "plan_sha256": "380879a0eb497f502c5d12e94885dfe379e4a5844049a7976638dd41b1c098d5",
+  "joint_spectrum_sha256": "d85da5a4e9aa868887c2221955a081b699dc0e9d274ec1ff7bcb6de6ab236ed4",
+  "configurations": "1329227995784915872903807060280344576",
+  "shards": [
+    {
+      "boundary_state": 0,
+      "file": "boundary_0000.jsonl.gz",
+      "sha256": "1e1ba3956a8df5b9dc07ea99f84a7ff3659fd0a279f496d2bf5b07c5ff62ee9d",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43087
+    },
+    {
+      "boundary_state": 1,
+      "file": "boundary_0001.jsonl.gz",
+      "sha256": "8e8386d2934c6a06f219e45f16f4ddb8bdad54ed19843ce2420c18b5f9cfa7cb",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43080
+    },
+    {
+      "boundary_state": 2,
+      "file": "boundary_0002.jsonl.gz",
+      "sha256": "a1c793f52cdfcd2494ed190abbf804d9b4a35f7f0874585371460b0bc8ab1985",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43080
+    },
+    {
+      "boundary_state": 3,
+      "file": "boundary_0003.jsonl.gz",
+      "sha256": "b190f24f7ebeb2f43dd624328bab8e2ab167c78e0dcac0a28e7051e562db8615",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 42728
+    },
+    {
+      "boundary_state": 4,
+      "file": "boundary_0004.jsonl.gz",
+      "sha256": "ab03ac4d3c52eed02ffb45a21faf24ae869e849d6b391cc4f903ae024e888a14",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43101
+    },
+    {
+      "boundary_state": 5,
+      "file": "boundary_0005.jsonl.gz",
+      "sha256": "0bb635094ab1b36ed83b8b204afc5162e1e8b966d66ab88cb62f6bdd5402c270",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 42789
+    },
+    {
+      "boundary_state": 6,
+      "file": "boundary_0006.jsonl.gz",
+      "sha256": "6cff28086bbe6099313ccdc3811032e2160ffe1a0b5606ee8dc1f36560d35e8e",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 42789
+    },
+    {
+      "boundary_state": 7,
+      "file": "boundary_0007.jsonl.gz",
+      "sha256": "bf6f253d23645f312af4bd5e4d85c56846b204328a5f1ba89a9869db795ddffa",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43069
+    },
+    {
+      "boundary_state": 8,
+      "file": "boundary_0008.jsonl.gz",
+      "sha256": "5b3293eecebf819661fc09bca51fba7f129c6c4d4c6431462ddee3149a514901",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43101
+    },
+    {
+      "boundary_state": 9,
+      "file": "boundary_0009.jsonl.gz",
+      "sha256": "715d28e47653010fa7ff4b1c53e267699059a39c0c1c4cf0eba3310ffbf4b8fa",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 42789
+    },
+    {
+      "boundary_state": 10,
+      "file": "boundary_0010.jsonl.gz",
+      "sha256": "eabc1a06fc8edf3b16f349c88ab5414b8a2b2f39306dce797dba28c1348226da",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 42789
+    },
+    {
+      "boundary_state": 11,
+      "file": "boundary_0011.jsonl.gz",
+      "sha256": "a38e7f4e9a4c02c82dd896b28db9d15383ed58cc1865ee6e95713b771886d3e9",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43069
+    },
+    {
+      "boundary_state": 12,
+      "file": "boundary_0012.jsonl.gz",
+      "sha256": "83e878f939070b2c1f37fc85dd430f33e3e2dd12d9dbc3b54d9ef22a347f84b2",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 42728
+    },
+    {
+      "boundary_state": 13,
+      "file": "boundary_0013.jsonl.gz",
+      "sha256": "23484ebaac27a415c10a6a180a0c3a5e281aa279255c4c6f437d439b7ed721ee",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43035
+    },
+    {
+      "boundary_state": 14,
+      "file": "boundary_0014.jsonl.gz",
+      "sha256": "929c2d278e1e15a03891537db1edb55298af02b7e8d7fbb41864047d9770405c",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43035
+    },
+    {
+      "boundary_state": 15,
+      "file": "boundary_0015.jsonl.gz",
+      "sha256": "bf55b924437fe2e768340fe527770ff2f63cb4446fc82164c2ac8c2fc8425507",
+      "records": 2595,
+      "configurations": "83076749736557242056487941267521536",
+      "bytes": 43055
+    }
+  ],
+  "verification": {
+    "full_DOS_projection": true,
+    "all_boundary_magnetization_binomials": true,
+    "independent_global_joint_hash": true,
+    "direct_dense_joint": false
+  },
+  "stored_bytes": 687324
+}

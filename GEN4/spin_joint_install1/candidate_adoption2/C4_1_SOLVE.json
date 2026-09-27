@@ -1,0 +1,1026 @@
+{
+  "operation": "GEN3_SPIN_SOLVE",
+  "status": "EXACT",
+  "source": {
+    "N": 6,
+    "fields": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "edges": [
+      [
+        0,
+        2,
+        8
+      ],
+      [
+        0,
+        3,
+        -6
+      ],
+      [
+        0,
+        4,
+        8
+      ],
+      [
+        0,
+        5,
+        4
+      ],
+      [
+        1,
+        2,
+        6
+      ],
+      [
+        1,
+        3,
+        8
+      ],
+      [
+        1,
+        4,
+        -4
+      ],
+      [
+        1,
+        5,
+        8
+      ],
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        2,
+        5,
+        8
+      ],
+      [
+        3,
+        4,
+        -8
+      ],
+      [
+        3,
+        5,
+        4
+      ]
+    ],
+    "parent_vertices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "parent_instance_sha256": "17406fa0273ad2057a914055671abd3fde14574df7e1dc0c2cd903d5cc59eadb",
+    "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+    "energy_bound_B": 76,
+    "construction": {
+      "phase_to_spin": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "physical_spin_assignment": false,
+      "source_model": "Unit retained-vertex complex bilinear C4 triangle",
+      "spin_energy_scale": "E_spin = 2 H_phase",
+      "vertices": [
+        "s0",
+        "t0",
+        "s1",
+        "t1",
+        "s2",
+        "t2"
+      ]
+    },
+    "source_sha256": "b31161a2a2fbf18e5882e79b634b5eefc3d62869546614f2ab3280a051e80f66"
+  },
+  "answer": {
+    "schema": "GEN3_EXACT_SPIN_DOS_V1",
+    "source_sha256": "b31161a2a2fbf18e5882e79b634b5eefc3d62869546614f2ab3280a051e80f66",
+    "N": 6,
+    "energy_convention": "E=-sum(J_uv*s_u*s_v)-sum(h_u*s_u); s_u in {-1,+1}",
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "port_state_convention": "bit i=1 is +1 at local vertex ports[i]; bit i=0 is -1",
+    "scalar_dos": [
+      [
+        -44,
+        "4"
+      ],
+      [
+        -40,
+        "8"
+      ],
+      [
+        -12,
+        "8"
+      ],
+      [
+        -4,
+        "4"
+      ],
+      [
+        8,
+        "16"
+      ],
+      [
+        12,
+        "8"
+      ],
+      [
+        20,
+        "4"
+      ],
+      [
+        24,
+        "8"
+      ],
+      [
+        28,
+        "4"
+      ]
+    ],
+    "port_rows": [
+      {
+        "state": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -40,
+            "2"
+          ],
+          [
+            8,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -44,
+            "1"
+          ],
+          [
+            -12,
+            "2"
+          ],
+          [
+            20,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            12,
+            "2"
+          ],
+          [
+            28,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            8,
+            "2"
+          ],
+          [
+            24,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            12,
+            "2"
+          ],
+          [
+            28,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -40,
+            "2"
+          ],
+          [
+            8,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            8,
+            "2"
+          ],
+          [
+            24,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -44,
+            "1"
+          ],
+          [
+            -12,
+            "2"
+          ],
+          [
+            20,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -44,
+            "1"
+          ],
+          [
+            -12,
+            "2"
+          ],
+          [
+            20,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            8,
+            "2"
+          ],
+          [
+            24,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -40,
+            "2"
+          ],
+          [
+            8,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            12,
+            "2"
+          ],
+          [
+            28,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            8,
+            "2"
+          ],
+          [
+            24,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            12,
+            "2"
+          ],
+          [
+            28,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -44,
+            "1"
+          ],
+          [
+            -12,
+            "2"
+          ],
+          [
+            20,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -40,
+            "2"
+          ],
+          [
+            8,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      }
+    ],
+    "configuration_count": "64",
+    "ground_energy": -44,
+    "ground_degeneracy": "4",
+    "energy_moments": {
+      "0": "64",
+      "1": "0",
+      "2": "33280"
+    },
+    "spectrum_sha256": "e16557ba617e7c957a43bf35c4709d25d5a17f27f9b5abe30c461f4ffcd5e157"
+  },
+  "selection": {
+    "schema": "SHARED_SPIN_JOINT_V1",
+    "source": {
+      "N": 6,
+      "fields": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        [
+          0,
+          2,
+          8
+        ],
+        [
+          0,
+          3,
+          -6
+        ],
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          0,
+          5,
+          4
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          4,
+          -4
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          3,
+          4,
+          -8
+        ],
+        [
+          3,
+          5,
+          4
+        ]
+      ],
+      "parent_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_instance_sha256": "17406fa0273ad2057a914055671abd3fde14574df7e1dc0c2cd903d5cc59eadb",
+      "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+      "energy_bound_B": 76,
+      "construction": {
+        "phase_to_spin": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "physical_spin_assignment": false,
+        "source_model": "Unit retained-vertex complex bilinear C4 triangle",
+        "spin_energy_scale": "E_spin = 2 H_phase",
+        "vertices": [
+          "s0",
+          "t0",
+          "s1",
+          "t1",
+          "s2",
+          "t2"
+        ]
+      },
+      "source_sha256": "b31161a2a2fbf18e5882e79b634b5eefc3d62869546614f2ab3280a051e80f66"
+    },
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "method": "JOINT_COMPONENT_POWERS",
+    "plan": {
+      "N": 6,
+      "fill": 0,
+      "ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pieces": [
+        {
+          "n": 6,
+          "edges": [
+            [
+              0,
+              2,
+              8
+            ],
+            [
+              0,
+              3,
+              -6
+            ],
+            [
+              0,
+              4,
+              8
+            ],
+            [
+              0,
+              5,
+              4
+            ],
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              1,
+              3,
+              8
+            ],
+            [
+              1,
+              4,
+              -4
+            ],
+            [
+              1,
+              5,
+              8
+            ],
+            [
+              2,
+              4,
+              4
+            ],
+            [
+              2,
+              5,
+              8
+            ],
+            [
+              3,
+              4,
+              -8
+            ],
+            [
+              3,
+              5,
+              4
+            ]
+          ],
+          "fields": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ports": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "bound": 76,
+          "global_ports": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "gateway_index": null,
+          "table_key": "df950a05afb1c90000d8ae20ca6484efc25c4c0df647d878bbed431b3f6f73e9"
+        }
+      ],
+      "bridges": [],
+      "correction_bound": 76,
+      "identity": "E=2*t-B-J0*((2*k-N)^2-N)/2; polynomial encodes k=number of positive spins and t=(correction_energy+B)/2",
+      "maximum_degree": 538
+    },
+    "plan_sha256": "fb31d546c3bbdf6c800b4fa9948a49e5b824f08d65a2b4bc62f4c2ed75f9c260",
+    "binding": {
+      "source_sha256": "b31161a2a2fbf18e5882e79b634b5eefc3d62869546614f2ab3280a051e80f66",
+      "ordered_ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dense_fill": null,
+      "decomposition": null,
+      "method": "JOINT_COMPONENT_POWERS",
+      "plan": {
+        "N": 6,
+        "fill": 0,
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "pieces": [
+          {
+            "n": 6,
+            "edges": [
+              [
+                0,
+                2,
+                8
+              ],
+              [
+                0,
+                3,
+                -6
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                0,
+                5,
+                4
+              ],
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                3,
+                8
+              ],
+              [
+                1,
+                4,
+                -4
+              ],
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                2,
+                4,
+                4
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3,
+                4,
+                -8
+              ],
+              [
+                3,
+                5,
+                4
+              ]
+            ],
+            "fields": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bound": 76,
+            "global_ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "gateway_index": null,
+            "table_key": "df950a05afb1c90000d8ae20ca6484efc25c4c0df647d878bbed431b3f6f73e9"
+          }
+        ],
+        "bridges": [],
+        "correction_bound": 76,
+        "identity": "E=2*t-B-J0*((2*k-N)^2-N)/2; polynomial encodes k=number of positive spins and t=(correction_energy+B)/2",
+        "maximum_degree": 538
+      }
+    },
+    "estimates": {
+      "local_assignments": 64,
+      "unique_local_tables": 1,
+      "estimated_polynomial_workspace_bytes": 280280
+    },
+    "execution_backend": "cpu",
+    "joint": true,
+    "limits": {
+      "max_component_size": 20,
+      "max_assignments": 2000000,
+      "max_degree": 6500000,
+      "max_seconds": 120,
+      "max_output_records": 4000000,
+      "max_factor_work": 10000000,
+      "max_intermediate_entries": 1000000,
+      "max_polynomial_bytes": 2147483648
+    },
+    "recomputed": false,
+    "arithmetic_calls": 0
+  },
+  "execution": {
+    "backend": "CPU_FLINT_COMPONENT_JOINT",
+    "cache_hits": 0,
+    "planning_ns": 222881,
+    "local_preparation_and_checks_ns": 1532311,
+    "reference_ns": 490218,
+    "total_solve_ns": 5925360,
+    "details": {
+      "correction_components": 1,
+      "distinct_components": 1,
+      "zero_correction_bridges": 0,
+      "joint_hash": "7e064dc7dd07a0eae90b80b8b345ff1c14b1b42cae49a309ec56c11d34b65bc6",
+      "primary_stages_ns": {
+        "scalar_power_product_seconds": 17697,
+        "port_row_multiply_seconds": 130533,
+        "decode_seconds": 1891450
+      },
+      "reference_stages_ns": {
+        "scalar_power_product_seconds": 4452,
+        "port_row_multiply_seconds": 66339,
+        "decode_seconds": 410376
+      }
+    },
+    "retained_complete_result_lookup": false
+  },
+  "joint": {
+    "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1",
+    "N": 6,
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "source_sha256": "b31161a2a2fbf18e5882e79b634b5eefc3d62869546614f2ab3280a051e80f66",
+    "rows": [
+      {
+        "state": 0,
+        "result_ref": "49516b79b4568ac64aff74b7b4a33a3a33f83f8a41435807f07828dc7d4ac3fa",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 1,
+        "result_ref": "7240f861310145d51ccb0ba4b52f6c6725322b8d70a1a89c089dd24d54134e3b",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 2,
+        "result_ref": "0677a74500e8045a5640a3ceb81ad58fdf17c99bb24de157f2f45d51b733338f",
+        "records": 3,
+        "configurations": "4"
+      },
+      {
+        "state": 3,
+        "result_ref": "8f6309d766b9b4be9c00ee177cc6dcc52a7b5eb2d2fd70f340e84b053b0b3f35",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 4,
+        "result_ref": "6f609c436205f83b924b15cdcaa4802e3c6aca1a342e0dace19cf3414a252b87",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 5,
+        "result_ref": "4c2062817f91571a19e3176ebd7a7db7bd1e4c5164a694587603d6c80d01efd8",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 6,
+        "result_ref": "275981242818d2937c6b4af357b17672b6927337676d0f8f3ad370a88be6dbba",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 7,
+        "result_ref": "89440ded89554ee92180255a7eb1931f85a94f503cbdf8582b04bdd85c427493",
+        "records": 3,
+        "configurations": "4"
+      },
+      {
+        "state": 8,
+        "result_ref": "90f48c9afacc75d5be6ae89e0bc7dd519ab07ece37b58dfb906f4ffad7ab6691",
+        "records": 3,
+        "configurations": "4"
+      },
+      {
+        "state": 9,
+        "result_ref": "d043fd5bd9cb96c600a463be88968fa83b584babc9c193f20b5ba0ac6984290a",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 10,
+        "result_ref": "4fda93f696d7cb2109c674f4d5bbf781b0cfd7c36d295b886b147874bf926386",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 11,
+        "result_ref": "8ba460727caa8da28375ed45dd569e821a3bfead79614352ed3519ef988aef68",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 12,
+        "result_ref": "1cb9cd5fae4145955618169eeca59c129e07c6ee2798ab31e1288e0109a6261d",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 13,
+        "result_ref": "3ffb3fbaa80ae1c72a8bb19fad2aeb1c4dd50fd8c4c4f3916948d9f561e81934",
+        "records": 3,
+        "configurations": "4"
+      },
+      {
+        "state": 14,
+        "result_ref": "3f3042745599f8e3c11074b69e50f9091325092bc192bd99a78f5d88e1f4ee9b",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 15,
+        "result_ref": "1d9f183a979a58f072e360153f7a3865d33600689450490397f8fc954342b809",
+        "records": 4,
+        "configurations": "4"
+      }
+    ],
+    "verification": {
+      "full_density": true,
+      "count_first_second_moments": true,
+      "magnetization_binomials": true,
+      "independent_encoding": true
+    }
+  },
+  "result_ref": "6b9b6b4229b22baefbd6571d5b3af8b1d8f9c23382862223e9727e624e185454",
+  "recomputed": true
+}

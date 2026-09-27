@@ -1,0 +1,880 @@
+{
+  "operation": "GEN3_SPIN_SOLVE",
+  "status": "EXACT",
+  "source": {
+    "N": 6,
+    "fields": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "edges": [
+      [
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        0,
+        5,
+        -2
+      ],
+      [
+        1,
+        2,
+        -2
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        1,
+        5,
+        4
+      ],
+      [
+        2,
+        4,
+        -2
+      ],
+      [
+        3,
+        5,
+        -2
+      ]
+    ],
+    "parent_vertices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "parent_instance_sha256": "e939dd002bc0e0d1f9989135b9ec77704c52d3330534731663ab812927d32744",
+    "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+    "energy_bound_B": 20,
+    "source_sha256": "6dd47803f89a2fdb7dd81312670686ee20004c871041c091517e2a56e7b068d0"
+  },
+  "answer": {
+    "schema": "GEN3_EXACT_SPIN_DOS_V1",
+    "source_sha256": "6dd47803f89a2fdb7dd81312670686ee20004c871041c091517e2a56e7b068d0",
+    "N": 6,
+    "energy_convention": "E=-sum(J_uv*s_u*s_v)-sum(h_u*s_u); s_u in {-1,+1}",
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "port_state_convention": "bit i=1 is +1 at local vertex ports[i]; bit i=0 is -1",
+    "scalar_dos": [
+      [
+        -12,
+        "12"
+      ],
+      [
+        -4,
+        "16"
+      ],
+      [
+        4,
+        "28"
+      ],
+      [
+        12,
+        "8"
+      ]
+    ],
+    "port_rows": [
+      {
+        "state": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -4,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -12,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "dos": [
+          [
+            -12,
+            "1"
+          ],
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -12,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -4,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -12,
+            "1"
+          ],
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -12,
+            "1"
+          ],
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -4,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "dos": [
+          [
+            -12,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -12,
+            "1"
+          ],
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -12,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -4,
+            "1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "configuration_count": "4"
+      },
+      {
+        "state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dos": [
+          [
+            -4,
+            "2"
+          ],
+          [
+            4,
+            "2"
+          ]
+        ],
+        "configuration_count": "4"
+      }
+    ],
+    "configuration_count": "64",
+    "ground_energy": -12,
+    "ground_degeneracy": "12",
+    "energy_moments": {
+      "0": "64",
+      "1": "0",
+      "2": "3584"
+    },
+    "spectrum_sha256": "a4a52819a9c9520a96603ac56ac1e2d288dbd60b416d4cdb1bb0664da44ba7a6"
+  },
+  "selection": {
+    "schema": "SHARED_SPIN_JOINT_V1",
+    "source": {
+      "N": 6,
+      "fields": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          5,
+          -2
+        ],
+        [
+          1,
+          2,
+          -2
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          2,
+          4,
+          -2
+        ],
+        [
+          3,
+          5,
+          -2
+        ]
+      ],
+      "parent_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_instance_sha256": "e939dd002bc0e0d1f9989135b9ec77704c52d3330534731663ab812927d32744",
+      "family": "VOLII_HE4_C4_TRIANGLE_SIX_SPIN",
+      "energy_bound_B": 20,
+      "source_sha256": "6dd47803f89a2fdb7dd81312670686ee20004c871041c091517e2a56e7b068d0"
+    },
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "method": "JOINT_COMPONENT_POWERS",
+    "plan": {
+      "N": 6,
+      "fill": 0,
+      "ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pieces": [
+        {
+          "n": 6,
+          "edges": [
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              1,
+              2,
+              -2
+            ],
+            [
+              1,
+              4,
+              2
+            ],
+            [
+              1,
+              5,
+              4
+            ],
+            [
+              2,
+              4,
+              -2
+            ],
+            [
+              3,
+              5,
+              -2
+            ]
+          ],
+          "fields": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ports": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "bound": 20,
+          "global_ports": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "gateway_index": null,
+          "table_key": "1ddc9351f6dd04a82282ab0ad471b5eabd03c343ee061b1f03054f613274dec0"
+        }
+      ],
+      "bridges": [],
+      "correction_bound": 20,
+      "identity": "E=2*t-B-J0*((2*k-N)^2-N)/2; polynomial encodes k=number of positive spins and t=(correction_energy+B)/2",
+      "maximum_degree": 146
+    },
+    "plan_sha256": "6ba9171edd15a924b28fb942e1cae5e90c325d6a4db9a60aefc20975e5673727",
+    "binding": {
+      "source_sha256": "6dd47803f89a2fdb7dd81312670686ee20004c871041c091517e2a56e7b068d0",
+      "ordered_ports": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dense_fill": null,
+      "decomposition": null,
+      "method": "JOINT_COMPONENT_POWERS",
+      "plan": {
+        "N": 6,
+        "fill": 0,
+        "ports": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "pieces": [
+          {
+            "n": 6,
+            "edges": [
+              [
+                0,
+                3,
+                2
+              ],
+              [
+                0,
+                4,
+                4
+              ],
+              [
+                0,
+                5,
+                -2
+              ],
+              [
+                1,
+                2,
+                -2
+              ],
+              [
+                1,
+                4,
+                2
+              ],
+              [
+                1,
+                5,
+                4
+              ],
+              [
+                2,
+                4,
+                -2
+              ],
+              [
+                3,
+                5,
+                -2
+              ]
+            ],
+            "fields": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bound": 20,
+            "global_ports": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "gateway_index": null,
+            "table_key": "1ddc9351f6dd04a82282ab0ad471b5eabd03c343ee061b1f03054f613274dec0"
+          }
+        ],
+        "bridges": [],
+        "correction_bound": 20,
+        "identity": "E=2*t-B-J0*((2*k-N)^2-N)/2; polynomial encodes k=number of positive spins and t=(correction_energy+B)/2",
+        "maximum_degree": 146
+      }
+    },
+    "estimates": {
+      "local_assignments": 64,
+      "unique_local_tables": 1,
+      "estimated_polynomial_workspace_bytes": 76440
+    },
+    "execution_backend": "cpu",
+    "joint": true,
+    "limits": {
+      "max_component_size": 20,
+      "max_assignments": 2000000,
+      "max_degree": 6500000,
+      "max_seconds": 120,
+      "max_output_records": 4000000,
+      "max_factor_work": 10000000,
+      "max_intermediate_entries": 1000000,
+      "max_polynomial_bytes": 2147483648
+    },
+    "recomputed": false,
+    "arithmetic_calls": 0
+  },
+  "execution": {
+    "backend": "CPU_FLINT_COMPONENT_JOINT",
+    "cache_hits": 0,
+    "planning_ns": 1292168,
+    "local_preparation_and_checks_ns": 586409,
+    "reference_ns": 230406,
+    "total_solve_ns": 5154729,
+    "details": {
+      "correction_components": 1,
+      "distinct_components": 1,
+      "zero_correction_bridges": 0,
+      "joint_hash": "fa15b91b169382f88832fa13b2534e9fbef23110c571b22ad19dda0a124cffb1",
+      "primary_stages_ns": {
+        "scalar_power_product_seconds": 21241,
+        "port_row_multiply_seconds": 46607,
+        "decode_seconds": 985407
+      },
+      "reference_stages_ns": {
+        "scalar_power_product_seconds": 5207,
+        "port_row_multiply_seconds": 38719,
+        "decode_seconds": 177585
+      }
+    },
+    "retained_complete_result_lookup": false
+  },
+  "joint": {
+    "schema": "SLC_JOINT_ENERGY_MAGNETIZATION_BOUNDARY_V1",
+    "N": 6,
+    "ports": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "source_sha256": "6dd47803f89a2fdb7dd81312670686ee20004c871041c091517e2a56e7b068d0",
+    "rows": [
+      {
+        "state": 0,
+        "result_ref": "f44119dcca744f9a3e127b43d3c3faecf5c23194e2b7ceacf4b9ba38dd027666",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 1,
+        "result_ref": "9f38e2954238cab6889edda8fb14f0567fd80ed5873b24244d9275e984f88b38",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 2,
+        "result_ref": "cee560d5b93fa25be376f56b12540a833156d2498fc605efdd0d5df8950fd0a8",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 3,
+        "result_ref": "3fe1b5af0d008f6cc5d2e3fe7bf4aa3f8b5801a7767451653cd61405a193ed5d",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 4,
+        "result_ref": "8bfa220b53d9171bae42bf3c80fdca3afb250c6da919b81e1cf5d00923acd285",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 5,
+        "result_ref": "ed01b2bcfece83f6f58aabfc8f671050675e4434659e653c619508cadf35fd91",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 6,
+        "result_ref": "899c31a35e055794f25900fc633779069a85a2dd94a273ecc1d17c5dc3c160a4",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 7,
+        "result_ref": "d156f965af9e743cc4c625e1f234693cdf144d3eba2e4c8e4773dff61d2a89d3",
+        "records": 3,
+        "configurations": "4"
+      },
+      {
+        "state": 8,
+        "result_ref": "3f5261b80308b5bbd12709fd85502a98a3ef93d16c59b8b7bc01fae18636a03a",
+        "records": 3,
+        "configurations": "4"
+      },
+      {
+        "state": 9,
+        "result_ref": "6185dbb154ab42a3024162defc2e446e28cf51745e7db15b45ce6c6f570b54d8",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 10,
+        "result_ref": "abe97f4589a2d65a7e948ccc725a4b9676c7ac5855daa6335a8faf89270cd149",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 11,
+        "result_ref": "56c2de36cd2896390f05c7155c3da79ea8c148823c3c454c33de70f800a539f9",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 12,
+        "result_ref": "6d3800f3f45b38797f70721fcf5059f2d70e25c8a17a2a60cbe2459af965e310",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 13,
+        "result_ref": "2032fa83ef3ae54d1827bc0675dd75ac555efdbc39d23ee766a224a42558ddd6",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 14,
+        "result_ref": "997c630270f2118f94b9c55a41150afd13f4ae14da43a47c03289223fad39712",
+        "records": 4,
+        "configurations": "4"
+      },
+      {
+        "state": 15,
+        "result_ref": "e97df55d0292a6308e79c0209c61b3f0d4631a3eee6d9140ce8922283be93a3a",
+        "records": 4,
+        "configurations": "4"
+      }
+    ],
+    "verification": {
+      "full_density": true,
+      "count_first_second_moments": true,
+      "magnetization_binomials": true,
+      "independent_encoding": true
+    }
+  },
+  "result_ref": "8525e4616c3aded29724dcadde6cf795329db328e410e806d895f88cbcfc66d3",
+  "recomputed": true
+}

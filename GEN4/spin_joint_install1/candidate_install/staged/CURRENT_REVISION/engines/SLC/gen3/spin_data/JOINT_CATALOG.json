@@ -1,0 +1,118 @@
+{
+  "schema": "SHARED_SPIN_JOINT_V1",
+  "canonical_defaults": 120,
+  "source_records": 123,
+  "packet_recipes": {
+    "families": [
+      "packet",
+      "signed_packet",
+      "signed_packet_chain"
+    ],
+    "N_min": 1,
+    "N_max": 1408,
+    "canonical_replacement": false,
+    "coverage": "Completed exact packet spectra in separately preserved campaigns"
+  },
+  "dense_sources": {
+    "families": [
+      "packet",
+      "signed_packet",
+      "signed_packet_chain"
+    ],
+    "fills": [
+      -1,
+      1
+    ],
+    "N_min": 1,
+    "N_max": 1408,
+    "source_count": 8448,
+    "status": "FULL_GRAPH_SOURCES_GENERATED",
+    "dense_DOS_coverage": "Only explicitly retained/executed results; source coverage is not DOS coverage"
+  },
+  "retained_joint_results": {
+    "packet_N120_fill_+1": {
+      "result_ref": "76f6067568219d05f49b8ad509a53ff137f8815f908c941550bc94aad0fd300f",
+      "N": 120,
+      "family": "packet",
+      "fill_coupling": 1,
+      "source_sha256": "dc5bcf7d0a561e8e794fad93b3cac5228053c1170a41b947139ba9594f1f7fae",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ]
+    },
+    "packet_N120_fill_-1": {
+      "result_ref": "29a7f4afac654c62578179a6e2920ea35c602659c681d32341c6579d4b7afdba",
+      "N": 120,
+      "family": "packet",
+      "fill_coupling": -1,
+      "source_sha256": "2d16a19a57df1ef12c607cc2daa01ee4acc746e6130fc3930a897f8d56e47e85",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ]
+    },
+    "signed_packet_N120_fill_+1": {
+      "result_ref": "849924d56740c7536baf2b2939c9bc72d3d2af9f31b3d3f9e8902fdb3a9416f8",
+      "N": 120,
+      "family": "signed_packet",
+      "fill_coupling": 1,
+      "source_sha256": "fa604b67a7cbcd595ed43b117f3fb591aa71fa75985bef259e4cb012eca73b1f",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ]
+    },
+    "signed_packet_N120_fill_-1": {
+      "result_ref": "d98f197e5b6873cdb460412cc0c0881864cc1b83371954bd33314e2229cfe7cd",
+      "N": 120,
+      "family": "signed_packet",
+      "fill_coupling": -1,
+      "source_sha256": "7b8c7a3677a100961bbf1be2f30583537e31dc53814db404f8809d8279422fb4",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ]
+    },
+    "signed_packet_chain_N120_fill_+1": {
+      "result_ref": "04a0903b6bac5bb2818b90b5ab2d464a7d911803ac4fce009c4ed0907568b624",
+      "N": 120,
+      "family": "signed_packet_chain",
+      "fill_coupling": 1,
+      "source_sha256": "dc0caee347c32a6b23fda9237938b8220e10f5427b2365ff1c6e294bd83a77d5",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ]
+    },
+    "signed_packet_chain_N120_fill_-1": {
+      "result_ref": "a16421b258af1e807d9cb566ac904109488627a43a3132764d3eb1373f60a13c",
+      "N": 120,
+      "family": "signed_packet_chain",
+      "fill_coupling": -1,
+      "source_sha256": "49cddbf6d0871654681ba4d7bc3977c7a95b344b87321f04898d1109b49cd3ce",
+      "ordered_ports": [
+        0,
+        1,
+        60,
+        61
+      ]
+    }
+  },
+  "method_contract": "Method and backend follow the source/decomposition and requested observables",
+  "provenance": {
+    "packet": "frustrated_spin_packet_catalog1;frustrated_spin_workstation1",
+    "dense": "frustrated_spin_dense_extension1",
+    "joint": "frustrated_spin_joint_readout1"
+  }
+}

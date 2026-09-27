@@ -1,0 +1,104 @@
+{
+  "status": "EXACT_DENSE_VERIFIED",
+  "N": 18,
+  "family": "signed_packet",
+  "fill_coupling": -1,
+  "result": "results/qualification_signed_packet_N000018_-1.json.gz",
+  "sha256": "8780ce103058218245f3e9d4d83f6c68246b236f7957eb46f58ab1fe65b7b1a5",
+  "timing": {
+    "local_seconds": 0.0012895429972559214,
+    "local_stages": [
+      {
+        "table_key": "4cce1157935903a12b41d9d206251c6513ee832a2ca2248aa323fbc441b21366",
+        "upload_seconds": 0.0005429531447589397,
+        "gpu_arithmetic_seconds": 4.09719068557024e-05,
+        "readout_seconds": 3.31290066242218e-05,
+        "histogram_seconds": 0.00011616409756243229,
+        "gpu_output_bytes": 64,
+        "assignments": 8,
+        "cpu_independent_seconds": 2.0831124857068062e-05
+      },
+      {
+        "table_key": "792e35f8c8d76c0b0d67399588624fa972b73886964945b49d1a333f8cb06657",
+        "upload_seconds": 0.0001616920344531536,
+        "gpu_arithmetic_seconds": 1.396099105477333e-05,
+        "readout_seconds": 1.3069948181509972e-05,
+        "histogram_seconds": 3.302912227809429e-05,
+        "gpu_output_bytes": 64,
+        "assignments": 8,
+        "cpu_independent_seconds": 1.164688728749752e-05
+      }
+    ],
+    "component_seconds": 0.00019832700490951538,
+    "primary_seconds": 0.004557069856673479,
+    "reference_seconds": 0.0005859481170773506,
+    "primary_stages": {
+      "scalar_power_product_seconds": 0.0001394590362906456,
+      "port_row_multiply_seconds": 7.756566628813744e-05,
+      "decode_seconds": 0.004329499090090394
+    },
+    "reference_stages": {
+      "scalar_power_product_seconds": 3.4771859645843506e-05,
+      "port_row_multiply_seconds": 3.054598346352577e-05,
+      "decode_seconds": 0.0005132390651851892
+    },
+    "verification_seconds": 0.08829893404617906,
+    "total_solve_and_verification_seconds": 0.09503504005260766
+  },
+  "cuda_initialization_seconds": 0.21651541301980615,
+  "cuda_identity": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_device_uuid_bytes": "661b6682ca4457c7a80b0259ec2f6b54",
+    "visible_devices": 1,
+    "free_bytes": 25130827776,
+    "total_bytes": 25367150592
+  },
+  "peak_rss_kib": 219828,
+  "plan_hash": "cd6c6576f21a38d6cd9e7bf2682345bd54d717fd44adae41f385c5e4b8baae59",
+  "source_identity": {
+    "manifest": "/opt/gen4-spin-joint-readout1/project/inputs/N000018/signed_packet_N000018_fill_minus.json",
+    "manifest_sha256": "ac4969dd531e9e810982688c73fa78160597b712404195f4742d28afabd6ee83",
+    "parent_sha256": "41a1e9ad08f65970fa8d9e5b18fc37262bb41436afebd375dd4e5f3cb3cc1523",
+    "raw_couplings_sha256": "f67e858779083a9395e76d04efb51638cb891125ba4df381acab94f87cc2da90",
+    "graph_sha256": "9b76a63c98ab626e9fa126e96e7970e521233b9a176325143a081740efc756cc",
+    "dense_source_sha256": "1bd5d5ae20871219767136452e5fa01677e9b2fe6210eef9c92bad7a25d91238",
+    "parent_source_sha256": "d5c70946d28270053059a48461bea6e0f28b40575a243ffcb188063c86724603",
+    "ordered_ports_hash": "463f2998327eb3a694145e6014444480b2235be84aa6cfd57871cc64f1cd816c"
+  },
+  "spectrum_sha256": "fece81106e021f55656b5067cefc9f13f22b95f16fd8e47a265c2e0568eee129",
+  "session": "/opt/gen4-spin-joint-readout1/project/sessions/MATTER_SEARCH_d028cceb1cca436aaf9cd255b14c75f4",
+  "controls": null,
+  "joint_readout": {
+    "manifest": "/opt/gen4-spin-joint-readout1/project/joint/qualification_signed_packet_N000018_-1/MANIFEST.json",
+    "sha256": "039fb9ebff6de89a73b9da313570e874478534d23bae610ca322a996a8609d89",
+    "stored_bytes": 2472,
+    "records": 506,
+    "verification": {
+      "full_DOS_projection": true,
+      "all_boundary_magnetization_binomials": true,
+      "independent_global_joint_hash": true,
+      "direct_dense_joint": false
+    }
+  },
+  "reductions": {
+    "zero_correction_bridges": 0,
+    "correction_components": 6,
+    "component_sizes": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "distinct_component_tables": 2,
+    "port_polynomials_materialized_simultaneously": 1,
+    "exact_reuse": "Repeated component polynomials raised to their integer multiplicity"
+  },
+  "matched_baseline_timing": null,
+  "retained_baseline_seconds": 0.08961930312216282
+}
