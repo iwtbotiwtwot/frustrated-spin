@@ -144,6 +144,14 @@ replay took 16.473s with identical raw/canonical hashes. The archive preserves
 all logical rows through 89 unique contents and 100 GiB batches. N4000 downloads
 are held pending owner clearance.
 
+## N5000 exact GPU result and cheap replay
+
+[N5000 reproduction](reproduce/n5000/README.md) adds all 192 exact rows and
+96 matching encoding pairs. PRO6000 production completed in 47m04s;
+the 32-row packet/+1 CPU replay took 37.769s with identical raw/canonical
+hashes. Lossless shards preserve all original rows in batches up to 100 GiB.
+Bulk downloads remain held while data move to the owner's storage pod.
+
 ## Verify the downloaded record
 
 From this directory:
