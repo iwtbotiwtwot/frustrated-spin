@@ -136,6 +136,14 @@ This repository contains the spin research and evidence. Its isolated GEN4
 runtime is supplied as a release asset; the parent repository's portable R3
 installation remains in SLC-GEN3-R3.
 
+## N4000 exact GPU result and cheap replay
+
+[N4000 reproduction](reproduce/n4000/README.md) adds all 192 exact rows alongside
+N2000 and N3000. The PRO6000 rerun finished in 11m27s; the 32-row packet/+1 CPU
+replay took 16.473s with identical raw/canonical hashes. The archive preserves
+all logical rows through 89 unique contents and 100 GiB batches. N4000 downloads
+are held pending owner clearance.
+
 ## Verify the downloaded record
 
 From this directory:

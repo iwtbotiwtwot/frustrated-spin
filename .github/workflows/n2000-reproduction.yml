@@ -1,9 +1,9 @@
-name: N2000 and N3000 reproduction
+name: N2000, N3000 and N4000 reproduction
 on:
   push:
-    paths: ["reproduce/n2000/**", "reproduce/n3000/**", ".github/workflows/n2000-reproduction.yml"]
+    paths: ["reproduce/n2000/**", "reproduce/n3000/**", "reproduce/n4000/**", ".github/workflows/n2000-reproduction.yml"]
   pull_request:
-    paths: ["reproduce/n2000/**", "reproduce/n3000/**", ".github/workflows/n2000-reproduction.yml"]
+    paths: ["reproduce/n2000/**", "reproduce/n3000/**", "reproduce/n4000/**", ".github/workflows/n2000-reproduction.yml"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,3 +24,5 @@ jobs:
       - run: python reproduce/n2000/run.py smoke --runtime runs/n2000-runtime/runtime --work-dir runs/n2000
       - run: python reproduce/n3000/run.py verify-record
       - run: python reproduce/n3000/run.py smoke --runtime runs/n2000-runtime/runtime --work-dir runs/n3000
+      - run: python reproduce/n4000/run.py verify-record
+      - run: python reproduce/n4000/run.py smoke --runtime runs/n2000-runtime/runtime --work-dir runs/n4000
