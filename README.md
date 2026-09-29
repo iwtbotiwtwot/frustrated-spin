@@ -1,8 +1,17 @@
 # GEN4 frustrated-spin research
 
-**Exact N3000 g(E,M,b) is complete for all six cases and all 16 boundary states per case.** The [N3000 cheap replay](reproduce/n3000/README.md) verifies the full 192-row record and recomputes packet/+1 on CPU in a measured **10.49 seconds**, matching all 32 GPU rows exactly. The primary encoding contains **550,074,346 exact records**. Both encodings are compressed into **236.96 GB of verified shards**, grouped into three transfer batches capped at 100 GiB; Google Drive upload is pending.
+**Exact g(E,M,b) is complete at N2000, N3000, N4000 and N5000**, each covering six graph cases, all 16 ordered boundary states per case, and two independent encodings: **192 rows and 96 matching encoding pairs per size**.
 
-**Exact N2000 g(E,M,b) is complete for all six graph cases and all 16 boundary states per case.** The [N2000 reproduction package](reproduce/n2000/README.md) includes frozen inputs, both encodings' verification receipts, pinned dependencies, a portable native runner, and checksum-verified data access. The primary table contains **244,104,392 exact records**; its compressed files total **37.4 GB**.
+The reproduction packages include frozen inputs, production verification receipts, bound solver code, exact CPU recomputation and checksum-verified archive manifests. Each N3000–N5000 package recomputes the complete packet/+1 case on CPU—32 rows across both encodings—and checks it against the GPU results.
+
+| Reproduction package | Primary exact records | Verified compressed archive | CPU packet/+1 reproduction |
+|---|---:|---:|---:|
+| [N5000](reproduce/n5000/README.md) | 1,530,259,992 | 609.67 GB; 6 batches | 37.769 seconds |
+| [N4000](reproduce/n4000/README.md) | 978,880,708 | 311.14 GB; 3 batches | 16.473 seconds |
+| [N3000](reproduce/n3000/README.md) | 550,074,346 | 236.96 GB; 3 batches | 10.486 seconds |
+| [N2000](reproduce/n2000/README.md) | 244,104,392 | 37.4 GB | See package validation |
+
+N3000–N5000 transfer batches contain whole shards and are capped at 100 GiB. The package READMEs describe reproduction scope, data formats and access.
 
 [Public N2000 data folder](https://drive.google.com/drive/folders/1F8wvIRqL3pdB34db-llz0YjnIbFbRg9Y) · [Data manifest and hosting status](reproduce/n2000/DATA_MANIFEST.json) · [Fresh reproduction checks](reproduce/n2000/VALIDATION.json)
 
@@ -32,7 +41,9 @@ Software is **[MIT licensed](LICENSE)**; research data, reports and figures are 
 
 | Record | Contents |
 |---|---|
-| [N3000 result and cheap replay](reproduce/n3000/README.md) | Six completed cases, 192 GPU rows, exact CPU replay, frozen sources and shard inventory |
+| [N5000 reproduction package](reproduce/n5000/README.md) | Complete 192-row result, exact CPU reproduction, 89 verified shards in six batches |
+| [N4000 reproduction package](reproduce/n4000/README.md) | Complete 192-row result, exact CPU reproduction, 89 verified shards in three batches |
+| [N3000 reproduction package](reproduce/n3000/README.md) | Six completed cases, 192 GPU rows, exact CPU replay, frozen sources and shard inventory |
 | [Reproduce N2000 exact g(E,M,b)](reproduce/n2000/README.md) | Six completed cases, 96 boundaries, 192 independent encoding receipts, exact binary hashes, public data and native recomputation |
 | [Earlier joint capability and results](GEN4/spin_joint_install1/RESULT.md) | Installed shared packet/joint solver; N1408 construction coverage, 54 dense magnetization cases and 24 joint datasets |
 | [Phase response, step 1](GEN4/vol_ii_joint_response1/REPORT.md) | Equal zero-field spectra with different contact-conditioned alignment responses |
@@ -136,7 +147,7 @@ This repository contains the spin research and evidence. Its isolated GEN4
 runtime is supplied as a release asset; the parent repository's portable R3
 installation remains in SLC-GEN3-R3.
 
-## N4000 exact GPU result and cheap replay
+## N4000 exact GPU result and reproduction package
 
 [N4000 reproduction](reproduce/n4000/README.md) adds all 192 exact rows alongside
 N2000 and N3000. The PRO6000 rerun finished in 11m27s; the 32-row packet/+1 CPU
@@ -144,7 +155,7 @@ replay took 16.473s with identical raw/canonical hashes. The archive preserves
 all logical rows through 89 unique contents and 100 GiB batches. N4000 downloads
 are held pending owner clearance.
 
-## N5000 exact GPU result and cheap replay
+## N5000 exact GPU result and reproduction package
 
 [N5000 reproduction](reproduce/n5000/README.md) adds all 192 exact rows and
 96 matching encoding pairs. PRO6000 production completed in 47m04s;

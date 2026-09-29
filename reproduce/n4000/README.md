@@ -1,4 +1,4 @@
-# N4000 exact g(E,M,b) and cheap replay
+# N4000 exact g(E,M,b) and reproduction package
 
 All six cases are complete: `packet`, `signed_packet`, `signed_packet_chain`, each
 with fill +1/-1, all 16 ordered boundary states, and two independently computed
@@ -25,7 +25,7 @@ python3 reproduce/n4000/run.py verify-record
 Authenticates 16 source files, bound code, all 192 rows, source/plan bindings,
 configuration counts and agreement of both encodings. Reads receipts, not bulk.
 
-## Cheap CPU replay
+## Reproduction package
 
 Use the same Python 3.12 environment and public runtime as [N2000](../n2000/README.md).
 

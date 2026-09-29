@@ -1,4 +1,4 @@
-# N5000 exact g(E,M,b) and cheap replay
+# N5000 exact g(E,M,b) and reproduction package
 
 All six cases are complete: packet, signed_packet and signed_packet_chain,
 each with fill +1/-1, all 16 ordered boundary states and two independent
@@ -25,7 +25,7 @@ Checks frozen input hashes, all 192 production receipts, code/source/plan
 bindings, configuration counts, independent-encoding agreement and the archive
 mapping. It reads receipts without requiring the bulk dataset.
 
-## Cheap CPU replay
+## Reproduction package
 
 Use the Python 3.12 environment and runtime described in [N2000](../n2000/README.md).
 

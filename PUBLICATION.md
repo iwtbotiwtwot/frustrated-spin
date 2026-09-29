@@ -1,6 +1,8 @@
-# N3000 supplement — September 29, 2026
+# N2000–N5000 reproduction packages — September 29, 2026
 
-The [N3000 package](reproduce/n3000/README.md) adds all six completed exact joint cases, 192 GPU production receipts, frozen sources and a tested cheap CPU replay. All 32 packet/+1 replay rows match production canonical and raw-record hashes in 10.486 seconds. The 422.457 GB raw dataset is losslessly compressed into 236.964 GB of independently verified shards, grouped into three batches capped at 100 GiB. The first batch download is underway. Google Drive upload is pending. Original production records and GPU source hashes are preserved; private session keys are excluded.
+The [N5000 reproduction package](reproduce/n5000/README.md) and [N4000 reproduction package](reproduce/n4000/README.md) each preserve 192 completed rows, 96 matching encoding pairs, frozen inputs, exact CPU recomputation, and verified lossless shard inventories. Their packet/+1 CPU reproductions match all 32 rows in 37.769 and 16.473 seconds, respectively. N5000 has six transfer batches and N4000 has three, each capped at 100 GiB.
+
+The [N3000 package](reproduce/n3000/README.md) adds all six completed exact joint cases, 192 GPU production receipts, frozen sources and tested CPU recomputation. All 32 packet/+1 replay rows match production canonical and raw-record hashes in 10.486 seconds. The 422.457 GB raw dataset is losslessly compressed into 236.964 GB of independently verified shards, grouped into three batches capped at 100 GiB. All three workstation downloads are complete; batches 001 and 002 have been uploaded to Drive, and batch 003 is ready for upload. Original production records and GPU source hashes are preserved; private session keys are excluded.
 
 # Open licensing supplement — September 27, 2026
 
