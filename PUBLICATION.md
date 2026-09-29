@@ -1,3 +1,7 @@
+# N3000 supplement — September 29, 2026
+
+The [N3000 package](reproduce/n3000/README.md) adds all six completed exact joint cases, 192 GPU production receipts, frozen sources and a tested cheap CPU replay. All 32 packet/+1 replay rows match production canonical and raw-record hashes in 10.486 seconds. The 422.457 GB raw dataset is losslessly compressed into 236.964 GB of independently verified shards, grouped into three batches capped at 100 GiB. The first batch download is underway. Google Drive upload is pending. Original production records and GPU source hashes are preserved; private session keys are excluded.
+
 # Open licensing supplement — September 27, 2026
 
 Owner-authorized scoped spin release: MIT software and CC BY 4.0 data, reports and figures. [LICENSING.md](LICENSING.md) explicitly covers the public dataset, manuscript foundation and identical materials in earlier spin releases. [RUNTIME_LICENSE.md](RUNTIME_LICENSE.md) identifies frozen runtime copies and grants additional open permissions without changing archive/scientific bytes. Third-party rights remain separate. The inherited research-only records below and in historical archives describe prior terms; current recipients may elect the new grant. Preferred citation: [CITATION.cff](CITATION.cff), DOI https://doi.org/10.5281/zenodo.22989862.
@@ -8,7 +12,7 @@ The [portable N2000 package](reproduce/n2000/README.md) adds the completed six-c
 
 Public-runtime qualification uses fresh sessions and pinned numpy 2.1.2 / python-flint 0.8.0. It reproduces all 32 files of the complete N2000 packet/+1 case byte-for-byte and checks N12/N30 independently. The other five large cases retain their original completed receipts; this publication did not rerun the full expensive campaign. The old runtime export omitted its 143,710-byte sealed foundation source ZIP; the exact original, already bound by the runtime's hash, is supplied in runtime_supplement. No runtime validation is bypassed.
 
-Private original sessions and custody keys are excluded. The original scientific receipts and older records retain their original bytes. The new publication manifests describe only the additive public files. N3000 stopped checkpoints are not presented as a completed joint result. Existing licensing, attribution and stewardship apply.
+Private original sessions and custody keys are excluded. The original scientific receipts and older records retain their original bytes. The new publication manifests describe only the additive public files. That earlier N3000 stopped-checkpoint boundary is superseded by the completed September 29 result above. Existing licensing, attribution and stewardship apply.
 
 # Standalone repository copy
 

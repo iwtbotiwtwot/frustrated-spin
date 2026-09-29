@@ -1,5 +1,7 @@
 # GEN4 frustrated-spin research
 
+**Exact N3000 g(E,M,b) is complete for all six cases and all 16 boundary states per case.** The [N3000 cheap replay](reproduce/n3000/README.md) verifies the full 192-row record and recomputes packet/+1 on CPU in a measured **10.49 seconds**, matching all 32 GPU rows exactly. The primary encoding contains **550,074,346 exact records**. Both encodings are compressed into **236.96 GB of verified shards**, grouped into three transfer batches capped at 100 GiB; Google Drive upload is pending.
+
 **Exact N2000 g(E,M,b) is complete for all six graph cases and all 16 boundary states per case.** The [N2000 reproduction package](reproduce/n2000/README.md) includes frozen inputs, both encodings' verification receipts, pinned dependencies, a portable native runner, and checksum-verified data access. The primary table contains **244,104,392 exact records**; its compressed files total **37.4 GB**.
 
 [Public N2000 data folder](https://drive.google.com/drive/folders/1F8wvIRqL3pdB34db-llz0YjnIbFbRg9Y) · [Data manifest and hosting status](reproduce/n2000/DATA_MANIFEST.json) · [Fresh reproduction checks](reproduce/n2000/VALIDATION.json)
@@ -30,6 +32,7 @@ Software is **[MIT licensed](LICENSE)**; research data, reports and figures are 
 
 | Record | Contents |
 |---|---|
+| [N3000 result and cheap replay](reproduce/n3000/README.md) | Six completed cases, 192 GPU rows, exact CPU replay, frozen sources and shard inventory |
 | [Reproduce N2000 exact g(E,M,b)](reproduce/n2000/README.md) | Six completed cases, 96 boundaries, 192 independent encoding receipts, exact binary hashes, public data and native recomputation |
 | [Earlier joint capability and results](GEN4/spin_joint_install1/RESULT.md) | Installed shared packet/joint solver; N1408 construction coverage, 54 dense magnetization cases and 24 joint datasets |
 | [Phase response, step 1](GEN4/vol_ii_joint_response1/REPORT.md) | Equal zero-field spectra with different contact-conditioned alignment responses |
@@ -53,8 +56,8 @@ Software is **[MIT licensed](LICENSE)**; research data, reports and figures are 
 The three packet-family exact catalogs now reach **N1408**. Complete signed graph
 construction covers six variants at each N1..1408, for **8,448 graph sources**.
 Earlier dense magnetization production covers **54 cases through N900**.
-Full joint energy–magnetization–boundary output now covers **30 datasets at
-N120, N300, N750, N900 and N2000**, including the six newly published N2000 cases.
+Full joint energy–magnetization–boundary output now covers **36 datasets at
+N120, N300, N750, N900, N2000 and N3000**, including the six newly published N3000 cases.
 These coverage categories retain separate identities.
 
 The [shared capability](GEN4/spin_joint_install1/GUIDE.md) extends existing
