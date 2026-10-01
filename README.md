@@ -26,17 +26,15 @@ N3000–N5000 transfer batches contain whole shards and are capped at 100 GiB. T
 
 [Public N2000 data folder](https://drive.google.com/drive/folders/1F8wvIRqL3pdB34db-llz0YjnIbFbRg9Y) · [Data manifest and hosting status](reproduce/n2000/DATA_MANIFEST.json) · [Fresh reproduction checks](reproduce/n2000/VALIDATION.json)
 
-**Fully constructed graphs for every spin count from N=1 through N=1408,
-including every integer in between, with no gaps.** The catalog contains
-**six fully connected signed graph variants at each N: 8,448 graphs in total**.
-Each N1408 graph explicitly stores all **990,528 pair interactions**.
+**Fully constructed graphs cover every spin count from N=1 through N=20,000,
+with no gaps: six variants per size, totaling 120,000 graph sources.**
+Each N20000 graph explicitly encodes **199,990,000 pair interactions**.
 
-The six variants come from packet, signed packet and signed packet chain sources,
-each completed with +1 or -1 couplings on previously absent pairs. See the
-[construction record and graph locations](GEN4/frustrated_spin_dense_extension1/README.md)
-for coverage and verification. The full catalog is retained in verified custody;
-this checkout includes selected sources and provenance. Exact dense-solution
-coverage is reported separately below.
+The variants use packet, signed packet and signed packet chain sources, each
+completed with +1 or -1 couplings on previously absent pairs. See the
+[N20000 construction evidence](provenance/graph-construction-n20000/README.md).
+Graph construction reaches N20000; continuous exact joint-density computation
+reaches N1800, with larger isolated exact milestones through N5000.
 
 This standalone repository collects the exact spin atlas, solver development, learning
 campaigns, packet-family extension, the September 26, 2026 N300 courtroom
@@ -60,7 +58,7 @@ Software is **[MIT licensed](LICENSE)**; research data, reports and figures are 
 | [Earlier joint capability and results](GEN4/spin_joint_install1/RESULT.md) | Installed shared packet/joint solver; N1408 construction coverage, 54 dense magnetization cases and 24 joint datasets |
 | [Phase response, step 1](GEN4/vol_ii_joint_response1/REPORT.md) | Equal zero-field spectra with different contact-conditioned alignment responses |
 | [Collective response, step 2](GEN4/vol_ii_joint_response2/REPORT.md) | Exact coupling thresholds and full-spectrum reflection around h=1 |
-| [Complete graph catalog: every N1–N1408](GEN4/frustrated_spin_dense_extension1/README.md) | No gaps: six fully constructed variants at every spin count, 8,448 graphs total; construction checks and custody locations |
+| [Complete graph catalog: every N1–N20000](provenance/graph-construction-n20000/README.md) | No gaps; 120,000 graph sources; 199,990,000 pair interactions per N20000 graph |
 | [Fully connected N300 sources](GEN4/frustrated_spin_dense_completion1/README.md) | Six complete graphs with 44,850 interactions each; preserved parent couplings and an exact collective-magnetization representation |
 | [Consecutive packet continuation](GEN4/frustrated_spin_packet_continuation1/README.md) | Resumable CPU campaign starting at N121, independent exact verification, and retained launch/recovery evidence |
 | [N300 report](GEN4/frustrated_spin_n300_courtroom1/REPORT.md) | Prospective timing prediction, sealed protocol, independent exact comparisons, six wrong controls, and every timing sample |
