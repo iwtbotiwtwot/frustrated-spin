@@ -1,3 +1,14 @@
+# Current completion and byte-accounting clarification — October 1, 2026
+
+N3000, N4000 and N5000 are completed exact joint-spectrum calculations, superseding
+the partial/checkpoint and graph-only states in the earlier N2000-era report.
+Their two-encoding logical raw output totals **3.055 TiB**, representing completed
+output. Their lossless compressed archives total **1.053 TiB**. The logical total
+includes encoding/boundary duplication and is not unique disk usage or download size.
+[Exact byte table and sources](README.md#completed-spectra-and-storage-accounting).
+The continuous campaign's hypothetical expanded-output byte figures are storage
+projections; its separately public compact release is 8.34 GB.
+
 # Continuous N1–1800 publication — October 1, 2026
 
 The [continuous package](reproduce/continuous-n1800/README.md) adds original

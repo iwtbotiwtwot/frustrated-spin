@@ -1,5 +1,15 @@
 # Reproduce N2000 exact g(E,M,b)
 
+**Later completion update (October 1, 2026):** the earlier N3000 partial
+checkpoint was superseded by its completed September 29 exact run. N4000 and
+N5000 subsequently completed all six exact joint-spectrum cases as well.
+See [N3000](../n3000/README.md), [N4000](../n4000/README.md),
+[N5000](../n5000/README.md), and the
+[current storage accounting](../../README.md#completed-spectra-and-storage-accounting).
+The approximately 3 TiB total is completed logical raw output for both encodings
+at N3000–N5000; their compressed archives total 1.053 TiB. It is not a projection.
+
+
 All six N2000 graph cases completed: packet, signed_packet and signed_packet_chain, each with fill coupling +1 and -1. Each case retains all 16 ordered-boundary states in two independently computed encodings. The 96 primary rows contain 244,104,392 exact (E,M,count) records. Original production completed in 816.625 seconds on 27.2 CPU equivalents with 14 workers x 2 FLINT threads and a 465.66 GiB cgroup RAM limit. Both A100s prepared 22 CPU-checked local tables; global arithmetic ran on CPU. These are measured run details, not timing guarantees on other hardware.
 
 `g(E,M,b)` counts configurations of 2000 binary spins. Energy is `E = -sum_{u<v} J_uv*s_u*s_v - sum_i h_i*s_i`; magnetization is `M = sum_i s_i`. Ordered retained ports are `[0,1,60,61]`. State integer `b` has bit i=1 for spin+1 at port i, and bit i=0 for spin-1. The graph manifests under `inputs/N002000` define each complete source and pin its compressed parent and complete pair-coupling bitstream. No source is reconstructed from prose alone.
@@ -85,6 +95,6 @@ The binary format starts with `GEMB001\n`, then a four-byte little-endian JSON-h
 
 ## Scope and attribution
 
-This publication installs completed N2000 joint results and a tested portable reproduction path. The earlier N3000 stop at 12 rows is superseded by the [completed N3000 GPU run and reproduction package](../n3000/README.md). Prior contiguous graph construction through N1408 and later N2000/N3000/N4000/N5000 construction milestones are distinct from solved joint-table coverage. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and Codex are AI research collaborators. Project-owned code is MIT; data, reports and figures are CC BY 4.0. See [license scope](../../LICENSING.md), [frozen runtime grant](../../RUNTIME_LICENSE.md) and [citation](../../CITATION.cff). The original hashes and scientific receipts are unchanged.
+This publication installs completed N2000 joint results and a tested portable reproduction path. The earlier N3000 stop at 12 rows is superseded by the [completed N3000 GPU run and reproduction package](../n3000/README.md). N4000 and N5000 also have completed exact joint-table packages linked above. Fully constructed graph coverage now reaches every N1–N20000; exact continuous joint coverage reaches N1–N1800, with the larger isolated solved milestones listed separately. Sean Brady is the originator and conceptual director; OpenAI ChatGPT and Codex are AI research collaborators. Project-owned code is MIT; data, reports and figures are CC BY 4.0. See [license scope](../../LICENSING.md), [frozen runtime grant](../../RUNTIME_LICENSE.md) and [citation](../../CITATION.cff). The original hashes and scientific receipts are unchanged.
 
 The pinned GitHub Actions workflow runs retained-record verification, public-runtime installation, CPU preparation, N12/N30 qualification and the complete N2000 packet/+1 smoke case. It does not launch the six-case large-memory production run.

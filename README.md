@@ -26,6 +26,39 @@ N3000–N5000 transfer batches contain whole shards and are capped at 100 GiB. T
 
 [Public N2000 data folder](https://drive.google.com/drive/folders/1F8wvIRqL3pdB34db-llz0YjnIbFbRg9Y) · [Data manifest and hosting status](reproduce/n2000/DATA_MANIFEST.json) · [Fresh reproduction checks](reproduce/n2000/VALIDATION.json)
 
+## Completed spectra and storage accounting
+
+**Status update since the September 27 N2000 report:** N3000 subsequently
+completed all six exact cases on September 29. N4000 and N5000 also have
+completed six-case exact joint spectra, with 192 encoding rows and 96 matching
+encoding pairs per size. The earlier partial-checkpoint and graph-only statuses
+are historical. Completed production receipts are linked in each reproduction
+package; graph construction through N20000 is a separate coverage result.
+
+The **approximately 3 TiB figure means 3.055 TiB of completed logical raw
+N3000–N5000 spectra in both encodings**. It is not a projection, unique disk
+usage, or the size of a public download.
+
+| Completed size | Logical raw bytes, both encodings | Archived raw shard bytes | Compressed archive bytes |
+|---|---:|---:|---:|
+| N3000 | 422,457,097,728 | 422,457,097,728 | 236,963,585,976 |
+| N4000 | 996,500,560,744 | 536,744,413,701 | 311,143,296,485 |
+| N5000 | 1,940,369,669,856 | 1,045,145,366,546 | 609,671,270,157 |
+| **Total** | **3,359,327,328,328 (3.055 TiB)** | **2,004,346,877,975 (1.823 TiB)** | **1,157,778,152,618 (1.053 TiB)** |
+
+Logical output includes duplicated encoding/boundary content; archived raw shard
+counts follow each archive's deduplication policy. These totals exclude N2000,
+the continuous N1–1800 campaign, graph construction files and runtime/metadata.
+They describe completed data, while public access and retained custody are
+reported separately in the package manifests. The public 8.34 GB continuous
+release contains compact records and solver sources, not these expanded tables.
+
+The continuous campaign's **42,030,624,816,236-byte hypothetical full-output
+figure is a projection of storage that would be needed** for both headerless
+encodings at every N1–1800; most such expanded tables were released after checks.
+It is not retained or published data volume. See the
+[machine-readable accounting](provenance/SPECTRA_STORAGE_ACCOUNTING.json).
+
 **Fully constructed graphs cover every spin count from N=1 through N=20,000,
 with no gaps: six variants per size, totaling 120,000 graph sources.**
 Each N20000 graph explicitly encodes **199,990,000 pair interactions**.

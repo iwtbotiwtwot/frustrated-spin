@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETED_SPECTRA_ACCOUNTING",
+  "scope": "N3000,N4000,N5000; two logical encodings; excludes N2000, continuous campaign, graph catalog and runtime",
+  "projection": false,
+  "rows": [
+    {
+      "N": 3000,
+      "status": "COMPLETE",
+      "cases": 6,
+      "encoding_rows": 192,
+      "logical_raw_bytes_both_encodings": 422457097728,
+      "archived_raw_bytes": 422457097728,
+      "compressed_archive_bytes": 236963585976,
+      "production_receipt": "reproduce/n3000/reference/PRODUCE.json",
+      "production_receipt_sha256": "211193782871b9e02d36689189cf6fd6327aa96317bba9401e859145064cf67c",
+      "archive_manifest": "reproduce/n3000/DATA_MANIFEST.json"
+    },
+    {
+      "N": 4000,
+      "status": "COMPLETE",
+      "cases": 6,
+      "encoding_rows": 192,
+      "logical_raw_bytes_both_encodings": 996500560744,
+      "archived_raw_bytes": 536744413701,
+      "compressed_archive_bytes": 311143296485,
+      "production_receipt": "reproduce/n4000/reference/PRODUCE.json",
+      "production_receipt_sha256": "0023400784195edbda0ddfcd51cd8206bdbf427b7aeb14546dc70fbead30d141",
+      "archive_manifest": "reproduce/n4000/DATA_MANIFEST.json"
+    },
+    {
+      "N": 5000,
+      "status": "COMPLETE",
+      "cases": 6,
+      "encoding_rows": 192,
+      "logical_raw_bytes_both_encodings": 1940369669856,
+      "archived_raw_bytes": 1045145366546,
+      "compressed_archive_bytes": 609671270157,
+      "production_receipt": "reproduce/n5000/reference/PRODUCE.json",
+      "production_receipt_sha256": "071e4dc5bca4805e1c6cffc5cd1c24bcaad0057adfae235d89ba641d668d513d",
+      "archive_manifest": "reproduce/n5000/DATA_MANIFEST.json"
+    }
+  ],
+  "totals_bytes": {
+    "logical_raw_bytes_both_encodings": 3359327328328,
+    "archived_raw_bytes": 2004346877975,
+    "compressed_archive_bytes": 1157778152618
+  },
+  "totals_TiB": {
+    "logical_raw_bytes_both_encodings": 3.055290406635322,
+    "archived_raw_bytes": 1.8229428660333724,
+    "compressed_archive_bytes": 1.0529930956345197
+  },
+  "definitions": {
+    "logical_raw_bytes_both_encodings": "Complete logical output including both encodings and duplicate boundary files; not unique disk use",
+    "archived_raw_bytes": "Raw shard bytes represented by the archive manifests after their deduplication policy; excludes metadata",
+    "compressed_archive_bytes": "Actual lossless compressed shard byte totals; custody/public access documented separately",
+    "TiB": "2^40bytes",
+    "GB": "10^9bytes"
+  }
+}
