@@ -7,7 +7,7 @@ entries evaluated** across the range. Two exact encodings agree for every case.
 Support entries count occupied (E,M,b) bins, not individual spin configurations.
 
 [Detailed results](RESULTS.md) · [Method and equations](METHODOLOGY.md) ·
-[Prepared release](https://github.com/iwtbotiwtwot/frustrated-spin/releases) ·
+[Download data](https://github.com/iwtbotiwtwot/frustrated-spin/releases/tag/continuous-n1800-20261001) ·
 [Per-size index](INDEX.json) · [10,800-case CSV](CASES.csv) · [Literature context](LITERATURE.md)
 
 This continuous campaign complements the separately published
@@ -17,13 +17,13 @@ N1800 is the continuous-coverage endpoint, not the largest isolated solved N.
 
 ## Download and inspect data
 
-**Hosting status:** all19assets (8.34GB) are uploaded and SHA-256 verified in a
-draft GitHub release. Public asset downloads await explicit owner approval.
+**Hosting status: PUBLIC.** All 19 assets (8.34 GB) are available without
+sign-in. Their byte counts and SHA-256 digests match the verified local assets;
+an anonymous download of the N1–100 archive also passed its checksum.
 The five example records, per-size index, case CSV, source code and reports
-are already in the public repository. The bulk download/extraction instructions
-below apply once the release is public. DATA_MANIFEST.json records the status.
+are included in the repository. DATA_MANIFEST.json records the public status.
 
-The release has 18archives covering100sizes each and one bound solver/source archive.
+The release has 18 archives covering 100 sizes each and one bound solver/source archive.
 Each range archive expands into records/Nxxxxxx/RECORD.json.gz and RECEIPT.json.
 All original compact record and receipt bytes are preserved. SHA-256 and byte
 counts are in [DATA_MANIFEST.json](DATA_MANIFEST.json). Bulk assets are separate
