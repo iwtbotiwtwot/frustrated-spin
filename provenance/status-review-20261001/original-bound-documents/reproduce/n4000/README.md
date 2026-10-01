@@ -1,13 +1,5 @@
 # N4000 exact g(E,M,b) and reproduction package
 
-**Large data are hosted on [Google Drive](https://drive.google.com/drive/folders/1WzwxQ3YcRh81BLsEa_4AdjikM2YryBEu) because of their size,
-not stored in this Git repository.** This package contains methodology, source
-code, checksums and reproduction/verification records.
-
-
-Current custody: all 89 compressed shards verified on Drive. See the
-[October 1 custody update](../../provenance/CUSTODY_MILESTONES_20261001.json).
-
 All six cases are complete: `packet`, `signed_packet`, `signed_packet_chain`, each
 with fill +1/-1, all 16 ordered boundary states, and two independently computed
 encodings. All 96 encoding pairs match. The primary encoding has **978,880,708

@@ -1,0 +1,17 @@
+name: Current documentation and retained publication
+on:
+  push:
+    paths: ["README.md", "PUBLICATION.md", "CURRENT_STATUS.*", "CITATION.cff", ".zenodo.json", "verify_current.py", "provenance/CURRENT_DOCUMENT_OVERRIDES.json", "provenance/status-review-20261001/**", "reproduce/n4000/DATA_MANIFEST.json", "reproduce/n5000/DATA_MANIFEST.json", ".github/workflows/current-documentation.yml"]
+  pull_request:
+    paths: ["README.md", "PUBLICATION.md", "CURRENT_STATUS.*", "verify_current.py", "provenance/CURRENT_DOCUMENT_OVERRIDES.json"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - run: python3 verify_current.py
+      - run: python3 reproduce/continuous-n1800/verify.py

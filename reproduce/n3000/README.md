@@ -1,5 +1,10 @@
 # N3000 exact g(E,M,b) and reproduction package
 
+**Large data are hosted on [Google Drive](https://drive.google.com/drive/folders/18y6ZEJGw6IhqAN-jJCXVvueTAzjwcypi) because of their size,
+not stored in this Git repository.** This package contains methodology, source
+code, checksums and reproduction/verification records.
+
+
 All six N3000 cases are complete: `packet`, `signed_packet` and `signed_packet_chain`, each with fill coupling +1 and -1. Each has all 16 ordered-boundary states in two independently computed encodings. All 96 encoding pairs agree exactly. The primary encoding contains **550,074,346 exact records**; both encodings occupy **422,457,097,728 bytes** before compression.
 
 Production on an RTX 3090 completed on September 29, 2026. The production phase took **1,712.316 seconds (28m32s)**, computing 190 rows and reusing two authenticated pilot rows. The pilot took 46.255 seconds. Production includes exact integer GPU transforms, CRT reconstruction, writing, fsync and checksum readback; it is not a GPU-kernel-only timing. `reference/PRODUCE.json` preserves the original production result. `reference/Q01.json` and `Q02.json` preserve qualification and the pilot; `gpu_source/` contains the exact bound production implementation and compiled source inputs.
@@ -14,7 +19,7 @@ python3 reproduce/n3000/run.py verify-record
 
 This standard-library command authenticates 16 source files, the retained result and production code, and all 192 rows. It checks source/plan bindings, configuration-count closure, coverage, and agreement of canonical hashes, record counts and energy moments between the two encodings. It reads receipts rather than the bulk tables.
 
-## Reproduction package alongside N2000
+## CPU reproduction and shared runtime
 
 Reuse the same Python 3.12 environment and public runtime as [N2000](../n2000/README.md). From a fresh checkout:
 
