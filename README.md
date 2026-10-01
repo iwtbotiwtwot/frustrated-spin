@@ -4,9 +4,11 @@
 **10,800 structured graph/fill  cases** and **118,387,509,614 primary
 joint-support entries evaluated**, with both exact encodings agreeing throughout.
 The [new results and methodology](reproduce/continuous-n1800/README.md) include
-per-size/per-case tables and [downloadable original compact data](https://github.com/iwtbotiwtwot/frustrated-spin/releases/tag/continuous-n1800-20261001).
+per-size/per-case tables and [original compact-data inventory](reproduce/continuous-n1800/DATA_MANIFEST.json).
 Compact records retain source identities, counts, moments, hashes and responses;
 expanded coefficient tables are retained separately at selected milestones.
+The8.34GB bulk release is uploaded and verified in draft; public publication
+awaits explicit owner approval. Five example records are included in Git.
 
 **Exact g(E,M,b) is complete at N2000, N3000, N4000 and N5000**, each covering six graph cases, all 16 ordered boundary states per case, and two independent encodings: **192 rows and 96 matching encoding pairs per size**.
 

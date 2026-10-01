@@ -7,7 +7,7 @@ entries evaluated** across the range. Two exact encodings agree for every case.
 Support entries count occupied (E,M,b) bins, not individual spin configurations.
 
 [Detailed results](RESULTS.md) · [Method and equations](METHODOLOGY.md) ·
-[Data downloads](https://github.com/iwtbotiwtwot/frustrated-spin/releases/tag/continuous-n1800-20261001) ·
+[Prepared release](https://github.com/iwtbotiwtwot/frustrated-spin/releases) ·
 [Per-size index](INDEX.json) · [10,800-case CSV](CASES.csv) · [Literature context](LITERATURE.md)
 
 This continuous campaign complements the separately published
@@ -16,6 +16,12 @@ This continuous campaign complements the separately published
 N1800 is the continuous-coverage endpoint, not the largest isolated solved N.
 
 ## Download and inspect data
+
+**Hosting status:** all19assets (8.34GB) are uploaded and SHA-256 verified in a
+draft GitHub release. Public asset downloads await explicit owner approval.
+The five example records, per-size index, case CSV, source code and reports
+are already in the public repository. The bulk download/extraction instructions
+below apply once the release is public. DATA_MANIFEST.json records the status.
 
 The release has 18archives covering100sizes each and one bound solver/source archive.
 Each range archive expands into records/Nxxxxxx/RECORD.json.gz and RECEIPT.json.
