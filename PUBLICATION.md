@@ -1,3 +1,12 @@
+# Continuous N1–1800 publication — October 1, 2026
+
+The [continuous package](reproduce/continuous-n1800/README.md) adds original
+compact scientific records for every N1–1800, 10,800 case summaries, explicit
+methodology and equations, batch results, source/build bindings and independently
+checked release assets. Expanded full tables are separate milestone data.
+[Literature context](reproduce/continuous-n1800/LITERATURE.md) identifies the
+N1296 sampling comparison and the scope of exact joint-density claims.
+
 # N2000–N5000 reproduction packages — September 29, 2026
 
 The [N5000 reproduction package](reproduce/n5000/README.md) and [N4000 reproduction package](reproduce/n4000/README.md) each preserve 192 completed rows, 96 matching encoding pairs, frozen inputs, exact CPU recomputation, and verified lossless shard inventories. Their packet/+1 CPU reproductions match all 32 rows in 37.769 and 16.473 seconds, respectively. N5000 has six transfer batches and N4000 has three, each capped at 100 GiB.

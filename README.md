@@ -1,5 +1,13 @@
 # GEN4 frustrated-spin research
 
+**Continuous exact g(E,M,b) coverage now includes every N1–1800:**
+**10,800 structured graph/fill  cases** and **118,387,509,614 primary
+joint-support entries evaluated**, with both exact encodings agreeing throughout.
+The [new results and methodology](reproduce/continuous-n1800/README.md) include
+per-size/per-case tables and [downloadable original compact data](https://github.com/iwtbotiwtwot/frustrated-spin/releases/tag/continuous-n1800-20261001).
+Compact records retain source identities, counts, moments, hashes and responses;
+expanded coefficient tables are retained separately at selected milestones.
+
 **Exact g(E,M,b) is complete at N2000, N3000, N4000 and N5000**, each covering six graph cases, all 16 ordered boundary states per case, and two independent encodings: **192 rows and 96 matching encoding pairs per size**.
 
 The reproduction packages include frozen inputs, production verification receipts, bound solver code, exact CPU recomputation and checksum-verified archive manifests. Each N3000–N5000 package recomputes the complete packet/+1 case on CPU—32 rows across both encodings—and checks it against the GPU results.
@@ -41,6 +49,7 @@ Software is **[MIT licensed](LICENSE)**; research data, reports and figures are 
 
 | Record | Contents |
 |---|---|
+| [Continuous N1–1800](reproduce/continuous-n1800/README.md) | 10,800 cases; detailed equations, original compact records, source code and checksums |
 | [N5000 reproduction package](reproduce/n5000/README.md) | Complete 192-row result, exact CPU reproduction, 89 verified shards in six batches |
 | [N4000 reproduction package](reproduce/n4000/README.md) | Complete 192-row result, exact CPU reproduction, 89 verified shards in three batches |
 | [N3000 reproduction package](reproduce/n3000/README.md) | Six completed cases, 192 GPU rows, exact CPU replay, frozen sources and shard inventory |
@@ -64,12 +73,12 @@ Software is **[MIT licensed](LICENSE)**; research data, reports and figures are 
 
 ## Latest continuation, magnetization and joint response
 
-The three packet-family exact catalogs now reach **N1408**. Complete signed graph
-construction covers six variants at each N1..1408, for **8,448 graph sources**.
-Earlier dense magnetization production covers **54 cases through N900**.
-Full joint energy–magnetization–boundary output now covers **36 datasets at
-N120, N300, N750, N900, N2000 and N3000**, including the six newly published N3000 cases.
-These coverage categories retain separate identities.
+Exact joint computation now covers **every N1–1800**, six source/fill cases per
+size. The [continuous package](reproduce/continuous-n1800/README.md) publishes
+original compact scientific records, bound source/solver code and verification.
+The earlier explicitly serialized graph catalog through N1408 retains its own
+construction/custody record. The new production additionally binds complete-graph
+identities at every solved size. Isolated full-output milestones extend to N5000.
 
 The [shared capability](GEN4/spin_joint_install1/GUIDE.md) extends existing
 SLC/CE/GEN3/GEN4 operations and has executed SB/A3D41 adoption. Local installation

@@ -1,5 +1,8 @@
 # N4000 exact g(E,M,b) and reproduction package
 
+Current custody: all 89 compressed shards verified on Drive. See the
+[October 1 custody update](../../provenance/CUSTODY_MILESTONES_20261001.json).
+
 All six cases are complete: `packet`, `signed_packet`, `signed_packet_chain`, each
 with fill +1/-1, all 16 ordered boundary states, and two independently computed
 encodings. All 96 encoding pairs match. The primary encoding has **978,880,708

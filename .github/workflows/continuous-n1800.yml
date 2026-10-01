@@ -1,0 +1,16 @@
+name: Continuous N1800 evidence
+on:
+  push:
+    paths: ["reproduce/continuous-n1800/**", ".github/workflows/continuous-n1800.yml"]
+  pull_request:
+    paths: ["reproduce/continuous-n1800/**", ".github/workflows/continuous-n1800.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - run: python3 reproduce/continuous-n1800/verify.py

@@ -84,9 +84,12 @@ python reproduce/n5000/data.py /path/to/batch-001 \
 Add --restore /path/to/raw to reconstruct the raw files and hardlinked aliases.
 Install zstd for deep verification/restoration. Existing raw files are preserved.
 
-Workstation bulk downloads remain held. Archive custody is being moved to the
-owner's storage pod; source-container retirement requires complete destination
-verification. No public bulk URL is available yet. Bulk files stay outside Git.
+All 89 compressed shards now have verified external custody: batches 001–002
+on Drive and batches 003–006 on T500. The final two T500 batches contain
+203,896,054,295 bytes and passed size/SHA-256 verification. This replaces the
+older pending-transfer status. [Custody receipt](../../provenance/CUSTODY_MILESTONES_20261001.json).
+A custody receipt does not establish public sharing permissions; this package
+has no newly confirmed public bulk URL. Bulk files stay outside Git.
 
 Sean Brady is originator/conceptual director; OpenAI ChatGPT and Codex are AI
 research collaborators. Code MIT; research data/results CC BY 4.0. Existing

@@ -1,0 +1,35 @@
+{
+  "schema": "SPIN_RAM_RETENTION_V1",
+  "min_N": 1409,
+  "max_N": 2000,
+  "families": [
+    "packet",
+    "signed_packet",
+    "signed_packet_chain"
+  ],
+  "fills": [
+    1,
+    -1
+  ],
+  "encodings": [
+    "K_MAJOR",
+    "T_MAJOR"
+  ],
+  "workers": 24,
+  "flint_threads_per_worker": 1,
+  "full_output_milestones": [],
+  "direct_enumeration_through_N": 10,
+  "thermal_beta_numerators_over_N": [
+    1,
+    4
+  ],
+  "thermal_precision_bits": 128,
+  "thermal_uniform_field": 0,
+  "thermal_collective_shift": 0,
+  "rss_sampling_seconds": 0.02,
+  "worker_address_space_limit_bytes": 8589934592,
+  "ordered_ports_policy": "Use exact source recipe ports; never invent missing boundary vertices",
+  "bulk_policy": "Canonical exact table written only at listed milestones; all other expanded tables exist only in RAM",
+  "checkpoint_policy": "N1409\u20132000 in bounded batches; compact exact records at every N; existing full N2000 archive retained separately; no duplicate full archive",
+  "gpu_cache_budget_bytes": 51539607552
+}
