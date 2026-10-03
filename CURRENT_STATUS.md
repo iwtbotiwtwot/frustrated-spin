@@ -1,4 +1,4 @@
-# Current coverage and data status — October 1, 2026
+# Current coverage and data status — October 2, 2026
 
 | Category | Completed coverage | Evidence |
 |---|---|---|
@@ -6,6 +6,15 @@
 | Continuous exact g(E,M,b) | Every N1–1800;10,800 cases | [Continuous package](reproduce/continuous-n1800/README.md) |
 | Larger isolated exact g(E,M,b) | N2000, N3000, N4000, N5000; six cases and 192 encoding rows at each | [Milestone packages](README.md#exact-milestone-packages) |
 | Public continuous release | 19 assets;8,340,788,456bytes; original compact records and bound solvers | [Public release](https://github.com/iwtbotiwtwot/frustrated-spin/releases/tag/continuous-n1800-20261001) |
+
+## New thermal and phase-transition work
+
+[October 2 research index](research/README.md) publishes compact thermal results
+through N=10⁵⁷+10, selected exact coefficients at N20000, normalization comparisons,
+global continuous-transition results for the retained 60%-free families, and
+variable-ratio tricritical points. These are separate from expanded spectra and
+explicit graph construction. The [CPU reproduction package](reproduce/ratio-transitions/README.md)
+includes frozen sources and exact global certificates for the ratio extension.
 
 ## What supersedes what
 

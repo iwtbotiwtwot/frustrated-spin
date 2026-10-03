@@ -1,4 +1,4 @@
-# Frustrated-spin: graphs to N20000, exact joint densities to N5000
+# Frustrated-spin: exact spectra, thermal boundaries and phase transitions
 
 **Fully constructed graphs at every N1–20000. Continuous exact g(E,M,b) at
 every N1–1800. Larger isolated exact milestones at N2000, N3000, N4000 and N5000.**
@@ -7,6 +7,13 @@ This repository publishes structured Ising graph sources, exact joint-density
 results, solver implementations, reproducible checks and research provenance.
 [Current status](CURRENT_STATUS.md) · [Machine-readable coverage](CURRENT_STATUS.json) ·
 [Data and reproduction guide](PUBLICATION.md) · [Citation](CITATION.cff)
+
+**New: compact thermal-boundary calculations through N=10⁵⁷+10, selected exact
+coefficients at N20000, and exact ratio-controlled tricritical points.**
+[Latest methods and results](research/README.md) ·
+[Reproduce the ratio study on a CPU](reproduce/ratio-transitions/README.md).
+These thermal and selected-coefficient calculations have their own coverage;
+full expanded spectra remain at the milestones below.
 
 | Completed work | Coverage | Results and evidence |
 |---|---|---|

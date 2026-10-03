@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "source_factorizations": 2,
+  "independent_enumeration": {
+    "implementation": "literal spin assignments and aligned-edge histogram, distinct from factor/derivative formulas",
+    "core_states": [
+      4,
+      4096
+    ],
+    "rational_a": [
+      "0",
+      "1/4",
+      "1/2",
+      "3/4",
+      "9/10"
+    ],
+    "exact_cumulant_comparisons": 30
+  },
+  "main_checks": 50,
+  "point_bernstein_coefficients": 10,
+  "extension_bernstein_coefficients": 71,
+  "exact_power_basis_reconstructions": 4,
+  "arb_bits": 192,
+  "certified_positive_pressure_witnesses": 2,
+  "independent_histogram_pressure_overlaps": 2,
+  "numerical_branch_records": 12,
+  "numerical_branches_interval_certified": false,
+  "remote_sha256_matches": [
+    "RUN.log",
+    "EXTENSION_RUN.log",
+    "bundle/MANIFEST.json",
+    "bundle/N005000_signed_packet_+1_K_MAJOR.json",
+    "bundle/N005000_signed_packet_chain_+1_K_MAJOR.json",
+    "bundle/worker.py",
+    "extension_bundle/MANIFEST.json",
+    "extension_bundle/extension.py",
+    "bundle/output/RESULTS.json",
+    "bundle/output/HARDWARE.json",
+    "extension_bundle/output/EXTENSION.json"
+  ],
+  "pod_workers_completed": true,
+  "pod_provider_terminated": false,
+  "source_code_hashes": {
+    "worker.py": "e58d47dbeacbebaa4a42dc3931e05d62daa1f46dfb2402a5bb6820a9897340ce",
+    "plot.py": "654bbac092355fb4c8fd4bf4be880166554366dbeafaeebf49d2fc7609668df6",
+    "extension.py": "517cbb81304e1324b941aa53d15bc4694202ff021f1270acf83a1248ec3ceb39",
+    "extension_run.py": "99c8b4c931af3b5d7c19c87bd7ebcb064c53f977e99785693a5500cc543085c1",
+    "native_run.py": "acfee6e283612a7958976fa3bc90e2cda158640346934bff81c5981cd9e99d2a"
+  },
+  "custody": "Remote executed sources/results match direct T500 copies. Small reports/code/results local. Completion archive shares T500; no separate physical archive replica.",
+  "faults": [
+    "Extension output directory missing: failed source, manifest, log and session preserved; mkdir fix and full extension rerun passed.",
+    "Shared resource lock respected while RH task ran."
+  ],
+  "retained_native_sessions": [
+    {
+      "path": "/home/sam/mnt/lilhelper-t500/GEN4/spin_ratio1/sessions/STARBREAKER_532d3573cd7b4c2ab3dc3edb6ccef391",
+      "announcement": "STARBREAKER Domain, SLC-GEN3-R4 \u2014 verified; CE: SLC-GEN3-CEV1-R4; domain engine: SB-GEN3-ACCUMULATION-R1; Chalkboard: OFF (owner-suspended)"
+    },
+    {
+      "path": "/home/sam/mnt/lilhelper-t500/GEN4/spin_ratio1/sessions/STARBREAKER_074c643a6f824388a8c86889de7b7bee",
+      "announcement": "STARBREAKER Domain, SLC-GEN3-R4 \u2014 verified; CE: SLC-GEN3-CEV1-R4; domain engine: SB-GEN3-ACCUMULATION-R1; Chalkboard: OFF (owner-suspended)"
+    }
+  ]
+}

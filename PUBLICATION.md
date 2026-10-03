@@ -78,6 +78,16 @@ Original transport lineage: [standalone extraction](provenance/STANDALONE_COPY.j
 [runtime asset](provenance/RELEASE_JOINT_20260926.json). Their dates and scopes
 remain valid; they are not today's latest data inventories.
 
+## October 2 thermal and ratio extension
+
+The [research index](research/README.md) links the newer source-bound thermal,
+selected-coefficient and global transition results. The
+[standalone CPU ratio replay](reproduce/ratio-transitions/README.md) includes
+pinned dependencies, source hashes, exact component reconstruction and global
+polynomial certificates. Reports and compact result records are in Git.
+Selected-count bulk streams remain in research custody; no new Drive upload is
+claimed. The unpublished working manuscript remains outside this repository.
+
 ## Licensing and attribution
 
 Project-owned software is MIT; research data, reports and figures are CC BY 4.0.
